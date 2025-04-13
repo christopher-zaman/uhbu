@@ -1,6 +1,6 @@
 import React from 'react';
 import TopBar from '../components/TopBar';
-import Navbar from '../components/Navbar';
+import NavBar from '../components/NavBar';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 
@@ -8,7 +8,7 @@ function SexualWellnessTreatments() {
     return(
         <>
         <TopBar />
-        <Navbar />
+        <NavBar />
         <Banner 
             image="/assets/img/banners/model-honey-tone-large.webp"
             title="Sexual Wellness Treatments"

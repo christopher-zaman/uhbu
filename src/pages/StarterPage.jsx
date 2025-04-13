@@ -8,7 +8,7 @@ function StarterPage() {
   return (
     <>
     <TopBar />
-    <Navbar />
+    <NavBar />
     <PageTitle />
     <StarterSection />
     <Footer />
