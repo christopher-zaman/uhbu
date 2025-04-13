@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import NavBar from '../components/NavBar';
 import PageTitle from '../components/PageTitle';
 import StarterSection from '../components/StarterSection';
 import Footer from '../components/Footer';
