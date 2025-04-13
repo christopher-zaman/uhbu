@@ -10,7 +10,7 @@ function OShot() {
         <TopBar />
         <NavBar />
             <Banner 
-            image="public/assets/img/banners/votiva-vaginal-forma-v.webp"
+            image="/assets/img/banners/votiva-vaginal-forma-v.webp"
             title="O Shot"
             subtitle="Orgasm Shot"
             role="img"

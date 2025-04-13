@@ -10,7 +10,7 @@ function PShot(){
         <TopBar />
         <NavBar />
         <Banner
-            image="public/assets/img/banners/votiva-vaginal-forma-v.webp"
+            image="/assets/img/banners/votiva-vaginal-forma-v.webp"
             title="P Shot"
             subtitle="Priapus Shot"
             role="img"

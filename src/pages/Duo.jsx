@@ -10,7 +10,7 @@ function Duo(){
     <TopBar />
         <NavBar />
             <Banner 
-            image="public/assets/img/banners/model-honey-tone-large.webp"
+            image="assets/img/banners/model-honey-tone-large.webp"
             title="Duo"
             subtitle="Duo"
             role="img"
