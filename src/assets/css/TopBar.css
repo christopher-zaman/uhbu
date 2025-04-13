@@ -1,0 +1,18 @@
+.topbar {
+  background-color: #f8f9fa;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+#top-bar img {
+  max-height: 145px; /* or the desired height */
+  width: auto;
+}
+.btn.navy-blue {
+  background-color: #0f058b;
+}
+.btn.navy-blue:hover {
+  background-color: #827af6;
+  color:#0f058b;
+}
