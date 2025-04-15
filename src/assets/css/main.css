@@ -1826,25 +1826,7 @@ section,
 /*--------------------------------------------------------------
 # Custom styles
 --------------------------------------------------------------*/
-/* Example CSS for animated waves */
-.hero-waves .wave1 {
-  animation: waveAnimation 4s infinite linear;
-}
-.hero-waves .wave2 {
-  animation: waveAnimation 4s infinite linear reverse;
-}
-.hero-waves .wave3 {
-  animation: waveAnimation 4s infinite linear;
-}
 
-@keyframes waveAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 
 
