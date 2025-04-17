@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
-import Banner from '../components/Banner';
+import Hero from '..//components/Hero';
 import Footer from '../components/Footer';
 
 function OShot() {
@@ -9,14 +9,16 @@ function OShot() {
         <>
         <TopBar />
         <NavBar />
-            <Banner 
-            image="/assets/img/banners/votiva-vaginal-forma-v.webp"
-            title="O Shot"
-            subtitle="Orgasm Shot"
-            role="img"
-            aria-label="Orgasm Shot"
-            />
+        <Hero
+        backgroundImage="assets/img/banners/votiva-vaginal-forma-v.webp"
+        heroImage="/assets/img/hero-img.png"
+        title="O Shot"
+        subtitle="Orgasm Shot designed to enhance your wellness journey."
+        videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+      />
         <Footer />
+
+        
         </>
     );
 }

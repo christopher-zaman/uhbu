@@ -18,7 +18,14 @@ function App() {
     <>
       <TopBar />
       <NavBar />
-      <Hero />
+      <Hero 
+        // backgroundImage="/assets/img/banners/vampire-facial-banner-medium.webp"
+        backgroundVideo="/assets/video/home-bg.mp4"
+        heroImage="/assets/img/hero-img-sexual-wellness.png"
+        title="Build Your Landing Page With Bootslander"
+        subtitle="We are team of talented designers making websites with Bootstrap."
+        videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+      />
       <About />
       <Features />
       <Details />

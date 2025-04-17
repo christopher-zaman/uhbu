@@ -1,7 +1,8 @@
 import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
-import Banner from '../components/Banner';
+import Hero from '../components/Hero';
+import StarterSection from '../components/StarterSection';
 import Footer from '../components/Footer';
 
 function SexualWellnessTreatments() {
@@ -9,13 +10,14 @@ function SexualWellnessTreatments() {
         <>
         <TopBar />
         <NavBar />
-        <Banner 
-            image="/assets/img/banners/model-honey-tone-large.webp"
-            title="Sexual Wellness Treatments"
-            subtitle="Empowering your wellness journey"
-            role="img"
-            aria-label="Model Honey Tone in a lifestyle setting, showcasing our signature style."
-        />
+        <Hero
+        backgroundImage="/assets/img/banners/model-honey-tone-large.webp"
+        heroImage="/assets/img/hero-img.png"
+        title="Sexual Wellness Treatments"
+        subtitle="Empowering your wellness journey"
+        videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+      />
+      <StarterSection />
         <Footer />
         </>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
-import Banner from '../components/Banner';
+import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 
 function Duo(){
@@ -9,13 +9,15 @@ function Duo(){
         <>
     <TopBar />
         <NavBar />
-            <Banner 
-            image="assets/img/banners/model-honey-tone-large.webp"
-            title="Duo"
-            subtitle="Duo"
-            role="img"
-            aria-label="Duo"
-            />
+        <Hero
+        backgroundImage="assets/img/banners/model-honey-tone-large.webp"
+        heroImage="/assets/img/hero-img.png"
+        title="Alma Duo"
+        subtitle="Introducing the DUO Treatment"
+        role="img"
+        aria-label="Duo"
+        videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+      />
         <Footer />
         </>
     );
