@@ -1,7 +1,7 @@
 import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
-import Banner from '../components/Banner';
+import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 
 function PShot(){
@@ -9,13 +9,14 @@ function PShot(){
         <>
         <TopBar />
         <NavBar />
-        <Banner
-            image="/assets/img/banners/votiva-vaginal-forma-v.webp"
-            title="P Shot"
-            subtitle="Priapus Shot"
-            role="img"
-            aria-label="Priapus Shot"
-         />
+        <Hero
+        backgroundImage="/assets/img/banners/votiva-vaginal-forma-v.webp"
+        heroImage="/assets/img/hero-img.png"
+        title="P Shot"
+        subtitle="Priapus Shot"
+        aria-label="Priapus Shot"
+        videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+        />
         <Footer />
         </>
     );

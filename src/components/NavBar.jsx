@@ -21,7 +21,7 @@ function NavBar() {
   // Navigation configuration array
   // Sexual Wellness 
   const navItems = [
-    { type: 'link', label: 'Home', href: '#top-bar', active: true },
+    { type: 'link', label: 'Home', href: '/', active: true },
     {
       type: 'dropdown',
       key: 'dropdown1',
@@ -31,6 +31,7 @@ function NavBar() {
         { label: 'O Shot', href: '/o-shot' },
         { label: 'P Shot', href: '/p-shot' },
         { label: 'Duo', href: '/duo' },
+        { label: 'Vampire Facial', href: '/vampire-facial' },
       ],
     },
     // Weight Loss

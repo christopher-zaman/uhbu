@@ -811,10 +811,12 @@ section,
   width: 100%;
   min-height: 70vh;
   position: relative;
+  overflow: hidden; /*line added from chatgpt fro video bg*/
   padding: 120px 0 120px 0;
   display: flex;
   align-items: center;
 }
+
 
 .hero .hero-bg {
   position: absolute;
@@ -826,9 +828,24 @@ section,
   z-index: 1;
 }
 
+/* Custom chatgpt below*/
+.hero .hero-bg,
+.hero .hero-bg-video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+/*custom chat gpt above*/
+
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 10%); */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1826,6 +1843,17 @@ section,
 /*--------------------------------------------------------------
 # Custom styles
 --------------------------------------------------------------*/
+.hero-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Ensures the video is behind content */
+}
+
+
 
 
 

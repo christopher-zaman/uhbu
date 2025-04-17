@@ -5,6 +5,7 @@ import SexualWellnessTreatments from './pages/SexualWellnessTreatments';
 import OShot from './pages/OShot';
 import PShot from './pages/PShot';
 import Duo from './pages/Duo';
+import VampireFacial from './pages/VampireFacial';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/o-shot" element={<OShot />} />
       <Route path="/p-shot" element={<PShot />} />
       <Route path="/duo" element={<Duo />} />
+      <Route path="/vampire-facial" element={<VampireFacial />} />
     </Routes>
     </>
   );
