@@ -11,6 +11,7 @@ function Duo(){
         <NavBar />
         <Hero
         backgroundImage="assets/img/banners/model-honey-tone-large.webp"
+        backgroundVideo="/assets/video/alma-duo-video.mp4"
         heroImage="/assets/img/hero-img.png"
         title="Alma Duo"
         subtitle="Introducing the DUO Treatment"
