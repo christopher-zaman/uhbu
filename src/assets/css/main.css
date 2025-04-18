@@ -1252,6 +1252,9 @@ section,
 .details .features-item p:last-child {
   margin-bottom: 0;
 }
+.description-title{
+  color:#95c352;
+}
 
 /*--------------------------------------------------------------
 # Gallery Section
