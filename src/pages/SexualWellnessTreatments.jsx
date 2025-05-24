@@ -21,12 +21,28 @@ function SexualWellnessTreatments() {
       />
         <SingleFeature
         video="/assets/video/p-shot.mp4"
+        treatments={[
+          '🌸 InMode Empower Platform',
+          '🌸 ALMA FemiLift',
+          '💉 The O-Shot®',
+          '💨 Oxytocin Nasal Spray & Tablets',
+          '💉 PT-141 Peptide Therapy',
+          '✨ Non-Surgical Labiaplasty',
+          '✨ Mons Pubis Reduction',
+          '✨ Labia Plumping with HA Filler + PRP',
+          '💥 ALMA Duo ED Treatment',
+          '💉 P-Shot (Priapus Shot®)',
+          '💊 Oral ED Medications',
+          '💉 Tri-Mix Injection Therapy',
+          '💉 PT-141 Peptide Therapy',
+        ]}
          />
         <Details 
           centerTitle={true}
           showHeading={false}
           introText="Explore Our"
           highlightText='Sexual Wellness Treatments'
+          headingText
         />
         <Features />
         <Footer />
