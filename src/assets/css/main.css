@@ -12,7 +12,7 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --default-font: 'Poppins', sans-serif;
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
@@ -1126,7 +1126,13 @@ section,
 --------------------------------------------------------------*/
 .features .features-item {
   background-color: var(--surface-color);
+  /* added five lines below*/
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+
   align-items: center;
   padding: 20px;
   transition: 0.3s;
@@ -1210,7 +1216,8 @@ section,
 # Details Section
 --------------------------------------------------------------*/
 .details .features-item {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: #000;
+  /*color-mix(in srgb, var(--default-color), transparent 20%);*/
 }
 
 .details .features-item+.features-item {
@@ -1256,6 +1263,20 @@ section,
   color:#95c352;
 }
 
+/*--------------------------------------------------------------
+# Custom Sexual Wellness Section
+--------------------------------------------------------------*/
+.sexual-wellness-bg {
+  background-image: url(../../../public/assets/img/wellness/o-shot.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blurred-bg {
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
@@ -1856,8 +1877,52 @@ section,
   z-index: -1; /* Ensures the video is behind content */
 }
 
+/*--------------------------------------------------------------
+# ChatGpt styles below
+--------------------------------------------------------------*/
+.custom-img {
+  max-height: 400px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 5px;
+}
 
+.feature-icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
 
+/*info split section*/
+.left-column {
+  background-color: #3c92b0; /* Adjust as needed */
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
 
+.right-column {
+  background-color: #3c93b0; /* Adjust as needed */
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
 
+.column-block {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 767.98px) {
+  /* remove per-side rounding for mobile */
+  .left-column,
+  .right-column {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+ /*Info split section above*/
+}
 

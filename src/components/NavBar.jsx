@@ -28,8 +28,8 @@ function NavBar() {
       title: 'Sexual Wellness',
       items: [
         { label: 'Sexual Wellness Treatments', href: '/sexual-wellness-treatments' },
-        { label: 'O Shot', href: '/o-shot' },
-        { label: 'P Shot', href: '/p-shot' },
+        { label: 'Sexual Wellness For her', href: '/sexual-wellness-for-her' },
+        { label: 'Sexual Wellness For him ', href: '/p-shot' },
         { label: 'Duo', href: '/duo' },
         { label: 'Vampire Facial', href: '/vampire-facial' },
       ],

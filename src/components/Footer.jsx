@@ -16,10 +16,10 @@ function Footer() {
           <p><strong>Email:</strong> <span>info@example.com</span></p>
         </div>
         <div className="social-links d-flex mt-4">
-          <a href><i className="bi bi-twitter-x" /></a>
-          <a href><i className="bi bi-facebook" /></a>
-          <a href><i className="bi bi-instagram" /></a>
-          <a href><i className="bi bi-linkedin" /></a>
+          <a href="#"><i className="bi bi-twitter-x" /></a>
+          <a href="#"><i className="bi bi-facebook" /></a>
+          <a href="#"><i className="bi bi-instagram" /></a>
+          <a href="#"><i className="bi bi-linkedin" /></a>
         </div>
       </div>
       <div className="col-lg-2 col-md-3 footer-links">

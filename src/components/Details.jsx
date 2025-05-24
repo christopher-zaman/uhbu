@@ -1,17 +1,19 @@
 import React from 'react';
 
 function Details({ 
-  centerTitle,
+  centerTitle = true,
   showHeading = true, 
   introText = "Check Our", 
-  highlightText = "Details" }) {
+  highlightText = "Details",
+  headingText = "headingText"
+ }) {
     return(
         <>
         {/* Details Section */}
 <section id="details" className="details section">
   {/* Section Title */}
   <div className={`container section-title ${centerTitle ? 'text-center' : ''}`} data-aos="fade-up">
-    {showHeading && <h2>Details</h2>}
+    {showHeading && <h2>{headingText}</h2>}
     <div><span>{introText}</span> <span className="description-title">{highlightText}</span></div>
   </div>{/* End Section Title */}
   <div className="container">
