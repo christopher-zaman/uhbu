@@ -1,55 +1,55 @@
-// src/components/About.jsx
 import React from 'react';
+import founderImage from '../assets/img/amanda.jpg';
+import '../assets/css/About.css';
+import Divider from '../components/Divider';
 
 function About() {
   return (
-<>
-<section id="about" className="about section">
-  <div className="container" data-aos="fade-up" data-aos-delay={100}>
-    <div className="row align-items-xl-center gy-5">
-      <div className="col-xl-5 content">
-        <h3>About Us</h3>
-        <h2>Ducimus rerum libero reprehenderit cumque</h2>
-        <p>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim reiciendis minus et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem tempora deleniti soluta.</p>
-        <a href="#" className="read-more"><span>Read More</span><i className="bi bi-arrow-right" /></a>
-      </div>
-      <div className="col-xl-7">
-        <div className="row gy-4 icon-boxes">
-          <div className="col-md-6" data-aos="fade-up" data-aos-delay={200}>
-            <div className="icon-box">
-              <i className="bi bi-buildings" />
-              <h3>Eius provident</h3>
-              <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+    <section id="about" className="about section about-us-bg">
+      <div className="container" data-aos="fade-up" data-aos-delay={100}>
+        <div className="row align-items-xl-center gy-5">
+          {/* Left Column (keep as-is) */}
+          <div className="col-xl-7 content">
+            <h2 className="text-uppercase">About Us</h2>
+            <Divider centered={false} />
+            <div>
+              <p><strong>Your Wellness, Our Passion</strong></p>
+
+              <p>
+                At Ultimate Health Direct Primary Care, we’re all about keeping healthcare simple, personal, and affordable.
+              </p>
+
+              <p>
+                We started our practice because we saw how hard it was for people to get the care they needed—without the hassle. Long wait times, rushed visits, and high costs? No thanks. We knew there had to be a better way.
+              </p>
+
+              <p>
+                That’s why we chose Direct Primary Care (DPC). With DPC, you pay one low monthly fee and get unlimited access to your provider. No copays. No hidden bills. Just real care, when you need it.
+              </p>
+
+              <p>
+                Our team takes time to listen, build real relationships, and focus on what matters most—you. Whether you’re dealing with a chronic condition, just need a check-up, or have questions about your health, we’re here for it all.
+              </p>
+
+              <p className="mb-3">
+                We proudly care for individuals, families, and local businesses across our community. At Ultimate Health, you’re not just a patient—you’re part of the family.
+              </p>
             </div>
-          </div> {/* End Icon Box */}
-          <div className="col-md-6" data-aos="fade-up" data-aos-delay={300}>
-            <div className="icon-box">
-              <i className="bi bi-clipboard-pulse" />
-              <h3>Rerum aperiam</h3>
-              <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
-            </div>
-          </div> {/* End Icon Box */}
-          <div className="col-md-6" data-aos="fade-up" data-aos-delay={400}>
-            <div className="icon-box">
-              <i className="bi bi-command" />
-              <h3>Veniam omnis</h3>
-              <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
-            </div>
-          </div> {/* End Icon Box */}
-          <div className="col-md-6" data-aos="fade-up" data-aos-delay={500}>
-            <div className="icon-box">
-              <i className="bi bi-graph-up-arrow" />
-              <h3>Delares sapiente</h3>
-              <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
-            </div>
-          </div> {/* End Icon Box */}
+
+            <a href="/about" className="read-more">
+              <span>Read More</span> <i className="bi bi-arrow-right" />
+            </a>
+          </div>
+
+          {/* Right Column (Image of Founder) */}
+          <div className="col-xl-5 d-flex justify-content-center">
+            <img src={founderImage} alt="Founder" className="about-image" />
+          </div>
+          
+
         </div>
       </div>
-    </div>
-  </div>
-</section>
-</>
-
+    </section>
   );
 }
 

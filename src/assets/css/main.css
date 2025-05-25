@@ -485,9 +485,10 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 80px; /* or 60px, adjust as needed */
   margin-right: 6px;
 }
+
 
 .footer .footer-about .logo span {
   font-size: 26px;
@@ -1300,15 +1301,16 @@ section,
 .testimonials {
   padding: 80px 0;
   position: relative;
+
+  background: linear-gradient(to right, #1e3059, #80a89d); /* Customize colors */
+  color: #fff; /* Optional: Make all text white */
+  position: relative;
+  z-index: 1;
+  padding: 60px 0;
 }
 
-.testimonials:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
+
+
 
 .testimonials .testimonials-bg {
   position: absolute;
@@ -1851,7 +1853,9 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
-
+.contact-bg {
+  background-color: #f0f9ff;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
@@ -1867,6 +1871,12 @@ section,
 /*--------------------------------------------------------------
 # Custom styles
 --------------------------------------------------------------*/
+
+.logo-wrapper {
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
 .hero-bg-video {
   position: absolute;
   top: 0;

@@ -1,6 +1,9 @@
 import React from 'react';
 
-function SectionTitle({ title }) {
-    return <h2 className="text-center mt-5">{title}</h2>;
-  }
+const SectionTitle = ({ children, className = "" }) => (
+  <h2 className={`text-2xl font-semibold text-center mt-5 ${className}`}>
+    {children}
+  </h2>
+);
+
 export default SectionTitle;  
