@@ -4,11 +4,10 @@ function Contact(){
     return(
         <>
         {/* Contact Section */}
-<section id="contact" className="contact section">
+<section id="contact" className="contact section contact-bg">
   {/* Section Title */}
   <div className="container section-title" data-aos="fade-up">
-    <h2>Contact</h2>
-    <div><span>Check Our</span> <span className="description-title">Contact</span></div>
+    <div><span>Contact</span> <span className="description-title">Information</span></div>
   </div>{/* End Section Title */}
   <div className="container" data-aos="fade" data-aos-delay={100}>
     <div className="row gy-4">
@@ -17,21 +16,21 @@ function Contact(){
           <i className="bi bi-geo-alt flex-shrink-0" />
           <div>
             <h3>Address</h3>
-            <p>A108 Adam Street, New York, NY 535022</p>
+            <p>733 North 3rd Street Leesburg FL 34748</p>
           </div>
         </div>{/* End Info Item */}
         <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={300}>
           <i className="bi bi-telephone flex-shrink-0" />
           <div>
             <h3>Call Us</h3>
-            <p>+1 5589 55488 55</p>
+            <p>352-901-6582</p>
           </div>
         </div>{/* End Info Item */}
         <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={400}>
           <i className="bi bi-envelope flex-shrink-0" />
           <div>
             <h3>Email Us</h3>
-            <p>info@example.com</p>
+            <p>ultimatehealthdpc@gmail.com </p>
           </div>
         </div>{/* End Info Item */}
       </div>

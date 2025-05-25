@@ -18,22 +18,11 @@ function NavBar() {
     }
   }, [mobileNavActive]);
 
-  // Navigation configuration array
-  // Sexual Wellness 
+  // Navigation configuration array 
   const navItems = [
+    // Home
     { type: 'link', label: 'Home', href: '/', active: true },
-    {
-      type: 'dropdown',
-      key: 'dropdown1',
-      title: 'Sexual Wellness',
-      items: [
-        { label: 'Sexual Wellness Treatments', href: '/sexual-wellness-treatments' },
-        { label: 'Sexual Wellness For her', href: '/sexual-wellness-for-her' },
-        { label: 'Sexual Wellness For him ', href: '/p-shot' },
-        { label: 'Duo', href: '/duo' },
-        { label: 'Vampire Facial', href: '/vampire-facial' },
-      ],
-    },
+    
     // Weight Loss
     {
       type: 'dropdown',
@@ -44,6 +33,19 @@ function NavBar() {
         { label: 'Dropdown 2', href: '#' },
         { label: 'Dropdown 3', href: '#' },
         { label: 'Dropdown 4', href: '#' },
+      ],
+    },
+    // Sexual Wellness
+    {
+      type: 'dropdown',
+      key: 'dropdown1',
+      title: 'Sexual Wellness',
+      items: [
+        { label: 'Sexual Wellness Treatments', href: '/sexual-wellness-treatments' },
+        { label: 'Sexual Wellness For her', href: '/sexual-wellness-for-her' },
+        { label: 'Sexual Wellness For him ', href: '/p-shot' },
+        { label: 'Duo', href: '/duo' },
+        { label: 'Vampire Facial', href: '/vampire-facial' },
       ],
     },
     // Services

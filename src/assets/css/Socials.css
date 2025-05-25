@@ -1,0 +1,24 @@
+.socials-section {
+  background-color: #f0f9ff;
+  color: #1a1a1a;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #00008b;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #00008b;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+.social-icon:hover {
+  background-color: #00008b;
+  color: white;
+}
+
+

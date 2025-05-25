@@ -1,0 +1,11 @@
+
+section.about.about-us-bg {
+  background-color: #f0f9ff !important;
+}
+.about-image {
+  max-width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: auto;
+  display: block;
+}

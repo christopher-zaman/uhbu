@@ -1,0 +1,47 @@
+.carecredit-section {
+  background-color: #ffffff;
+}
+
+.carecredit-card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2c9b94, #3e7f87);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.carecredit-card ul {
+  color: white;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.carecredit-card .bi {
+  color: white;
+}
+
+.apply-btn {
+  padding: 0.6rem 1.5rem;
+  background-color: #00008b;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: white;
+  color: #00008b;
+  border: 2px solid #00008b;
+}
+
+.carecredit-image {
+  width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.carecredit-image:hover {
+  transform: scale(1.05);
+}

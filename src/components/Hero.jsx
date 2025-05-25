@@ -34,13 +34,13 @@ function Hero({ backgroundImage, backgroundVideo, heroImage, title, subtitle, vi
             <h1>{title}</h1>
             <p>{subtitle}</p>
             <div className="d-flex">
-              <a href="#about" className="btn-get-started">Get Started</a>
-              <a
+              {/* <a href="#about" className="btn-get-started">Get Started</a> */}
+              {/* <a
                 href={videoUrl}
                 className="glightbox btn-watch-video d-flex align-items-center"
               >
                 <i className="bi bi-play-circle" /><span>Watch Video</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
