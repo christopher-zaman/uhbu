@@ -12,10 +12,10 @@ function Socials() {
         <Divider />
 
         <div className="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202" className="social-icon"><i className="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/ultimatehealthdpc" className="social-icon"><i className="bi bi-instagram"></i></a>
           <a href="#" className="social-icon"><i className="bi bi-facebook"></i></a>
-          <a href="#" className="social-icon"><i className="bi bi-instagram"></i></a>
           <a href="#" className="social-icon"><i className="bi bi-tiktok"></i></a>
-          <a href="#" className="social-icon"><i className="bi bi-yelp"></i></a>
           <a href="#" className="social-icon"><i className="bi bi-youtube"></i></a>
         </div>
       </div>

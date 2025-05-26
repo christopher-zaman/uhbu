@@ -26,81 +26,124 @@ function NavBar() {
     // Weight Loss
     {
       type: 'dropdown',
-      key: 'dropdown2',
+      key: 'dropdown1',
       title: 'Weight Loss',
       items: [
-        { label: 'Dropdown 1', href: '#' },
-        { label: 'Dropdown 2', href: '#' },
-        { label: 'Dropdown 3', href: '#' },
-        { label: 'Dropdown 4', href: '#' },
+        { label: '💉 Semaglutide', href: 'semaglutide' },
+        { label: '💉 Tirzepatide', href: 'tirzepatide' },
+        { label: '💊 Contrave', href: 'contrave' },
+        { label: '🌿 Calocurb', href: 'calocurb' },
+        { label: '💉 Retatrutide', href: 'retatrutide' },
+        { label: '💊 Low Dose Naltrexone', href: 'low-dose-naltrexone' },
+        { label: '💉 Sermorelin', href: 'sermorelin' },
+        { label: '💊 Phentermine', href: 'phentermine' },
+      ],
+    },
+    // Hormone Therapy
+    {
+      type: 'dropdown',
+      key: 'dropdown2',
+      title: 'Hormone Therapy',
+      items: [
+        { label: 'Peri-menopause', href: '#' },
+        { label: '🌸 Estrogen', href: '#' },
+        { label: '🌙 Progesterone', href: '#' },
+        { label: '💪 Testosterone', href: '#' },
+      ],
+    },
+    // Peptide Therapy
+    {
+      type: 'dropdown',
+      key: 'dropdown3',
+      title: 'Peptide Therapy',
+      items: [
+        { label: '💉 Sermorelin', href: '#' },
+        { label: '💉 CJC-1295 / Ipamorelin', href: '#' },
+        { label: '💉 BPC-157', href: '#' },
+        { label: '💉 PT-141 (Bremelanotide)', href: '#' },
+        { label: '💉 AOD-9604', href: '#' },
+        { label: '💉 Tesamorelin', href: '#' },
       ],
     },
     // Sexual Wellness
     {
       type: 'dropdown',
-      key: 'dropdown1',
+      key: 'dropdown4',
       title: 'Sexual Wellness',
       items: [
         { label: 'Sexual Wellness Treatments', href: '/sexual-wellness-treatments' },
         { label: 'Sexual Wellness For her', href: '/sexual-wellness-for-her' },
         { label: 'Sexual Wellness For him ', href: '/p-shot' },
         { label: 'Duo', href: '/duo' },
-        { label: 'Vampire Facial', href: '/vampire-facial' },
       ],
     },
-    // Services
-    {
-      type: 'dropdown',
-      key: 'dropdown3',
-      title: 'Services',
-      items: [
-        { label: 'Dropdown 1', href: '#' },
-        { label: 'Dropdown 2', href: '#' },
-        { label: 'Dropdown 3', href: '#' },
-        { label: 'Dropdown 4', href: '#' },
-      ],
-    },
-    // Cosmetic Injectables
-    {
-      type: 'dropdown',
-      key: 'dropdown4',
-      title: 'Cosmetic Injectables',
-      items: [
-        { label: 'Dropdown 1', href: '#' },
-        { label: 'Dropdown 2', href: '#' },
-        { label: 'Dropdown 3', href: '#' },
-        { label: 'Dropdown 4', href: '#' },
-      ],
-    },
-    // IV Hydration
+    // Primary Care
     {
       type: 'dropdown',
       key: 'dropdown5',
-      title: 'IV Hydration',
+      title: 'Primary Care',
       items: [
-        { label: 'Dropdown 1', href: '#' },
-        { label: 'Dropdown 2', href: '#' },
-        { label: 'Dropdown 3', href: '#' },
-        { label: 'Dropdown 4', href: '#' },
+        { label: 'Women\'s Health', href: '#' },
+        { label: 'Men\'s Health', href: '#' },
+        { label: 'Telemedicine', href: '#' },
+        { label: 'House calls', href: '#' },
+        { label: '24 hour health care', href: '#' },
+        { label: 'Mental Health', href: '#' },
+      ],
+    },
+    // Aesthetics
+    {
+      type: 'dropdown',
+      key: 'dropdown6',
+      title: 'Aesthetics',
+      items: [
+        { label: '✨ Vampire Facial & Vampire Face Lift®', href: '#' },
+        { label: '✨ SkinPen Microneedling', href: '#' },
+        { label: '✨ Toskani Peptide Cocktails', href: '#' },
+        { label: '✨ Neurotoxins for Fine Lines & Wrinkle Relaxation', href: '#' },
+        { label: '✨ Dermal Fillers', href: '#' },
+        { label: '✨ ALMA FemiLift for Facial Resurfacing', href: '#' },
+      ],
+    },
+    // // Cosmetic Injectables
+    // {
+    //   type: 'dropdown',
+    //   key: 'dropdown7',
+    //   title: 'Cosmetic Injectables',
+    //   items: [
+    //     { label: 'Dropdown 1', href: '#' },
+    //     { label: 'Dropdown 2', href: '#' },
+    //     { label: 'Dropdown 3', href: '#' },
+    //     { label: 'Dropdown 4', href: '#' },
+    //   ],
+    // },
+    // Vitamin Therapy
+    {
+      type: 'dropdown',
+      key: 'dropdown8',
+      title: 'Vitamin Therapy',
+      items: [
+        { label: '💉 Vitamin Injections', href: '#' },
+        { label: '💧 Vitamin Infusions', href: '#' },
       ],
     },
     // About Us
     {
       type: 'dropdown',
-      key: 'dropdown6',
+      key: 'dropdown9',
       title: 'About Us',
       items: [
-        { label: 'Dropdown 1', href: '#' },
-        { label: 'Dropdown 2', href: '#' },
-        { label: 'Dropdown 3', href: '#' },
-        { label: 'Dropdown 4', href: '#' },
+        { label: 'Meet Us', href: '#' },
+        { label: 'Our Practice', href: '#' },
+        { label: 'Careers', href: '#' },
+        { label: 'Enrollment', href: '#' },
       ],
     },
-    { type: 'link', label: 'Gallery', href: '#gallery' },
-    { type: 'link', label: 'Team', href: '#team' },
-    { type: 'link', label: 'Pricing', href: '#pricing' },
-    { type: 'link', label: 'About', href: '#about' },
-    { type: 'link', label: 'Contact', href: '#contact' },
+    // { type: 'link', label: 'Gallery', href: '#gallery' },
+    // { type: 'link', label: 'Team', href: '#team' },
+    // { type: 'link', label: 'Pricing', href: '#pricing' },
+    // { type: 'link', label: 'About', href: '#about' },
+    // { type: 'link', label: 'Contact', href: '#contact' },
   ];
 
   return (

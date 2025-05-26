@@ -3,7 +3,7 @@ import React from 'react';
 function MultiFeatureSection({ sections = [] }) {
   return (
     <section id="details" className="details section sexual-wellness-bg">
-      <div className="container blurred-bg">
+      <div className="container">
         {sections.map((section, index) => {
           const treatments = section.treatments || [];
           const isReversed = index % 2 === 1; // alternate layout for Z-pattern
@@ -16,7 +16,7 @@ function MultiFeatureSection({ sections = [] }) {
               data-aos-delay={index * 100}
             >
               {/* Text Column */}
-              <div className={`col-md-7 ${isReversed ? 'order-md-2' : ''}`}>
+              <div className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}>
                 {section.title && <h3>{section.title}</h3>}
                 {section.subheading && <h4>{section.subheading}</h4>}
                 {section.description && <div className="fst-italic">{section.description}</div>}
@@ -35,6 +35,12 @@ function MultiFeatureSection({ sections = [] }) {
                   )
                 )}
                 {section.extraText && <p className="fst-italic">{section.extraText}</p>}
+
+                {section.buttonText && section.buttonLink && (
+                  <a href={section.buttonLink} className="btn btn-success mt-2">
+                    {section.buttonText}
+                  </a>
+                )}
               </div>
 
               {/* Image/Video Column */}
