@@ -5,7 +5,7 @@ import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 
 import ContentSection from '../components/ContentSection';
-import video from '../assets/videos/Tirzepatide.mp4';
+import video from '../assets/videos/tirzepatide.mp4';
 import contentImage from '../assets/img/tirzepatide.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 
