@@ -25,9 +25,17 @@ function TopBar() {
           {/* Social + Phone */}
           <div className="col-md-4 text-md-end text-center">
             <div className="d-flex justify-content-md-end justify-content-center align-items-center gap-3">
-              <a href="#" className="text-dark"><i className="bi bi-facebook fs-5"></i></a>
-              <a href="#" className="text-dark"><i className="bi bi-instagram fs-5"></i></a>
-              <span className="ms-2 fw-semibold">📞 (352) 555-1234</span>
+              <a href="https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202" className="text-dark"><i className="bi bi-linkedin fs-5"></i></a>
+              <a href="https://www.instagram.com/ultimatehealthdpc" className="text-dark"><i className="bi bi-instagram fs-5"></i></a>
+              <span className="ms-2 fw-semibold">
+              <a
+                href="tel:+13529016582"
+                className="text-dark fw-semibold d-flex align-items-center gap-1"
+                itemProp="telephone"
+              >
+                <i className="bi bi-telephone-fill"></i> 352-901-6582
+              </a>
+              </span>
             </div>
           </div>
 

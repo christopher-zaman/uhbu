@@ -58,10 +58,10 @@ function Footer() {
             </div>
 
             <div className="social-links d-flex mt-4">
-              <a href="#"><i className="bi bi-twitter-x" /></a>
+              <a href="https://www.instagram.com/ultimatehealthdpc"><i className="bi bi-instagram" /></a>
+              <a href="https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202"><i className="bi bi-linkedin" /></a>
               <a href="#"><i className="bi bi-facebook" /></a>
-              <a href="#"><i className="bi bi-instagram" /></a>
-              <a href="#"><i className="bi bi-linkedin" /></a>
+              <a href="#"><i className="bi bi-twitter-x" /></a>
             </div>
           </div>
 
