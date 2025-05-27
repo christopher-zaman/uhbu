@@ -16,8 +16,9 @@ const services = [
     'Lipotropic injection',
     '(Ozempic/Wegovy)'
     ],
-    image: '/assets/img/wellness/for-her.jpg',
-    link: '/sexual-wellness-for-her'
+    image: '/assets/img/wellness/weight-loss.jpg',
+    
+    link: '/semaglutide'
   },
   {
     title: 'Hormone Replacement Therapy',
@@ -31,7 +32,7 @@ const services = [
     '💊 Oral or Topical Progesterone',
     '💉 SubQ Testosterone Injections'
     ],
-    image: '/assets/img/wellness/for-her.jpg',
+    image: '/assets/img/wellness/hormone-therapy.jpg',
     link: '/hormone-therapy',
     noBullets: true
   },
@@ -45,7 +46,7 @@ const services = [
     '💉 AOD-9604',
     '💉 Tesamorelin',
     ],
-    image: '/assets/img/wellness/for-her.jpg',
+    image: '/assets/img/wellness/peptide-therapy.png',
     link: '/hormone-therapy',
     noBullets: true
   },
@@ -71,7 +72,7 @@ const services = [
     description: [
     'We’re a Direct Primary Care practice, which means you get care when you need it—without the long waits, surprise bills, or rushed visits.',
     ],
-    image: '/assets/img/wellness/for-her.jpg',
+    image: '/assets/img/wellness/primary-care.webp',
     link: '/p-shot',
     noBullets: true
   },
@@ -80,7 +81,7 @@ const services = [
     description: [
     'Whether you\'re new to aesthetics or ready for a full glow-up, we’re here to walk you through every option with honesty, care, and a keen eye for natural results.',
     ],
-    image: '/assets/img/wellness/for-her.jpg',
+    image: '/assets/img/wellness/aesthetics.png',
     link: '/p-shot',
     noBullets: true
   }, 

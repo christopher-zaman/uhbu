@@ -2,7 +2,16 @@ import React, { useEffect } from 'react';
 import GLightbox from 'glightbox';
 import 'glightbox/dist/css/glightbox.css';
 
-function Hero({ backgroundImage, backgroundVideo, heroImage, title, subtitle, videoUrl }) {
+function Hero({ 
+  backgroundImage, 
+  backgroundVideo, 
+  heroImage, 
+  title, 
+  subtitle, 
+  videoUrl, 
+  textColor 
+}) 
+{
   useEffect(() => {
     const lightbox = GLightbox({
       selector: '.glightbox',
@@ -31,8 +40,8 @@ function Hero({ backgroundImage, backgroundVideo, heroImage, title, subtitle, vi
             <img src={heroImage} className="img-fluid animated" alt="" />
           </div>
           <div className="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
-            <h1>{title}</h1>
-            <p>{subtitle}</p>
+            <h1 style={textColor ? { color: textColor } : {}}>{title}</h1>
+            <p style={textColor ? { color: textColor } : {}}>{subtitle}</p>
             <div className="d-flex">
               {/* <a href="#about" className="btn-get-started">Get Started</a> */}
               {/* <a

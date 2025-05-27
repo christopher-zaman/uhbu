@@ -9,6 +9,7 @@ function ContentSection({
   paragraphs = [],
   listItems = [],
   image,
+  video,
   imageAlt = '',
   buttonText = '',
   buttonLink = '',
@@ -50,7 +51,20 @@ function ContentSection({
 
           {/* Image Column */}
           <div className="col-xl-5 d-flex justify-content-center">
-            <img src={image} alt={imageAlt || title} className="about-image" />
+            {video ? (
+              <video
+                src={video}
+                className="img-fluid"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls={true} // optional
+                style={{ width: '60%', borderRadius: '1rem' }}
+              />
+            ) : (
+              <img src={image} className="img-fluid" alt={imageAlt || title} />
+            )}
           </div>
         </div>
       </div>
