@@ -28,6 +28,7 @@ function NavBar() {
       type: 'dropdown',
       key: 'dropdown1',
       title: 'Weight Loss',
+      href: '/weight-loss',
       items: [
         { label: '💉 Semaglutide', href: 'semaglutide' },
         { label: '💉 Tirzepatide', href: 'tirzepatide' },
@@ -44,11 +45,12 @@ function NavBar() {
       type: 'dropdown',
       key: 'dropdown2',
       title: 'Hormone Therapy',
+      href: '/hormone-replacement-therapy', // ← this makes the main link clickable
       items: [
-        { label: 'Peri-menopause', href: '#' },
-        { label: '🌸 Estrogen', href: '#' },
-        { label: '🌙 Progesterone', href: '#' },
-        { label: '💪 Testosterone', href: '#' },
+        { label: '🌸 Peri-menopause', href: 'peri-menopause' },
+        { label: '🌸 Estrogen', href: 'estrogen' },
+        { label: '🌙 Progesterone', href: 'progesterone' },
+        { label: '💪 Testosterone', href: 'testosterone' },
       ],
     },
     // Peptide Therapy
@@ -56,13 +58,14 @@ function NavBar() {
       type: 'dropdown',
       key: 'dropdown3',
       title: 'Peptide Therapy',
+      href: '/peptide-therapy',
       items: [
-        { label: '💉 Sermorelin', href: '#' },
-        { label: '💉 CJC-1295 / Ipamorelin', href: '#' },
-        { label: '💉 BPC-157', href: '#' },
-        { label: '💉 PT-141 (Bremelanotide)', href: '#' },
-        { label: '💉 AOD-9604', href: '#' },
-        { label: '💉 Tesamorelin', href: '#' },
+        { label: '💉 Sermorelin', href: 'sermorelin' },
+        { label: '💉 CJC-1295 / Ipamorelin', href: 'CJC-1295-Ipamorelin' },
+        { label: '💉 BPC-157', href: 'BPC-157' },
+        { label: '💉 PT-141 (Bremelanotide)', href: 'pt-141-bremelonotide' },
+        { label: '💉 AOD-9604', href: 'aod-9604' },
+        { label: '💉 Tesamorelin', href: 'tesamorelin' },
       ],
     },
     // Sexual Wellness
@@ -164,14 +167,16 @@ function NavBar() {
                 return (
                   <li key={item.key} className="dropdown">
                     <a
-                      href="#"
+                      href={item.href || '#'}
                       onClick={(e) => {
-                        e.preventDefault();
-                        toggleDropdown(item.key);
+                        if (window.innerWidth < 1200) {
+                          e.preventDefault(); // prevent link navigation on mobile
+                          toggleDropdown(item.key); // open dropdown
+                        }
+                        // On desktop, link will work normally
                       }}
                     >
-                      <span>{item.title}</span>{' '}
-                      <i className="bi bi-chevron-down toggle-dropdown" />
+                      {item.title} <i className="bi bi-chevron-down toggle-dropdown" />
                     </a>
                     <ul className={dropdownStates[item.key] ? 'dropdown-active' : ''}>
                       {item.items.map((dropdownItem, idx) => (

@@ -840,7 +840,10 @@ section,
   object-fit: cover;
   z-index: 1;
 }
-
+.pt141-text .hero-content h1,
+.pt141-text .hero-content p {
+  color: #ff69b4; /* Hot pink, for example */
+}
 
 /*custom chat gpt above*/
 
