@@ -20,6 +20,8 @@ import Faq from '../components/Faq';
 import Contact from '../components/Contact';
 import CareCredit from '../components/CareCredit';
 import SEO from '../components/SEO';
+import backgroundVideo from '../assets/videos/alma-duo-video.mp4';
+
 function App() {
   
   return (    
@@ -33,11 +35,10 @@ function App() {
       <NavBar />
       <Hero 
         backgroundImage="/assets/img/banners/vampire-facial-banner-medium.webp"
-        backgroundVideo="/assets/video/home-bg.mp4"
+        backgroundVideo="/assets/video/alma-duo-video.mp4"
         heroImage="/assets/img/hero-img-sexual-wellness.png"
         title=""
         subtitle=""
-        videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
       />
 
       <SectionTitle>
@@ -54,10 +55,16 @@ function App() {
         Let’s take care of you—together.
       </Paragraph>
 
-      <Video
-        src="https://www.youtube.com/embed/92jlApzokh0"
-        type="youtube"
-      />
+      {/* <video
+        className="hero-bg-video"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> */}
 
       <Services /> 
 
