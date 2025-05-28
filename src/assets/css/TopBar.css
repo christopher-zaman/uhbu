@@ -16,3 +16,23 @@
   background-color: #827af6;
   color:#0f058b;
 }
+
+/* Logo fixes */
+.topbar-logo {
+  max-height: 50px; /* adjust as needed */
+  object-fit: contain;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* On very small screens, give it more breathing room */
+@media (max-width: 576px) {
+  .topbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .topbar-logo {
+    max-height: 40px;
+  }
+}

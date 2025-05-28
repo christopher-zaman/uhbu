@@ -12,6 +12,7 @@ function TopBar() {
             <img
               src="../assets/img/logo.webp"
               alt="Logo"
+              className="topbar-logo"
             />
           </div>
 

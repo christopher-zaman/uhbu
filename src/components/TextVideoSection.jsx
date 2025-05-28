@@ -1,6 +1,10 @@
 import React from 'react';
 
-function TextVideoSection({ sections = [], bgClass = '' }) {
+function TextVideoSection({ 
+    sections = [], 
+    bgClass = '' 
+    
+}) {
   return (
     <section className={`details section ${bgClass}`}>
       <div className="container">
@@ -15,10 +19,10 @@ function TextVideoSection({ sections = [], bgClass = '' }) {
               data-aos-delay={index * 100}
             >
               {/* Text Column */}
-              <div className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}
-              data-aos="fade-up"
+              <div
+                className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}
+                data-aos="fade-up"
               >
-                
                 {section.title && <h3>{section.title}</h3>}
                 {section.description && <p>{section.description}</p>}
 
@@ -39,13 +43,13 @@ function TextVideoSection({ sections = [], bgClass = '' }) {
                 )}
               </div>
 
-              {/* YouTube Video Column */}
+              {/* Video Column */}
               <div
                 className={`col-md-5 d-flex align-items-center ${isReversed ? 'order-md-1' : ''}`}
                 data-aos="zoom-out"
                 data-aos-delay={100}
               >
-                {section.youtubeUrl && (
+                {section.youtubeUrl ? (
                   <div className="ratio ratio-16x9 w-100">
                     <iframe
                       src={section.youtubeUrl.replace('youtu.be/', 'www.youtube.com/embed/')}
@@ -56,7 +60,18 @@ function TextVideoSection({ sections = [], bgClass = '' }) {
                       className="w-100 rounded"
                     />
                   </div>
-                )}
+                ) : section.video ? (
+                  <video
+                    className={`img-fluid rounded ${section.videoClassName || 'w-100'}`}
+                    controls
+                    muted
+                    playsInline
+                    loop
+                    >
+                    <source src={section.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                ) : null}
               </div>
             </div>
           );

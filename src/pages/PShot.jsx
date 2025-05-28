@@ -11,7 +11,7 @@ function PShot(){
         <NavBar />
         <Hero
         backgroundImage="/assets/img/banners/votiva-vaginal-forma-v.webp"
-        heroImage="/assets/img/hero-img.png"
+        // heroImage="/assets/img/hero-img.png"
         title="P Shot"
         subtitle="Priapus Shot"
         aria-label="Priapus Shot"
