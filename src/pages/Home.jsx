@@ -27,14 +27,14 @@ function App() {
     <SEO
         title="Membership-Based Primary Care in Leesburg | Ultimate Health DPC"
         description="Join Ultimate Health DPC and enjoy unlimited doctor access, weight loss support, hormone therapy, and more. Serving Leesburg, Florida."
-        image="https://ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.png"
+        image="https://ultimatehealthdpc.com/assets/img/membership-based-primary.png"
       />
       <TopBar />
       <NavBar />
       <Hero 
         backgroundImage="/assets/img/banners/vampire-facial-banner-medium.webp"
         backgroundVideo="/assets/video/home-bg.mp4"
-        heroImage="/assets/img/addiction-group-badge.webp"
+        heroImage="/assets/img/hero-img-sexual-wellness.png"
         title=""
         subtitle=""
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"

@@ -9,6 +9,7 @@ function Hero({
   title, 
   subtitle, 
   videoUrl, 
+  className = '',
   textColor 
 }) 
 {
@@ -41,7 +42,7 @@ function Hero({
           </div>
           <div className="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
             <h1 style={textColor ? { color: textColor } : {}}>{title}</h1>
-            <p style={textColor ? { color: textColor } : {}}>{subtitle}</p>
+            <p>{subtitle}</p>
             <div className="d-flex">
               {/* <a href="#about" className="btn-get-started">Get Started</a> */}
               {/* <a

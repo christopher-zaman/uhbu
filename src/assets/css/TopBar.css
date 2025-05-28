@@ -4,6 +4,8 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
+  padding-top: 10px;  /* increase if needed */
+  padding-bottom: 10px;
 }
 #top-bar img {
   max-height: 145px; /* or the desired height */
