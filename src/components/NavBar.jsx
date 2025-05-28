@@ -136,7 +136,7 @@ function NavBar() {
       key: 'dropdown9',
       title: 'About Us',
       items: [
-        { label: 'Meet Us', href: '#' },
+        { label: 'Meet Us', href: 'meet-us' },
         { label: 'Our Practice', href: '#' },
         { label: 'Careers', href: '#' },
         { label: 'Enrollment', href: '#' },

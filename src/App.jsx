@@ -30,6 +30,7 @@ import BPC157 from './pages/BPC-157';
 import PT141Bremelonotide from './pages/PT-141-Bremelonotide';
 import AOD9604 from './pages/AOD9604';
 import Tesamorelin from './pages/Tesamorelin';
+import AboutUs from './pages/AboutUs';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -73,6 +74,8 @@ function App() {
       <Route path="/p-shot" element={<PShot />} />
       <Route path="/duo" element={<Duo />} />
       <Route path="/vampire-facial" element={<VampireFacial />} />
+
+      <Route path="/meet-us" element={<AboutUs />} />
     </Routes>
     
     </>

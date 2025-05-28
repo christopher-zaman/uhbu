@@ -13,6 +13,7 @@ function ContentSection({
   imageAlt = '',
   buttonText = '',
   buttonLink = '',
+  roundedImage = false,
   reverse = false
 }) {
   return (
@@ -63,7 +64,12 @@ function ContentSection({
                 style={{ width: '60%', borderRadius: '1rem' }}
               />
             ) : (
-              <img src={image} className="img-fluid" alt={imageAlt || title} />
+              <img 
+              src={image} 
+              className="img-fluid" 
+              alt={imageAlt || title}
+              style={{ borderRadius: roundedImage ? '1rem' : '0' }} 
+              />
             )}
           </div>
         </div>
