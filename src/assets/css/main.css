@@ -840,10 +840,7 @@ section,
   object-fit: cover;
   z-index: 1;
 }
-.pt141-text .hero-content h1,
-.pt141-text .hero-content p {
-  color: #ff69b4; /* Hot pink, for example */
-}
+
 
 /*custom chat gpt above*/
 
@@ -1857,7 +1854,7 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 .contact-bg {
-  background-color: #f0f9ff;
+      background-color: #f0f9ff !important;
 }
 /*--------------------------------------------------------------
 # Starter Section Section
@@ -1874,12 +1871,6 @@ section,
 /*--------------------------------------------------------------
 # Custom styles
 --------------------------------------------------------------*/
-
-.logo-wrapper {
-  display: inline-block;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
 .hero-bg-video {
   position: absolute;
   top: 0;
@@ -1939,3 +1930,15 @@ section,
  /*Info split section above*/
 }
 
+/*mobile logo*/
+/* Mobile */
+@media (max-width: 576px) {
+  #top-bar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  #top-bar img {
+    max-height: 60px;
+  }
+}
