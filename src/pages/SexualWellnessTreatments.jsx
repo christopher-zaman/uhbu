@@ -6,6 +6,8 @@ import Details from '../components/Details';
 import SingleFeature from '../components/SingleFeature';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
+import pshotVideo from '../assets/videos/p-shot.mp4';
+import TextVideoSection from '../components/TextVideoSection';
 
 function SexualWellnessTreatments() {
     return(
@@ -14,12 +16,12 @@ function SexualWellnessTreatments() {
         <NavBar />
         <Hero
         backgroundImage="/assets/img/banners/model-honey-tone-large.webp"
-        heroImage="/assets/img/hero-img.png"
+        // heroImage="/assets/img/hero-img.png"
         title="Sexual Wellness Treatments"
         subtitle="Empowering your wellness journey"
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
       />
-        <SingleFeature
+        {/* <SingleFeature
         video="/assets/video/p-shot.mp4"
         treatments={[
           '🌸 InMode Empower Platform',
@@ -36,15 +38,39 @@ function SexualWellnessTreatments() {
           '💉 Tri-Mix Injection Therapy',
           '💉 PT-141 Peptide Therapy',
         ]}
-         />
-        <Details 
+         /> */}
+
+        <TextVideoSection
+          bgClass="sexual-wellness-bg"
+          sections={[
+            {
+              title: 'Sexual Wellness Treatments',
+              description:
+                'We offer a variety of evidence-based, non-invasive and minimally invasive treatments to help restore function, comfort, and confidence.',
+                treatments: [
+                  '🌸 InMode Empower Platform',
+                  '🌸 ALMA FemiLift',
+                  '💉 The O-Shot®',
+                  '💉 PT-141 Peptide Therapy',
+                  '💥 ALMA Duo ED Treatment',
+                  '💉 P-Shot (Priapus Shot®)',
+                  '💨 Oxytocin Nasal Spray & Tablets'
+                ],
+              video: pshotVideo, 
+              videoClassName: 'w-75'
+            },
+          ]}
+        />
+
+
+        {/* <Details 
           centerTitle={true}
           showHeading={false}
           introText="Explore Our"
           highlightText='Sexual Wellness Treatments'
           headingText
-        />
-        <Features />
+        /> */}
+        {/* <Features /> */}
         <Footer />
       </>
     );

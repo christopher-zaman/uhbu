@@ -162,7 +162,7 @@ function OShot() {
       <NavBar />
       <Hero
         backgroundImage="assets/img/banners/votiva-vaginal-forma-v.webp"
-        heroImage="/assets/img/hero-img.png"
+        // heroImage="/assets/img/hero-img.png"
         title="Sexual Wellness For Her"
         subtitle="Featuring the Orgasm Shot - designed to enhance your wellness journey."
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
