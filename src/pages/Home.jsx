@@ -20,7 +20,7 @@ import Faq from '../components/Faq';
 import Contact from '../components/Contact';
 import CareCredit from '../components/CareCredit';
 import SEO from '../components/SEO';
-import backgroundVideo from '../assets/videos/alma-duo-video.mp4';
+import backgroundVideo from '../assets/videos/alma-duo-video-optimized.mp4';
 
 function App() {
   
