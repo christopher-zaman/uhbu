@@ -35,7 +35,7 @@ function App() {
       <NavBar />
       <Hero 
         backgroundImage="/assets/img/banners/vampire-facial-banner-medium.webp"
-        backgroundVideo="/assets/video/alma-duo-video.mp4"
+        backgroundVideo={backgroundVideo}
         heroImage="/assets/img/hero-img-sexual-wellness.png"
         title=""
         subtitle=""
