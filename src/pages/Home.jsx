@@ -34,7 +34,7 @@ function App() {
       <TopBar />
       <NavBar />
       <Hero 
-        backgroundImage="/assets/img/banners/vampire-facial-banner-medium.webp"
+        backgroundImage="/assets/img/banners/amanda-mobile-small.webp"
         backgroundVideo={backgroundVideo}
         heroImage="/assets/img/hero-img-sexual-wellness.png"
         title=""
