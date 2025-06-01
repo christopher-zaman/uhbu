@@ -101,7 +101,7 @@ function NavBar() {
       key: 'dropdown6',
       title: 'Aesthetics',
       items: [
-        { label: '✨ Vampire Facial & Vampire Face Lift®', href: '#' },
+        { label: '✨ Vampire Facial & Vampire Face Lift®', href: 'vampire-facial' },
         { label: '✨ SkinPen Microneedling', href: '#' },
         { label: '✨ Toskani Peptide Cocktails', href: '#' },
         { label: '✨ Neurotoxins for Fine Lines & Wrinkle Relaxation', href: '#' },

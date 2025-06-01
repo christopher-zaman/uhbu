@@ -7,7 +7,7 @@ function TextBlock({ title, body, footer }) {
         <div className="row justify-content-center">
           <div className="col-lg-12 text-center" data-aos="fade-up">
             {title && <h2 className="mb-3">{title}</h2>}
-            {body && <p className="lead mb-4">{body}</p>}
+            {body && <div className="lead mb-4">{body}</div>}
             {footer && <p className="fw-semibold">{footer}</p>}
           </div>
         </div>

@@ -34,6 +34,7 @@ import AboutUs from './pages/AboutUs';
 import PrimaryCare from './pages/PrimaryCare';
 import VitaminInjections from './pages/VitaminInjections';
 import VitaminInfusions from './pages/VitaminInfusions';
+import VampireFacialPage from './pages/VampireFacialPage';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -76,7 +77,7 @@ function App() {
       <Route path="/sexual-wellness-for-her" element={<OShot />} />
       <Route path="/sexual-wellness-for-him" element={<PShot />} />
       <Route path="/duo" element={<Duo />} />
-      <Route path="/vampire-facial" element={<VampireFacial />} />
+      <Route path="/vampire-facial" element={<VampireFacialPage />} />
 
       <Route path="/primary-care" element={<PrimaryCare />} />
       <Route path="/vitamin-injections" element={<VitaminInjections />} />
