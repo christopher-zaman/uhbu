@@ -33,7 +33,7 @@ const defaultServices = [
     '💉 SubQ Testosterone Injections'
     ],
     image: '/assets/img/wellness/hormone-therapy.jpg',
-    link: '/hormone-therapy',
+    link: '/peri-menopause',
     noBullets: true
   },
   {
@@ -47,7 +47,7 @@ const defaultServices = [
     '💉 Tesamorelin',
     ],
     image: '/assets/img/wellness/peptide-therapy.png',
-    link: '/hormone-therapy',
+    link: '/peri-menopause',
     noBullets: true
   },
   {
@@ -64,7 +64,7 @@ const defaultServices = [
     '💉 Tri-Mix Injection Therapy',
     ],
     image: '/assets/img/wellness/for-her.jpg',
-    link: '/p-shot',
+    link: '/sexual-wellness-treatments',
     noBullets: true
   },
   {
@@ -73,7 +73,7 @@ const defaultServices = [
     'We’re a Direct Primary Care practice, which means you get care when you need it—without the long waits, surprise bills, or rushed visits.',
     ],
     image: '/assets/img/wellness/primary-care.webp',
-    link: '/p-shot',
+    link: '/primary-care',
     noBullets: true
   },
   {
@@ -82,7 +82,7 @@ const defaultServices = [
     'Whether you\'re new to aesthetics or ready for a full glow-up, we’re here to walk you through every option with honesty, care, and a keen eye for natural results.',
     ],
     image: '/assets/img/wellness/aesthetics.png',
-    link: '/p-shot',
+    link: '/sexual-wellness-treatments',
     noBullets: true
   }, 
 

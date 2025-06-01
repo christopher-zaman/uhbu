@@ -45,7 +45,7 @@ function NavBar() {
       type: 'dropdown',
       key: 'dropdown2',
       title: 'Hormone Therapy',
-      href: '/hormone-replacement-therapy', // ← this makes the main link clickable
+      href: '/peri-menopause', // ← this makes the main link clickable
       items: [
         { label: '🌸 Peri-menopause', href: 'peri-menopause' },
         { label: '🌸 Estrogen', href: 'estrogen' },
