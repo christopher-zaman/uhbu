@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../assets/css/Subscribe.css';
 
 function Subscribe() {
+  const form = useRef();
+
+  const sendSubscription = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_SUBSCRIBE_TEMPLATE_ID,
+      form.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then((result) => {
+      console.log('Subscription sent:', result.text);
+      alert('Thank you for subscribing!');
+      form.current.reset();
+    }, (error) => {
+      console.error('Subscription error:', error.text);
+      alert('Failed to subscribe. Please try again later.');
+    });
+  };
+
   return (
     <section className="subscribe-section text-white">
       <div className="container py-5">
@@ -24,9 +46,14 @@ function Subscribe() {
           {/* Email Form */}
           <div className="col-lg-8 text-center text-lg-start">
             <p className="mb-3">Join our email list to stay up to date on services and events.</p>
-            <form className="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2">
+            <form
+              ref={form}
+              onSubmit={sendSubscription}
+              className="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2"
+            >
               <input
                 type="email"
+                name="subscriber_email"
                 placeholder="Your Email"
                 className="form-control email-input"
                 required
