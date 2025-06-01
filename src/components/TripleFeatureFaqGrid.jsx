@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../assets/css/TripleFeatureFAQGrid.css'; // Optional for styling
+import '../assets/css/TripleFeatureFaqGrid.css'; // Optional for styling
 
 function TripleFeatureFAQGrid({ items = [] }) {
   const [activeIndex, setActiveIndex] = useState({});
