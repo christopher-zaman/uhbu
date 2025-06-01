@@ -26,21 +26,21 @@ function Hero({
   return (
     <section id="hero" className="hero section dark-background">
   {/* Background Video */}
-  {backgroundVideo ? (
-    <video
-      className="hero-bg-video"
-      autoPlay
-      loop
-      muted
-      playsInline
-      preload="auto"
-    >
-      <source src={backgroundVideo} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  ) : (
-    <img src={backgroundImage} alt="" className="hero-bg" />
-  )}
+  {backgroundVideo && window.innerWidth > 768 ? (
+  <video
+    className="hero-bg-video"
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="auto"
+  >
+    <source src={backgroundVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+) : (
+  <img src={backgroundImage} alt="" className="hero-bg" />
+)}
 
   {/* Foreground Content */}
   <div className="container">

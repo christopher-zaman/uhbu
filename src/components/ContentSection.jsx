@@ -9,6 +9,7 @@ function ContentSection({
   paragraphs = [],
   listItems = [],
   image,
+  imageClassName,
   video,
   imageAlt = '',
   buttonText = '',
@@ -66,7 +67,7 @@ function ContentSection({
             ) : (
               <img 
               src={image} 
-              className="img-fluid" 
+              className={`img-fluid ${imageClassName}`}
               alt={imageAlt || title}
               style={{ borderRadius: roundedImage ? '1rem' : '0' }} 
               />

@@ -1,0 +1,53 @@
+import React from 'react';
+
+function TextImageSection({ 
+  bgClass = '', 
+  section = {}, 
+  reverse = false 
+}) {
+  return (
+    <section className={`details section py-5 ${bgClass}`}>
+      <div className="container">
+        <div
+          className={`row gy-4 align-items-center features-item ${reverse ? 'flex-row-reverse' : ''}`}
+          data-aos="fade-up"
+        >
+          {/* Text Column */}
+          <div className="col-md-7">
+            {section.title && <h3>{section.title}</h3>}
+            {section.description && <div>{section.description}</div>}
+
+            {section.treatments?.length > 0 && (
+              <ul>
+                {section.treatments.map((t, i) => (
+                  <li key={i}>
+                    <i className="bi bi-check" /> <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {section.buttonText && section.buttonLink && (
+              <a href={section.buttonLink} className="btn btn-primary mt-2">
+                {section.buttonText}
+              </a>
+            )}
+          </div>
+
+          {/* Image Column */}
+          <div className="col-md-5 text-center">
+            {section.image && (
+              <img
+                src={section.image}
+                alt={section.title || 'Image'}
+                className={`img-fluid rounded ${section.imageClassName || ''}`}
+              />
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default TextImageSection;

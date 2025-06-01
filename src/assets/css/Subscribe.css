@@ -18,13 +18,13 @@
   color: #98c733; /* Match teal accent */
 }
 
-.wave-underline {
+/* .wave-underline {
   width: 100px;
   height: 10px;
-  background-image: url('/assets/img/wave-underline.svg'); /* use a teal wavy SVG line */
+  background-image: url('/assets/img/wave-underline.svg');
   background-repeat: no-repeat;
   background-size: contain;
-}
+} */
 
 .email-input {
   max-width: 400px;

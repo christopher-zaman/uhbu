@@ -76,7 +76,7 @@ function NavBar() {
       items: [
         { label: 'Sexual Wellness Treatments', href: '/sexual-wellness-treatments' },
         { label: 'Sexual Wellness For her', href: '/sexual-wellness-for-her' },
-        { label: 'Sexual Wellness For him ', href: '/p-shot' },
+        { label: 'Sexual Wellness For him ', href: '/sexual-wellness-for-him' },
         { label: 'Duo', href: '/duo' },
       ],
     },
@@ -85,6 +85,7 @@ function NavBar() {
       type: 'dropdown',
       key: 'dropdown5',
       title: 'Primary Care',
+      href: 'primary-care',
       items: [
         { label: 'Women\'s Health', href: '#' },
         { label: 'Men\'s Health', href: '#' },
@@ -126,8 +127,8 @@ function NavBar() {
       key: 'dropdown8',
       title: 'Vitamin Therapy',
       items: [
-        { label: '💉 Vitamin Injections', href: '#' },
-        { label: '💧 Vitamin Infusions', href: '#' },
+        { label: '💉 Vitamin Injections', href: 'vitamin-injections' },
+        { label: '💧 Vitamin Infusions', href: 'vitamin-infusions' },
       ],
     },
     // About Us

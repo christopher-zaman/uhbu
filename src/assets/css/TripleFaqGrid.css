@@ -1,0 +1,19 @@
+.faq-box {
+  background-color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-box:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.faq-question h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.faq-answer p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}

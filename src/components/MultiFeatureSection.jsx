@@ -18,8 +18,8 @@ function MultiFeatureSection({ sections = [] }) {
               {/* Text Column */}
               <div className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}>
                 {section.title && <h3>{section.title}</h3>}
-                {section.subheading && <h4>{section.subheading}</h4>}
-                {section.description && <div className="fst-italic">{section.description}</div>}
+                {section.subheading && <p>{section.subheading}</p>}
+                {section.description && <div>{section.description}</div>}
 
                 {treatments.length > 0 ? (
                   <ul>
@@ -34,7 +34,7 @@ function MultiFeatureSection({ sections = [] }) {
                     <p className="fst-italic">{section.fallbackMessage}</p>
                   )
                 )}
-                {section.extraText && <p className="fst-italic">{section.extraText}</p>}
+                {section.extraText && <p>{section.extraText}</p>}
 
                 {section.buttonText && section.buttonLink && (
                   <a href={section.buttonLink} className="btn btn-success mt-2">

@@ -71,3 +71,9 @@
   padding: 0 0.5rem;
   color: #fff;
 }
+.fixed-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* <— This makes it stay still */
+}

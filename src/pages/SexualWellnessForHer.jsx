@@ -167,19 +167,20 @@ function OShot() {
         subtitle="Featuring the Orgasm Shot - designed to enhance your wellness journey."
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
       />
-      <Title
+      {/* <Title
         centerTitle={true}
         showHeading={false}
         introText="Sexual Wellness"
         highlightText='For Her'
-      />
-      <MultiFeatureSection 
-        sections={featureSections} 
-      />
+      /> */}
+      
       <FeatureItems 
         items={featureList}
         topTitle="Treatment Options"
         middleTitle="Cosmetic Gynecology – Non-Surgical Options"
+      />
+      <MultiFeatureSection 
+        sections={featureSections} 
       />
       <InfoSplitSection
         paragraph="The O-Shot, or Orgasm Shot, is a non-surgical procedure that utilizes Platelet-Rich Plasma (PRP) therapy to rejuvenate and revitalize intimate areas in women. This groundbreaking treatment harnesses the natural healing properties of your own blood to enhance sexual function and address various concerns related to female intimate wellness"

@@ -1,0 +1,45 @@
+.feature-faq-box {
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-faq-box:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question h6 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.faq-answer {
+  font-size: 0.95rem;
+}
+
+.circle-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.iv-hydration-bg {
+    background-image: url('/assets/img/vitamins/iv-bg.png'); /* remove ../../../public */
+    background-size: cover; /* or 'contain' */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.white-transparent-bg {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.iv-faq-item{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px 30px;
+    border-radius: 6px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
