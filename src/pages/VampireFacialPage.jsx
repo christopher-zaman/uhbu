@@ -7,6 +7,7 @@ import Contact from '../components/Contact';
 import banner from '../assets/banners/vampire-facial.jpeg';
 import TextBlock from '../components/TextBlock';
 import BulletedTextBlock from '../components/BulletedTextBlock';
+import sideImage from '../assets/img/side-card-image.webp';
 
 import TextImageSection from '../components/TextImageSection';
 
@@ -56,7 +57,8 @@ function VampireFacialPage() {
                     </ul>
                 </>
                 ),
-                image: '/assets/img/',
+                image: sideImage,
+                className: 'side-image-style',
                 buttonText: 'Book Now',
                 buttonLink: '/contact'
             }}
@@ -65,31 +67,29 @@ function VampireFacialPage() {
       
 
         <TextBlock
-        title="What Is IV Hydration Therapy?"
-        body="IV hydration delivers fluids, vitamins, and nutrients directly into your bloodstream, so your body can absorb everything fully and quickly. You get immediate hydration and targeted nutrients—without having to rely on your digestive system to process it all."
+        title="Benefits of a Vampire Facial"
+        body="The Vampire Facial offers a range of aesthetic enhancements by harnessing the body's natural healing abilities. It's an effective alternative to more invasive anti-aging treatments, such as Botox or surgery, providing a rejuvenated complexion. This treatment is multifaceted, addressing issues from fine lines to hair thinning."
         footer=""
       />
 
       <BulletedTextBlock
-        title="Benefits of IV Therapy:"
+        title="Key Benefits Include:"
         bullets={[
-            'Rehydrates and restores electrolyte balance',
-            'Boosts energy and mental clarity',
-            'Strengthens immune system',
-            'Speeds up recovery after illness, travel, or workouts',
-            'Supports weight loss and metabolism',
-            'Brightens skin and improves complexion',
-            'Relieves symptoms of stress, fatigue, and hangovers',
+            'Facial rejuvenation for a youthful contour and firmer skin',
+            'Natural healing with minimal side effects using the body\'s own PRP',
+            'Improved skin texture and quality',
+            'Non-surgical procedure with minimal recovery time',
+            'Quick, typically 30 to 60 minutes per session',
         ]}
-        paragraph="We offer 500 cc and 1000 cc bags, depending on your needs. 💧 📞 Call for pricing and to book your session."
+        paragraph=""
         />
 
 
 
         <TextBlock
-            title="Let’s Get You Rehydrated and Recharged"
-            body="IV therapy takes about 45–60 minutes and is done right here in our relaxing Leesburg office. Whether you’re looking to heal, glow, or simply feel better—we’ll help you choose the perfect drip for your goals."
-            footer=" Call us today to schedule your infusion and ask about bag size pricing!"
+            title="Why Choose Ultimate Health DPC in Leesburg, Florida?"
+            body="At Ultimate Health DPC, we prioritize your well-being, offering personalized care in a comfortable and discreet environment. Our experienced healthcare professionals are dedicated to providing comprehensive consultations and ensuring your journey to optimal health is tailored to your unique needs."
+            footer=""
         />
       
       <Contact />

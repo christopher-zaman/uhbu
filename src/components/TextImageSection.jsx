@@ -3,7 +3,8 @@ import React from 'react';
 function TextImageSection({ 
   bgClass = '', 
   section = {}, 
-  reverse = false 
+  reverse = false,
+  className="side-image-style" 
 }) {
   return (
     <section className={`details section py-5 ${bgClass}`}>
@@ -40,7 +41,7 @@ function TextImageSection({
               <img
                 src={section.image}
                 alt={section.title || 'Image'}
-                className={`img-fluid rounded ${section.imageClassName || ''}`}
+                className={`img-fluid rounded ${section.className || ''}`}
               />
             )}
           </div>
