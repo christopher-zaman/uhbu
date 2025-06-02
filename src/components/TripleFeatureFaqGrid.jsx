@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../assets/css/TripleFeatureFaqGrid.css'; // Optional for styling
 
-function TripleFeatureFAQGrid({ items = [] }) {
+function TripleFeatureFAQGrid({ items = [], bgClass = 'iv-hydration-bg' }) {
   const [activeIndex, setActiveIndex] = useState({});
 
   const toggle = (itemIdx, faqIdx) => {
@@ -12,7 +12,7 @@ function TripleFeatureFAQGrid({ items = [] }) {
   };
 
   return (
-    <section className="section py-5 iv-hydration-bg">
+    <section className={`section py-5 ${bgClass}`}>
       <div className="container">
         <div className="row gy-4">
           {items.map((item, itemIdx) => (

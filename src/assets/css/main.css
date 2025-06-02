@@ -1950,3 +1950,7 @@ section,
     height: auto;
     display: block;
 }
+.our-practice-bg{
+  background-color: #f5f5f5; /* light gray */
+  padding: 60px 20px;
+}

@@ -138,9 +138,10 @@ function NavBar() {
       title: 'About Us',
       items: [
         { label: 'Meet Us', href: 'meet-us' },
-        { label: 'Our Practice', href: '#' },
+        { label: 'Our Practice', href: 'our-practice' },
         { label: 'Careers', href: '#' },
         { label: 'Enrollment', href: '#' },
+        { label: 'Contact Us', href: 'contact' },
       ],
     },
     // { type: 'link', label: 'Gallery', href: '#gallery' },

@@ -1,0 +1,18 @@
+.approach-section {
+  background-color: #fff;
+}
+
+.mission-card,
+.vision-card {
+  background-color: #e6fafa; /* match the FootstepsToWellness feel */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 992px) {
+  .approach-section .col-lg-6:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ensures vertical alignment */
+    height: 100%;
+  }
+}

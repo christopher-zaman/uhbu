@@ -106,7 +106,7 @@ function PrimaryCare() {
         },
         ]}
          />
-        <SideBySideImages
+        {/* <SideBySideImages
         title=""
         leftImage={beforeImage}
         rightImage={afterImage}
@@ -115,7 +115,7 @@ function PrimaryCare() {
         sectionId="before-after"
         className="bg-light"
         
-         />
+         /> */}
 
         {/* add primary care services to the features list */}
          {/* <FeatureItems
@@ -124,7 +124,7 @@ function PrimaryCare() {
          middleTitle="middle title"
          /> */}
 
-    <Services
+    {/* <Services
     bgClass=""
     backgroundImage="/assets/img/subscribe.png"
     title="Primary Care Services"
@@ -147,26 +147,27 @@ function PrimaryCare() {
       image: '/assets/img/wellness/alma-duo.jpg',
       link: '/alma-duo',
     },
-    // {
-    //   title: 'Housecalls',
-    //   description: ['Acoustic wave therapy for stronger erections & blood flow'],
-    //   image: '/assets/img/wellness/alma-duo.jpg',
-    //   link: '/alma-duo',
-    // },
-    // {
-    //   title: '24 Hour Health Care',
-    //   description: ['Acoustic wave therapy for stronger erections & blood flow'],
-    //   image: '/assets/img/wellness/alma-duo.jpg',
-    //   link: '/alma-duo',
-    // },
-    // {
-    //   title: 'Mental Health',
-    //   description: ['Acoustic wave therapy for stronger erections & blood flow'],
-    //   image: '/assets/img/wellness/alma-duo.jpg',
-    //   link: '/alma-duo',
-    // },
+    
+    {
+      title: 'Housecalls',
+      description: ['Acoustic wave therapy for stronger erections & blood flow'],
+      image: '/assets/img/wellness/alma-duo.jpg',
+      link: '/alma-duo',
+    },
+    {
+      title: '24 Hour Health Care',
+      description: ['Acoustic wave therapy for stronger erections & blood flow'],
+      image: '/assets/img/wellness/alma-duo.jpg',
+      link: '/alma-duo',
+    },
+    {
+      title: 'Mental Health',
+      description: ['Acoustic wave therapy for stronger erections & blood flow'],
+      image: '/assets/img/wellness/alma-duo.jpg',
+      link: '/alma-duo',
+    },
   ]}
-/>
+/> */}
 
     <Footer />
     </>
