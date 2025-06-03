@@ -37,6 +37,12 @@ import VitaminInfusions from './pages/VitaminInfusions';
 import VampireFacialPage from './pages/VampireFacialPage';
 import ContactUs from './pages/ContactUs';
 import OurPractice from './pages/OurPractice';
+import SkinPen from './pages/SkinPen';
+import Toskani from './pages/Toskani';
+import Neurotoxins from './pages/Neurotoxins';
+import DermalFiller from './pages/DermalFiller';
+import AlmaFemiLift from './pages/AlmaFemiLift';
+import Careers from './pages/Careers';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -84,9 +90,15 @@ function App() {
       <Route path="/primary-care" element={<PrimaryCare />} />
       <Route path="/vitamin-injections" element={<VitaminInjections />} />
       <Route path="/vitamin-infusions" element={<VitaminInfusions />} />
+      <Route path="/skin-pen" element={<SkinPen />} />
+      <Route path="/toskani" element={<Toskani />} />
+      <Route path="/neurotoxin" element={<Neurotoxins />} />
+      <Route path="/dermal-filler" element={<DermalFiller />} />
+      <Route path="/alma-femi-lift" element={<AlmaFemiLift />} />
 
       <Route path="/meet-us" element={<AboutUs />} />
       <Route path="/contact" element={<ContactUs />} />
+      <Route path="/careers" element={<Careers />} />
       <Route path="/our-practice" element={<OurPractice />} />
     </Routes>
     

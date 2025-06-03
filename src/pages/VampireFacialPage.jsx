@@ -4,10 +4,10 @@ import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
-import banner from '../assets/banners/vampire-facial.jpeg';
+import banner from '../assets/banners/vampire-facial-banner.jpeg';
 import TextBlock from '../components/TextBlock';
 import BulletedTextBlock from '../components/BulletedTextBlock';
-import sideImage from '../assets/img/side-card-image.webp';
+import sideImage from '../assets/img/vampire-facial.jpg';
 
 import TextImageSection from '../components/TextImageSection';
 

@@ -107,7 +107,7 @@ function OurPractice() {
             'Amanda Vontrice Gaskin, APRN, is not only a successful Direct Primary Care founder—she’s also a dedicated mentor to new and aspiring DPC providers across the country. Her dynamic mentorship program helps others launch, grow, and thrive in their own practices, with real-world guidance and a heart for servant leadership.',
             
         ]}
-        paragraph=""
+        paragraph="When you choose Ultimate Health DPC, you're not just getting a healthcare provider—you’re joining a practice that lives, leads, and gives back."
         />
         <ApproachMissionVision />
 
@@ -130,7 +130,7 @@ function OurPractice() {
                     'Authenticity – We show up as our true selves and create a safe, judgment-free space for our patients to do the same.',
 
                 ],
-                extraText: 'Great for all skin types and safe for long-term use.',
+                extraText: '',
                 //   video: '/assets/videos/vampire-treatment.mp4',
                 buttonText: 'Schedule Now',
                 buttonLink: '/contact'
@@ -141,7 +141,7 @@ function OurPractice() {
 
 
         
-
+           
 
 
         {/* <TextBlock

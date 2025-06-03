@@ -102,11 +102,11 @@ function NavBar() {
       title: 'Aesthetics',
       items: [
         { label: '✨ Vampire Facial & Vampire Face Lift®', href: 'vampire-facial' },
-        { label: '✨ SkinPen Microneedling', href: '#' },
-        { label: '✨ Toskani Peptide Cocktails', href: '#' },
-        { label: '✨ Neurotoxins for Fine Lines & Wrinkle Relaxation', href: '#' },
-        { label: '✨ Dermal Fillers', href: '#' },
-        { label: '✨ ALMA FemiLift for Facial Resurfacing', href: '#' },
+        { label: '✨ SkinPen Microneedling', href: 'skin-pen' },
+        { label: '✨ Toskani Peptide Cocktails', href: 'toskani' },
+        { label: '✨ Neurotoxins for Fine Lines & Wrinkle Relaxation', href: 'neurotoxin' },
+        { label: '✨ Dermal Fillers', href: 'dermal-filler' },
+        { label: '✨ ALMA FemiLift for Facial Resurfacing', href: 'alma-femi-lift' },
       ],
     },
     // // Cosmetic Injectables
@@ -139,7 +139,7 @@ function NavBar() {
       items: [
         { label: 'Meet Us', href: 'meet-us' },
         { label: 'Our Practice', href: 'our-practice' },
-        { label: 'Careers', href: '#' },
+        { label: 'Careers', href: 'careers' },
         { label: 'Enrollment', href: '#' },
         { label: 'Contact Us', href: 'contact' },
       ],
