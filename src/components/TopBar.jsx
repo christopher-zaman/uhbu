@@ -10,7 +10,7 @@ function TopBar() {
           {/* Logo */}
           <div className="col-md-4 text-md-start text-center mb-2 mb-md-0">
             <img
-              src="../assets/img/logo.webp"
+              src="/assets/img/logo.webp"
               alt="Logo"
               className="topbar-logo"
             />
