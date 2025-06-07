@@ -43,6 +43,12 @@ import Neurotoxins from './pages/Neurotoxins';
 import DermalFiller from './pages/DermalFiller';
 import AlmaFemiLift from './pages/AlmaFemiLift';
 import Careers from './pages/Careers';
+import WomensHealth from './pages/WomensHealth';
+import MensHealth from './pages/MensHealth';
+import Telemedicine from './pages/Telemedicine';
+import HouseCalls from './pages/HouseCalls';
+import MentalHealth from './pages/MentalHealth';
+import HairRestoration from './pages/HairRestoration';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -88,6 +94,14 @@ function App() {
       <Route path="/vampire-facial" element={<VampireFacialPage />} />
 
       <Route path="/primary-care" element={<PrimaryCare />} />
+      <Route path="/womens-health" element={<WomensHealth />} />
+      <Route path="/mens-health" element={<MensHealth />} />
+      <Route path="/telemedicine" element={<Telemedicine />} />
+      <Route path="/house-calls" element={<HouseCalls />} />
+      <Route path="/hair-restoration" element={<HairRestoration />} />
+      <Route path="/mental-health" element={<MentalHealth />} />
+
+
       <Route path="/vitamin-injections" element={<VitaminInjections />} />
       <Route path="/vitamin-infusions" element={<VitaminInfusions />} />
       <Route path="/skin-pen" element={<SkinPen />} />

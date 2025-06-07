@@ -827,9 +827,62 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+  border: none;
+
+  
+
 }
 
+
+
 /* Custom chatgpt below*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*custom chat gpt above*/
+
+.hero {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.25); /* optional overlay */
+}
+.hero-video-wrapper,
+.hero-bg-video,
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  border: none;
+}
+
 .hero .hero-bg,
 .hero .hero-bg-video {
   position: absolute;
@@ -837,26 +890,8 @@ section,
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: 1;
 }
-
-
-/*custom chat gpt above*/
-
-.hero:before {
-  content: "";
-  /* background: color-mix(in srgb, var(--background-color), transparent 10%); */
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 3;
-}
-
 .hero h1 {
   margin: 0 0 20px 0;
   font-size: 48px;
@@ -942,6 +977,8 @@ section,
     font-size: 13px;
   }
 }
+
+
 
 .hero .hero-waves {
   display: block;

@@ -2,11 +2,12 @@ import React from 'react';
 
 function MultiFeatureSection({ sections = [] }) {
   return (
-    <section id="details" className="details section sexual-wellness-bg">
+    <section id="details" className="details section sexual-wellness-bg lead">
       <div className="container">
         {sections.map((section, index) => {
           const treatments = section.treatments || [];
-          const isReversed = index % 2 === 1; // alternate layout for Z-pattern
+          const htmlList = section.htmlList || [];
+          const isReversed = index % 2 === 1;
 
           return (
             <div
@@ -21,7 +22,8 @@ function MultiFeatureSection({ sections = [] }) {
                 {section.subheading && <p>{section.subheading}</p>}
                 {section.description && <div>{section.description}</div>}
 
-                {treatments.length > 0 ? (
+                {/* Original treatments list */}
+                {treatments.length > 0 && (
                   <ul>
                     {treatments.map((item, i) => (
                       <li key={i}>
@@ -29,11 +31,21 @@ function MultiFeatureSection({ sections = [] }) {
                       </li>
                     ))}
                   </ul>
-                ) : (
-                  section.fallbackMessage && (
-                    <p className="fst-italic">{section.fallbackMessage}</p>
-                  )
                 )}
+
+                {/* Optional HTML-enhanced list */}
+                {htmlList.length > 0 && (
+                  <ul>
+                    {htmlList.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+
+                {section.fallbackMessage && !treatments.length && !htmlList.length && (
+                  <p className="fst-italic">{section.fallbackMessage}</p>
+                )}
+
                 {section.extraText && <p>{section.extraText}</p>}
 
                 {section.buttonText && section.buttonLink && (

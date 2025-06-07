@@ -18,7 +18,7 @@ function ContentSection({
   reverse = false
 }) {
   return (
-    <section id={id} className="about section">
+    <section id={id} className="about section lead">
       <div className="container" data-aos="fade-up" data-aos-delay={100}>
         <div className={`row align-items-xl-center gy-5 ${reverse ? 'flex-row-reverse' : ''}`}>
           

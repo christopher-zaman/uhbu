@@ -8,14 +8,14 @@ function TextImageSection({
 }) {
   return (
     <section className={`details section py-5 ${bgClass}`}>
-      <div className="container">
+      <div className="container lead">
         <div
           className={`row gy-4 align-items-center features-item ${reverse ? 'flex-row-reverse' : ''}`}
           data-aos="fade-up"
         >
           {/* Text Column */}
           <div className="col-md-7">
-            {section.title && <h3>{section.title}</h3>}
+            {section.title && <h3 className={section.titleClass || ''}>{section.title}</h3>}
             {section.description && <div>{section.description}</div>}
 
             {section.treatments?.length > 0 && (
@@ -29,7 +29,7 @@ function TextImageSection({
             )}
 
             {section.buttonText && section.buttonLink && (
-              <a href={section.buttonLink} className="btn btn-primary mt-2">
+              <a href={section.buttonLink} className="btn btn-success mt-2">
                 {section.buttonText}
               </a>
             )}

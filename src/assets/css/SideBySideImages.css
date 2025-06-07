@@ -36,3 +36,21 @@
   transition: transform 0.3s ease;
 }
 
+.womens-health-images img {
+  width: 100% !important;
+  height: 350px; /* or any fixed height */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.house-call-images img {
+  width: 82% !important;
+  height: 350px; /* or any fixed height */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+

@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/estrogen-banner.png';
+import sideImage from '../assets/img/peptide.jpg';
 import contentImage from '../assets/img/peptide-therapy.png';
 import thirdImage from '../assets/img/what-is-peptide-therapy.webp';
 import fourthImage from '../assets/img/fourth-peptide.png';
@@ -14,6 +15,7 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/peptide-therapy-1.jpg';
 import afterImage from '../assets/img/peptide-therapy-2.png';
+import TextImageSection from '../components/TextImageSection';
 
 function PeptideTherapy() {
   return (
@@ -58,26 +60,28 @@ function PeptideTherapy() {
         image={thirdImage}
         />
 
-        <MultiFeatureSection
-        sections={[
-        {
-            title: "Peptides We Offer at Ultimate Health (Leesburg)	",
-            description: "",
-            treatments: [
-                "💉 Sermorelin – Stimulates natural growth hormone production. Helps improve energy, muscle tone, sleep, and overall well-being. Often used for anti-aging and fat loss.",
-                "💉 CJC-1295 / Ipamorelin – This powerful duo boosts growth hormone while minimizing side effects. Great for fat burning, lean muscle gain, better recovery, and deep sleep.",
-                "💉 BPC-157 – Known as the 'Body Protection Compound,' this peptide helps heal joints, muscles, and the gut. Great for athletes, injury recovery, or anyone with inflammation.",
-                "💉 PT-141 (Bremelanotide) – Supports libido and sexual function—works for both men and women. Can also enhance energy and mood.",
-                "💉 AOD-9604 – A fat-burning peptide that mimics the part of growth hormone responsible for breaking down fat. Great for weight loss support when paired with healthy habits.",
-                "💉 Tesamorelin – Another growth hormone–stimulating peptide, great for reducing stubborn belly fat and improving body composition—especially helpful for patients with insulin resistance or metabolic concerns."
-                ],
-
-            // image: contentImage,
+         <TextImageSection 
+         bgClass="sexual-wellness-bg"
+         section={{
+            title: 'Peptides We Offer at Ultimate Health (Leesburg)',
+            titleClass: 'blurred-bg',
+            description: (
+            <>
+                <ul className="blurred-bg p-2">
+                    <li><span className="d-inline-block"><strong> 💉 Sermorelin</strong> – Stimulates natural growth hormone production. Helps improve energy, muscle tone, sleep, and overall well-being. Often used for anti-aging and fat loss.</span></li>
+                    <li><span className="d-inline-block"><strong> 💉 CJC-1295 / Ipamorelin</strong> – This powerful duo boosts growth hormone while minimizing side effects. Great for fat burning, lean muscle gain, better recovery, and deep sleep.</span></li>
+                    <li><span className="d-inline-block"><strong> 💉 BPC-157</strong> – Known as the 'Body Protection Compound,' this peptide helps heal joints, muscles, and the gut. Great for athletes, injury recovery, or anyone with inflammation.</span></li>
+                    <li><span className="d-inline-block"><strong> 💉 PT-141 (Bremelanotide)</strong> – Supports libido and sexual function—works for both men and women. Can also enhance energy and mood.</span></li>
+                    <li><span className="d-inline-block"><strong> 💉 AOD-9604</strong> – A fat-burning peptide that mimics the part of growth hormone responsible for breaking down fat. Great for weight loss support when paired with healthy habits.</span></li>
+                    <li><span className="d-inline-block"><strong> 💉 Tesamorelin</strong> – Another growth hormone–stimulating peptide, great for reducing stubborn belly fat and improving body composition—especially helpful for patients with insulin resistance or metabolic concerns.</span></li>
+                </ul>
+            </>
+            ),
+            image: sideImage,
             bgClass: "blue-fade-bg",
             buttonText: "Learn More",
-            buttonLink: "/peptide-therapy"
-        },
-        ]}
+            buttonLink: "/contact"
+        }}
          />
 
          <ContentSection
