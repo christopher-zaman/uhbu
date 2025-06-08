@@ -26,8 +26,23 @@ function TopBar() {
           {/* Social + Phone */}
           <div className="col-md-4 text-md-end text-center">
             <div className="d-flex justify-content-md-end justify-content-center align-items-center gap-3">
-              <a href="https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202" className="text-dark"><i className="bi bi-linkedin fs-5"></i></a>
-              <a href="https://www.instagram.com/ultimatehealthdpc" className="text-dark"><i className="bi bi-instagram fs-5"></i></a>
+              <a 
+              href="https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202" 
+              className="text-dark"
+              aria-label="LinkedIn profile for Amanda Gaskin" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+                <i className="bi bi-linkedin fs-5"></i>
+              </a>
+              <a 
+              href="https://www.instagram.com/ultimatehealthdpc" 
+              className="text-dark"
+              aria-label="Instagram profile for Amanda Gaskin" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+              <i className="bi bi-instagram fs-5"></i></a>
               <span className="ms-2 fw-semibold">
               <a
                 href="tel:+13529016582"
