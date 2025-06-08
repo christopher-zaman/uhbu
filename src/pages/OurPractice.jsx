@@ -65,7 +65,8 @@ function OurPractice() {
                 image: sideImage,
                 className: 'side-image-style',
                 buttonText: 'Book a Consultation',
-                buttonLink: 'https://app.elationemr.com/book/UltimateHealthDPC?appointment_types'
+                buttonLink: 'https://app.elationemr.com/book/UltimateHealthDPC?appointment_types',
+                buttonTarget: '_blank'
             }}
             />
 

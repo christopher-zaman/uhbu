@@ -29,7 +29,12 @@ function TextImageSection({
             )}
 
             {section.buttonText && section.buttonLink && (
-              <a href={section.buttonLink} className="btn btn-success mt-2">
+              <a
+                href={section.buttonLink}
+                className="btn btn-success mt-2"
+                target={section.buttonTarget || '_self'}
+                rel={section.buttonTarget === '_blank' ? 'noopener noreferrer' : undefined}
+              >
                 {section.buttonText}
               </a>
             )}
