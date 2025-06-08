@@ -5,7 +5,7 @@ import Divider from '../components/Divider';
 
 function About() {
   return (
-    <section id="about" className="about section about-us-bg">
+    <section id="about" className="about section about-us-bg lead">
       <div className="container" data-aos="fade-up" data-aos-delay={100}>
         <div className="row align-items-xl-center gy-5">
           {/* Left Column (keep as-is) */}
@@ -36,8 +36,8 @@ function About() {
               </p>
             </div>
 
-            <a href="/about" className="read-more">
-              <span>Read More</span> <i className="bi bi-arrow-right" />
+            <a href="/meet-us" className="read-more lead">
+              <span>Meet the Team</span> <i className="bi bi-arrow-right" />
             </a>
           </div>
 

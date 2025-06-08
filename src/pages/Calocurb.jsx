@@ -55,8 +55,8 @@ function Calocurb() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/calocurb"
+            buttonText: "Get Started with Calocurb",
+            buttonLink: "contact"
         },
         ]}
          />

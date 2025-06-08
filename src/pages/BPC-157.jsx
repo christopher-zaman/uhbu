@@ -54,8 +54,8 @@ function BPC157() {
             ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/BPC-157"
+            buttonText: "",
+            buttonLink: "contact"
         },
         ]}
          />

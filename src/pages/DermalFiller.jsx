@@ -55,7 +55,6 @@ function DermalFiller() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
             buttonLink: "/dermal-filler"
         },
         ]}

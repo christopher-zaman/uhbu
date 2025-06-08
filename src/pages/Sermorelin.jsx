@@ -53,8 +53,7 @@ function Sermorelin() {
             ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/sermorelin"
+            buttonLink: "contact"
         },
         ]}
          />

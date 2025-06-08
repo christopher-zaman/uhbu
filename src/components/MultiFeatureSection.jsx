@@ -48,11 +48,27 @@ function MultiFeatureSection({ sections = [] }) {
 
                 {section.extraText && <p>{section.extraText}</p>}
 
-                {section.buttonText && section.buttonLink && (
-                  <a href={section.buttonLink} className="btn btn-success mt-2">
-                    {section.buttonText}
+                {section.buttonLink && section.title && (
+                section.buttonLink.startsWith('http') ? (
+                  <a
+                    href={section.buttonLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-success mt-2"
+                    aria-label={section.buttonText || `Get Started with ${section.title}`}
+                  >
+                    {section.buttonText || `Get Started with ${section.title}`}
                   </a>
-                )}
+                ) : (
+                  <a
+                    href={`/${section.buttonLink}`}
+                    className="btn btn-success mt-2"
+                    aria-label={section.buttonText || `Get Started with ${section.title}`}
+                  >
+                    {section.buttonText || `Get Started with ${section.title}`}
+                  </a>
+                )
+              )}
               </div>
 
               {/* Image/Video Column */}

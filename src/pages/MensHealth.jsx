@@ -57,8 +57,8 @@ function MensHealth() {
                 ],
             image: SecondContentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/contact"
+            buttonText: "Schedule a Consultation",
+            buttonLink: "contact"
         },
         ]}
          />

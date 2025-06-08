@@ -55,8 +55,7 @@ function Retatrutide() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/retatrutide"
+            buttonLink: "contact"
         },
         ]}
          />

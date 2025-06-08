@@ -37,7 +37,7 @@ function TextVideoSection({
                 )}
 
                 {section.buttonText && section.buttonLink && (
-                  <a href={section.buttonLink} className="btn btn-primary mt-2">
+                  <a href={section.buttonLink} className="btn btn-success mt-2">
                     {section.buttonText}
                   </a>
                 )}

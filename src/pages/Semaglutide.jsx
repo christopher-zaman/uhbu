@@ -55,8 +55,8 @@ function Semaglutide() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/semaglutide"
+            buttonText: "Get Started with Semaglutide",
+            buttonLink: "/contact"
         },
         ]}
          />

@@ -101,8 +101,8 @@ function PrimaryCare() {
                 extraText: "You don’t need insurance to be cared for. You just need a provider who puts you first. That’s what we do here.",
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/primary-care"
+            buttonText: "Schedule an Appointment",
+            buttonLink: "contact"
         },
         ]}
          />

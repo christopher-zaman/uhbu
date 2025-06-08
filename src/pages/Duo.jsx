@@ -53,7 +53,6 @@ function Duo(){
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
             buttonLink: "/duo"
         },
         ]}

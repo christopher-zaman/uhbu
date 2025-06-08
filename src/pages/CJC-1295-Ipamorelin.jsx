@@ -54,8 +54,8 @@ function CJC1295Ipamorelin() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/CJC-1295-Ipamorelin"
+            buttonText: "Get Started with CJC 1295 Ipamorelin",
+            buttonLink: "contact"
         },
         ]}
          />

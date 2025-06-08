@@ -60,8 +60,8 @@ function PeriMenopause() {
 
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/peri-menopause"
+            buttonText: "Schedule a Hormone Evaluation",
+            buttonLink: "/contact"
         },
         ]}
          />

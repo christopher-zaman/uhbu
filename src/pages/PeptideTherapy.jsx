@@ -79,8 +79,8 @@ function PeptideTherapy() {
             ),
             image: sideImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/contact"
+            buttonText: "Get Started with Peptides",
+            buttonLink: "contact"
         }}
          />
 

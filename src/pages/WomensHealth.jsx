@@ -56,8 +56,7 @@ function WomensHealth() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/contact"
+            buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"
         },
         ]}
          />

@@ -56,8 +56,8 @@ function SkinPen() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/skin-pen"
+            buttonText: "Book an Appointment",
+            buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"
         },
         ]}
          />

@@ -33,7 +33,7 @@ const defaultServices = [
     '💉 SubQ Testosterone Injections'
     ],
     image: '/assets/img/wellness/hormone-therapy.jpg',
-    link: '/peri-menopause',
+    link: '/hormone-replacement-therapy',
     noBullets: true
   },
   {
@@ -47,7 +47,7 @@ const defaultServices = [
     '💉 Tesamorelin',
     ],
     image: '/assets/img/wellness/peptide-therapy.png',
-    link: '/peri-menopause',
+    link: '/peptide-therapy',
     noBullets: true
   },
   {
@@ -126,7 +126,7 @@ function Services({ services = defaultServices, title = "Our Services", classNam
                     ))}
                   </ul>
                   <Link to={service.link} className="btn btn-outline-light btn-sm rounded-pill mt-2">
-                    Learn More
+                    {service.title}
                   </Link>
                 </div>
               </div>

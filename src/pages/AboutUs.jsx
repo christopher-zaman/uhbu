@@ -55,7 +55,7 @@ function AboutUs() {
         roundedImage={true}
         />
         <TextVideoSection
-            bgClass="sexual-wellness-bg"
+            bgClass="sexual-wellness-bg lead"
             sections={[
                 {
                 title: 'About Us',
@@ -66,8 +66,8 @@ function AboutUs() {
                 //     'No downtime, no medication required',
                 // ],
                 youtubeUrl: 'https://youtu.be/WI1gtvVhmDI',
-                // buttonText: 'Schedule a Consultation',
-                // buttonLink: '/contact',
+                buttonText: 'Schedule a Consultation',
+                buttonLink: '/contact',
                 },
             ]}
         />
@@ -88,35 +88,7 @@ function AboutUs() {
         reverse={true}
         />
        
-        {/* <MultiFeatureSection
-        sections={[
-        {
-            title: "About Us",
-            description: "",
-            treatments: [
-                "$150 for 30-day supply",
-                "FDA-approved prescription for long-term weight management.",
-                "Targets hunger and cravings through brain-based appetite control.",
-                "Contains bupropion and naltrexone — a unique combination that supports behavioral change.",
-                "Designed for adults with obesity or those overweight with weight-related medical conditions."
-                ],
-            // image: contentImage,
-            bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/about-us"
-        },
-        ]}
-         />
-        <SideBySideImages
-        title=""
-        leftImage={beforeImage}
-        rightImage={afterImage}
-        leftAlt="Before Treatment"
-        rightAlt="After Treatment"
-        sectionId="before-after"
-        className="bg-light about-us-images"
         
-         /> */}
          <Contact />
     
     <Footer />

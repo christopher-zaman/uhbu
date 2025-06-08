@@ -50,8 +50,8 @@ function AlmaFemiLift() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/alma-femi-lift"
+            buttonText: "Get Started with Alma Femilift",
+            buttonLink: "/contact"
         },
         ]}
          />

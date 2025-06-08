@@ -57,8 +57,7 @@ function Tirzepatide() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/tirzepatide"
+            buttonLink: "contact"
         },
         ]}
          />

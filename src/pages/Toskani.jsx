@@ -50,8 +50,8 @@ function Toskani() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/toskani"
+            buttonText: "Schedule an Appointment",
+            buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"
         },
         ]}
          />

@@ -52,8 +52,7 @@ function AOD9604() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/aod-9604"
+            buttonLink: "/contact"
         },
         ]}
          />

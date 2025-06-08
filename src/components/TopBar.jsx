@@ -18,7 +18,7 @@ function TopBar() {
 
           {/* CTA Button */}
           <div className="col-md-4 text-center mb-2 mb-md-0">
-            <a href="#contact" className="btn navy-blue text-white px-4 py-2">
+            <a href="contact" className="btn navy-blue text-white px-4 py-2">
               Request an Appointment
             </a>
           </div>

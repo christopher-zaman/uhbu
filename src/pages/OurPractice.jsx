@@ -64,8 +64,8 @@ function OurPractice() {
                 ),
                 image: sideImage,
                 className: 'side-image-style',
-                buttonText: 'Book Now',
-                buttonLink: '/contact'
+                buttonText: 'Book a Consultation',
+                buttonLink: 'https://app.elationemr.com/book/UltimateHealthDPC?appointment_types'
             }}
             />
 
@@ -95,8 +95,6 @@ function OurPractice() {
                 extraText: "",
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/contact"
         },
         ]}
       />
@@ -132,8 +130,6 @@ function OurPractice() {
                 ],
                 extraText: '',
                 //   video: '/assets/videos/vampire-treatment.mp4',
-                buttonText: 'Schedule Now',
-                buttonLink: '/contact'
                 }
             ]}
         />

@@ -40,7 +40,7 @@ function HouseCalls() {
         <MultiFeatureSection
         sections={[
         {
-            title: "Make an appointment",
+            title: "Schedule an appointment",
             description: "",
             treatments: [
                 "Direct Primary Care (DPC) is a membership model that replaces the complex and costly billing system of our current insurance based health care.",
@@ -51,7 +51,7 @@ function HouseCalls() {
                 ],
             image: SecondContentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
+            buttonText: "Schedule an Appointment",
             buttonLink: "/contact"
         },
         ]}

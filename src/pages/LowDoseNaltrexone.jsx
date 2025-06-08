@@ -53,7 +53,6 @@ function LowDoseNaltrexone() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
             buttonLink: "/low-dose-naltrexone"
         },
         ]}

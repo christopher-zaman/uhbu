@@ -55,8 +55,7 @@ function PT141Bremelonotide() {
                 ],
             // image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Learn More",
-            buttonLink: "/pt-141-bremelonotide"
+            buttonLink: "contact"
         },
         ]}
          />
