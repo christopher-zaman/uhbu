@@ -79,7 +79,7 @@ function HairRestoration() {
         // listItems={[
         //   ""
         // ]}
-        video={video}
+        video="/assets/video/prp-hair.mp4"  // ← this is the public path
       />
 
       <MultiFeatureSection
