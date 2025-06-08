@@ -45,7 +45,7 @@ function Subscribe() {
 
           {/* Email Form */}
           <div className="col-lg-8 text-center text-lg-start">
-            <p className="mb-3">Join our email list to stay up to date on services and events.</p>
+            <p className="mb-3 lead">Join our email list to stay up to date on services and events.</p>
             <form
               ref={form}
               onSubmit={sendSubscription}

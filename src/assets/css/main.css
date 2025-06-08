@@ -491,11 +491,16 @@ h6 {
 
 
 .footer .footer-about .logo span {
-  font-size: 26px;
+
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  /* font-size: 26px;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: var(--heading-font);
-  color: var(--heading-color);
+  color: var(--heading-color); */
 }
 
 .footer .footer-about p {
@@ -539,11 +544,11 @@ h6 {
   margin: 0;
 }
 
-.footer .footer-links ul i {
+/* .footer .footer-links ul i {
   padding-right: 2px;
   font-size: 12px;
   line-height: 0;
-}
+} */
 
 .footer .footer-links ul li {
   padding: 10px 0;
@@ -563,6 +568,10 @@ h6 {
 
 .footer .footer-links ul a:hover {
   color: var(--accent-color);
+}
+
+.footer-contact a:hover {
+  color: #94c142; 
 }
 
 .footer .footer-contact p {
@@ -1842,7 +1851,7 @@ section,
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .contact .info-item:hover i {

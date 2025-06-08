@@ -11,7 +11,6 @@ const defaultServices = [
     'FDA approved',
     'Treats chronic weight loss in adults with obesity',
     'Control blood sugar levels',
-    'Suppress appetite',
     'Type 2 diabetes',
     'Lipotropic injection',
     '(Ozempic/Wegovy)'
@@ -60,7 +59,6 @@ const defaultServices = [
     '💉 PT-141 Peptide Therapy',
     '💥 ALMA Duo ED Treatment',
     '💉 P-Shot (Priapus Shot®)',
-    '💊 Oral ED Medications',
     '💉 Tri-Mix Injection Therapy',
     ],
     image: '/assets/img/wellness/for-her.jpg',
@@ -82,7 +80,7 @@ const defaultServices = [
     'Whether you\'re new to aesthetics or ready for a full glow-up, we’re here to walk you through every option with honesty, care, and a keen eye for natural results.',
     ],
     image: '/assets/img/wellness/aesthetics.png',
-    link: '/sexual-wellness-treatments',
+    link: '/skin-pen',
     noBullets: true
   }, 
 
@@ -108,7 +106,7 @@ function Services({ services = defaultServices, title = "Our Services", classNam
         <div className="row g-4">
           {services.map((service, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
-              <div className="service-card position-relative overflow-hidden rounded">
+              <div className="service-card position-relative overflow-hidden rounded lead">
                 <img
                   src={service.image}
                   className="img-fluid w-100 h-100 object-fit-cover"
@@ -116,10 +114,10 @@ function Services({ services = defaultServices, title = "Our Services", classNam
                 />
                 <div className="gradient-overlay position-absolute top-0 start-0 w-100 h-100 z-1"></div>
                 <div className="service-title position-absolute bottom-0 start-0 w-100 text-white text-center py-2 z-2">
-                  <h5 className="m-0">{service.title}</h5>
+                  <h3 className="m-0 text-white">{service.title}</h3>
                 </div>
                 <div className="overlay p-3 d-flex flex-column justify-content-center text-center">
-                  <h5 className="text-white mb-2">{service.title}</h5>
+                  {/* <p className="text-white mb-2">{service.title}</p> */}
                   <ul className={`text-white small text-start ${service.noBullets ? 'list-unstyled ps-0' : 'ps-3'}`}>
                     {service.description.map((item, i) => (
                       <li key={i}>{item}</li>
