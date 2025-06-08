@@ -8,12 +8,12 @@ import Hero from '../components/Hero';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/banners/hair-restoration-banner.jpg';
 import myImage from '../assets/img/hair-injections.jpg';
-import video from '../videos/prp-hair.mp4'
 import MultiFeatureSection from '../components/MultiFeatureSection';
 import Contact from '../components/Contact';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import TextBlock from '../components/TextBlock';
 
 const htmlList = [
   <ul key="mental-health-list">
@@ -98,6 +98,19 @@ function HairRestoration() {
     buttonLink: "/contact"
   }]}
 />
+
+
+
+    <TextBlock
+    title="Why Choose Ultimate Health Spa for Hair Restoration?"
+    body={[
+    "Customized, multi-therapy approach tailored to your unique hair goals",
+    "Regenerative, non-surgical solutions with little to no downtime",
+    "Cutting-edge treatments led by experienced professionals"
+    ]}
+    footer="✨ Schedule your personalized consultation today!"
+     />
+
     <Contact />
     <Footer />
     </>
