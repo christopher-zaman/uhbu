@@ -9,7 +9,13 @@ function CareCredit() {
           
           {/* Left Content */}
           <div className="text-white mb-4 mb-lg-0">
-            <img src="/assets/img/care-credit-logo.png" alt="CareCredit Logo" className="mb-3" />
+            <img 
+            src="/assets/img/care-credit-logo.png" 
+            alt="CareCredit Logo" 
+            className="mb-3 care-credit-logo" 
+            width="216"
+            height="29"
+            />
 
             <ul className="list-unstyled">
               <li><i className="bi bi-chevron-right me-2"></i>Take control of your health today with 6 months interest free</li>
@@ -33,6 +39,8 @@ function CareCredit() {
               src="/assets/img/care-credit-card.png"
               alt="CareCredit Card"
               className="carecredit-image"
+              width="349"
+              height="220"
             />
           </a>
         </div>

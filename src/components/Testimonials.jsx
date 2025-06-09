@@ -19,7 +19,13 @@ function Testimonials() {
         >
         <SwiperSlide>
   <div className="testimonial-item">
-    <img src="assets/img/testimonials/testimonials-1.webp" className="testimonial-img" alt="Client Review" />
+    <img 
+    src="assets/img/testimonials/testimonials-1.webp" 
+    className="testimonial-img" 
+    alt="Client Review"
+    width="88"
+    height="88"
+     />
     <h3>Felicia</h3>
     <div className="stars">
       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
@@ -37,7 +43,13 @@ function Testimonials() {
 
 <SwiperSlide>
   <div className="testimonial-item">
-    <img src="assets/img/testimonials/testimonials-2.webp" className="testimonial-img" alt="Client Review" />
+    <img 
+    src="assets/img/testimonials/testimonials-2.webp" 
+    className="testimonial-img" 
+    alt="Client Review"
+    width="88"
+    height="88"
+    />
     <h3>Shelton</h3>
     <div className="stars">
       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
@@ -55,7 +67,13 @@ function Testimonials() {
 
 <SwiperSlide>
   <div className="testimonial-item">
-    <img src="assets/img/testimonials/testimonials-3.webp" className="testimonial-img" alt="Client Review" />
+    <img 
+    src="assets/img/testimonials/testimonials-3.webp" 
+    className="testimonial-img" 
+    alt="Client Review"
+    width="88"
+    height="88"
+    />
     <h3>Kate</h3>
     <div className="stars">
       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
@@ -73,7 +91,13 @@ function Testimonials() {
 
 <SwiperSlide>
   <div className="testimonial-item">
-    <img src="assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="Client Review" />
+    <img 
+    src="assets/img/testimonials/testimonials-3.jpg" 
+    className="testimonial-img" 
+    alt="Client Review"
+    width="88"
+    height="88" 
+    />
     <h3>Lynn</h3>
     <div className="stars">
       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" />
@@ -91,7 +115,13 @@ function Testimonials() {
 
 <SwiperSlide>
   <div className="testimonial-item">
-    <img src="assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="Client Review" />
+    <img 
+    src="assets/img/testimonials/testimonials-2.jpg" 
+    className="testimonial-img" 
+    alt="Client Review" 
+    width="88"
+    height="88"
+    />
     <h3>DeAnnA</h3>
     <div className="stars">
       <i className="bi bi-star-fill" /><i className="bi bi-star-fill" />

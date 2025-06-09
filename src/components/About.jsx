@@ -1,5 +1,5 @@
 import React from 'react';
-import founderImage from '../assets/img/amanda.jpg';
+import founderImage from '../assets/img/amanda.webp';
 import '../assets/css/About.css';
 import Divider from '../components/Divider';
 
@@ -43,7 +43,13 @@ function About() {
 
           {/* Right Column (Image of Founder) */}
           <div className="col-xl-5 d-flex justify-content-center">
-            <img src={founderImage} alt="Founder" className="about-image" />
+            <img 
+            src={founderImage} 
+            alt="Founder" 
+            className="about-image" 
+            width="368"
+            height="552"
+            />
           </div>
           
 

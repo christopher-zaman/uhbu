@@ -1383,8 +1383,10 @@ section,
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 100px;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
+  object-fit: cover; 
   border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
   margin: 0 auto;
 }

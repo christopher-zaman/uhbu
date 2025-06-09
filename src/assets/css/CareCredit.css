@@ -38,10 +38,13 @@
 }
 
 .carecredit-image {
-  width: 220px;
+  max-width: 100%;
   transition: transform 0.3s ease;
 }
 
 .carecredit-image:hover {
   transform: scale(1.05);
+}
+.care-credit-logo{
+  max-width: 100%;
 }
