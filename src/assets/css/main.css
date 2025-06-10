@@ -1821,6 +1821,41 @@ section,
   color: #999;
 }
 
+/**/
+/*Custom animation slide in*/
+@keyframes customFadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100vw); /* start far off to the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes customFadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw); /* start far off to the left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.aos-animate.custom-fade-right {
+  animation: customFadeRight 1s ease-out forwards;
+}
+
+.aos-animate.custom-fade-left {
+  animation: customFadeLeft 1s ease-out forwards;
+}
+
+/**/
+
+
 
 /*--------------------------------------------------------------
 # Contact Section

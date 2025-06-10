@@ -1,36 +1,20 @@
 import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
-import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
 import Paragraph from '../components/Paragraph';
-import Video from '../components/Video';
 import About from '../components/About';
 import Services from '../components/Services';
-import Features from '../components/Features';
 import Footer from '../components/Footer';
-import Details from '../components/Details';
-import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
 import Socials from '../components/Socials';
 import Subscribe from '../components/Subscribe';
-import Team from '../components/Team';
-import Pricing from '../components/Pricing';
-import Faq from '../components/Faq';
 import Contact from '../components/Contact';
 import CareCredit from '../components/CareCredit';
 import SEO from '../components/SEO';
-import backgroundVideo from '../assets/videos/alma-duo-video-optimized.mp4';
 import VideoHero from '../components/VideoHero';
-import CenteredVideoSection from '../components/CenteredVideoSection';
-import { useEffect } from 'react';
-import AOS from 'aos';
 
-function App() {
-
-  useEffect(() => {
-    AOS.refresh(); // This runs after the page component mounts
-  }, []);
+function MentalWellness() {
   
   return (    
     <>
@@ -42,14 +26,6 @@ function App() {
       <TopBar />
       <NavBar />
       <VideoHero videoId="rxVnntel71w" height="75vh" />
-      
-      {/* <Hero 
-        backgroundImage="/assets/img/banners/amanda-mobile-small.webp"
-        backgroundVideo={backgroundVideo}
-        heroImage="/assets/img/hero-img-sexual-wellness.png"
-        title=""
-        subtitle=""
-      /> */}
 
       <SectionTitle>
         Welcome to <strong>Ultimate Health</strong>{' '}
@@ -65,9 +41,6 @@ function App() {
         Let’s take care of you—together.
       </Paragraph>
 
-        <CenteredVideoSection videoId="92jlApzokh0" />
-
-
       {/* <video
         className="hero-bg-video"
         autoPlay
@@ -81,31 +54,20 @@ function App() {
 
       <Services /> 
 
-
       <About />
-
 
       <Testimonials />
 
-      
       <Socials />
 
       <CareCredit />
 
       <Subscribe />
 
-
-      {/* <Features />
-      <Details />
-      <Gallery />
-      
-      <Team />
-      <Pricing />
-      <Faq /> */}
       <Contact />
       <Footer />
     </>
   );
 }
 
-export default App;
+export default MentalWellness;

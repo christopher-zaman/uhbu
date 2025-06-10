@@ -1,5 +1,19 @@
-const Divider = ({ width = "200px", color = "#040677", style = "dotted", thickness = "7.8px", centered = true}) => (
+const Divider = ({
+  width = "200px",
+  color = "#040677",
+  style = "dotted",
+  thickness = "7.8px",
+  centered = true,
+  aos = "",
+  aosDelay = "",
+  aosDuration = "",
+  customClass = "" // 👈 new prop
+}) => (
   <div
+    data-aos={aos || undefined}
+    data-aos-delay={aosDelay || undefined}
+    data-aos-duration={aosDuration || undefined}
+    className={customClass}
     style={{
       borderBottom: `${thickness} ${style} ${color}`,
       width,
@@ -10,4 +24,5 @@ const Divider = ({ width = "200px", color = "#040677", style = "dotted", thickne
     }}
   />
 );
+
 export default Divider;

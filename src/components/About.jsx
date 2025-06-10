@@ -9,9 +9,21 @@ function About() {
       <div className="container" data-aos="fade-up" data-aos-delay={100}>
         <div className="row align-items-xl-center gy-5">
           {/* Left Column (keep as-is) */}
-          <div className="col-xl-7 content">
+          <div
+            className="col-xl-7 content"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <h2 className="text-uppercase">About Us</h2>
-            <Divider centered={false} />
+            <Divider
+              centered={false}
+              aos="fade-right"
+              aosDelay="100"
+              aosDuration="1000"
+              customClass="custom-fade-right"
+            />
+
+            
             <div>
               <p><strong>Your Wellness, Our Passion</strong></p>
 
@@ -42,7 +54,12 @@ function About() {
           </div>
 
           {/* Right Column (Image of Founder) */}
-          <div className="col-xl-5 d-flex justify-content-center">
+          <div
+            className="col-xl-5 d-flex justify-content-center"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <img 
             src={founderImage} 
             alt="Founder" 

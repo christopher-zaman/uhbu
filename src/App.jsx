@@ -49,6 +49,7 @@ import Telemedicine from './pages/Telemedicine';
 import HouseCalls from './pages/HouseCalls';
 import MentalHealth from './pages/MentalHealth';
 import HairRestoration from './pages/HairRestoration';
+import MentalWellness from './pages/MentalWellness';
 function App() {
   useEffect(() => {
     AOS.init({
@@ -100,6 +101,7 @@ function App() {
       <Route path="/house-calls" element={<HouseCalls />} />
       <Route path="/hair-restoration" element={<HairRestoration />} />
       <Route path="/mental-health" element={<MentalHealth />} />
+      <Route path="/mental-wellness" element={<MentalWellness />} />
 
 
       <Route path="/vitamin-injections" element={<VitaminInjections />} />

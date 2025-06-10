@@ -17,7 +17,8 @@ function NavBar() {
     // Navigation configuration array 
     const navItems = [
       // Home
-      { type: 'link', label: 'Home', href: '/', active: true },
+      // { type: 'link', label: 'Home', href: '/', active: true },
+      { type: 'link', label: 'Exomind', href: 'https://exomindthevillages.com/'},
       
       // Weight Loss
       {
@@ -89,6 +90,7 @@ function NavBar() {
           { label: 'House calls', href: 'house-calls' },
           { label: 'Hair Restoration', href: 'hair-restoration' },
           { label: 'Mental Health', href: 'mental-health' },
+          { label: 'Mental Wellness', href: 'mental-wellness' },
         ],
       },
       // Aesthetics

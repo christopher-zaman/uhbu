@@ -15,13 +15,11 @@ function TextVideoSection({
             <div
               className="row gy-4 align-items-center features-item"
               key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
             >
               {/* Text Column */}
               <div
                 className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}
-                data-aos="fade-up"
+                data-aos={isReversed ? 'fade-right' : 'fade-left'}
               >
                 {section.title && <h3>{section.title}</h3>}
                 {section.description && <p>{section.description}</p>}
@@ -46,8 +44,8 @@ function TextVideoSection({
               {/* Video Column */}
               <div
                 className={`col-md-5 d-flex align-items-center ${isReversed ? 'order-md-1' : ''}`}
-                data-aos="zoom-out"
-                data-aos-delay={100}
+                data-aos={isReversed ? 'fade-left' : 'fade-right'}
+                data-aos-delay="100"
               >
                 {section.youtubeUrl ? (
                   <div className="ratio ratio-16x9 w-100">
