@@ -7,7 +7,7 @@ import Contact from '../components/Contact';
 
 import AlternatingColumns from '../components/AlternatingColumns';
 import AboutUs from './AboutUs';
-import banner from '../assets/img/primary-care-banner.png';
+import banner from '../assets/banners/iv-infusion-treatments.jpg';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -94,11 +94,12 @@ function VitaminInfusions() {
             faqs: [
                 {
                 question: 'What’s in it?',
-                answer: 'Magnesium, B-vitamins, Vitamin C, and more.',
+                answer: 'Magnesium, B-vitamins, Vitamin C, and Electrolytes.',
                 },
                 {
-                question: 'What is it good for?',
-                answer: 'Fatigue, low energy, migraines, immune support.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $160'
                 },
             ],
             },
@@ -108,16 +109,13 @@ function VitaminInfusions() {
             description: 'Just got back from a trip? This drip helps you bounce back from travel fatigue, dehydration, and time zone changes so you can feel rested and refreshed.',
             faqs: [
                 {
-                question: 'How often can I get this?',
-                answer: 'Every 1–2 weeks is safe and effective.',
+                question: 'What’s in it?',
+                answer: 'Vitamin B12, B-complex vitamins, Vitamin C, Magnesium, Taurine, Electrolytes and hydration fluids.',
                 },
                 {
-                question: 'What makes this different?',
-                answer: 'It includes glutathione and biotin, not found in basic IVs.',
-                },
-                {
-                question: 'Is there downtime?',
-                answer: 'Nope! You’ll walk out glowing.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $195.00'
                 },
             ],
             },
@@ -127,16 +125,13 @@ function VitaminInfusions() {
             description: 'Feeling under the weather? This immune-boosting blend includes Vitamin C, zinc, and other essential nutrients to help fight off illness and get you back on your feet.',
             faqs: [
                 {
-                question: 'How often can I get this?',
-                answer: 'Every 1–2 weeks is safe and effective.',
+                question: 'What’s in it?',
+                answer: 'High-dose Vitamin C, Zinc, B-complex vitamins, Glutathione (optional), Electrolytes and fluids',
                 },
                 {
-                question: 'What makes this different?',
-                answer: 'It includes glutathione and biotin, not found in basic IVs.',
-                },
-                {
-                question: 'Is there downtime?',
-                answer: 'Nope! You’ll walk out glowing.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $160.00'
                 },
             ],
             },
@@ -147,16 +142,13 @@ function VitaminInfusions() {
             description: 'Designed to give you a clean, natural energy boost without the crash. Great for busy professionals, parents, students, or anyone in need of a pick-me-up.',
             faqs: [
                 {
-                question: 'How often can I get this?',
-                answer: 'Every 1–2 weeks is safe and effective.',
+                question: 'What’s in it?',
+                answer: 'Vitamin B12, B-complex vitamins, Magnesium, Taurine, Amino acids, Electrolytes',
                 },
                 {
-                question: 'What makes this different?',
-                answer: 'It includes glutathione and biotin, not found in basic IVs.',
-                },
-                {
-                question: 'Is there downtime?',
-                answer: 'Nope! You’ll walk out glowing.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $185.00'
                 },
             ],
             },
@@ -166,16 +158,13 @@ function VitaminInfusions() {
             description: 'The OG of IV therapy. This classic blend of vitamins and minerals (B vitamins, Vitamin C, magnesium, and more) helps with everything from fatigue and migraines to stress and chronic illness.',
             faqs: [
                 {
-                question: 'How often can I get this?',
-                answer: 'Every 1–2 weeks is safe and effective.',
+                question: 'What’s in it?',
+                answer: 'Vitamin C, B-complex vitamins, Vitamin B12, Magnesium, Calcium, Sterile saline solution',
                 },
                 {
-                question: 'What makes this different?',
-                answer: 'It includes glutathione and biotin, not found in basic IVs.',
-                },
-                {
-                question: 'Is there downtime?',
-                answer: 'Nope! You’ll walk out glowing.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $195.00'
                 },
             ],
             },
@@ -185,16 +174,13 @@ function VitaminInfusions() {
             description: 'Cellular repair from the inside out. NAD+ helps with brain fog, low energy, aging, and mood. It supports longevity and whole-body health—ideal for anti-aging and peak performance.',
             faqs: [
                 {
-                question: 'How often can I get this?',
-                answer: 'Every 1–2 weeks is safe and effective.',
+                question: 'What’s in it?',
+                answer: 'Nicotinamide Adenine Dinucleotide (NAD+), Saline or dextrose base, Optional B vitamins or amino acids',
                 },
                 {
-                question: 'What makes this different?',
-                answer: 'It includes glutathione and biotin, not found in basic IVs.',
-                },
-                {
-                question: 'Is there downtime?',
-                answer: 'Nope! You’ll walk out glowing.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $375.00'
                 },
             ],
             },
@@ -205,16 +191,13 @@ function VitaminInfusions() {
             description: 'Low iron levels? We’ve got you covered. This drip is great for patients with anemia, fatigue, or chronic blood loss. We’ll monitor your labs and guide you through treatment safely.',
             faqs: [
                 {
-                question: 'How often can I get this?',
-                answer: 'Every 1–2 weeks is safe and effective.',
+                question: 'What’s in it?',
+                answer: 'IV iron (iron sucrose or ferric gluconate), Saline solution, Customized based on lab work',
                 },
                 {
-                question: 'What makes this different?',
-                answer: 'It includes glutathione and biotin, not found in basic IVs.',
-                },
-                {
-                question: 'Is there downtime?',
-                answer: 'Nope! You’ll walk out glowing.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $375.00'
                 },
             ],
             },
@@ -224,16 +207,13 @@ function VitaminInfusions() {
             description: 'Glow from within! This skin-loving blend is packed with antioxidants, Vitamin C, and biotin to help improve skin clarity, support collagen, and leave you looking radiant.',
             faqs: [
                 {
-                question: 'How often can I get this?',
-                answer: 'Every 1–2 weeks is safe and effective.',
+                question: 'What’s in it?',
+                answer: 'High-dose Vitamin C, Biotin, Glutathione, B-complex vitamins, Hydration fluids',
                 },
                 {
-                question: 'What makes this different?',
-                answer: 'It includes glutathione and biotin, not found in basic IVs.',
-                },
-                {
-                question: 'Is there downtime?',
-                answer: 'Nope! You’ll walk out glowing.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $185.00'
                 },
             ],
             },
@@ -243,16 +223,13 @@ function VitaminInfusions() {
             description: 'Supports your metabolism and energy while aiding in fat-burning and muscle recovery. Great as part of a weight loss or fitness plan.',
             faqs: [
                 {
-                question: 'How often can I get this?',
-                answer: 'Every 1–2 weeks is safe and effective.',
+                question: 'What’s in it?',
+                answer: 'MIC (Methionine, Inositol, Choline), L-Carnitine, B-complex vitamins, Amino acids, Electrolytes',
                 },
                 {
-                question: 'What makes this different?',
-                answer: 'It includes glutathione and biotin, not found in basic IVs.',
-                },
-                {
-                question: 'Is there downtime?',
-                answer: 'Nope! You’ll walk out glowing.',
+                question: 'Details?',
+                answer: 'Duration: 45 minutes',
+                answer2: 'Cost: $185.00'
                 },
             ],
             },

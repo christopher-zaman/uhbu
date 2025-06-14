@@ -11,7 +11,7 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/alma-femi-lift-1.jpg';
-import afterImage from '../assets/img/alma-femi-lift-2.webp';
+import afterImage from '../assets/img/alma-femilift.jpg';
 
 function AlmaFemiLift() {
   return (

@@ -55,6 +55,7 @@ function TripleFeatureFAQGrid({ items = [], bgClass = 'iv-hydration-bg' }) {
                       }}
                     >
                       <p className="mt-2">{faq.answer}</p>
+                      <p className="mt-2">{faq.answer2}</p>
                     </div>
                   </div>
                 ))}

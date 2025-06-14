@@ -7,7 +7,7 @@ import ContentSection from '../components/ContentSection';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 
 import SideBySideImages from '../components/SideBySideImages';
-import contentImage from '../assets/img/estrogen.jpg';
+import contentImage from '../assets/img/alma-duo.jpg';
 import beforeImage from '../assets/img/estrogen-1.webp';
 import afterImage from '../assets/img/estrogen-2.jpg';
 
@@ -51,7 +51,7 @@ function Duo(){
             treatments: [
                 "The Alma Duo system revitalizes sexual health by using LI-ESWT technology to boost blood flow, enhancing sexual pleasure and function in both men and women. Treatments are brief, under 15 minutes, without the need for downtime. Men can experience improved erection quality through restored penile blood flow, while women benefit from increased sensitivity and pleasure due to enhanced vaginal tissue blood flow. Administered with a handheld applicator, the treatment is painless, with no needles or anesthesia required."
                 ],
-            // image: contentImage,
+            image: contentImage,
             bgClass: "blue-fade-bg",
             buttonLink: "/duo"
         },

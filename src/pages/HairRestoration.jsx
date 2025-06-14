@@ -64,7 +64,7 @@ function HairRestoration() {
 
       <Hero
         backgroundImage={banner}
-        title=""
+        title="Hair Restoration"
         subtitle=""
         textColor="rgba(255,255,255,0.8)"
       />

@@ -100,7 +100,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "These issues may be caused by hormone shifts (like menopause or postpartum), past trauma, stress, medication side effects, childbirth, or natural aging. But the good news is—you have options.",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/female-sexual-wellness.jpg",
     fallbackMessage: "This is the fallback message"
   },
   {
@@ -121,7 +121,7 @@ const featureSections = [
       "Changes due to menopause"
       ],
     extraText: "Comfortable, non-surgical, and highly effective—Empower helps restore both function and sensation",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/inmode-forma-v.jpg",
   },
   {
     title: "🌸 ALMA FemiLift",
@@ -135,7 +135,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "It’s quick, safe, and has no downtime—just better results and more confidence.",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/alma-femilift.jpg",
     fallbackMessage: "This is the fallback message"
   },
   {
@@ -150,7 +150,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "We also offer O-Shot Arousal Oil and O-Shot CBD Lubricant to complement your in-office treatment and support intimacy at home.",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/o-shot-bottle.webp",
     fallbackMessage: "This is the fallback message"
   },
 ];

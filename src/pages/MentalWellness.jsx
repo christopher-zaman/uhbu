@@ -25,7 +25,7 @@ function MentalWellness() {
       />
       <TopBar />
       <NavBar />
-      <VideoHero videoId="rxVnntel71w" height="75vh" />
+      <VideoHero videoId="5fbA9uugBRY" height="75vh" objectFit={true}/>
 
       <SectionTitle>
         Welcome to <strong>Ultimate Health</strong>{' '}

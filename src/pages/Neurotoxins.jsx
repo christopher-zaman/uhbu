@@ -11,7 +11,7 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/neurotoxin-1.jpg';
-import afterImage from '../assets/img/neurotoxin-2.png';
+import afterImage from '../assets/img/dysport.jpg';
 
 function Neurotoxins() {
   return (

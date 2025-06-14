@@ -110,7 +110,7 @@ const featureSections = [
     <>
     "We’re here to remind you: <strong>you’re not alone—and you’re not out of options.</strong>"
     </>),
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/peptide.jpg",
     fallbackMessage: "This is the fallback message"
   },
   {
@@ -129,7 +129,7 @@ const featureSections = [
       "Is safe for men with health concerns—including those in remission from prostate cancer",
       ],
     extraText: "This is a great long-term solution that treats the root cause—not just the symptoms—of ED",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/alma-duo.jpg",
   },
   {
     title: "💉 P-Shot (Priapus Shot®)",
@@ -143,7 +143,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "This procedure is performed in-office with minimal discomfort and downtime.",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/p-shot.jpg",
     fallbackMessage: "This is the fallback message"
   },
   {
@@ -156,7 +156,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "These medications can help improve erection quality, stamina, and confidence in the bedroom. We'll help you choose the best option based on your needs and medical history.",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/ed-pills.png",
     fallbackMessage: "This is the fallback message"
   },
 
@@ -168,7 +168,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/sermorelin.png",
     fallbackMessage: "This is the fallback message"
   },
 
@@ -184,7 +184,8 @@ const featureSections = [
     ],
     description: "",
     extraText: "",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "assets/img/wellness/pt-141-purple.jpg",
+    
     fallbackMessage: "This is the fallback message"
   },
 
@@ -201,7 +202,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "",
-    image: "/assets/img/wellness/for-her.jpg",
+    image: "/assets/img/wellness/sermorelin-peptide.jpg",
     fallbackMessage: "This is the fallback message"
   },
 ];
