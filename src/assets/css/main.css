@@ -1314,6 +1314,14 @@ section,
 /*--------------------------------------------------------------
 # Custom Sexual Wellness Section
 --------------------------------------------------------------*/
+.male-sexual-wellness-bg {
+  background-image: url(../banners/male-sexual-wellness-banner.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .sexual-wellness-bg {
   background-image: url(/assets/img/wellness/o-shot.webp);
   background-attachment: fixed;

@@ -1,8 +1,11 @@
 import React from 'react';
 
-function MultiFeatureSection({ sections = [] }) {
+function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false, titleClass = '' }) {
   return (
-    <section id="details" className="details section sexual-wellness-bg lead">
+    <section
+    id="details"
+    className={`details section ${backgroundClass || 'sexual-wellness-bg'} lead`}
+    >
       <div className="container">
         {sections.map((section, index) => {
           const treatments = section.treatments || [];
@@ -11,14 +14,14 @@ function MultiFeatureSection({ sections = [] }) {
 
           return (
             <div
-              className="row gy-4 align-items-center features-item"
-              key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 100}
-            >
+                className={`row gy-4 align-items-center features-item ${textWhite ? 'text-white' : ''}`}
+                key={index}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
               {/* Text Column */}
               <div className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}>
-                {section.title && <h3>{section.title}</h3>}
+                {section.title && <h3 className={titleClass}>{section.title}</h3>}
                 {section.subheading && <p>{section.subheading}</p>}
                 {section.description && <div>{section.description}</div>}
 

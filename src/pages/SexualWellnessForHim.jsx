@@ -233,7 +233,10 @@ function PShot() {
         middleTitle="Cosmetic Gynecology – Non-Surgical Options"
       /> */}
       <MultiFeatureSection 
+        backgroundClass="male-sexual-wellness-bg"
         sections={featureSections} 
+        textWhite={true}
+        titleClass="text-white"
       />
       <InfoSplitSection
         paragraph="The P-Shot is a non-surgical, natural approach to improving sexual function and wellness in men. This cutting-edge therapy utilizes platelet-rich plasma extracted from your blood, harnessing the body's natural healing properties to rejuvenate and enhance various aspects of male sexual health"
