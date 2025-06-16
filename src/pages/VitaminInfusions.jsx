@@ -19,7 +19,7 @@ import Faq from '../components/Faq';
 import TripleFAQGrid from '../components/TripleFaqGrid';
 import TripleFeatureFaqGrid from '../components/TripleFeatureFaqGrid';
 import TextImageSection from '../components/TextImageSection';
-
+import SEO from '../components/SEO';
 
 function VitaminInfusions() {
   return (
