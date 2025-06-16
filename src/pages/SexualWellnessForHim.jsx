@@ -118,7 +118,7 @@ const featureSections = [
     subheading: "We offer a variety of evidence-based, non-invasive and minimally invasive treatments to help restore function, comfort, and confidence.",
     description:(
       <>
-      <h3 className="fst-normal fw-bold mb-2">💥 ALMA Duo ED Treatment</h3>
+      <h3 className="fst-normal fw-bold mb-2 text-white">💥 ALMA Duo ED Treatment</h3>
       <p className="">A non-invasive, pain-free treatment that uses low-intensity shockwave therapy to improve blood flow, restore natural erections, and enhance sexual performance. ALMA Duo:</p>
       </>
     ) ,
