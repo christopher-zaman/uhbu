@@ -12,10 +12,15 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/before.webp';
 import afterImage from '../assets/img/after-weight-loss.jpg';
+import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
+
 
 function WeightLoss() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     <Hero
