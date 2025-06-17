@@ -9,9 +9,14 @@ import Footer from '../components/Footer';
 import pshotVideo from '../assets/videos/p-shot.mp4';
 import TextVideoSection from '../components/TextVideoSection';
 
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
+
 function SexualWellnessTreatments() {
+  const seo = usePageSEO();
     return(
       <>
+        <SEO {...seo} />
         <TopBar />
         <NavBar />
         <Hero

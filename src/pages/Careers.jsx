@@ -7,11 +7,14 @@ import banner from '../assets/banners/contact-banner.png';
 import TextBlock from '../components/TextBlock';
 import ResumeUploadForm from '../components/ResumeUploadForm';
 
-
+import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
 
 function Careers() {
+  const seo = usePageSEO();
   return (
     <>
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
 

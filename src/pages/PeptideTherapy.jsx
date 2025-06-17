@@ -16,10 +16,14 @@ import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/peptide-therapy-1.jpg';
 import afterImage from '../assets/img/peptide-therapy-2.png';
 import TextImageSection from '../components/TextImageSection';
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 function PeptideTherapy() {
+    const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     <Hero

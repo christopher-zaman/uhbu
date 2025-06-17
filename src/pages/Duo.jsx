@@ -14,10 +14,15 @@ import afterImage from '../assets/img/estrogen-2.jpg';
 import duoVideo from '../assets/videos/what-is-ed.mp4';
 import Contact from '../components/Contact';
 
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
+
 function Duo(){
+    const seo = usePageSEO();
     return(
         <>
-    <TopBar />
+        <SEO {...seo} />
+        <TopBar />
         <NavBar />
         <Hero
         backgroundImage="assets/img/banners/model-honey-tone-large.webp"

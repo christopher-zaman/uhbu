@@ -8,6 +8,8 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import FeatureItems from '../components/FeatureItems';
 import InfoSplitSection from '../components/InfoSplitSection';
 import Footer from '../components/Footer';
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 const featureList = [
   { 
@@ -208,8 +210,10 @@ const featureSections = [
 ];
 
 function PShot() {
+  const seo = usePageSEO();
     return(
       <>
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
       <Hero

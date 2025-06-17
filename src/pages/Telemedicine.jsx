@@ -14,9 +14,14 @@ import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/telemedicine-3.jpg';
 import afterImage from '../assets/img/telemedicine-2.jpg';
 
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
+
 function Telemedicine() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

@@ -13,9 +13,14 @@ import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/hormone-therapy-1.jpg';
 import afterImage from '../assets/img/hormone-therapy-2.jpg';
 
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
+
 function HormoneTherapy() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

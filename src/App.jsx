@@ -3,12 +3,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Home from './pages/Home';
-import StarterPage from './pages/StarterPage';
 import SexualWellnessTreatments from './pages/SexualWellnessTreatments';
 import OShot from './pages/SexualWellnessForHer';
 import PShot from './pages/SexualWellnessForHim';
 import Duo from './pages/Duo';
-import VampireFacial from './pages/VampireFacial';
 import Semaglutide from './pages/Semaglutide';
 import Tirzepatide from './pages/Tirzepatide';
 import Contrave from './pages/Contrave';
@@ -63,7 +61,6 @@ function App() {
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/starter" element={<StarterPage />} />
       <Route path="/semaglutide" element={<Semaglutide />} />
       <Route path="/tirzepatide" element={<Tirzepatide />} />
       <Route path="/contrave" element={<Contrave />} />

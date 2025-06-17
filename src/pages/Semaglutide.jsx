@@ -12,10 +12,14 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/before.png';
 import afterImage from '../assets/img/after.jpg';
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 function Semaglutide() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     <Hero

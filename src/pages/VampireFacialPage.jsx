@@ -10,11 +10,14 @@ import BulletedTextBlock from '../components/BulletedTextBlock';
 import sideImage from '../assets/img/vampire-facial.jpg';
 
 import TextImageSection from '../components/TextImageSection';
-
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 function VampireFacialPage() {
+  const seo = usePageSEO();
   return (
     <>
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
 

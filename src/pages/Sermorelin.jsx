@@ -12,10 +12,14 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/sermorelin-1.jpg';
 import afterImage from '../assets/img/sermorelin-2.webp';
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 function Sermorelin() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

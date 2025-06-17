@@ -19,15 +19,17 @@ import Pricing from '../components/Pricing';
 import Faq from '../components/Faq';
 import Contact from '../components/Contact';
 import CareCredit from '../components/CareCredit';
-import SEO from '../components/SEO';
+
 import backgroundVideo from '../assets/videos/alma-duo-video-optimized.mp4';
 import VideoHero from '../components/VideoHero';
 import CenteredVideoSection from '../components/CenteredVideoSection';
 import { useEffect } from 'react';
 import AOS from 'aos';
+import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
 
 function App() {
-
+  const seo = usePageSEO();
   useEffect(() => {
     AOS.refresh(); // This runs after the page component mounts
   }, []);
@@ -37,7 +39,7 @@ function App() {
     <SEO
         title="Membership-Based Primary Care in Leesburg | Ultimate Health DPC"
         description="Join Ultimate Health DPC and enjoy unlimited doctor access, weight loss support, hormone therapy, and more. Serving Leesburg, Florida."
-        image="https://ultimatehealthdpc.com/assets/img/membership-based-primary.png"
+        image="https://ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.png"
       />
       <TopBar />
       <NavBar />

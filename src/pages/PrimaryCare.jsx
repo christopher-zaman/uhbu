@@ -17,7 +17,8 @@ import FeatureItems from '../components/FeatureItems';
 import Gallery from '../components/Gallery';
 import Services from '../components/Services';
 
-
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 const featureList = [
   { 
@@ -41,8 +42,10 @@ const featureList = [
 ];
 
 function PrimaryCare() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

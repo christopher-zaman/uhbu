@@ -13,9 +13,14 @@ import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/sermorelin-1.jpg';
 import afterImage from '../assets/img/CJC-1295-2.webp';
 
+import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
+
 function CJC1295Ipamorelin() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

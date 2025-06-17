@@ -13,9 +13,14 @@ import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/weight-loss.png';
 import afterImage from '../assets/img/aod-9604-2.jpg';
 
+import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
+
 function AOD9604() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     <Hero

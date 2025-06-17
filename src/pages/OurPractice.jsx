@@ -14,10 +14,14 @@ import Faq from '../components/Faq';
 import TripleFeatureFaqGrid from '../components/TripleFeatureFaqGrid';
 import ApproachMissionVision from '../components/ApproachMissionVision';
 import SingleColumnFeatureSection from '../components/SingleColumnFeatureSection';
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 function OurPractice() {
+  const seo = usePageSEO();
   return (
     <>
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
 

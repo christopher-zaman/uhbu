@@ -15,7 +15,8 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 import TextBlock from '../components/TextBlock';
-
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 
 const injections = [
@@ -129,8 +130,10 @@ const injections = [
 ];
 
 function VitaminInjectionsPage() {
+  const seo = usePageSEO();
   return (
     <>
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
 

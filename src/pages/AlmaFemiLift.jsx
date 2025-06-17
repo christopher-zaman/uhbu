@@ -12,10 +12,14 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/alma-femi-lift-1.jpg';
 import afterImage from '../assets/img/alma-femilift.jpg';
+import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
 
 function AlmaFemiLift() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

@@ -16,9 +16,10 @@ import Contact from '../components/Contact';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/house-call-1.png';
 import afterImage from '../assets/img/house-call-2.jpg';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 const htmlList = [
   <ul key="mental-health-list">
@@ -68,8 +69,10 @@ const htmlList = [
 ];
 
 function MentalHealth() {
+  const seo = usePageSEO();
   return (
     <>
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
 

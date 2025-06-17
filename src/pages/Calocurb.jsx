@@ -13,9 +13,14 @@ import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/calocurb-1.jpg';
 import afterImage from '../assets/img/calocurb-2.jpg';
 
+import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
+
 function Calocurb() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

@@ -3,18 +3,20 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/banners/medical-house-calls.webp';
 import contentImage from '../assets/img/house-calls.webp';
 import SecondContentImage from '../assets/img/amanda-facetime.webp';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import Contact from '../components/Contact';
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 function HouseCalls() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

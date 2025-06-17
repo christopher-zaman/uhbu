@@ -15,6 +15,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import TextBlock from '../components/TextBlock';
 
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
+
 const htmlList = [
   <ul key="mental-health-list">
     <li>
@@ -57,8 +60,10 @@ const htmlList = [
 ];
 
 function HairRestoration() {
+  const seo = usePageSEO();
   return (
     <>
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
 

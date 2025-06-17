@@ -3,19 +3,21 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/banners/neurotoxins-banner.png';
 import contentImage from '../assets/img/neurotoxin.png';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/neurotoxin-1.jpg';
 import afterImage from '../assets/img/dysport.jpg';
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 function Neurotoxins() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

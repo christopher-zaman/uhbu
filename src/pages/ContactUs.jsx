@@ -7,11 +7,14 @@ import Contact from '../components/Contact';
 import banner from '../assets/banners/contact-banner.png';
 import TextBlock from '../components/TextBlock';
 
-
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
 
 function ContactUs() {
+  const seo = usePageSEO();
   return (
     <>
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
 

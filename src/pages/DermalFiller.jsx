@@ -13,9 +13,14 @@ import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/dermal-filler-1.webp';
 import afterImage from '../assets/img/dermal-filler-2.png';
 
+import { usePageSEO } from '../hooks/usePageSEO';
+import SEO from '../components/SEO';
+
 function DermalFiller() {
+  const seo = usePageSEO();
   return (
     <>
+    <SEO {...seo} />
     <TopBar />
     <NavBar />
     

@@ -22,12 +22,13 @@ import TextImageSection from '../components/TextImageSection';
 import SEO from '../components/SEO';
 
 function VitaminInfusions() {
+  const seo = usePageSEO();
   return (
     <>
     <SEO
         title="Vitamin Infusions | Ultimate Health DPC"
         description="Revitalize with our powerful vitamin infusions in Leesburg, FL. Boost energy, immunity, and hydration with IV therapy at Ultimate Health."
-        image="https://www.ultimatehealthdpc.com/assets/iv-infusion-treatments.jpg"
+        image="https://www.ultimatehealthdpc.com/assets/iv-infusion-treatments-eb346629.jpg"
         url="https://www.ultimatehealthdpc.com/vitamin-infusions"
       />
       <TopBar />
