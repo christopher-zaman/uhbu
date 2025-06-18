@@ -48,7 +48,9 @@ import HouseCalls from './pages/HouseCalls';
 import MentalHealth from './pages/MentalHealth';
 import HairRestoration from './pages/HairRestoration';
 import MentalWellness from './pages/MentalWellness';
+import usePageTracking from './hooks/usePageTracking';
 function App() {
+  usePageTracking();
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
@@ -58,11 +60,11 @@ function App() {
   
   return (
     <>
+    
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/semaglutide" element={<Semaglutide />} />
-      <Route path="/tirzepatide" element={<Tirzepatide />} />
       <Route path="/contrave" element={<Contrave />} />
       <Route path="/calocurb" element={<Calocurb />} />
       <Route path="/retatrutide" element={<Retatrutide />} />
@@ -95,7 +97,6 @@ function App() {
       <Route path="/womens-health" element={<WomensHealth />} />
       <Route path="/mens-health" element={<MensHealth />} />
       <Route path="/telemedicine" element={<Telemedicine />} />
-      <Route path="/house-calls" element={<HouseCalls />} />
       <Route path="/hair-restoration" element={<HairRestoration />} />
       <Route path="/mental-health" element={<MentalHealth />} />
       <Route path="/mental-wellness" element={<MentalWellness />} />

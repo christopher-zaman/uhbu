@@ -28,7 +28,6 @@ function NavBar() {
         href: '/weight-loss',
         items: [
           { label: '💉 Semaglutide', href: 'semaglutide' },
-          { label: '💉 Tirzepatide', href: 'tirzepatide' },
           { label: '💊 Contrave', href: 'contrave' },
           { label: '🌿 Calocurb', href: 'calocurb' },
           { label: '💉 Retatrutide', href: 'retatrutide' },
@@ -87,7 +86,6 @@ function NavBar() {
           { label: 'Women\'s Health', href: 'womens-health' },
           { label: 'Men\'s Health', href: 'mens-health' },
           { label: 'Telemedicine', href: 'telemedicine' },
-          { label: 'House calls', href: 'house-calls' },
           { label: 'Hair Restoration', href: 'hair-restoration' },
           { label: 'Mental Health', href: 'mental-health' },
           { label: 'Mental Wellness', href: 'mental-wellness' },
