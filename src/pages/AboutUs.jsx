@@ -5,8 +5,8 @@ import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 
 import ContentSection from '../components/ContentSection';
-import banner from '../assets/img/amanda-banner.jpg';
-import contentImage from '../assets/img/amanda.jpg';
+import banner from '../assets/img/amanda-banner.webp';
+import contentImage from '../assets/img/amanda.webp';
 import secondImage from '../assets/img/amanda-facetime.webp';
 
 import TextVideoSection from '../components/TextVideoSection';
