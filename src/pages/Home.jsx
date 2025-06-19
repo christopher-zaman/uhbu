@@ -55,10 +55,11 @@ function App() {
 
       <SectionTitle>
         Welcome to <strong>Ultimate Health</strong>{' '}
-        <span className="text-green-600 animate-bounce">Direct Primary Care!</span>
+        <span className="text-green-600">Direct Primary Care!</span>
       </SectionTitle>
 
       <Paragraph className="lead text-gray-500" data-aos="fade-up" data-aos-delay="0">
+        
         We’re so glad you’re here!
 
         At Ultimate Health, we believe going to the doctor should be simple, affordable, and personal. That’s why we do things differently. We’re a Direct Primary Care practice, which means you get care when you need it—without the long waits, surprise bills, or rushed visits.

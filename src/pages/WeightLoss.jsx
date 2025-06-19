@@ -29,6 +29,7 @@ function WeightLoss() {
     subtitle="Doctor-guided, personalized care for lasting weight loss"
      />
      <ContentSection
+     
         id="weight-loss"
         title="Weight Loss"
         subTitle="What We Offer"
