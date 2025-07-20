@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -89,7 +88,16 @@ function Contact() {
                     required
                   />
                 </div>
-                <div className="col-md-12">
+                <div className="col-md-6">
+                  <input
+                    type="tel"
+                    name="phone"
+                    className="form-control"
+                    placeholder="Your Phone"
+                    required
+                  />
+                </div>
+                <div className="col-md-6">
                   <input
                     type="text"
                     name="subject"
