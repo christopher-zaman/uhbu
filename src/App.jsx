@@ -46,6 +46,8 @@ import Telemedicine from './pages/Telemedicine';
 import MentalHealth from './pages/MentalHealth';
 import HairRestoration from './pages/HairRestoration';
 import MentalWellness from './pages/MentalWellness';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import usePageTracking from './hooks/usePageTracking';
 function App() {
   usePageTracking();
@@ -112,6 +114,8 @@ function App() {
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/careers" element={<Careers />} />
       <Route path="/our-practice" element={<OurPractice />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<BlogPost />} /> 
     </Routes>
     
     </>
