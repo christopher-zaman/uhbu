@@ -107,6 +107,8 @@ function Footer() {
               <li><a href="meet-us">About us</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="contact">Contact</a></li>
+              <li><a href="privacy-policy">Privacy Policy</a></li>
+              <li><a href="terms-and-conditions">Terms</a></li>
             </ul>
           </div>
 
