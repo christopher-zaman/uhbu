@@ -4,28 +4,42 @@ import emailjs from '@emailjs/browser';
 function Contact() {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = async (e) => {
+  e.preventDefault();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log('Email sent:', result.text);
-          alert('Message sent successfully!');
-          form.current.reset();
-        },
-        (error) => {
-          console.log('Email error:', error.text);
-          alert('Failed to send message. Please try again later.');
-        }
-      );
-  };
+  // Guard: make sure env vars exist
+  const SERVICE = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const PUBLIC  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+  if (!SERVICE || !TEMPLATE || !PUBLIC) {
+    console.error('EmailJS env vars missing:', { SERVICE, TEMPLATE, PUBLIC });
+    alert('Email settings are not configured. Please try again later.');
+    return;
+  }
+
+  try {
+    const result = await emailjs.sendForm(SERVICE, TEMPLATE, form.current, PUBLIC);
+    console.log('Email sent:', result); // { status: 200, text: 'OK' }
+    alert('Message sent successfully!');
+    form.current.reset();
+  } catch (err) {
+    // log everything useful
+    console.error('EmailJS error:', err, {
+      status: err?.status,
+      text: err?.text,
+      message: err?.message,
+      name: err?.name,
+    });
+
+    alert(
+      `Failed to send message. ${
+        err?.text || err?.message || 'Please try again later.'
+      }`
+    );
+  }
+};
+
 
   return (
     <section id="contact" className="contact section contact-bg">
@@ -115,6 +129,35 @@ function Contact() {
                     required
                   ></textarea>
                 </div>
+
+                {/* New checkbox & disclaimer */}
+                <div className="col-md-12">
+                  <div className="form-check">
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="smsConsent"
+                      name="smsConsent"
+                      required
+                    />
+                    <label className="form-check-label" htmlFor="smsConsent">
+                      By providing my phone number, I consent to receive SMS text messages from
+                      Ultimate Health Direct Primary Care for appointment reminders, marketing
+                      messages, and general two-way communication. Msg frequency varies.
+                      Msg&amp;data rates may apply. Reply HELP for support. Reply STOP to opt out.
+                      Refer to our{' '}
+                      <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+                        privacy policy
+                      </a>{' '}
+                      and{' '}
+                      <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+                        terms and conditions
+                      </a>{' '}
+                      for more information.
+                    </label>
+                  </div>
+                </div>
+
                 <div className="col-md-12 text-center">
                   <button type="submit">Send Message</button>
                 </div>

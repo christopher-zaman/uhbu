@@ -13,7 +13,7 @@ build/
 *.log
 
 # environment variables
-.env
+.env*
 
 # optional IDE configs
 .vscode/
