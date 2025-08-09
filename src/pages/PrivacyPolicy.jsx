@@ -69,7 +69,7 @@ function PrivacyPolicy() {
           <h3 className="h5 mt-4">Data Security</h3>
           <p className="lead">
             We implement reasonable measures to protect your personal information from unauthorized
-            access or disclosure.
+            access or disclosure. Consumer information is not shared with third parties for marketing purposes
           </p>
 
           <h3 className="h5 mt-4">Contact Us</h3>
