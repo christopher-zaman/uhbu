@@ -1,21 +1,35 @@
-# dependencies
+# Dependencies
 node_modules/
 
-# Vite build cache
-.vite/
-
-# production builds
+# Build / output
 dist/
 build/
+.vite/
 
-# system files
-.DS_Store
+# Logs & debug
 *.log
+npm-debug.log*
+yarn-debug.log*
 
-# environment variables
+# Environment variables
 .env*
+!.env.example
 
-# optional IDE configs
+# IDE / editor configs
 .vscode/
 .idea/
 
+# System files
+.DS_Store
+
+# Testing / coverage
+coverage/
+
+# TypeScript build info (if applicable)
+*.tsbuildinfo
+
+# ESLint / lint caches (if applicable)
+.eslintcache
+
+# Parcel cache (if applicable)
+.parcel-cache/
