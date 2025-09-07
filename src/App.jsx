@@ -51,6 +51,7 @@ import BlogPost from './pages/BlogPost';
 import usePageTracking from './hooks/usePageTracking';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
+import PaymentPlans from './pages/PaymentPlans';
 function App() {
   usePageTracking();
   useEffect(() => {
@@ -120,6 +121,7 @@ function App() {
       <Route path="/blog/:slug" element={<BlogPost />} /> 
       <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> 
+      <Route path="/payment-plans" element={<PaymentPlans />} /> 
     </Routes>
     
     </>
