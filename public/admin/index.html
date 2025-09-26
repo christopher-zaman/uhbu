@@ -8,11 +8,10 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
-      // Force manual init to a path we know won’t be rewritten
+      // Force manual init to avoid SPA rewrite traps
       window.CMS_MANUAL_INIT = true;
       CMS.init({ config: '/config.yml' });
     </script>
   </head>
   <body></body>
 </html>
-
