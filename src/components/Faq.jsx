@@ -77,7 +77,7 @@ function Faq() {
           {/* Image Right Column */}
           <div className="col-lg-6 d-flex align-items-center justify-content-center">
             <img
-              src="assets/img/faq.jpg"
+              src="/assets/img/faq.jpg"
               alt="FAQ"
               className="img-fluid"
               style={{ maxHeight: '400px', objectFit: 'contain' }}

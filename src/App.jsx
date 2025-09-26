@@ -122,6 +122,12 @@ function App() {
       <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> 
       <Route path="/payment-plans" element={<PaymentPlans />} /> 
+
+{/* Create a proper 404 page */}
+      <Route path="*" element={<div style={{padding: '3rem'}}>
+        <h1>Page not found</h1>
+        <p>Try the menu above or <a href="/">go home</a>.</p>
+      </div>} />
     </Routes>
     
     </>

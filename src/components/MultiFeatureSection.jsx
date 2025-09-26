@@ -1,10 +1,16 @@
 import React from 'react';
+// (optional) if you want SPA nav: import { Link } from 'react-router-dom';
+
+function asPath(p = '') {
+  // always return exactly one leading slash
+  return '/' + String(p).replace(/^\/+/, '');
+}
 
 function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false, titleClass = '' }) {
   return (
     <section
-    id="details"
-    className={`details section ${backgroundClass || 'sexual-wellness-bg'} lead`}
+      id="details"
+      className={`details section ${backgroundClass || 'sexual-wellness-bg'} lead`}
     >
       <div className="container">
         {sections.map((section, index) => {
@@ -14,18 +20,17 @@ function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false
 
           return (
             <div
-                className={`row gy-4 align-items-center features-item ${textWhite ? 'text-white' : ''}`}
-                key={index}
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
+              className={`row gy-4 align-items-center features-item ${textWhite ? 'text-white' : ''}`}
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               {/* Text Column */}
               <div className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}>
                 {section.title && <h3 className={titleClass}>{section.title}</h3>}
                 {section.subheading && <p>{section.subheading}</p>}
                 {section.description && <div>{section.description}</div>}
 
-                {/* Original treatments list */}
                 {treatments.length > 0 && (
                   <ul>
                     {treatments.map((item, i) => (
@@ -36,7 +41,6 @@ function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false
                   </ul>
                 )}
 
-                {/* Optional HTML-enhanced list */}
                 {htmlList.length > 0 && (
                   <ul>
                     {htmlList.map((item, i) => (
@@ -52,26 +56,33 @@ function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false
                 {section.extraText && <p>{section.extraText}</p>}
 
                 {section.buttonLink && section.title && (
-                section.buttonLink.startsWith('http') ? (
-                  <a
-                    href={section.buttonLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-success mt-2"
-                    aria-label={section.buttonText || `Get Started with ${section.title}`}
-                  >
-                    {section.buttonText || `Get Started with ${section.title}`}
-                  </a>
-                ) : (
-                  <a
-                    href={`/${section.buttonLink}`}
-                    className="btn btn-success mt-2"
-                    aria-label={section.buttonText || `Get Started with ${section.title}`}
-                  >
-                    {section.buttonText || `Get Started with ${section.title}`}
-                  </a>
-                )
-              )}
+                  // External vs internal
+                  String(section.buttonLink).startsWith('http')
+                    ? (
+                      <a
+                        href={section.buttonLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-success mt-2"
+                        aria-label={section.buttonText || `Get Started with ${section.title}`}
+                      >
+                        {section.buttonText || `Get Started with ${section.title}`}
+                      </a>
+                    )
+                    : (
+                      <a
+                        href={asPath(section.buttonLink)}   // << normalize here
+                        className="btn btn-success mt-2"
+                        aria-label={section.buttonText || `Get Started with ${section.title}`}
+                      >
+                        {section.buttonText || `Get Started with ${section.title}`}
+                      </a>
+                      // If you prefer SPA nav:
+                      // <Link to={asPath(section.buttonLink)} className="btn btn-success mt-2">
+                      //   {section.buttonText || `Get Started with ${section.title}`}
+                      // </Link>
+                    )
+                )}
               </div>
 
               {/* Image/Video Column */}

@@ -17,7 +17,7 @@ function Pricing() {
           <h3>Free Plan</h3>
           <p className="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
           <h4><sup>$</sup>0<span> / month</span></h4>
-          <a href="#" className="cta-btn">Start a free trial</a>
+          <a href="/contact" className="cta-btn">Start a free trial</a>
           <p className="text-center small">No credit card required</p>
           <ul>
             <li><i className="bi bi-check" /> <span>Quam adipiscing vitae proin</span></li>
@@ -36,7 +36,7 @@ function Pricing() {
           <h3>Business Plan</h3>
           <p className="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
           <h4><sup>$</sup>29<span> / month</span></h4>
-          <a href="#" className="cta-btn">Start a free trial</a>
+          <a href="/contact" className="cta-btn">Start a free trial</a>
           <p className="text-center small">No credit card required</p>
           <ul>
             <li><i className="bi bi-check" /> <span>Quam adipiscing vitae proin</span></li>
@@ -54,7 +54,7 @@ function Pricing() {
           <h3>Developer Plan</h3>
           <p className="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
           <h4><sup>$</sup>49<span> / month</span></h4>
-          <a href="#" className="cta-btn">Start a free trial</a>
+          <a href="/contact" className="cta-btn">Start a free trial</a>
           <p className="text-center small">No credit card required</p>
           <ul>
             <li><i className="bi bi-check" /> <span>Quam adipiscing vitae proin</span></li>

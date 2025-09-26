@@ -1,4 +1,6 @@
 import React from 'react';
+// at top
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -103,24 +105,25 @@ function Footer() {
           <div className="col-lg-2 col-md-3 footer-links">
             <h3>Links</h3>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="meet-us">About us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="contact">Contact</a></li>
-              <li><a href="privacy-policy">Privacy Policy</a></li>
-              <li><a href="terms-and-conditions">Terms</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/meet-us">About us</Link></li>
+              <li><Link to="/blog">Blog</Link></li>   {/* change to your blog route or remove if none */}
+              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+              <li><Link to="/terms-and-conditions">Terms</Link></li>
             </ul>
+
           </div>
 
           <div className="col-lg-2 col-md-3 footer-links">
             <h3>Services</h3>
             <ul>
-              <li><a href="weight-loss">Weight Loss</a></li>
-              <li><a href="hormone-replacement-therapy">Hormone Therapy</a></li>
-              <li><a href="peptide-therapy">Peptide Therapy</a></li>
-              <li><a href="sexual-wellness-treatments">Sexual Wellness</a></li>
-              <li><a href="primary-care">Primary Care</a></li>
-              <li><a href="skin-pen">Aesthetics</a></li>
+              <li><a href="/weight-loss">Weight Loss</a></li>
+              <li><a href="/hormone-replacement-therapy">Hormone Therapy</a></li>
+              <li><a href="/peptide-therapy">Peptide Therapy</a></li>
+              <li><a href="/sexual-wellness-treatments">Sexual Wellness</a></li>
+              <li><a href="/primary-care">Primary Care</a></li>
+              <li><a href="/skin-pen">Aesthetics</a></li>
             </ul>
           </div>
 

@@ -58,7 +58,7 @@ function Duo(){
                 ],
             image: contentImage,
             bgClass: "blue-fade-bg",
-            buttonLink: "/duo"
+            buttonLink: "payment-plans"
         },
         ]}
          />

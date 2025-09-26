@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 function Testimonials() {
   return (
     <section id="testimonials" className="testimonials section dark-background">
-      {/* <img src="assets/img/testimonials-bg.jpg" className="testimonials-bg" alt="Testimonials" /> */}
+      {/* <img src="/assets/img/testimonials-bg.jpg" className="testimonials-bg" alt="Testimonials" /> */}
       <div className="container" data-aos="fade-up" data-aos-delay={100}>
         <Swiper
           modules={[Pagination, Autoplay]}
@@ -20,7 +20,7 @@ function Testimonials() {
         <SwiperSlide>
   <div className="testimonial-item">
     <img 
-    src="assets/img/testimonials/testimonials-1.webp" 
+    src="/assets/img/testimonials/testimonials-1.webp" 
     className="testimonial-img" 
     alt="Client Review"
     width="88"
@@ -44,7 +44,7 @@ function Testimonials() {
 <SwiperSlide>
   <div className="testimonial-item">
     <img 
-    src="assets/img/testimonials/testimonials-2.webp" 
+    src="/assets/img/testimonials/testimonials-2.webp" 
     className="testimonial-img" 
     alt="Client Review"
     width="88"
@@ -68,7 +68,7 @@ function Testimonials() {
 <SwiperSlide>
   <div className="testimonial-item">
     <img 
-    src="assets/img/testimonials/testimonials-3.webp" 
+    src="/assets/img/testimonials/testimonials-3.webp" 
     className="testimonial-img" 
     alt="Client Review"
     width="88"
@@ -92,7 +92,7 @@ function Testimonials() {
 <SwiperSlide>
   <div className="testimonial-item">
     <img 
-    src="assets/img/testimonials/testimonials-3.jpg" 
+    src="/assets/img/testimonials/testimonials-3.jpg" 
     className="testimonial-img" 
     alt="Client Review"
     width="88"
@@ -116,7 +116,7 @@ function Testimonials() {
 <SwiperSlide>
   <div className="testimonial-item">
     <img 
-    src="assets/img/testimonials/testimonials-2.jpg" 
+    src="/assets/img/testimonials/testimonials-2.jpg" 
     className="testimonial-img" 
     alt="Client Review" 
     width="88"

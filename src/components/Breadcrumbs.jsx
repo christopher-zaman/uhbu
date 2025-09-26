@@ -6,7 +6,7 @@ function Breadcrumbs(){
         <nav className="breadcrumbs">
         <div className="container">
             <ol>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li className="current">Starter Page</li>
             </ol>
         </div>

@@ -14,7 +14,7 @@ function Team() {
     <div className="row gy-5">
       <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={100}>
         <div className="member">
-          <div className="pic"><img src="assets/img/team/team-1.jpg" className="img-fluid" alt /></div>
+          <div className="pic"><img src="/assets/img/team/team-1.jpg" className="img-fluid" alt /></div>
           <div className="member-info">
             <h4>Walter White</h4>
             <span>Chief Executive Officer</span>
@@ -29,7 +29,7 @@ function Team() {
       </div>{/* End Team Member */}
       <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={200}>
         <div className="member">
-          <div className="pic"><img src="assets/img/team/team-2.jpg" className="img-fluid" alt /></div>
+          <div className="pic"><img src="/assets/img/team/team-2.jpg" className="img-fluid" alt /></div>
           <div className="member-info">
             <h4>Sarah Jhonson</h4>
             <span>Product Manager</span>
@@ -44,7 +44,7 @@ function Team() {
       </div>{/* End Team Member */}
       <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={300}>
         <div className="member">
-          <div className="pic"><img src="assets/img/team/team-3.jpg" className="img-fluid" alt /></div>
+          <div className="pic"><img src="/assets/img/team/team-3.jpg" className="img-fluid" alt /></div>
           <div className="member-info">
             <h4>William Anderson</h4>
             <span>CTO</span>

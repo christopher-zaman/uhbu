@@ -19,7 +19,7 @@ function Details({
   <div className="container">
     <div className="row gy-4 align-items-center features-item">
       <div className="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay={100}>
-        <img src="assets/img/details-1.png" className="img-fluid" alt />
+        <img src="/assets/img/details-1.png" className="img-fluid" alt />
       </div>
       <div className="col-md-7" data-aos="fade-up" data-aos-delay={100}>
         <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -36,7 +36,7 @@ function Details({
     </div>{/* Features Item */}
     <div className="row gy-4 align-items-center features-item">
       <div className="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay={200}>
-        <img src="assets/img/details-2.png" className="img-fluid" alt />
+        <img src="/assets/img/details-2.png" className="img-fluid" alt />
       </div>
       <div className="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay={200}>
         <h3>Corporis temporibus maiores provident</h3>
@@ -53,7 +53,7 @@ function Details({
     </div>{/* Features Item */}
     <div className="row gy-4 align-items-center features-item">
       <div className="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-        <img src="assets/img/details-3.png" className="img-fluid" alt />
+        <img src="/assets/img/details-3.png" className="img-fluid" alt />
       </div>
       <div className="col-md-7" data-aos="fade-up">
         <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
@@ -67,7 +67,7 @@ function Details({
     </div>{/* Features Item */}
     <div className="row gy-4 align-items-center features-item">
       <div className="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-        <img src="assets/img/details-4.png" className="img-fluid" alt />
+        <img src="/assets/img/details-4.png" className="img-fluid" alt />
       </div>
       <div className="col-md-7 order-2 order-md-1" data-aos="fade-up">
         <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
