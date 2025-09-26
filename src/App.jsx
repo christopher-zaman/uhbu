@@ -123,6 +123,10 @@ function App() {
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> 
       <Route path="/payment-plans" element={<PaymentPlans />} /> 
 
+      <Route path="/blog-cms" element={<BlogCMS />} />
+      <Route path="/blog-cms/:slug" element={<BlogPostCMS />} />
+
+
 {/* Create a proper 404 page */}
       <Route path="*" element={<div style={{padding: '3rem'}}>
         <h1>Page not found</h1>
