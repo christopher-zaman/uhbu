@@ -52,6 +52,9 @@ import usePageTracking from './hooks/usePageTracking';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PaymentPlans from './pages/PaymentPlans';
+import BlogCMS from './pages/BlogCMS';
+import BlogPostCMS from './pages/BlogPostCMS';
+
 function App() {
   usePageTracking();
   useEffect(() => {
