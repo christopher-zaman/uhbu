@@ -1,0 +1,35 @@
+backend:
+  name: github
+  repo: christopher-zaman/uhbu   # <— YOUR REPO FULL NAME
+  branch: main
+  # OAuth provider we'll add shortly (Vercel function or small service)
+  base_url: https://ultimatehealthdpc.com
+  auth_endpoint: /api/decap/auth
+
+media_folder: "public/assets/blog"     # where images get saved in the repo
+public_folder: "/assets/blog"          # how images are referenced on the site
+
+publish_mode: editorial_workflow        # drafts → review → publish
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Blog Post"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["date", "title"]
+    view_groups:
+      - label: "Location"
+        field: "location"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "URL path (no spaces), e.g. hormone-therapy-benefits" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Location", name: "location", widget: "string", default: "Leesburg, FL" }
+      - { label: "Cover Image", name: "coverImage", widget: "image", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "SEO Title", name: "seoTitle", widget: "string", required: false }
+      - { label: "SEO Description", name: "seoDescription", widget: "text", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
