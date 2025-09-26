@@ -5,13 +5,18 @@
     <title>Ultimate Health DPC – Admin</title>
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
+    <!-- 1) Tell Decap to NOT auto-init (must come BEFORE the cms script) -->
     <script>
-      // Force manual init to avoid SPA rewrite traps
       window.CMS_MANUAL_INIT = true;
-      CMS.init({ config: '/config.yml' });
     </script>
+
+    <!-- 2) Load Decap CMS -->
+    <script
+      src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"
+      onload="window.CMS && window.CMS.init({ config: '/config.yml' })"
+    ></script>
+    <!-- Using onload guarantees CMS is defined before we call init -->
   </head>
   <body></body>
 </html>
