@@ -5,10 +5,14 @@
     <title>Ultimate Health DPC – Admin</title>
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+    <script>
+      // Force manual init to a path we know won’t be rewritten
+      window.CMS_MANUAL_INIT = true;
+      CMS.init({ config: '/config.yml' });
+    </script>
   </head>
-  <body>
-    <!-- The CMS mounts itself here -->
-  </body>
+  <body></body>
 </html>
+
