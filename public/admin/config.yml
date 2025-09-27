@@ -5,7 +5,8 @@ backend:
   # OAuth provider we'll add shortly (Vercel function or small service)
   base_url: https://ultimatehealthdpc.com
   auth_endpoint: /api/decap/auth
-
+  site_id: ultimatehealthdpc
+  
 media_folder: "public/assets/blog"     # where images get saved in the repo
 public_folder: "/assets/blog"          # how images are referenced on the site
 

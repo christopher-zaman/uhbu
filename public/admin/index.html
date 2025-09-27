@@ -5,18 +5,32 @@
     <title>Ultimate Health DPC – Admin</title>
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- 1) Tell Decap to NOT auto-init (must come BEFORE the cms script) -->
-    <script>
-      window.CMS_MANUAL_INIT = true;
-    </script>
-
-    <!-- 2) Load Decap CMS -->
-    <script
-      src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"
-      onload="window.CMS && window.CMS.init({ config: '/config.yml' })"
-    ></script>
-    <!-- Using onload guarantees CMS is defined before we call init -->
   </head>
-  <body></body>
+  <body>
+    <!-- Give Decap a stable mount point -->
+    <div id="nc-root"></div>
+
+    <script>
+      // 1) Disable auto init
+      window.CMS_MANUAL_INIT = true;
+
+      // 2) Load Decap only AFTER the DOM is ready, then init with root config
+      function bootCMS() {
+        var s = document.createElement('script');
+        s.src = 'https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js';
+        s.onload = function () {
+          if (window.CMS) {
+            window.CMS.init({ config: '/config.yml' });
+          }
+        };
+        document.head.appendChild(s);
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', bootCMS);
+      } else {
+        bootCMS();
+      }
+    </script>
+  </body>
 </html>

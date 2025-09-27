@@ -63,6 +63,13 @@ function App() {
       once: true,     // only animate once
     });
   }, []);
+
+  function AdminRedirect() {
+  useEffect(() => {
+    window.location.replace('/admin/index.html'); // explicit file path
+  }, []);
+  return null;
+}
   
   return (
     <>
@@ -135,7 +142,12 @@ function App() {
         <h1>Page not found</h1>
         <p>Try the menu above or <a href="/">go home</a>.</p>
       </div>} />
+
+<Route path="/admin" element={<AdminRedirect />} />
+      
     </Routes>
+
+
     
     </>
   );
