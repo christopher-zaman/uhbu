@@ -1,9 +1,9 @@
 // api/decap/[...all].js
 export default async function handler(req, res) {
-  // In Vercel, a catch-all param ends up in req.query.all.
-  // Normalize it to a simple string like "auth" | "callback" | "".
-  const all = req.query?.all;
-  const action = Array.isArray(all) ? (all[0] || "") : (all || "");
+  // Normalize the catch-all segments: may be array, string, or under key "0"
+  const splat = req.query.all ?? req.query['0'];
+  const parts = Array.isArray(splat) ? splat : (splat ? [splat] : []);
+  const path = "/" + parts.join("/");
 
   const {
     OAUTH_CLIENT_ID,
@@ -16,25 +16,36 @@ export default async function handler(req, res) {
     return;
   }
 
+  // TEMP: debug endpoint to see what Vercel is giving us
+  if (path === "/debug") {
+    res.setHeader("Cache-Control", "no-store");
+    return res.status(200).json({
+      rawQuery: req.query,
+      normalizedParts: parts,
+      normalizedPath: path,
+      hasClientId: !!OAUTH_CLIENT_ID,
+      hasClientSecret: !!OAUTH_CLIENT_SECRET,
+    });
+  }
+
   const redirectUri = `${BASE_URL}/api/decap/callback`;
 
-  // 1) /api/decap/auth?provider=github&scope=repo
-  if (action === "auth") {
+  if (path === "/auth") {
     const scope = req.query.scope || "repo";
+    const state = Math.random().toString(36).slice(2);
     const authorizeUrl =
       `https://github.com/login/oauth/authorize` +
       `?client_id=${encodeURIComponent(OAUTH_CLIENT_ID)}` +
       `&redirect_uri=${encodeURIComponent(redirectUri)}` +
-      `&scope=${encodeURIComponent(scope)}`;
+      `&scope=${encodeURIComponent(scope)}` +
+      `&state=${encodeURIComponent(state)}`;
     res.setHeader("Cache-Control", "no-store");
-    res.redirect(authorizeUrl);
-    return;
+    return res.redirect(authorizeUrl);
   }
 
-  // 2) /api/decap/callback?code=...&state=...
-  if (action === "callback") {
+  if (path === "/callback") {
     const code = req.query.code;
-    if (!code) { res.status(400).send("Missing ?code"); return; }
+    if (!code) return res.status(400).send("Missing ?code");
 
     const r = await fetch("https://github.com/login/oauth/access_token", {
       method: "POST",
@@ -46,20 +57,21 @@ export default async function handler(req, res) {
         redirect_uri: redirectUri,
       }),
     });
+
     const json = await r.json();
-    if (!json.access_token) { res.status(401).send("OAuth exchange failed"); return; }
+    if (!json.access_token) return res.status(401).send("OAuth exchange failed");
 
     const token = json.access_token;
-    res.setHeader("Content-Type", "text/html; charset=utf-8");
-    res.status(200).send(`<!doctype html><html><body><script>
+    const html = `<!doctype html><html><body><script>
       (function () {
         var token = ${JSON.stringify(token)};
         window.opener && window.opener.postMessage('authorization:github:success:' + token, '*');
         window.close();
       })();
-    </script>Success. You can close this window.</body></html>`);
-    return;
+    </script>Success. You can close this window.</body></html>`;
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    return res.status(200).send(html);
   }
 
-  res.status(404).send("Not found");
+  return res.status(404).send("Not found");
 }
