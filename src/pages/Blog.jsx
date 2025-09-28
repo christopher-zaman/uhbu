@@ -81,6 +81,34 @@ function Blog() {
               link="/blog/does-the-labia-really-matter"
             />
           </div>
+
+          <div className="col-md-6 col-lg-4 mb-4">
+            <BlogPreview
+              title="Where to Find Safe, Affordable Weight Loss in Leesburg, FL"
+              excerpt="Why “Safe” Matters in Weight Loss"
+              image="/assets/img/blog-images/safe-weight-loss.webp"
+              link="/blog/safe-affordable-weight-loss-in-leesburg-florida"
+            />
+          </div>
+
+          <div className="col-md-6 col-lg-4 mb-4">
+            <BlogPreview
+              title="Top 5 Signs Your Hormones Might Be Out of Balance—And What Leesburg Women Are Doing About It"
+              excerpt="Hormones play a quiet but powerful role in how you feel every day."
+              image="/assets/img/blog-images/hormone-balance.webp"
+              link="/blog/signs-your-hormones-might-be-out-of-balance"
+            />
+          </div>
+
+          <div className="col-md-6 col-lg-4 mb-4">
+            <BlogPreview
+              title="What Direct Primary Care Looks Like in Lake County vs Traditional Insurance"
+              excerpt="The healthcare system can feel like a maze"
+              image="/assets/img/blog-images/health-care-maze.webp"
+              link="/blog/direct-primary-care-versus-traditional-care"
+            />
+          </div>
+
         </div>
       </div>
     </section>
