@@ -53,6 +53,34 @@ function Media() {
           </div>
           
         </div>
+    {/* Row 2 */}
+        <div className="row mb-5">
+            <div className="col-md-6 col-lg-4 mb-4">
+            <MediaPreview
+              title="Orlando-area primary care company plans expansion into men's clinics and spa services"
+              excerpt="Ambitious plans for the future"
+              image="/assets/img/media-images/amanda-daily-commercial.webp"
+              link="/media/orlando-bizjournals"
+            />
+          </div>
+          <div className="col-md-6 col-lg-4 mb-4">
+            <MediaPreview
+              title="Ultimate Health Direct Primary Care: A New Approach to Medical Care Management Multi-Service Primary Care Clinic Launches in Leesburg with Assistance from Florida SBDC at UCF"
+              excerpt="Successful entrepreneurs typically have a spirit, an energy, a kind of determination"
+              image="/assets/img/media-images/sba.svg"
+              link="/media/small-business-administration"
+            />
+          </div>
+          {/* <div className="col-md-6 col-lg-4 mb-4">
+            <MediaPreview
+              title="Tired of your primary care provider? Leesburg practitioner recognized for direct care alternative"
+              excerpt="North Florida’s Top Honorees for 2025"
+              image="/assets/img/media-images/amanda-daily-commercial.webp"
+              link="/media/tired-of-your-primary-care-provider"
+            />
+          </div> */}
+          
+        </div>
 
       </div>
     </section>

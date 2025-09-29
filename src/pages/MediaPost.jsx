@@ -77,90 +77,34 @@ Gaskin has also been recognized as the North Florida District Woman-Owned Small 
 
 
   },
-  'peptide-therapy': {
-    title: 'Peptide Therapy – Is It Just a Trend?',
+  'orlando-bizjournals': {
+    title: 'Orlando-area primary care company plans expansion into men\'s clinics and spa services',
     banner: '/assets/img/why-men-avoid-going-to-the-doctor.jpg',
-    date: 'July 17, 2025',
+    date: 'April 29, 2025',
     content: <>
   <p>
-    You may have heard about peptide therapy on social media or from a friend. It’s gaining popularity fast. But what exactly is it, and does it really work?
+    This rapidly growing medical practice has ambitious plans for the future, including expanding into specialized clinics and wellness services to meet diverse health care needs.
+    <br></br>
+    <a href="https://www.dailycommercial.com/story/news/local/2025/04/15/leesburg-practitioner-wins-prominent-award-for-primary-care-alternative/82567975007/"> Preview the article</a>
   </p>
 
-  <h2>What Are Peptides?</h2>
-  <p>
-    Peptides are short chains of amino acids — the building blocks of protein. They send signals to your body to perform specific functions like healing, muscle growth, fat loss, and more.
-  </p>
-
-  <h2>What Can Peptide Therapy Help With?</h2>
-  <ul>
-    <li>Boosting energy and metabolism</li>
-    <li>Improving muscle mass and recovery</li>
-    <li>Supporting fat loss</li>
-    <li>Enhancing sleep and mood</li>
-    <li>Increasing libido</li>
-    <li>Slowing signs of aging</li>
-  </ul>
-
-  <h2>Is It Safe?</h2>
-  <p>
-    When used correctly under medical supervision, peptide therapy is generally safe and effective. At <strong>Ultimate Health</strong>, we offer personalized peptide treatments based on lab work and your health goals.
-  </p>
-
-  <h2>Not Just a Trend</h2>
-  <p>
-    While it may be trending, peptide therapy is rooted in science. More and more research is showing how targeted peptides can help optimize health naturally.
-  </p>
-
-  <p>
-    Interested in learning more? Let’s chat about whether peptide therapy is a good fit for your wellness journey.
-  </p>
+  
 </>
 
   },
-  'women-and-testosterone-therapy': {
-    title: 'Women and Testosterone Therapy',
+  'small-business-administration': {
+    title: 'Ultimate Health Direct Primary Care: A New Approach to Medical Care Management Multi-Service Primary Care Clinic Launches in Leesburg with Assistance from Florida SBDC at UCF',
     banner: '/assets/img/why-men-avoid-going-to-the-doctor.jpg',
-    date: 'July 18, 2025',
+    date: 'May 5, 2025',
     content: <>
   <p>
-    Most people think testosterone is just for men, but women need it too. In fact, low testosterone levels in women can cause a wide range of frustrating symptoms.
+    Successful entrepreneurs typically have a spirit, an energy, a kind of determination that drives them to meet and overcome the many challenges faced when starting a new business. For Amanda Gaskin (Neil), now the owner and operator of Ultimate Health Direct Primary Care, LLC, it was the conviction that she had a great idea for improving the delivery of healthcare in Lake County, Florida that inspired her to pursue a new venture. With assistance from the Florida Small Business Development Center at the University of Central Florida (FSBDC at UCF), Gaskin was able to turn her idea into reality.
+<br></br><br></br>
+At Ultimate Health Direct Primary Care, Neil and her team do healthcare a little differently. Direct Primary Care (DPC) is a new and innovative personalized approach to medical care management. This affordable, patient-centric model gives members access to unlimited primary care. The focus is to provide every patient with individualized attention to meet his or her specific healthcare needs; 24/7; days, nights, weekends; and in whatever manner they choose: phone, telehealth, email, in office. And it’s all covered by a single, monthly fee. Ultimate Health DPC’s monthly direct pay, flat fee is likely to cover 80-90% of the issues for which patients need to seek medical care, including: routine and preventative care; sick visits, weight loss management, and chronic disease management. Gone are the high costs of standard health insurance with traditional pay-per-visit doctor’s appointment co-pays, and expensive and often unnecessary visits to urgent care centers or emergency rooms. This model works well for patients and their employers alike, resulting in lower expenses and fewer sick days.
+<br></br><br></br>
+“At Ultimate Health DPC, we put the patient back in the center of care,” Gaskin explains. “Personal attention is what we offer. Our billing model supports that focus; it’s set up as a monthly membership model that offers patients unlimited, 24-hour access to me as their primary care provider.” “When the idea for Ultimate Health DPC came to me, I approached my credit union for advice,” recalls Gaskin. “And they referred me to the FSBDC. I am a health care professional, not a businesswoman. At least I wasn’t a businesswoman until I started working with the FSBDC. With their help, today I am.” “I just know I had an idea. With my FSBDC consultant Jamie Mead, she took my idea and helped me write my business plan,” continued Gaskin. “Then together we went after an SBA loan. The FSBDC helped me with everything the bank needed. We checked every box. Jamie made sure we presented a strong loan application and helped me educate our banker and answer his questions about our new cash-based, membership health care model. My consultant ensured we had the data, and that our story was iron clad. And we got the loan!” “If I had to use one word to describe the FSBDC, it would be ‘partner’” said Gaskin. “The SBDC and my consultant Jamie took on my dream and made it her dream. And now it’s come true. We got the loan and now Ultimate Health DPC is off to a great start. We have only been open for 30 days, and we are already halfway to our first-year patient goal,” Gaskin shared proudly. “I think they like us” she concluded with a smile. 
   </p>
 
-  <h2>Signs You May Have Low Testosterone:</h2>
-  <ul>
-    <li>Tired all the time</li>
-    <li>Brain fog or trouble focusing</li>
-    <li>Low sex drive</li>
-    <li>Mood swings or anxiety</li>
-    <li>Weight gain</li>
-    <li>Poor muscle tone</li>
-  </ul>
-
-  <h2>What Causes Low Testosterone in Women?</h2>
-  <ul>
-    <li>Aging</li>
-    <li>Menopause</li>
-    <li>Stress</li>
-    <li>Certain medications or health conditions</li>
-  </ul>
-
-  <h2>How Testosterone Therapy Can Help</h2>
-  <p>When carefully dosed, testosterone therapy can help:</p>
-  <ul>
-    <li>Boost energy and mood</li>
-    <li>Improve sexual wellness</li>
-    <li>Enhance memory and focus</li>
-    <li>Support weight loss and muscle strength</li>
-  </ul>
-
-  <h2>Is It Safe?</h2>
-  <p>
-    Yes, when managed by a qualified provider. At <strong>Ultimate Health</strong>, we take a gentle, personalized approach. We monitor your labs closely and adjust your plan as needed.
-  </p>
-
-  <p>
-    You deserve to feel good in your body. Let’s get your hormones back in balance.
-  </p>
 </>
 
   },
