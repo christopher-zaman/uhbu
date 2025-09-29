@@ -139,6 +139,7 @@ function NavBar() {
           { label: 'Enrollment', href: 'https://app.elationemr.com/book/UltimateHealthDPC', external: true },
           { label: 'Contact Us', href: 'contact' },
           { label: 'Blog', href: 'blog' },
+          { label: 'Media', href: 'media' },
           { label: 'Payment Plans', href: 'payment-plans' },
         ],
       },

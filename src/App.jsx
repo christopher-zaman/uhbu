@@ -47,6 +47,8 @@ import MentalHealth from './pages/MentalHealth';
 import HairRestoration from './pages/HairRestoration';
 import MentalWellness from './pages/MentalWellness';
 import Blog from './pages/Blog';
+import Media from './pages/Media';
+import MediaPost from './pages/MediaPost';
 import BlogPost from './pages/BlogPost';
 import usePageTracking from './hooks/usePageTracking';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -128,6 +130,8 @@ function App() {
       <Route path="/careers" element={<Careers />} />
       <Route path="/our-practice" element={<OurPractice />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/media" element={<Media />} />
+      <Route path="/media/:slug" element={<MediaPost />} />
       <Route path="/blog/:slug" element={<BlogPost />} /> 
       <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> 
