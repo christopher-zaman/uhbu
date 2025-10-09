@@ -10,7 +10,7 @@ import Duo from './pages/Duo';
 import Semaglutide from './pages/Semaglutide';
 import Contrave from './pages/Contrave';
 import Calocurb from './pages/Calocurb';
-import Retatrutide from './pages/Retatrutide';
+
 import LowDoseNaltrexone from './pages/LowDoseNaltrexone';
 import Sermorelin from './pages/Sermorelin';
 import Phentermine from './pages/Phentermine';
@@ -82,7 +82,7 @@ function App() {
       <Route path="/semaglutide" element={<Semaglutide />} />
       <Route path="/contrave" element={<Contrave />} />
       <Route path="/calocurb" element={<Calocurb />} />
-      <Route path="/retatrutide" element={<Retatrutide />} />
+      
       <Route path="/low-dose-naltrexone" element={<LowDoseNaltrexone />} />
       <Route path="/sermorelin" element={<Sermorelin />} />
       <Route path="/phentermine" element={<Phentermine />} />

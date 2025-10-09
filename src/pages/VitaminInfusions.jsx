@@ -22,7 +22,7 @@ import TextImageSection from '../components/TextImageSection';
 import SEO from '../components/SEO';
 
 function VitaminInfusions() {
-  const seo = usePageSEO();
+  
   return (
     <>
     <SEO

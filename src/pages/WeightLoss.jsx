@@ -43,7 +43,7 @@ function WeightLoss() {
             "💉 Tirzepatide - $150/week (2.5 mg & 5 mg), $200/week (7.5 mg & 10 mg)",
             "💊 Contrave - $150 for 30-day supply",
             "🌿 Calocurb - $89 for 30-day supply",
-            "💉 Retatrutide - $150/week",
+
             "💊 Low Dose Naltrexone (LDN) $30/month with GLP-1 plan or $250/month alone",
             "💉 Sermorelin - $299/month",
             "💊 Phentermine - $30/month with GLP-1 plan or $250/month alone",

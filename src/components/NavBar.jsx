@@ -30,7 +30,7 @@ function NavBar() {
           { label: '💉 Semaglutide', href: 'semaglutide' },
           { label: '💊 Contrave', href: 'contrave' },
           { label: '🌿 Calocurb', href: 'calocurb' },
-          { label: '💉 Retatrutide', href: 'retatrutide' },
+          
           { label: '💊 Low Dose Naltrexone', href: 'low-dose-naltrexone' },
           { label: '💉 Sermorelin', href: 'sermorelin' },
           { label: '💊 Phentermine', href: 'phentermine' },

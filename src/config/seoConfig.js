@@ -29,12 +29,7 @@ const seoConfig = {
     image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
     url: "https://www.ultimatehealthdpc.com/calocurb"
   },
-  "/retatrutide": {
-    title: "Retatrutide: Weight Loss Injection | Ultimate Health DPC",
-    description: "A new generation of GLP-1/GIP/GCGR medication for significant fat reduction.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/retatrutide"
-  },
+  
   "/low-dose-naltrexone": {
     title: "Low Dose Naltrexone (LDN) Therapy | Ultimate Health DPC",
     description: "Immune modulation, inflammation control, and support for autoimmune conditions.",
