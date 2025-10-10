@@ -10,7 +10,7 @@ import contentImage from '../assets/img/cjc-1295-ipamorelin.webp';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 
 import SideBySideImages from '../components/SideBySideImages';
-import beforeImage from '../assets/img/sermorelin-1.jpg';
+import beforeImage from '../assets/img/get-fit.jpg';
 import afterImage from '../assets/img/CJC-1295-2.webp';
 
 import SEO from '../components/SEO';

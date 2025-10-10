@@ -92,7 +92,7 @@ const featureSections = [
     </>),
     description: "",
     extraText: "",    
-    image: "/src/assets/img/sermorelin-1.jpg",
+    image: "/src/assets/img/well-being.jpg",
     fallbackMessage: ""
   },
   {
@@ -170,7 +170,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "",
-    image: "/assets/img/wellness/sermorelin.png",
+    image: "/assets/img/wellness/tri-mix.png",
     fallbackMessage: "This is the fallback message"
   },
 
@@ -204,7 +204,7 @@ const featureSections = [
     ],
     description: "",
     extraText: "",
-    image: "/assets/img/wellness/sermorelin-peptide.jpg",
+    image: "/assets/img/wellness/get-fit.jpg",
     fallbackMessage: "This is the fallback message"
   },
 ];

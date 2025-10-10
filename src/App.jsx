@@ -24,7 +24,7 @@ import Testosterone from './pages/Testosterone';
 import PeptideTherapy from './pages/PeptideTherapy';
 import CJC1295Ipamorelin from './pages/CJC-1295-Ipamorelin';
 import BPC157 from './pages/BPC-157';
-import PT141Bremelonotide from './pages/PT-141-Bremelonotide';
+import PT141 from './pages/PT141';
 import AOD9604 from './pages/AOD9604';
 
 import AboutUs from './pages/AboutUs';
@@ -97,7 +97,7 @@ function App() {
       <Route path="/peptide-therapy" element={<PeptideTherapy />} />
       <Route path="/CJC-1295-Ipamorelin" element={<CJC1295Ipamorelin />} />
       <Route path="/BPC-157" element={<BPC157 />} />
-      <Route path="/pt-141-bremelonotide" element={<PT141Bremelonotide />} />
+      <Route path="/pt-141" element={<PT141 />} />
       <Route path="/aod-9604" element={<AOD9604 />} />
       
 
