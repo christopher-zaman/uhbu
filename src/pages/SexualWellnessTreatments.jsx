@@ -36,7 +36,7 @@ function SexualWellnessTreatments() {
           '💉 PT-141 Peptide Therapy',
           '✨ Non-Surgical Labiaplasty',
           '✨ Mons Pubis Reduction',
-          '✨ Labia Plumping with HA Filler + PRP',
+          '✨ Labia Plumping with HA Filler',
           '💥 ALMA Duo ED Treatment',
           '💉 P-Shot (Priapus Shot®)',
           '💊 Oral ED Medications',

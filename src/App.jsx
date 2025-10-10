@@ -7,13 +7,13 @@ import SexualWellnessTreatments from './pages/SexualWellnessTreatments';
 import OShot from './pages/SexualWellnessForHer';
 import PShot from './pages/SexualWellnessForHim';
 import Duo from './pages/Duo';
-import Semaglutide from './pages/Semaglutide';
+
 import Contrave from './pages/Contrave';
 import Calocurb from './pages/Calocurb';
 
-import LowDoseNaltrexone from './pages/LowDoseNaltrexone';
-import Sermorelin from './pages/Sermorelin';
-import Phentermine from './pages/Phentermine';
+
+
+
 import ScrollToTop from './components/ScrollToTop';
 import HormoneTherapy from './pages/HormoneTherapy';
 import WeightLoss from './pages/WeightLoss';
@@ -26,7 +26,7 @@ import CJC1295Ipamorelin from './pages/CJC-1295-Ipamorelin';
 import BPC157 from './pages/BPC-157';
 import PT141Bremelonotide from './pages/PT-141-Bremelonotide';
 import AOD9604 from './pages/AOD9604';
-import Tesamorelin from './pages/Tesamorelin';
+
 import AboutUs from './pages/AboutUs';
 import PrimaryCare from './pages/PrimaryCare';
 import VitaminInjections from './pages/VitaminInjections';
@@ -79,13 +79,13 @@ function App() {
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/semaglutide" element={<Semaglutide />} />
+      
       <Route path="/contrave" element={<Contrave />} />
       <Route path="/calocurb" element={<Calocurb />} />
       
-      <Route path="/low-dose-naltrexone" element={<LowDoseNaltrexone />} />
-      <Route path="/sermorelin" element={<Sermorelin />} />
-      <Route path="/phentermine" element={<Phentermine />} />
+      
+     
+      
 
 
       <Route path="/weight-loss" element={<WeightLoss />} />
@@ -99,7 +99,7 @@ function App() {
       <Route path="/BPC-157" element={<BPC157 />} />
       <Route path="/pt-141-bremelonotide" element={<PT141Bremelonotide />} />
       <Route path="/aod-9604" element={<AOD9604 />} />
-      <Route path="/tesamorelin" element={<Tesamorelin />} />
+      
 
 
       <Route path="/sexual-wellness-treatments" element={<SexualWellnessTreatments />} />

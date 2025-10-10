@@ -27,13 +27,13 @@ function NavBar() {
         title: 'Weight Loss',
         href: '/weight-loss',
         items: [
-          { label: '💉 Semaglutide', href: 'semaglutide' },
+          
           { label: '💊 Contrave', href: 'contrave' },
           { label: '🌿 Calocurb', href: 'calocurb' },
           
-          { label: '💊 Low Dose Naltrexone', href: 'low-dose-naltrexone' },
-          { label: '💉 Sermorelin', href: 'sermorelin' },
-          { label: '💊 Phentermine', href: 'phentermine' },
+          
+          
+          
         ],
       },
       // Hormone Therapy
@@ -56,12 +56,12 @@ function NavBar() {
         title: 'Peptide Therapy',
         href: '/peptide-therapy',
         items: [
-          { label: '💉 Sermorelin', href: 'sermorelin' },
+          
           { label: '💉 CJC-1295 / Ipamorelin', href: 'CJC-1295-Ipamorelin' },
           { label: '💉 BPC-157', href: 'BPC-157' },
-          { label: '💉 PT-141 (Bremelanotide)', href: 'pt-141-bremelonotide' },
+          
           { label: '💉 AOD-9604', href: 'aod-9604' },
-          { label: '💉 Tesamorelin', href: 'tesamorelin' },
+          
         ],
       },
       // Sexual Wellness

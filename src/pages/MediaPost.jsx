@@ -172,7 +172,7 @@ At Ultimate Health Direct Primary Care, Neil and her team do healthcare a little
   <ul>
     <li>Supervision by a licensed medical provider</li>
     <li>Customized plans based on your labs and lifestyle</li>
-    <li>Evidence-based treatments, like FDA-approved medications such as Tirzepatide or Semaglutide</li>
+    
     <li>Built-in accountability so you don’t feel like you’re doing it alone</li>
   </ul>
 

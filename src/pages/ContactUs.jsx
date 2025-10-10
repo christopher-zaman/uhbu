@@ -76,7 +76,7 @@ function ContactUs() {
         title="Key Benefits Include:"
         bullets={[
             'Facial rejuvenation for a youthful contour and firmer skin',
-            'Natural healing with minimal side effects using the body\'s own PRP',
+            
             'Improved skin texture and quality',
             'Non-surgical procedure with minimal recovery time',
             'Quick, typically 30 to 60 minutes per session',

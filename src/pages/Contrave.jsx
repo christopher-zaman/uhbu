@@ -39,7 +39,7 @@ function Contrave() {
         ]}
         listItems={[
             "Promotes steady weight loss by targeting both hunger and cravings.",
-            "Combines two medications — bupropion and naltrexone — for dual action on the brain's appetite control centers.",
+            
             "Helps reduce emotional eating and food-related reward signals.",
             "FDA-approved for chronic weight management in adults with obesity or overweight with weight-related conditions."
             ]}
@@ -55,7 +55,7 @@ function Contrave() {
                 "$150 for 30-day supply",
                 "FDA-approved prescription for long-term weight management.",
                 "Targets hunger and cravings through brain-based appetite control.",
-                "Contains bupropion and naltrexone — a unique combination that supports behavioral change.",
+                
                 "Designed for adults with obesity or those overweight with weight-related medical conditions."
                 ],
             // image: contentImage,

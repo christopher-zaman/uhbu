@@ -5,12 +5,7 @@ const seoConfig = {
     image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
     url: "https://www.ultimatehealthdpc.com/"
   },
-  "/semaglutide": {
-    title: "Semaglutide Weight Loss Injections | Ultimate Health DPC",
-    description: "Lose weight effectively with Semaglutide injections at Ultimate Health DPC in Leesburg, FL. Physician-guided care for sustainable weight loss.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/semaglutide"
-  },
+ 
   "/tirzepatide": {
     title: "Tirzepatide Weight Loss Program | Ultimate Health DPC",
     description: "Boost fat loss and insulin sensitivity with Tirzepatide at Ultimate Health DPC.",
@@ -30,24 +25,9 @@ const seoConfig = {
     url: "https://www.ultimatehealthdpc.com/calocurb"
   },
   
-  "/low-dose-naltrexone": {
-    title: "Low Dose Naltrexone (LDN) Therapy | Ultimate Health DPC",
-    description: "Immune modulation, inflammation control, and support for autoimmune conditions.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/low-dose-naltrexone"
-  },
-  "/sermorelin": {
-    title: "Sermorelin for Anti-Aging & Recovery | Ultimate Health DPC",
-    description: "Peptide therapy for better sleep, muscle recovery, and GH support.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/sermorelin"
-  },
-  "/phentermine": {
-    title: "Phentermine Weight Loss Program | Ultimate Health DPC",
-    description: "A proven appetite suppressant prescribed safely by your DPC provider.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/phentermine"
-  },
+  
+
+  
   "/weight-loss": {
     title: "Medical Weight Loss in Leesburg, FL | Ultimate Health DPC",
     description: "Safe, customized weight loss programs at Ultimate Health DPC.",
@@ -114,12 +94,7 @@ const seoConfig = {
     image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
     url: "https://www.ultimatehealthdpc.com/aod-9604"
   },
-  "/tesamorelin": {
-    title: "Tesamorelin Peptide Therapy | Ultimate Health DPC",
-    description: "Target visceral fat and improve metabolic function with Tesamorelin.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/tesamorelin"
-  },
+
   "/sexual-wellness-for-him": {
     title: "Sexual Wellness for Men | Ultimate Health DPC",
     description: "P-Shot®, ED treatment, PT-141, and male enhancement therapies.",
@@ -140,7 +115,7 @@ const seoConfig = {
   },
   "/vampire-facial": {
     title: "Vampire Facial® in Leesburg, FL | Ultimate Health DPC",
-    description: "PRP-based microneedling to refresh and smooth aging skin.",
+    description: "Microneedling to refresh and smooth aging skin.",
     image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
     url: "https://www.ultimatehealthdpc.com/vampire-facial"
   },
@@ -176,7 +151,7 @@ const seoConfig = {
   },
   "/hair-restoration": {
     title: "Hair Restoration in Leesburg, FL | Ultimate Health DPC",
-    description: "Regrow thinning hair with PRP or medication-based treatment plans.",
+    description: "Regrow thinning hair with medication-based treatment plans.",
     image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
     url: "https://www.ultimatehealthdpc.com/hair-restoration"
   },

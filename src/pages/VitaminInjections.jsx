@@ -8,8 +8,6 @@ import SideBySideImages from '../components/SideBySideImages';
 import AlternatingColumns from '../components/AlternatingColumns';
 
 import banner from '../assets/img/primary-care-banner.png';
-import beforeImage from '../assets/img/naltrexone-1.png';
-import afterImage from '../assets/img/naltrexone-2.jpg';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';

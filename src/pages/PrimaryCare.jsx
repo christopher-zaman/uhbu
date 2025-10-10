@@ -9,13 +9,6 @@ import banner from '../assets/img/primary-care-banner.png';
 import contentImage from '../assets/img/gallery-9.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 
-import SideBySideImages from '../components/SideBySideImages';
-import beforeImage from '../assets/img/naltrexone-1.png';
-import afterImage from '../assets/img/naltrexone-2.jpg';
-import Features from '../components/Features';
-import FeatureItems from '../components/FeatureItems';
-import Gallery from '../components/Gallery';
-import Services from '../components/Services';
 
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';

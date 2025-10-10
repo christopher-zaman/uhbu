@@ -23,8 +23,8 @@ const htmlList = [
     <li>
       <span>
         <FontAwesomeIcon icon={faStar} className="text-warning me-2" />
-        <strong>PRP Therapy (Platelet-Rich Plasma): – </strong>
-        We use your body’s own powerful growth factors to stimulate dormant hair follicles. PRP involves a simple blood draw, after which your plasma is processed and injected directly into the scalp to encourage natural hair growth and strengthen thinning hair.
+        <strong>Hair Growth: – </strong>
+        We use your body’s own powerful growth factors to stimulate dormant hair follicles. Involves a simple blood draw, after which your plasma is processed and injected directly into the scalp to encourage natural hair growth and strengthen thinning hair.
       </span>
     </li>
     <li>
@@ -84,7 +84,7 @@ function HairRestoration() {
         // listItems={[
         //   ""
         // ]}
-        video="/assets/video/prp-hair.mp4"  // ← this is the public path
+        video="/assets/video/hair-growth.mp4"  // ← this is the public path
       />
 
       <MultiFeatureSection

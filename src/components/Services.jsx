@@ -4,21 +4,7 @@ import Divider from '../components/Divider';
 import { Link } from 'react-router-dom';    
 
 const defaultServices = [
-  {
-    title: 'Weight Loss',
-    description: [
-    'GLP1A/Semaglutide',
-    'FDA approved',
-    'Treats chronic weight loss in adults with obesity',
-    'Control blood sugar levels',
-    'Type 2 diabetes',
-    'Lipotropic injection',
-    '(Ozempic/Wegovy)'
-    ],
-    image: '/assets/img/wellness/weight-loss.jpg',
-    
-    link: '/semaglutide'
-  },
+  
   {
     title: 'Hormone Replacement Therapy',
     description: [
@@ -38,12 +24,12 @@ const defaultServices = [
   {
     title: 'Peptide Therapy',
     description: [
-    '💉 Sermorelin',
+    
     '💉 CJC-1295 / Ipamorelin',
     '💉 BPC-157',
-    '💉 PT-141 (Bremelanotide)',
+   
     '💉 AOD-9604',
-    '💉 Tesamorelin',
+    
     ],
     image: '/assets/img/wellness/peptide-therapy.png',
     link: '/peptide-therapy',

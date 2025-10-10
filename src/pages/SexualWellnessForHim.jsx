@@ -38,7 +38,7 @@ const featureList = [
   },
   { 
     icon: "bi-shuffle", 
-    title: "✨ Labia Plumping with HA Filler + PRP", 
+    title: "✨ Labia Plumping with HA Filler", 
     subtext: "Restores volume to thinning labia for a fuller, more youthful appearance. This treatment also helps protect against discomfort from friction during activities or intimacy",
     color: "#47aeff" 
   },
@@ -135,7 +135,7 @@ const featureSections = [
   },
   {
     title: "💉 P-Shot (Priapus Shot®)",
-    subheading: "The P-Shot uses your own platelet-rich plasma (PRP) to regenerate tissue and improve blood flow to the penis. Benefits may include:",
+    subheading: "The P-Shot uses regenerative tissue to improve blood flow to the penis. Benefits may include:",
     treatments: [
       "Stronger, firmer erections", 
       "Lubrication and moisture", 

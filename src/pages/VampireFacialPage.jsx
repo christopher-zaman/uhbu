@@ -35,7 +35,7 @@ function VampireFacialPage() {
         body={
             <>
             <p>
-                A vampire facial, or Platelet-Rich Plasma (PRP) therapy, harnesses the body's own healing mechanisms and cellular resources for skin rejuvenation, utilizing the plasma and platelets found in your blood.
+                A vampire facial, harnesses the body's own healing mechanisms and cellular resources for skin rejuvenation, utilizing the plasma and platelets found in your blood.
             </p>
             <p>
                 Platelets play a key role in healing by fostering cell renewal, boosting collagen formation, enhancing blood circulation, and diminishing inflammation. In this process, blood is drawn and processed in a centrifuge to enrich the plasma, which is then re-injected into the skin, encouraging the development of new collagen and diminishing aging signs.
@@ -79,7 +79,7 @@ function VampireFacialPage() {
         title="Key Benefits Include:"
         bullets={[
             'Facial rejuvenation for a youthful contour and firmer skin',
-            'Natural healing with minimal side effects using the body\'s own PRP',
+            'Natural healing with minimal side effects',
             'Improved skin texture and quality',
             'Non-surgical procedure with minimal recovery time',
             'Quick, typically 30 to 60 minutes per session',

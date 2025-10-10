@@ -37,7 +37,7 @@ const featureList = [
   },
   { 
     icon: "bi-shuffle", 
-    title: "✨ Labia Plumping with HA Filler + PRP", 
+    title: "✨ Labia Plumping with HA Filler", 
     subtext: "Restores volume to thinning labia for a fuller, more youthful appearance. This treatment also helps protect against discomfort from friction during activities or intimacy",
     color: "#47aeff" 
   },
@@ -142,7 +142,7 @@ const featureSections = [
   },
   {
     title: "💉 The O-Shot®",
-    subheading: "A revolutionary treatment using your body’s own PRP (Platelet-Rich Plasma) to:",
+    subheading: "A revolutionary treatment to:",
     treatments: [
       "Increase arousal and natural lubrication", 
       "Improve orgasm sensitivity", 
@@ -187,7 +187,7 @@ function OShot() {
         sections={featureSections} 
       />
       <InfoSplitSection
-        paragraph="The O-Shot, or Orgasm Shot, is a non-surgical procedure that utilizes Platelet-Rich Plasma (PRP) therapy to rejuvenate and revitalize intimate areas in women. This groundbreaking treatment harnesses the natural healing properties of your own blood to enhance sexual function and address various concerns related to female intimate wellness"
+        paragraph="The O-Shot, or Orgasm Shot, is a non-surgical procedure that rejuvenates and revitalizes intimate areas in women. This groundbreaking treatment harnesses the natural healing properties of your own blood to enhance sexual function and address various concerns related to female intimate wellness"
         leftColumnTitle="Understanding the O-Shot"
         rightColumnTitle="Benefits of the O-Shot"
         listItems={[

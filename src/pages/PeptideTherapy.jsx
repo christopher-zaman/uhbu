@@ -72,12 +72,12 @@ function PeptideTherapy() {
             description: (
             <>
                 <ul className="blurred-bg p-2">
-                    <li><span className="d-inline-block"><strong> 💉 Sermorelin</strong> – Stimulates natural growth hormone production. Helps improve energy, muscle tone, sleep, and overall well-being. Often used for anti-aging and fat loss.</span></li>
+                    
                     <li><span className="d-inline-block"><strong> 💉 CJC-1295 / Ipamorelin</strong> – This powerful duo boosts growth hormone while minimizing side effects. Great for fat burning, lean muscle gain, better recovery, and deep sleep.</span></li>
                     <li><span className="d-inline-block"><strong> 💉 BPC-157</strong> – Known as the 'Body Protection Compound,' this peptide helps heal joints, muscles, and the gut. Great for athletes, injury recovery, or anyone with inflammation.</span></li>
-                    <li><span className="d-inline-block"><strong> 💉 PT-141 (Bremelanotide)</strong> – Supports libido and sexual function—works for both men and women. Can also enhance energy and mood.</span></li>
+                
                     <li><span className="d-inline-block"><strong> 💉 AOD-9604</strong> – A fat-burning peptide that mimics the part of growth hormone responsible for breaking down fat. Great for weight loss support when paired with healthy habits.</span></li>
-                    <li><span className="d-inline-block"><strong> 💉 Tesamorelin</strong> – Another growth hormone–stimulating peptide, great for reducing stubborn belly fat and improving body composition—especially helpful for patients with insulin resistance or metabolic concerns.</span></li>
+                    
                 </ul>
             </>
             ),
