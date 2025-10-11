@@ -81,15 +81,28 @@ function SpaServices() {
             description: (
             <>
                 <ul className="blurred-bg p-2">
-                    
-                    <li><span className="d-inline-block">Whether you’re preparing for a special occasion, maintaining your skin health, or simply treating yourself, our team is here to help you shine.</span></li>
+  <li>
+    <span className="d-inline-block">
+      Whether you’re preparing for a special occasion, maintaining your skin health, or simply treating yourself, our team is here to help you shine.
+    </span>
+  </li>
 
-                    <li><span className="d-inline-block">📍 Find us at 711 North 3rd Street, Leesburg, FL 34748</span></li>
+  <li>
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=711%20North%203rd%20Street%2C%20Leesburg%2C%20FL%2034748"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="d-inline-block"
+      aria-label="Open address 711 North 3rd Street, Leesburg, FL 34748 in Google Maps (opens in a new tab)"
+    >
+      📍 Find us at 711 North 3rd Street, Leesburg, FL 34748
+    </a>
+  </li>
 
                     📞 Call us at{" "}
                     <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
                     to book your consultation.
-                    <br></br>
+                    <br></br><br></br>
 
                     🌐 Visit us at
                     <a
