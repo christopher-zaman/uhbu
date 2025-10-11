@@ -7,6 +7,8 @@ import Hero from '../components/Hero';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/weight-loss-banner.jpg';
 import contentImage from '../assets/img/weight-loss.png';
+import contentImage2 from '../assets/img/help1.png';
+import contentImage3 from '../assets/img/what-makes-us-different.png';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 
 import SideBySideImages from '../components/SideBySideImages';
@@ -25,38 +27,97 @@ function WeightLoss() {
     <NavBar />
     <Hero
     backgroundImage={banner}
-    title="Weight Loss"
+    title="Medical Weight Loss in Leesburg, FL"
     subtitle="Doctor-guided, personalized care for lasting weight loss"
      />
      <ContentSection
-     
         id="weight-loss"
-        title="Weight Loss"
+        title="Medical Weight Loss in Leesburg, FL"
         subTitle="What We Offer"
         paragraphs={[
-            "We offer several trusted and effective weight loss options right here at Ultimate Health DPC in Leesburg. No need to visit a pharmacy—all medications are available in-office, making it easy and convenient to stay on track.",
-            "Our doctor-guided program includes weekly check-ins, nutrition guidance, and personalized support.",
-            "Experience real results, safely and sustainably — without the high costs of insurance-based care."
+          <>
+          <>
+            At <strong>Ultimate Health Direct Primary Care</strong>, we understand that weight management isn’t one-size-fits-all. Our medical weight loss program is designed around you—your health history, lifestyle, and long-term goals.
+          </>
+          
+          </>
         ]}
         listItems={[
             
-            "💉 Tirzepatide - $150/week (2.5 mg & 5 mg), $200/week (7.5 mg & 10 mg)",
-            "💊 Contrave - $150 for 30-day supply",
-            "🌿 Calocurb - $89 for 30-day supply",            
+            "Comprehensive health evaluations to uncover metabolic or hormonal imbalances",
+            "Lab testing to guide safe and effective treatment",
+            "Provider-guided weight management plans that may include advanced therapies when appropriate",            
+            "Ongoing support and accountability with a focus on lifestyle, nutrition, and movement", 
+            <>
+            <>
+              <strong>Note:</strong> All therapies are prescribed only after a full medical evaluation. Some treatments may not be appropriate for every patient.
+            </>
+            </>          
         ]}
         image={contentImage}
         />
         <MultiFeatureSection
         sections={[
         {
-            title: "Weight Loss",
+            title: "Why Choose Medical Weight Loss?",
             description: "",
             treatments: [
-                "Need help choosing the right one for your goals? We’ll work with you to create a personalized weight loss plan that fits your body, your budget, and your lifestyle."
+                "Losing weight on your own can feel frustrating and overwhelming. Fad diets and quick fixes often fail because they don’t address the root causes of weight gain. Our team takes a medical approach, helping you understand your body’s needs and creating a personalized plan that supports safe, sustainable results."
                 ],
-            // image: contentImage,
+            image: contentImage2,
             bgClass: "blue-fade-bg",
             buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"
+        },
+
+        {
+            title: "What Makes Us Different?",
+            description: "",
+            treatments: [
+                <>
+                <>
+                <strong>Personalized care:</strong> We don’t hand you a one-page diet sheet. We dig deep into what your body needs.
+                <br/><br/>
+                <strong>Medical expertise:</strong> Every program is supervised by licensed providers with experience in primary care and weight management.
+                <br/><br/>
+                <strong>Local support:</strong> We’re part of your community here in Leesburg, so we walk this journey with you—not as a number, but as a neighbor.
+                </>
+                </>
+            ],
+            image: contentImage3,
+            bgClass: "blue-fade-bg",
+           //buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"
+        },
+
+        {
+            title: "Get Started Today",
+            description: [
+              <>
+              <>
+              Take the first step toward lasting change. Schedule a consultation at Ultimate Health DPC in Leesburg, FL, and let’s design a plan that works for your health, your body, and your goals.
+              </>
+              <br/>
+              </>
+            ],
+            treatments: [
+                <>
+                  <>
+                    📞 Call us at{" "}
+                    <strong>
+                      <a
+                        href="tel:+13529016582"
+                        className="text-decoration-underline"
+                        style={{ color: 'inherit' }}
+                      >
+                        (352) 901-6582
+                      </a>
+                    </strong>{" "}
+                    to book your consultation.
+                  </>
+                </>
+            ],
+            //image: contentImage3,
+            bgClass: "blue-fade-bg",
+           //buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"
         },
         ]}
          />

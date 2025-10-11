@@ -12,18 +12,7 @@ const seoConfig = {
     image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
     url: "https://www.ultimatehealthdpc.com/tirzepatide"
   },
-  "/contrave": {
-    title: "Contrave Prescription for Weight Loss | Ultimate Health DPC",
-    description: "Suppress appetite and support weight loss with Contrave. Personalized support included.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/contrave"
-  },
-  "/calocurb": {
-    title: "Calocurb Natural Appetite Suppressant | Ultimate Health DPC",
-    description: "Try Calocurb for natural appetite control and better portion discipline.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/calocurb"
-  },
+
   
   
 
@@ -70,30 +59,15 @@ const seoConfig = {
     image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
     url: "https://www.ultimatehealthdpc.com/peptide-therapy"
   },
-  "/CJC-1295-Ipamorelin": {
-    title: "CJC-1295 + Ipamorelin Therapy | Ultimate Health DPC",
-    description: "Synergistic peptide combo to promote natural GH release.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/CJC-1295-Ipamorelin"
-  },
-  "/BPC-157": {
-    title: "BPC-157 Peptide Therapy | Ultimate Health DPC",
-    description: "Boost recovery from injuries and support gut health with BPC-157.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/BPC-157"
-  },
+  
+
   "/pt-141-bremelonotide": {
     title: "PT-141 Peptide Therapy | Ultimate Health DPC",
     description: "Stimulate sexual desire with brain-targeting PT-141 peptide therapy.",
     image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
     url: "https://www.ultimatehealthdpc.com/pt-141-bremelonotide"
   },
-  "/aod-9604": {
-    title: "AOD-9604 Fat-Burning Peptide | Ultimate Health DPC",
-    description: "Stimulate fat loss without affecting blood sugar with AOD-9604.",
-    image: "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/aod-9604"
-  },
+
 
   "/sexual-wellness-for-him": {
     title: "Sexual Wellness for Men | Ultimate Health DPC",

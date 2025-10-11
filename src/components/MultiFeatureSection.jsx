@@ -21,15 +21,15 @@ function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false
           return (
             <div
               className={`row gy-4 align-items-center features-item ${textWhite ? 'text-white' : ''}`}
-              key={index}
+              key={section.key || section.title || index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               {/* Text Column */}
               <div className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}>
                 {section.title && <h3 className={titleClass}>{section.title}</h3>}
-                {section.subheading && <p>{section.subheading}</p>}
-                {section.description && <div>{section.description}</div>}
+                {section.subheading && <>{React.Children.toArray(section.subheading)}</>}
+                {section.description && <div>{React.Children.toArray(section.description)}</div>}
 
                 {treatments.length > 0 && (
                   <ul>
@@ -53,7 +53,7 @@ function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false
                   <p className="fst-italic">{section.fallbackMessage}</p>
                 )}
 
-                {section.extraText && <p>{section.extraText}</p>}
+                {section.extraText && <>{React.Children.toArray(section.extraText)}</>}
 
                 {section.buttonLink && section.title && (
                   // External vs internal

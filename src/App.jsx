@@ -8,8 +8,7 @@ import OShot from './pages/SexualWellnessForHer';
 import PShot from './pages/SexualWellnessForHim';
 import Duo from './pages/Duo';
 
-import Contrave from './pages/Contrave';
-import Calocurb from './pages/Calocurb';
+
 
 
 
@@ -17,15 +16,12 @@ import Calocurb from './pages/Calocurb';
 import ScrollToTop from './components/ScrollToTop';
 import HormoneTherapy from './pages/HormoneTherapy';
 import WeightLoss from './pages/WeightLoss';
-import Estrogen from './pages/Estrogen';
-import Progesterone from './pages/Progesterone';
-import PeriMenopause from './pages/PeriMenopause';
-import Testosterone from './pages/Testosterone';
+
 import PeptideTherapy from './pages/PeptideTherapy';
-import CJC1295Ipamorelin from './pages/CJC-1295-Ipamorelin';
-import BPC157 from './pages/BPC-157';
+
+
 import PT141 from './pages/PT141';
-import AOD9604 from './pages/AOD9604';
+
 
 import AboutUs from './pages/AboutUs';
 import PrimaryCare from './pages/PrimaryCare';
@@ -80,28 +76,16 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       
-      <Route path="/contrave" element={<Contrave />} />
-      <Route path="/calocurb" element={<Calocurb />} />
-      
-      
-     
-      
-
-
       <Route path="/weight-loss" element={<WeightLoss />} />
       <Route path="/hormone-replacement-therapy" element={<HormoneTherapy />} />
-      <Route path="/estrogen" element={<Estrogen />} />
-      <Route path="/progesterone" element={<Progesterone />} />
-      <Route path="/peri-menopause" element={<PeriMenopause />} />
-      <Route path="/testosterone" element={<Testosterone />} />
+     
+     
       <Route path="/peptide-therapy" element={<PeptideTherapy />} />
-      <Route path="/CJC-1295-Ipamorelin" element={<CJC1295Ipamorelin />} />
-      <Route path="/BPC-157" element={<BPC157 />} />
+    
+     
       <Route path="/pt-141" element={<PT141 />} />
-      <Route path="/aod-9604" element={<AOD9604 />} />
       
-
-
+  
       <Route path="/sexual-wellness-treatments" element={<SexualWellnessTreatments />} />
       <Route path="/sexual-wellness-for-her" element={<OShot />} />
       <Route path="/sexual-wellness-for-him" element={<PShot />} />
@@ -115,7 +99,6 @@ function App() {
       <Route path="/hair-restoration" element={<HairRestoration />} />
       <Route path="/mental-health" element={<MentalHealth />} />
       <Route path="/mental-wellness" element={<MentalWellness />} />
-
 
       <Route path="/vitamin-injections" element={<VitaminInjections />} />
       <Route path="/vitamin-infusions" element={<VitaminInfusions />} />
@@ -150,8 +133,6 @@ function App() {
 <Route path="/admin" element={<AdminRedirect />} />
       
     </Routes>
-
-
     
     </>
   );

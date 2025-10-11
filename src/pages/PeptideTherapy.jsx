@@ -33,33 +33,34 @@ function PeptideTherapy() {
      />
      <ContentSection
         id="peptide-therapy"
-        title="Peptide Therapy"
-        subTitle="What Are Peptides?"
+        title="Peptide Therapy in Leesburg, FL"
+        subTitle="Why Consider Peptide Therapy?"
         paragraphs={[
-            "Feeling tired, slow to recover, struggling with weight, or just not quite yourself? Peptide therapy could be the missing piece. At Ultimate Health DPC in Leesburg, we offer cutting-edge peptide treatments to help you look, feel, and perform at your best."
+            <>
+            <p>
+            At <strong>Ultimate Health Direct Primary Care</strong>, we offer advanced therapies that support cellular health, energy, and recovery. Peptides are short chains of amino acids—naturally occurring building blocks in the body—that act as messengers to help regulate important biological functions
+            </p>
+            </>
         ]}
         listItems={[
-            "Peptides are short chains of amino acids—like little messengers that tell your body to heal, repair, and perform certain functions. Think of them as natural boosters that work with your body to improve energy, sleep, metabolism, muscle recovery, and even skin health."
+            "As we age, the body produces fewer of these natural messengers. This can affect energy, sleep, metabolism, focus, and even how we recover from stress or exercise. Peptide therapy is designed to gently encourage the body’s own restorative processes so you can feel and perform at your best."
             ]}
         image={contentImage}
         />
 
         <ContentSection
         id="why-peptide-therapy"
-        title="Why Peptide Therapy?"
+        title="Potential Benefits?"
         subTitle=""
         paragraphs={[
-            "As we age, our body slows down in producing the hormones and proteins that keep us feeling young and vibrant. Peptides help restart that natural process, making them a great option for"
+            "Patients explore peptide therapy for:"
         ]}
         listItems={[
-            "Weight loss support",
-            "Muscle building and faster recovery",
-            "Better sleep",
-            "Improved focus and brain clarity",
-            "Boosted immune system",
-            "Anti-aging and skin rejuvenation",
-            "Increased libido and sexual function",
-            "Joint and tissue healing"
+            "Supporting energy and stamina",
+            "Encouraging healthy metabolism",
+            "Promoting restful sleep",
+            "Enhancing focus and mental clarity",
+            "Assisting in recovery and performance",
             ]}
         image={thirdImage}
         />
@@ -67,16 +68,19 @@ function PeptideTherapy() {
          <TextImageSection 
          bgClass="sexual-wellness-bg"
          section={{
-            title: 'Peptides We Offer at Ultimate Health (Leesburg)',
+            title: 'Our Approach',
             titleClass: 'blurred-bg',
             description: (
             <>
                 <ul className="blurred-bg p-2">
                     
-                    <li><span className="d-inline-block"><strong> 💉 CJC-1295 / Ipamorelin</strong> – This powerful duo boosts growth hormone while minimizing side effects. Great for fat burning, lean muscle gain, better recovery, and deep sleep.</span></li>
-                    <li><span className="d-inline-block"><strong> 💉 BPC-157</strong> – Known as the 'Body Protection Compound,' this peptide helps heal joints, muscles, and the gut. Great for athletes, injury recovery, or anyone with inflammation.</span></li>
+                    <li><span className="d-inline-block"><strong> Comprehensive evaluation:</strong> We begin with a thorough consultation and lab testing to understand your health needs</span></li>
+
+                    <li><span className="d-inline-block"><strong>Personalized plan:</strong> Therapy is customized to your body, lifestyle, and goals</span></li>
                 
-                    <li><span className="d-inline-block"><strong> 💉 AOD-9604</strong> – A fat-burning peptide that mimics the part of growth hormone responsible for breaking down fat. Great for weight loss support when paired with healthy habits.</span></li>
+                    <li><span className="d-inline-block"><strong> Ongoing monitoring:</strong> Adjustments are made along the way to ensure safe, effective results</span></li>
+
+                    <li><span className="d-inline-block"><strong> Note: </strong>All therapies are prescribed only after a full medical evaluation by a licensed provider. Not every option is appropriate for every patient.</span></li>
                     
                 </ul>
             </>
@@ -90,11 +94,18 @@ function PeptideTherapy() {
 
          <ContentSection
         id="how-to-get-started-peptide-therapy"
-        title="How Do I Get Started?"
+        title="Why Choose Ultimate Health in Leesburg?"
         subTitle=""
         paragraphs={[
-            "We’ll draw your labs right here in our office to get a full picture of your hormone and metabolic health. Then we’ll create a personalized peptide plan just for you.",
-            "You’ll receive your peptide therapy in-office or as a prescription for home use—whichever fits your lifestyle best."
+            <>
+            <ul>
+            <li><span><strong>Expert guidance:</strong></span> Experienced providers who understand the science behind peptide therapy</li>
+
+            <li><span><strong>Whole-person care:</strong></span> We don’t just prescribe—we combine therapy with nutrition, lifestyle, and other strategies for lasting results</li>
+
+            <li><span><strong>Local trust:</strong></span> Proudly serving Leesburg and the surrounding Central Florida community with compassionate, patient-centered care</li>
+            </ul>
+            </>
         ]}
         listItems={[
             

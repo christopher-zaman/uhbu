@@ -18,51 +18,25 @@ function NavBar() {
     const navItems = [
       // Home
       // { type: 'link', label: 'Home', href: '/', active: true },
-      { type: 'link', label: 'Exomind', href: 'https://exomindthevillages.com/'},
-      
+      { type: 'link', label: 'Exomind', href: 'https://exomindthevillages.com/', external: true },
+
       // Weight Loss
-      {
-        type: 'dropdown',
-        key: 'dropdown1',
-        title: 'Weight Loss',
-        href: '/weight-loss',
-        items: [
-          
-          { label: '💊 Contrave', href: 'contrave' },
-          { label: '🌿 Calocurb', href: 'calocurb' },
-          
-          
-          
-          
-        ],
-      },
+      { type: 'link', key: 'weightloss', label: 'Weight Loss', href: '/weight-loss' },
+
       // Hormone Therapy
       {
-        type: 'dropdown',
-        key: 'dropdown2',
-        title: 'Hormone Therapy',
+        type: 'link',
+        key: 'hormonetherapy',
+        label: 'Hormone Therapy',
         href: '/hormone-replacement-therapy',
-        items: [
-          { label: '🌸 Peri-menopause', href: 'peri-menopause' },
-          { label: '🌸 Estrogen', href: 'estrogen' },
-          { label: '🌙 Progesterone', href: 'progesterone' },
-          { label: '💪 Testosterone', href: 'testosterone' },
-        ],
       },
       // Peptide Therapy
       {
-        type: 'dropdown',
-        key: 'dropdown3',
-        title: 'Peptide Therapy',
+        type: 'link',
+        key: 'peptidetherapy',
+        label: 'Peptide Therapy',
         href: '/peptide-therapy',
-        items: [
-          
-          { label: '💉 CJC-1295 / Ipamorelin', href: 'CJC-1295-Ipamorelin' },
-          { label: '💉 BPC-157', href: 'BPC-157' },
-          
-          { label: '💉 AOD-9604', href: 'aod-9604' },
-          
-        ],
+        
       },
       // Sexual Wellness
       {
@@ -157,14 +131,21 @@ function NavBar() {
           <ul>
             {navItems.map((item, index) => {
               if (item.type === 'link') {
-                return (
-                  <li key={index}>
-                    <Link to={item.href} className={item.active ? 'active' : ''}>
-                      {item.label}
-                    </Link>
-                  </li>
-                );
-              } else if (item.type === 'dropdown') {
+  const text = item.label || item.title;
+  return (
+    <li key={index}>
+      {item.external ? (
+        <a href={item.href} target="_blank" rel="noopener noreferrer" className={item.active ? 'active' : ''}>
+          {text}
+        </a>
+      ) : (
+        <Link to={item.href} className={item.active ? 'active' : ''}>
+          {text}
+        </Link>
+      )}
+    </li>
+  );
+} else if (item.type === 'dropdown') {
                 return (
                   <li key={item.key} className="dropdown">
                     <a

@@ -21,20 +21,7 @@ const defaultServices = [
     link: '/hormone-replacement-therapy',
     noBullets: true
   },
-  {
-    title: 'Peptide Therapy',
-    description: [
-    
-    '💉 CJC-1295 / Ipamorelin',
-    '💉 BPC-157',
-   
-    '💉 AOD-9604',
-    
-    ],
-    image: '/assets/img/wellness/peptide-therapy.png',
-    link: '/peptide-therapy',
-    noBullets: true
-  },
+  
   {
     title: 'Sexual Wellness',
     description: [
