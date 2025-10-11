@@ -52,6 +52,8 @@ import TermsAndConditions from './pages/TermsAndConditions';
 import PaymentPlans from './pages/PaymentPlans';
 import BlogCMS from './pages/BlogCMS';
 import BlogPostCMS from './pages/BlogPostCMS';
+import RegenerativeTherapy from './pages/RegenerativeTherapy';
+import SpaServices from './pages/SpaServices';
 
 function App() {
   usePageTracking();
@@ -100,8 +102,12 @@ function App() {
       <Route path="/mental-health" element={<MentalHealth />} />
       <Route path="/mental-wellness" element={<MentalWellness />} />
 
+
+      <Route path="/regenerative-therapy" element={<RegenerativeTherapy />} />
+
       <Route path="/vitamin-injections" element={<VitaminInjections />} />
       <Route path="/vitamin-infusions" element={<VitaminInfusions />} />
+      <Route path="/spa-services" element={<SpaServices />} />
       <Route path="/skin-pen" element={<SkinPen />} />
       <Route path="/toskani" element={<Toskani />} />
       <Route path="/neurotoxin" element={<Neurotoxins />} />

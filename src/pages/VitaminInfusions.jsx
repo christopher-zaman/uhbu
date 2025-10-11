@@ -18,7 +18,12 @@ import BulletedTextBlock from '../components/BulletedTextBlock';
 import Faq from '../components/Faq';
 import TripleFAQGrid from '../components/TripleFaqGrid';
 import TripleFeatureFaqGrid from '../components/TripleFeatureFaqGrid';
+
+import ContentSection from '../components/ContentSection';
 import TextImageSection from '../components/TextImageSection';
+import sideImage from '../assets/img/vitamin.png';
+import fourthImage from '../assets/img/why-vitamin.png';
+import spaLogo from '../assets/img/ultimate-health-spa-logo.png'; 
 import SEO from '../components/SEO';
 
 function VitaminInfusions() {
@@ -48,7 +53,7 @@ function VitaminInfusions() {
       /> */}
 
       <TextBlock
-        title="Feel Better, Live Better—One Injection at a Time"
+        title="IV Therapy in Leesburg, FL"
         body="Whether you need a quick energy boost, want to brighten your skin, or support your immune system—our vitamin injections are a fast, effective way to feel your best."
         footer="📞 Call or stop by today to get started. We’ll help you choose the right mix for your body and your goals!"
       />
@@ -59,8 +64,8 @@ function VitaminInfusions() {
                 title: 'Vitamin Infusion Therapy – Leesburg Office',
                 description: (
                 <>
-                    <p>Feeling tired, dehydrated, or just not at your best? <strong>IV hydration therapy</strong> is a fast and powerful way to rehydrate your body, replenish key vitamins and minerals, and leave you feeling refreshed from the inside out.</p>
-                    <p>At <strong>Ultimate Health DPC</strong> in Leesburg, we offer a variety of vitamin infusions tailored to your needs—whether you’re recovering from a rough week, battling burnout, or simply looking to glow up your wellness routine.</p>
+                    <p>At <strong>Ultimate Health Direct Primary Care</strong>, we offer IV therapy as a powerful way to support hydration, energy, immune health, and recovery. Whether you’re feeling run down, preparing for travel, or simply want to give your body a boost, IV therapy delivers essential nutrients directly into the bloodstream for faster absorption and noticeable results.</p>
+                    
                 </>
                 ),
                 image: '/assets/img/vitamins/iv-bag.jpeg',
@@ -72,24 +77,116 @@ function VitaminInfusions() {
       
 
         <TextBlock
-        title="What Is IV Hydration Therapy?"
-        body="IV hydration delivers fluids, vitamins, and nutrients directly into your bloodstream, so your body can absorb everything fully and quickly. You get immediate hydration and targeted nutrients—without having to rely on your digestive system to process it all."
+        title="Why IV Therapy?"
+        body="When taken by mouth, vitamins and nutrients pass through the digestive system, which can limit how much your body absorbs. IV therapy bypasses digestion, allowing higher concentrations of nutrients to reach your cells more efficiently. Patients often report feeling refreshed, energized, and rehydrated after treatment."
         footer=""
       />
 
       <BulletedTextBlock
         title="Benefits of IV Therapy:"
         bullets={[
-            'Rehydrates and restores electrolyte balance',
-            'Boosts energy and mental clarity',
-            'Strengthens immune system',
-            'Speeds up recovery after illness, travel, or workouts',
-            'Supports weight loss and metabolism',
-            'Brightens skin and improves complexion',
-            'Relieves symptoms of stress, fatigue, and hangovers',
+            'Energy and focus',
+            'Immune health during cold and flu season',
+            'Hydration after travel or activity',
+            'Recovery from fatigue or stress',
+            'Overall wellness optimization',
         ]}
-        paragraph="We offer 500 cc and 1000 cc bags, depending on your needs. 💧 📞 Call for pricing and to book your session."
+
+    paragraph={[<>
+                <p>
+                  📞 Call us at{" "}
+                  <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
+                  to book your consultation.
+                </p>
+              </>
+            ]}
+          />
+
+
+<TextImageSection 
+         bgClass="sexual-wellness-bg"
+         section={{
+            title: 'Our Approach',
+            titleClass: 'blurred-bg',
+            description: (
+            <>
+                <ul className="blurred-bg p-2">
+                    
+                    <li><span className="d-inline-block"><strong> Provider-guided care:</strong>   Every IV treatment is administered by trained medical professionals in a safe, clinical setting</span></li>
+
+                    <li><span className="d-inline-block"><strong> Personalized formulas:</strong>  IV blends are tailored to your goals—whether it’s immune support, energy enhancement, or recovery</span></li>
+                
+                    <li><span className="d-inline-block"><strong>Relaxing experience: </strong> Treatments are delivered in a comfortable environment designed to help you recharge</span></li>
+
+                    <li><span className="d-inline-block"><strong> Note: </strong>IV therapy is provided only after evaluation by a licensed provider. Not every option is suitable for every patient.</span></li>
+                    
+                </ul>
+            </>
+            ),
+            image: sideImage,
+            bgClass: "blue-fade-bg",
+            //buttonText: "Get Started with Regenerative Therapy",
+            //buttonLink: "contact"
+        }}
+         />
+
+         <ContentSection
+        id="how-to-get-started-peptide-therapy"
+        title="Why Choose Ultimate Health in Leesburg?"
+        subTitle=""
+        paragraphs={[
+            <>
+            <ul>
+            <li><span><strong>Medical expertise: </strong></span>Experienced providers who understand how IV therapy supports wellness and prevention</li>
+
+            <li><span><strong>Whole-person care: </strong></span>IV therapy is part of a broader approach to health, including nutrition, hormones, and lifestyle strategies</li>
+
+            <li><span><strong>Local trust: </strong></span>Proudly serving Leesburg and surrounding communities with compassionate, patient-centered care</li>
+            </ul>
+            </>
+        ]}
+        listItems={[
+            
+            ]}
+        image={fourthImage}
         />
+
+        <TextBlock
+  title="Book Your IV Therapy Session"
+  body="Give your body the boost it deserves. Schedule an IV therapy appointment at Ultimate Health Direct Primary Care in Leesburg, FL today."
+  footer={[
+    <React.Fragment key="cta">
+      📞 Call us at{" "}
+      <a
+        href="tel:+13529016582"
+        className="phone-chip unstyled-link"
+        aria-label="Call Ultimate Health DPC at (352) 901-6582"
+      >
+        (352) 901-6582
+      </a>{" "}
+      to book your consultation.
+      <br />
+      <br />
+      Or visit us at{" "}
+      <a
+        href="https://ultimatehealthspa.glossgenius.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="external-link"
+        aria-label="Open Ultimate Health Spa (new tab)"
+      >
+        <img
+          src={spaLogo}
+          alt="Ultimate Health Spa"
+          width={150}
+          height={100}
+          loading="lazy"
+        />
+        <span className="ms-2">Ultimate Health Spa</span>
+      </a>
+    </React.Fragment>
+  ]}
+/>
 
 
         <TripleFeatureFaqGrid
@@ -244,11 +341,7 @@ function VitaminInfusions() {
   ]}
 />
 
-        <TextBlock
-            title="Let’s Get You Rehydrated and Recharged"
-            body="IV therapy takes about 45–60 minutes and is done right here in our relaxing Leesburg office. Whether you’re looking to heal, glow, or simply feel better—we’ll help you choose the perfect drip for your goals."
-            footer=" Call us today to schedule your infusion and ask about bag size pricing!"
-        />
+        
       
       <Contact />
       <Footer />

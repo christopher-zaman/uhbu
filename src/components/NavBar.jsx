@@ -65,20 +65,28 @@ function NavBar() {
           { label: 'Mental Wellness', href: 'mental-wellness' },
         ],
       },
-      // Aesthetics
+      // Regenerative Therapy
       {
-        type: 'dropdown',
-        key: 'dropdown6',
-        title: 'Aesthetics',
-        items: [
-          { label: '✨ Vampire Facial & Vampire Face Lift®', href: 'vampire-facial' },
-          { label: '✨ SkinPen Microneedling', href: 'skin-pen' },
-          { label: '✨ Toskani Peptide Cocktails', href: 'toskani' },
-          { label: '✨ Neurotoxins for Fine Lines & Wrinkle Relaxation', href: 'neurotoxin' },
-          { label: '✨ Dermal Fillers', href: 'dermal-filler' },
-          { label: '✨ ALMA FemiLift for Facial Resurfacing', href: 'alma-femi-lift' },
-        ],
+        type: 'link',
+        key: 'regenerativetherapy',
+        label: 'Regenerative Therapy',
+        href: '/regenerative-therapy',
+        
       },
+      // Aesthetics
+      // {
+      //   type: 'dropdown',
+      //   key: 'dropdown6',
+      //   title: 'Aesthetics',
+      //   items: [
+      //     { label: '✨ Vampire Facial & Vampire Face Lift®', href: 'vampire-facial' },
+      //     { label: '✨ SkinPen Microneedling', href: 'skin-pen' },
+      //     { label: '✨ Toskani Peptide Cocktails', href: 'toskani' },
+      //     { label: '✨ Neurotoxins for Fine Lines & Wrinkle Relaxation', href: 'neurotoxin' },
+      //     { label: '✨ Dermal Fillers', href: 'dermal-filler' },
+      //     { label: '✨ ALMA FemiLift for Facial Resurfacing', href: 'alma-femi-lift' },
+      //   ],
+      // },
       // // Cosmetic Injectables
       // {
       //   type: 'dropdown',
@@ -99,6 +107,7 @@ function NavBar() {
         items: [
           { label: '💉 Vitamin Injections', href: 'vitamin-injections' },
           { label: '💧 Vitamin Infusions', href: 'vitamin-infusions' },
+          { label: '🪷 Spa Services', href: 'spa-services' }
         ],
       },
       // About Us

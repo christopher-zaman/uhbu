@@ -113,7 +113,41 @@ function PeptideTherapy() {
         image={fourthImage}
         />
 
-        <SideBySideImages
+        <TextImageSection 
+         bgClass="sexual-wellness-bg"
+         section={{
+            title: 'Take the Next Step',
+            titleClass: 'blurred-bg',
+            description: (
+            <>
+
+                <ul className="blurred-bg p-2">
+                    <li>
+                        <p>
+                        If you’re ready to explore how peptide therapy could help restore balance and vitality, schedule a consultation with our team at 
+                        
+                           <strong> Ultimate Health Direct Primary Care in Leesburg, FL.</strong>
+                            
+                         We begin with a thorough consultation and lab testing to understand your health needs
+                         <br></br><br></br>
+                         📞 Call us at{" "}
+                    <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
+                    to book your consultation.
+                         </p>
+                        
+                    </li>
+                </ul>
+            </>
+            ),
+            
+            image: beforeImage,
+            bgClass: "blue-fade-bg",
+           // buttonText: "Get Started with Peptides",
+            //buttonLink: "contact"
+        }}
+         />
+
+        {/* <SideBySideImages
         title=""
         leftImage={beforeImage}
         rightImage={afterImage}
@@ -122,7 +156,7 @@ function PeptideTherapy() {
         sectionId="before-after"
         className="bg-light peptide-therapy-img"
 
-         />
+         /> */}
     
     <Footer />
     </>
