@@ -1,8 +1,10 @@
 import React from 'react';
-// at top
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Footer() {
+  const { pathname } = useLocation();
+  const showPrimaryCareCta = pathname !== '/primary-care';
+
   return (
     <footer id="footer" className="footer dark-background">
       <div className="container footer-top lead">
@@ -19,86 +21,83 @@ function Footer() {
             </a>
 
             <div
-  className="footer-contact pt-3 footer-links"
-  itemScope
-  itemType="http://schema.org/LocalBusiness"
->
-  <meta itemProp="url" content="https://ultimatehealthdpc.com/" />
-  <span itemProp="name" className="d-none">Ultimate Health DPC</span>
+              className="footer-contact pt-3 footer-links"
+              itemScope
+              itemType="http://schema.org/LocalBusiness"
+            >
+              <meta itemProp="url" content="https://ultimatehealthdpc.com/" />
+              <span itemProp="name" className="d-none">Ultimate Health DPC</span>
 
-  <ul>
-    <li>
-      <strong>Phone:</strong>{'\u00A0'}
-      <a
-        href="tel:+13529016582"
-        className="p-tel"
-        itemProp="telephone"
-      >
-        352-901-6582
-      </a>
-    </li>
+              <ul>
+                <li>
+                  <strong>Phone:</strong>{'\u00A0'}
+                  <a
+                    href="tel:+13529016582"
+                    className="p-tel"
+                    itemProp="telephone"
+                  >
+                    352-901-6582
+                  </a>
+                </li>
 
-    <li>
-      <strong>Email:</strong>{'\u00A0'}
-      <a
-        href="mailto:ultimatehealthdpc@gmail.com"
-        className="u-email"
-        itemProp="email"
-      >
-       ultimatehealthdpc@gmail.com
-      </a>
-    </li>
+                <li>
+                  <strong>Email:</strong>{'\u00A0'}
+                  <a
+                    href="mailto:ultimatehealthdpc@gmail.com"
+                    className="u-email"
+                    itemProp="email"
+                  >
+                    ultimatehealthdpc@gmail.com
+                  </a>
+                </li>
 
-    <li itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-      <a
-        href="https://g.page/AmandaNeilNP?share"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="p-adr h-adr d-inline-block"
-      >
-        <i className="bi bi-geo-alt me-1"></i>
-        <span itemProp="streetAddress">733 North 3rd Street</span>,{' '}
-        <span itemProp="addressLocality">Leesburg</span>,{' '}
-        <span itemProp="addressRegion">FL</span>{' '}
-        <span itemProp="postalCode">34748</span>
-      </a>
-    </li>
-  </ul>
-</div>
-
+                <li itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                  <a
+                    href="https://g.page/AmandaNeilNP?share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-adr h-adr d-inline-block"
+                  >
+                    <i className="bi bi-geo-alt me-1"></i>
+                    <span itemProp="streetAddress">733 North 3rd Street</span>,{' '}
+                    <span itemProp="addressLocality">Leesburg</span>,{' '}
+                    <span itemProp="addressRegion">FL</span>{' '}
+                    <span itemProp="postalCode">34748</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
             <div className="social-links d-flex mt-4">
-              <a 
-              href="https://www.instagram.com/ultimatehealthdpc"
-              className="social-icon"
-              aria-label="Instagram profile for Amanda Gaskin" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              <a
+                href="https://www.instagram.com/ultimatehealthdpc"
+                className="social-icon"
+                aria-label="Instagram profile for Amanda Gaskin"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-              <i className="bi bi-instagram" />
-                
+                <i className="bi bi-instagram" />
               </a>
 
-              <a 
-              href="https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202"
-              className="social-icon"
-              aria-label="LinkedIn profile for Amanda Gaskin" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              <a
+                href="https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202"
+                className="social-icon"
+                aria-label="LinkedIn profile for Amanda Gaskin"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-              <i className="bi bi-linkedin" />
+                <i className="bi bi-linkedin" />
               </a>
 
-              <a 
-              href="https://www.tiktok.com/@ultimatehealthdpc" 
-              className="social-icon"
-              aria-label="TikTok profile for Amanda Gaskin" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              <a
+                href="https://www.tiktok.com/@ultimatehealthdpc"
+                className="social-icon"
+                aria-label="TikTok profile for Amanda Gaskin"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-              <i className="bi bi-tiktok"></i>
+                <i className="bi bi-tiktok"></i>
               </a>
-
             </div>
           </div>
 
@@ -107,12 +106,11 @@ function Footer() {
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/meet-us">About us</Link></li>
-              <li><Link to="/blog">Blog</Link></li>   {/* change to your blog route or remove if none */}
+              <li><Link to="/blog">Blog</Link></li>
               <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions">Terms</Link></li>
             </ul>
-
           </div>
 
           <div className="col-lg-2 col-md-3 footer-links">
@@ -128,7 +126,7 @@ function Footer() {
           </div>
 
           <div className="col-lg-4 col-md-6 footer-about">
-              <h3>Hours</h3>
+            <h3>Hours</h3>
             <div className="footer-contact">
               <ul className="list-unstyled" itemScope itemType="https://schema.org/Organization">
                 <meta itemProp="name" content="Ultimate Health DPC" />
@@ -144,6 +142,17 @@ function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Primary Care CTA on all pages except /primary-care */}
+      {showPrimaryCareCta && (
+        <div className="container mt-3">
+          <p className="text-center m-0">
+            Learn how our{' '}
+            <Link to="/primary-care"><strong>Direct Primary Care in Leesburg</strong></Link>{' '}
+            keeps care affordable and accessible.
+          </p>
+        </div>
+      )}
 
       <div className="container copyright text-center mt-4">
         <p>

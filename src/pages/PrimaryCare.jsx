@@ -7,9 +7,9 @@ import Hero from '../components/Hero';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/primary-care-banner.png';
 import contentImage from '../assets/img/gallery-9.jpg';
-import MultiFeatureSection from '../components/MultiFeatureSection';
 
-
+import TextImageSection from '../components/TextImageSection';
+import sideImage from '../assets/img/membership-based-primary-health-care.webp';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -72,36 +72,59 @@ function PrimaryCare() {
         image={contentImage}
         imageClassName="shadow rounded"
         />
-        <MultiFeatureSection
-        sections={[
-        {
-            title: "Is Direct Primary Care Right for You?",
-            description: (
-                <>
-                <p>DPC is a great fit for anyone who wants more access, more time, and more personalized care—without breaking the bank.
-                </p>
-                <p><strong>You’ll love DPC if you’re:</strong></p>
-                </>
-            ) ,
 
-            treatments: [
-                "Tired of waiting weeks for an appointment",
-                "Wanting longer visits where you’re actually heard",
-                "Self-employed or without insurance",
-                "Paying high premiums but still not getting great care",
-                "Managing chronic conditions like high blood pressure, diabetes, or thyroid issues",
-                "Looking for a provider who treats the whole person—not just symptoms",
-                "A small business owner wanting to offer affordable care to your team",
-                "A parent who needs quick, convenient access for the whole family",
-                ],
-                extraText: "You don’t need insurance to be cared for. You just need a provider who puts you first. That’s what we do here.",
-            // image: contentImage,
+
+        
+
+        {/* New Section */}
+
+        <TextImageSection 
+         bgClass="sexual-wellness-bg"
+         section={{
+            title: 'Is Direct Primary Care Right for You?',
+            titleClass: 'blurred-bg',
+            description: (
+            <>
+                <ul className="blurred-bg p-2 checklist">
+                  <li>
+                    <i className="bi bi-check2-circle" aria-hidden="true"></i>
+                    <span>DPC is a great fit for anyone who wants more access, more time, and more personalized care—without breaking the bank.</span>
+                  </li>
+                  <li className="mt-2 fw-semibold">You’ll love DPC if you’re:</li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>Tired of waiting weeks for an appointment</span></li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>Wanting longer visits where you’re actually heard</span></li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>Self-employed or without insurance</span></li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>Paying high premiums but still not getting great care</span></li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>Managing chronic conditions like high blood pressure, diabetes, or thyroid issues</span></li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>Looking for a provider who treats the whole person—not just symptoms</span></li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>A small business owner wanting to offer affordable care to your team</span></li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>A parent who needs quick, convenient access for the whole family</span></li>
+                  <li><i className="bi bi-check2-circle" aria-hidden="true"></i><span>You don’t need insurance to be cared for. You just need a provider who puts you first. That’s what we do here.</span></li>
+                <li>
+                </li>
+                    📞 Call us at{" "}
+                    <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
+                    to book your consultation.
+                    <br></br><br></br>
+                </ul>
+            </>
+            ),
+            image: sideImage,
             bgClass: "blue-fade-bg",
-            buttonText: "Schedule an Appointment",
-            buttonLink: "contact"
-        },
-        ]}
+            //buttonText: "Get Started with Regenerative Therapy",
+            //buttonLink: "contact"
+        }}
          />
+
+
+
+
+
+
+
+
+
+
         {/* <SideBySideImages
         title=""
         leftImage={beforeImage}

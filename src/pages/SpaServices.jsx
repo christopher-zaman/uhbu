@@ -9,9 +9,7 @@ import banner from '../assets/img/ultimate-health-spa-logo-bg.png';
 import sideImage from '../assets/img/regenerative-therapy.png';
 import contentImage from '../assets/img/spa.png';
 import thirdImage from '../assets/img/spa2.png';
-import fourthImage from '../assets/img/fourth-peptide.png';
 
-import beforeImage from '../assets/img/peptide-therapy-1.jpg';
 import spaLogo from '../assets/img/ultimate-health-spa-logo.png'; 
 import TextImageSection from '../components/TextImageSection';
 import { usePageSEO } from '../hooks/usePageSEO';
