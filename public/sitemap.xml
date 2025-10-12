@@ -1,149 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/starter</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/tirzepatide</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
- 
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core -->
+  <url><loc>https://www.ultimatehealthdpc.com/</loc><lastmod>2025-10-12</lastmod></url>
 
- 
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/weight-loss</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/hormone-replacement-therapy</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/estrogen</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/progesterone</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/peri-menopause</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/testosterone</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/peptide-therapy</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
- 
- 
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/pt-141-bremelonotide</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
+  <!-- Services & Programs -->
+  <url><loc>https://www.ultimatehealthdpc.com/weight-loss</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/hormone-replacement-therapy</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/peptide-therapy</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/pt-141</loc><lastmod>2025-10-12</lastmod></url>
 
-  
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/sexual-wellness-treatments</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/sexual-wellness-for-her</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/sexual-wellness-for-him</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/duo</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/vampire-facial</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/primary-care</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/womens-health</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/mens-health</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/telemedicine</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/house-calls</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/hair-restoration</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/mental-health</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/vitamin-injections</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/vitamin-infusions</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/skin-pen</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/toskani</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/neurotoxin</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/dermal-filler</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/alma-femi-lift</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/meet-us</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/contact</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/careers</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://www.ultimatehealthdpc.com/our-practice</loc>
-    <lastmod>2025-06-08T19:10:23.636672+00:00</lastmod>
-  </url>
+  <!-- Sexual Wellness -->
+  <url><loc>https://www.ultimatehealthdpc.com/sexual-wellness-treatments</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/sexual-wellness-for-her</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/sexual-wellness-for-him</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/duo</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/vampire-facial</loc><lastmod>2025-10-12</lastmod></url>
+
+  <!-- Primary Care & Health -->
+  <url><loc>https://www.ultimatehealthdpc.com/primary-care</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/womens-health</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/mens-health</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/telemedicine</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/hair-restoration</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/mental-health</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/mental-wellness</loc><lastmod>2025-10-12</lastmod></url>
+
+  <!-- Regenerative, Vitamins, Spa, Aesthetics -->
+  <url><loc>https://www.ultimatehealthdpc.com/regenerative-therapy</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/vitamin-injections</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/vitamin-infusions</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/spa-services</loc><lastmod>2025-10-12</lastmod></url>
+
+  <!-- Aesthetics detail pages -->
+  <url><loc>https://www.ultimatehealthdpc.com/skin-pen</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/toskani</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/neurotoxin</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/dermal-filler</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/alma-femi-lift</loc><lastmod>2025-10-12</lastmod></url>
+
+  <!-- Company pages -->
+  <url><loc>https://www.ultimatehealthdpc.com/meet-us</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/contact</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/careers</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/our-practice</loc><lastmod>2025-10-12</lastmod></url>
+
+  <!-- Content hubs (list pages only; individual posts are dynamic and typically generated separately) -->
+  <url><loc>https://www.ultimatehealthdpc.com/blog</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/media</loc><lastmod>2025-10-12</lastmod></url>
+
+  <!-- Policies -->
+  <url><loc>https://www.ultimatehealthdpc.com/privacy-policy</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/terms-and-conditions</loc><lastmod>2025-10-12</lastmod></url>
+  <url><loc>https://www.ultimatehealthdpc.com/payment-plans</loc><lastmod>2025-10-12</lastmod></url>
 </urlset>

@@ -6,16 +6,14 @@ import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 
 import ContentSection from '../components/ContentSection';
-import banner from '../assets/banners/medical-house-calls.webp';
+
 import video from '../videos/exomind-video.mp4';
 import contentImage from '../assets/img/mental-health.webp';
 import myImage from '../assets/img/positive-mental-health.jpg';
-import SecondContentImage from '../assets/img/amanda-facetime.webp';
+
 import MultiFeatureSection from '../components/MultiFeatureSection';
 import Contact from '../components/Contact';
-import SideBySideImages from '../components/SideBySideImages';
-import beforeImage from '../assets/img/house-call-1.png';
-import afterImage from '../assets/img/house-call-2.jpg';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { usePageSEO } from '../hooks/usePageSEO';
@@ -111,16 +109,6 @@ function MentalHealth() {
 />
 
 <Contact />
-
-      {/* <SideBySideImages
-        title=""
-        leftImage={beforeImage}
-        rightImage={afterImage}
-        leftAlt="Before Treatment"
-        rightAlt="After Treatment"
-        sectionId="before-after"
-        className="bg-light mens-health-images"
-      /> */}
 
       <Footer />
     </>

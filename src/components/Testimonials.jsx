@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 function Testimonials() {
   return (
     <section id="testimonials" className="testimonials section dark-background">
-      {/* <img src="/assets/img/testimonials-bg.jpg" className="testimonials-bg" alt="Testimonials" /> */}
+
       <div className="container" data-aos="fade-up" data-aos-delay={100}>
         <Swiper
           modules={[Pagination, Autoplay]}

@@ -49,7 +49,7 @@ function TopBar() {
               <span className="ms-2 fw-semibold">
               <a
                 href="tel:+13529016582"
-                className="text-dark fw-semibold d-flex align-items-center gap-1"
+                className="text-dark fw-semibold d-flex align-items-center gap-1 fs-4"
                 itemProp="telephone"
               >
                 <i className="bi bi-telephone-fill"></i> 352-901-6582

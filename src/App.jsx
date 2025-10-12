@@ -7,22 +7,11 @@ import SexualWellnessTreatments from './pages/SexualWellnessTreatments';
 import OShot from './pages/SexualWellnessForHer';
 import PShot from './pages/SexualWellnessForHim';
 import Duo from './pages/Duo';
-
-
-
-
-
-
 import ScrollToTop from './components/ScrollToTop';
 import HormoneTherapy from './pages/HormoneTherapy';
 import WeightLoss from './pages/WeightLoss';
-
 import PeptideTherapy from './pages/PeptideTherapy';
-
-
 import PT141 from './pages/PT141';
-
-
 import AboutUs from './pages/AboutUs';
 import PrimaryCare from './pages/PrimaryCare';
 import VitaminInjections from './pages/VitaminInjections';
@@ -77,23 +66,15 @@ function App() {
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
-      
       <Route path="/weight-loss" element={<WeightLoss />} />
       <Route path="/hormone-replacement-therapy" element={<HormoneTherapy />} />
-     
-     
       <Route path="/peptide-therapy" element={<PeptideTherapy />} />
-    
-     
       <Route path="/pt-141" element={<PT141 />} />
-      
-  
       <Route path="/sexual-wellness-treatments" element={<SexualWellnessTreatments />} />
       <Route path="/sexual-wellness-for-her" element={<OShot />} />
       <Route path="/sexual-wellness-for-him" element={<PShot />} />
       <Route path="/duo" element={<Duo />} />
       <Route path="/vampire-facial" element={<VampireFacialPage />} />
-
       <Route path="/primary-care" element={<PrimaryCare />} />
       <Route path="/womens-health" element={<WomensHealth />} />
       <Route path="/mens-health" element={<MensHealth />} />
@@ -101,13 +82,12 @@ function App() {
       <Route path="/hair-restoration" element={<HairRestoration />} />
       <Route path="/mental-health" element={<MentalHealth />} />
       <Route path="/mental-wellness" element={<MentalWellness />} />
-
-
       <Route path="/regenerative-therapy" element={<RegenerativeTherapy />} />
-
       <Route path="/vitamin-injections" element={<VitaminInjections />} />
       <Route path="/vitamin-infusions" element={<VitaminInfusions />} />
       <Route path="/spa-services" element={<SpaServices />} />
+      
+{/* Pages not in navbar */}
       <Route path="/skin-pen" element={<SkinPen />} />
       <Route path="/toskani" element={<Toskani />} />
       <Route path="/neurotoxin" element={<Neurotoxins />} />
@@ -120,15 +100,16 @@ function App() {
       <Route path="/our-practice" element={<OurPractice />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/media" element={<Media />} />
+
       <Route path="/media/:slug" element={<MediaPost />} />
       <Route path="/blog/:slug" element={<BlogPost />} /> 
+
       <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
       <Route path="/terms-and-conditions" element={<TermsAndConditions />} /> 
       <Route path="/payment-plans" element={<PaymentPlans />} /> 
-
       <Route path="/blog-cms" element={<BlogCMS />} />
-      <Route path="/blog-cms/:slug" element={<BlogPostCMS />} />
 
+      <Route path="/blog-cms/:slug" element={<BlogPostCMS />} />
 
 {/* Create a proper 404 page */}
       <Route path="*" element={<div style={{padding: '3rem'}}>
@@ -136,13 +117,10 @@ function App() {
         <p>Try the menu above or <a href="/">go home</a>.</p>
       </div>} />
 
-<Route path="/admin" element={<AdminRedirect />} />
-      
+    <Route path="/admin" element={<AdminRedirect />} />
     </Routes>
-    
     </>
   );
 }
-
 export default App;
 

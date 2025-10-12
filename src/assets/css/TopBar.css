@@ -38,3 +38,69 @@
     max-height: 40px;
   }
 }
+
+
+/*  */
+/* ===== TopBar social icons (LinkedIn & Instagram) ===== */
+#top-bar a[href*="linkedin.com"] .bi-linkedin,
+#top-bar a[href*="instagram.com"] .bi-instagram {
+  color: #0b3d5c;                 /* brand navy */
+  font-size: 1.125rem;            /* similar to fs-5 */
+  line-height: 1;
+  transition: color 120ms ease;
+}
+
+#top-bar a[href*="linkedin.com"]:hover .bi-linkedin,
+#top-bar a[href*="linkedin.com"]:focus-visible .bi-linkedin,
+#top-bar a[href*="instagram.com"]:hover .bi-instagram,
+#top-bar a[href*="instagram.com"]:focus-visible .bi-instagram {
+  color: #1f7a8c;                 /* accent on hover/focus */
+}
+
+/* Visible focus ring for keyboard users, no layout shift */
+#top-bar a[href*="linkedin.com"]:focus-visible,
+#top-bar a[href*="instagram.com"]:focus-visible {
+  outline: 2px solid rgba(31, 122, 140, 0.35);
+  outline-offset: 2px;
+  border-radius: 999px;           /* ring looks rounded around icon */
+}
+
+/* ===== TopBar phone link ===== */
+#top-bar a[href^="tel:"] {
+  color: #0b3d5c;                 /* brand navy */
+  font-weight: 600;               /* already in your markup; safe to reinforce */
+  text-decoration: none;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+
+#top-bar a[href^="tel:"]:hover,
+#top-bar a[href^="tel:"]:focus-visible {
+  color: #1f7a8c;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+
+/* Keep the phone icon aligned and inheriting color */
+#top-bar a[href^="tel:"] .bi-telephone-fill {
+  font-size: 1rem;
+  line-height: 1;
+  color: inherit;
+}
+
+/* Accessibility: consistent focus ring on the phone link */
+#top-bar a[href^="tel:"]:focus-visible {
+  outline: 2px solid rgba(31, 122, 140, 0.35);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  #top-bar a[href^="tel:"],
+  #top-bar a[href*="linkedin.com"] .bi-linkedin,
+  #top-bar a[href*="instagram.com"] .bi-instagram {
+    transition: none;
+  }
+}
+

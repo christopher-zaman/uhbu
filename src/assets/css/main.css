@@ -863,10 +863,10 @@ section,
 }
 
 /* Ensure the hero has a height and can position children */
-.hero.section {
+/* .hero.section {
   position: relative;
   min-height: clamp(320px, 55vh, 680px);
-}
+} */
 
 .hero.hero--spa.dark-background {
   background: transparent !important;   /* or background-color: #fff; */
