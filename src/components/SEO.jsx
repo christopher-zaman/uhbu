@@ -1,17 +1,89 @@
+// src/components/SEO.jsx
 import React from 'react';
 import { Helmet } from 'react-helmet';
+
+function JsonLd({ data }) {
+  if (!data) return null;
+  const items = Array.isArray(data) ? data : [data];
+  return items.map((obj, i) => (
+    <script
+      // eslint-disable-next-line react/no-danger
+      key={i}
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(obj) }}
+    />
+  ));
+}
+
+const HOST = 'https://www.ultimatehealthdpc.com';
+const ORG_ID = `${HOST}/#org`;
+const LOCAL_ID = `${HOST}/#local`;
+
+const defaultOrg = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalOrganization',
+  '@id': ORG_ID,
+  name: 'Ultimate Health DPC',
+  url: `${HOST}/`,
+  telephone: '+1-352-901-6582',
+  logo: `${HOST}/assets/img/logo.webp`,
+  sameAs: [
+    'https://www.instagram.com/ultimatehealthdpc',
+    'https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202',
+    'https://www.tiktok.com/@ultimatehealthdpc'
+  ]
+};
+
+const defaultLocal = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': LOCAL_ID,
+  name: 'Ultimate Health DPC',
+  url: `${HOST}/`,
+  image: `${HOST}/assets/img/membership-based-primary-health-care.webp`,
+  telephone: '+1-352-901-6582',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '711 North 3rd Street',
+    addressLocality: 'Leesburg',
+    addressRegion: 'FL',
+    postalCode: '34748',
+    addressCountry: 'US'
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '00:00',
+      closes: '23:59'
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Sunday',
+      opens: '00:00',
+      closes: '00:00'
+    }
+  ],
+  parentOrganization: { '@id': ORG_ID }
+};
 
 const SEO = ({
   title = 'Ultimate Health Direct Primary Care',
   description = 'Affordable Direct Primary Care in Leesburg, FL. Membership-based healthcare for individuals and families.',
-  image = 'https://ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.png',
-  url = 'https://www.ultimatehealthdpc.com/',
+  image = `${HOST}/assets/img/membership-based-primary-health-care.webp`,
+  url = `${HOST}/`,
+  noindex = false,
+  jsonLd // optional: object or array of schema.org objects
 }) => {
   return (
     <Helmet>
       {/* Basic Meta */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+      {/* Canonical */}
+      <link rel="canonical" href={url} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -27,60 +99,9 @@ const SEO = ({
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
 
-      {/* JSON-LD Business Schema (static/global) */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "http://schema.org",
-          "@type": "LocalBusiness",
-          name: "Ultimate Health Direct Primary Care LLC",
-          image: "https://www.ultimatehealthdpc.com/images/uhdpc-logo.svg",
-          telephone: "352-901-6582",
-          url: "https://www.ultimatehealthdpc.com/",
-          logo: "https://ultimatehealthdpc.com/images/logo.png",
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "5.0",
-            ratingCount: "25 reviews"
-          },
-          review: {
-            "@type": "Review",
-            author: {
-              "@type": "Person",
-              name: "Erin McCann"
-            },
-            datePublished: "2022-07-27",
-            reviewBody:
-              "I can't say enough! Amanda found the problem with my weight immediately! Started the program and down 9 lbs in 2 weeks."
-          },
-          sameAs: [
-            "https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202",
-            "https://www.facebook.com/ultimatehealthdpc",
-            "http://www.yelp.com/biz/ultimatehealthdpc",
-            "https://www.instagram.com/ultimatehealthdpc",
-            "https://www.twitter.com/ultimatehealthdpc"
-          ],
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "733 North 3rd Street",
-            addressLocality: "Leesburg",
-            addressRegion: "FL",
-            postalCode: "34748"
-          },
-          openingHoursSpecification: {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: [
-              "Monday",
-              "Tuesday",
-              "Wednesday",
-              "Thursday",
-              "Friday",
-              "Saturday"
-            ],
-            opens: "00:00",
-            closes: "23:59"
-          }
-        })}
-      </script>
+      {/* Global JSON-LD + page-specific JSON-LD */}
+      <JsonLd data={[defaultOrg, defaultLocal]} />
+      <JsonLd data={jsonLd} />
     </Helmet>
   );
 };
