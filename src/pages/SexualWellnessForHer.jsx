@@ -7,6 +7,7 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import FeatureItems from '../components/FeatureItems';
 import InfoSplitSection from '../components/InfoSplitSection';
 import Footer from '../components/Footer';
+import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -83,11 +84,20 @@ const featureSections = [
   {
     title: " Female Sexual Wellness – Leesburg Office",
     subheading: "Women Taking Care of Women",
-    description: "Your sexual health is a vital part of your overall well-being—and you deserve care that’s compassionate, respectful, and tailored to your body. At Ultimate Health DPC in Leesburg, we proudly offer advanced, non-surgical solutions to help women feel confident, comfortable, and in control of their sexual health and intimacy",
-    extraText: "Whether you’re struggling with discomfort, dryness, low desire, or cosmetic concerns—we’re here for you.",    
+    description: "Your sexual health is a vital part of your overall well-being—and you deserve care that’s compassionate, respectful, and tailored to your body. At Ultimate Health DPC in Leesburg, we proudly offer advanced, non-surgical solutions to help women feel confident, comfortable, and in control of their sexual health and intimacy",  
+    extraText: (
+    <>
+    Whether you’re struggling with discomfort, dryness, low desire, or cosmetic concerns—we’re here for you.
+      <p className='mt-4'>
+      {' '}
+      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+      </p>
+    </>
+  ),
     image: "/assets/img/wellness/for-her.jpg",
-    fallbackMessage: ""
+    fallbackMessage: "",
   },
+  
   {
     title: "Common Female Sexual Wellness Concerns",
     subheading: "Sexual dysfunction in women is more common than most people think. Some of the most frequent issues we treat include:",
@@ -101,7 +111,16 @@ const featureSections = [
       "Loss of confidence due to changes after childbirth, aging, or hormones",
     ],
     description: "",
-    extraText: "These issues may be caused by hormone shifts (like menopause or postpartum), past trauma, stress, medication side effects, childbirth, or natural aging. But the good news is—you have options.",
+    extraText: (
+    <>
+      These issues may be caused by hormone shifts (like menopause or postpartum), past trauma, stress, medication side effects, childbirth, or natural aging. But the good news is—you have options.
+      <p className='mt-4'>
+      {' '}
+      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+      </p>
+    </>
+  ),
+    
     image: "/assets/img/wellness/female-sexual-wellness.jpg",
     fallbackMessage: "This is the fallback message"
   },
@@ -122,7 +141,16 @@ const featureSections = [
       "Poor muscle tone after childbirth",
       "Changes due to menopause"
       ],
-    extraText: "Comfortable, non-surgical, and highly effective—Empower helps restore both function and sensation",
+    extraText: (
+        <>
+          Comfortable, non-surgical, and highly effective—Empower helps restore both function and sensation
+          <p className='mt-4'>
+          {' '}
+          Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          </p>
+        </>
+      ),
+    
     image: "/assets/img/wellness/inmode-forma-v.jpg",
   },
   {
@@ -136,7 +164,15 @@ const featureSections = [
       "Improved comfort during intercourse"
     ],
     description: "",
-    extraText: "It’s quick, safe, and has no downtime—just better results and more confidence.",
+    extraText: (
+        <>
+          It’s quick, safe, and has no downtime—just better results and more confidence.
+          <p className='mt-4'>
+          {' '}
+          Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          </p>
+        </>
+      ),
     image: "/assets/img/wellness/alma-femilift.jpg",
     fallbackMessage: "This is the fallback message"
   },
@@ -151,9 +187,17 @@ const featureSections = [
       "Boost overall sexual satisfaction"
     ],
     description: "",
-    extraText: "We also offer O-Shot Arousal Oil and O-Shot CBD Lubricant to complement your in-office treatment and support intimacy at home.",
+     extraText: (
+        <>
+          We also offer O-Shot Arousal Oil and O-Shot CBD Lubricant to complement your in-office treatment and support intimacy at home.
+          <p className='mt-4'>
+          {' '}
+          Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          </p>
+        </>
+      ),
     image: "/assets/img/wellness/o-shot-bottle.webp",
-    fallbackMessage: "This is the fallback message"
+    fallbackMessage: "Orgasm Shot avaialable at Ultimate Health Direct Primary Care in the Leesburg office"
   },
 ];
 

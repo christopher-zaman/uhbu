@@ -9,6 +9,8 @@ import banner from '../assets/banners/womens-health-banner.webp';
 import contentImage from '../assets/img/womens-health.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 
+import PhoneChip from '../components/PhoneChip';
+
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/estrogen.jpg';
 import afterImage from '../assets/img/peri-menopause.png';
@@ -41,9 +43,15 @@ function WomensHealth() {
             "Many women experience these concerns but don’t know where to turn. At Ultimate Health, we offer safe and simple cosmetic gynecology treatments to help improve comfort and confidence.",
             "We offer procedures like labiaplasty and other vaginal rejuvenation services in a private, respectful environment.",
             "This isn’t about vanity. It’s about feeling good in your body and reclaiming your confidence.",
-            "Have questions? We’re here to help you feel heard, respected, and empowered."
+            "Have questions? We’re here to help you feel heard, respected, and empowered.",
+              <>
+              📞 Call us at{" "}
+                <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
+                to book your consultation.
+              </>
+            
             ]}
-
+            
         image={contentImage}
         />
         <MultiFeatureSection
@@ -56,14 +64,21 @@ function WomensHealth() {
                 "💊 Estradiol Creams, Troches, & Pills",
                 "🧴 Compounded Testosterone Cream for Women",
                 "💊 Oral or Topical Progesterone",
-                "💉 SubQ Testosterone Injections"
+                "💉 SubQ Testosterone Injections",
+                
+                
                 ],
+                
+                 
             // image: contentImage,
             bgClass: "blue-fade-bg",
             buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"
         },
+        
         ]}
+        
          />
+         
         <SideBySideImages
         title=""
         leftImage={beforeImage}

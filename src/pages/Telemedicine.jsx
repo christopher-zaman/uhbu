@@ -13,7 +13,7 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/telemedicine-3.jpg';
 import afterImage from '../assets/img/telemedicine-2.jpg';
-
+import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -40,6 +40,9 @@ function Telemedicine() {
         ]}
         listItems={[
             "Telehealth is the distribution of health-related services and information via electronic information and telecommunication technologies. It allows long-distance patient and clinician contact, care, advice, reminders, education, intervention, monitoring, and remote admissions.",
+            <>
+                        Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+                      </>
             ]}
 
         image={contentImage}

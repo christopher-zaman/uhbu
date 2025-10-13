@@ -11,6 +11,7 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/male.jpg';
 import afterImage from '../assets/img/mens-health-2.jpg';
+import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -40,7 +41,10 @@ function MensHealth() {
             "$2,500 (includes six treatments) Alma Duo is an in-office, aesthetic treatment that uses gold standard shock wave technology, focused low-intensity extracorporeal shock wave therapy (LI-ESWT), clinically validated to stimulate better blood flow and restore his natural sexual performance - bringing spontaneity back to his life.",
             "Imagine what your love life would look like without erectile dysfunction. Imagine how close you and your partner could be ... we’ve got proven effective results using our erectile dysfunction treatment Alma Duo! In erectile dysfunction, a male is incapacitated to achieve or sustain the erection of the penis.",
             "This problem negatively affects the sexual life of many men. All men that suffer from ED should ask their doctor for a thorough physical examination to get to the root cause of their dysfunction. The reported prevalence of erectile dysfunction in young men has increased globally over the last decade.",
-            "If you're located in Leesburg Florida or The Villages, Umatilla, Eustis, Tavares, Lady Lake, Clermont, and Fruitland Park then we are the men’s health care clinic offering ed treatment near you!"
+            "If you're located in Leesburg Florida or The Villages, Umatilla, Eustis, Tavares, Lady Lake, Clermont, and Fruitland Park then we are the men’s health care clinic offering ed treatment near you!",
+            <>
+            Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          </>
             ]}
 
         image={contentImage}

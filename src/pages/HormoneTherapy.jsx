@@ -42,9 +42,13 @@ function HormoneTherapy() {
         ]}
         listItems={[
             "Hormones act like messengers in your body, controlling energy, sleep, metabolism, mood, and even how your body responds to stress. As we age, levels naturally shift, and sometimes the imbalance becomes disruptive to daily life.",
-            
+            <li className="list-style-type-none">
+              📞 Call us at{' '}
+              <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{' '}
+              to book your consultation.
+            </li>
             ]}
-
+            
         image={contentImage}
         />
         <MultiFeatureSection
@@ -129,18 +133,10 @@ function HormoneTherapy() {
       treatments: [
                 <>
                   <>
-                    📞 Call us at{" "}
-                    <strong>
-                      <a
-                        href="tel:+13529016582"
-                        className="text-decoration-underline"
-                        style={{ color: 'inherit' }}
-                      >
-                        (352) 901-6582
-                      </a>
-                    </strong>{" "}
-                    to book your consultation.
-                  </>
+              📞 Call us at{" "}
+                <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
+                to book your consultation.
+              </>
                 </>
             ],
       bgClass: "blue-fade-bg",

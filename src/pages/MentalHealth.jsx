@@ -10,7 +10,7 @@ import ContentSection from '../components/ContentSection';
 import video from '../videos/exomind-video.mp4';
 import contentImage from '../assets/img/mental-health.webp';
 import myImage from '../assets/img/positive-mental-health.jpg';
-
+import PhoneChip from '../components/PhoneChip';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 import Contact from '../components/Contact';
 
@@ -88,7 +88,10 @@ function MentalHealth() {
           "At Ultimate Health Direct Primary Care, we believe that mental health is just as important as physical health. Our compassionate healthcare providers offer comprehensive mental health services to address a wide range of emotional and psychological conditions. From depression and anxiety to stress management and counseling, we provide a holistic approach to mental health care to help you achieve emotional well-being."
         ]}
         listItems={[
-          "Home based primary care or the modern day “house call” delivers primary care to the most medically complex (and costliest to the health care system) homebound or home limited patients in society. These patients typically have no continuous follow up care, which continues the cycle of poor health management and is even more expensive and exhaustive for patients and their caregivers."
+          "Home based primary care or the modern day “house call” delivers primary care to the most medically complex (and costliest to the health care system) homebound or home limited patients in society. These patients typically have no continuous follow up care, which continues the cycle of poor health management and is even more expensive and exhaustive for patients and their caregivers.",
+          <>
+            Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          </>
         ]}
         image={contentImage}
       />

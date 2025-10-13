@@ -23,7 +23,7 @@ function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false
               className={`row gy-4 align-items-center features-item ${textWhite ? 'text-white' : ''}`}
               key={section.key || section.title || index}
               data-aos="fade-up"
-              data-aos-delay={index * 100}
+              // data-aos-delay={index * 50}
             >
               {/* Text Column */}
               <div className={`col-md-7 blurred-bg ${isReversed ? 'order-md-2' : ''}`}>
@@ -88,8 +88,8 @@ function MultiFeatureSection({ sections = [], backgroundClass, textWhite = false
               {/* Image/Video Column */}
               <div
                 className={`col-md-5 d-flex align-items-center ${isReversed ? 'order-md-1' : ''}`}
-                data-aos="zoom-out"
-                data-aos-delay={100}
+                data-aos="zoom-in"
+                data-aos-delay={50}
               >
                 {section.video ? (
                   <video className="img-fluid" controls muted loop playsInline>

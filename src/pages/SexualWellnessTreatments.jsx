@@ -8,7 +8,7 @@ import Features from '../components/Features';
 import Footer from '../components/Footer';
 import pshotVideo from '../assets/videos/p-shot.mp4';
 import TextVideoSection from '../components/TextVideoSection';
-
+import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -46,7 +46,7 @@ function SexualWellnessTreatments() {
          /> */}
 
         <TextVideoSection
-          bgClass="sexual-wellness-bg"
+          bgClass="sexual-wellness-bg lead"
           sections={[
             {
               title: 'Sexual Wellness Treatments',
@@ -59,11 +59,29 @@ function SexualWellnessTreatments() {
                   '💉 PT-141 Peptide Therapy',
                   '💥 ALMA Duo ED Treatment',
                   '💉 P-Shot (Priapus Shot®)',
-                  '💨 Oxytocin Nasal Spray & Tablets'
+                  '💨 Oxytocin Nasal Spray & Tablets',
+                  <>
+                  <li className="list-style-type-none">
+                    📞 Call us at{' '}
+                    <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{' '}
+                    to book your consultation.
+                  </li>
+                  </> 
                 ],
+                extraText: (
+                    <>
+                      These issues may be caused by hormone shifts (like menopause or postpartum), past trauma, stress, medication side effects, childbirth, or natural aging. But the good news is—you have options.
+                      <p className='mt-4'>
+                      {' '}
+                      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+                      </p>
+                    </>
+                  ),
+                
               video: pshotVideo, 
               videoClassName: 'w-75'
             },
+            
           ]}
         />
 

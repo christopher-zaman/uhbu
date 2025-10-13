@@ -10,7 +10,7 @@ import banner from '../assets/banners/hair-restoration-banner.jpg';
 import myImage from '../assets/img/hair-injections.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 import Contact from '../components/Contact';
-
+import PhoneChip from '../components/PhoneChip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import TextBlock from '../components/TextBlock';
@@ -79,7 +79,10 @@ function HairRestoration() {
         title="Hair Restoration Services"
         paragraphs={[
           "At Ultimate Health Spa, we understand that hair loss can impact your confidence and self-image. That’s why we offer a comprehensive, science-driven approach to hair restoration — designed to naturally stimulate growth, strengthen existing hair, and restore your confidence.",
-          "Our hair restoration treatments are non-surgical, minimally invasive, and customized to each individual’s needs. Whether you’re noticing early thinning or have struggled with hair loss for years, we have advanced solutions to help you regain healthier, fuller hair."
+          "Our hair restoration treatments are non-surgical, minimally invasive, and customized to each individual’s needs. Whether you’re noticing early thinning or have struggled with hair loss for years, we have advanced solutions to help you regain healthier, fuller hair.",
+          <>
+            Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          </>
         ]}
         // listItems={[
         //   ""
@@ -113,7 +116,14 @@ function HairRestoration() {
     "Regenerative, non-surgical solutions with little to no downtime",
     "Cutting-edge treatments led by experienced professionals"
     ]}
-    footer="✨ Schedule your personalized consultation today!"
+    footer={
+        <>
+          ✨ Schedule your personalized consultation today!
+          <br></br>
+          <PhoneChip variant="inline" className="phone-chip lead" />
+        </>
+      }
+    
      />
 
     <Contact />

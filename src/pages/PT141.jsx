@@ -6,7 +6,7 @@ import Hero from '../components/Hero';
 
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/pt-141-banner.jpg';
-import contentImage from '../assets/img/pt-141-purple.jpg';
+import contentImage from '../assets/img/pt-141-purple.webp';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 
 import SideBySideImages from '../components/SideBySideImages';

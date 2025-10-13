@@ -9,7 +9,7 @@ import banner from '../assets/img/ultimate-health-spa-logo-bg.png';
 import sideImage from '../assets/img/regenerative-therapy.png';
 import contentImage from '../assets/img/spa.png';
 import thirdImage from '../assets/img/spa2.png';
-
+import PhoneChip from '../components/PhoneChip';
 import spaLogo from '../assets/img/ultimate-health-spa-logo.png'; 
 import TextImageSection from '../components/TextImageSection';
 import { usePageSEO } from '../hooks/usePageSEO';
@@ -54,6 +54,9 @@ function SpaServices() {
             "Microneedling and collagen-boosting therapies",
             "Regenerative skin options using your body’s natural resources, performed under medical supervision",
             "Note: All medical spa services are performed or supervised by licensed professionals. Individual results vary, and not every treatment is suitable for every client.",
+            <>
+              <PhoneChip variant="inline" className="phone-chip lead" />
+            </>
             ]}
         image={contentImage}
         />

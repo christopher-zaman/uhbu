@@ -11,7 +11,7 @@ import banner from '../assets/banners/iv-infusion-treatments.jpg';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-
+import PhoneChip from '../components/PhoneChip';
 import TextBlock from '../components/TextBlock';
 import TextVideoSection from '../components/TextVideoSection';
 import BulletedTextBlock from '../components/BulletedTextBlock';
@@ -55,7 +55,12 @@ function VitaminInfusions() {
       <TextBlock
         title="IV Therapy in Leesburg, FL"
         body="Whether you need a quick energy boost, want to brighten your skin, or support your immune system—our vitamin injections are a fast, effective way to feel your best."
-        footer="📞 Call or stop by today to get started. We’ll help you choose the right mix for your body and your goals!"
+        footer={
+        <>
+          Call or stop by today to get started. We’ll help you choose the right mix for your body and your goals!<br></br>
+          <PhoneChip variant="inline" className="phone-chip lead" />
+        </>
+        }
       />
 
       <TextImageSection

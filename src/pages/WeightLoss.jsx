@@ -51,7 +51,16 @@ function WeightLoss() {
             <>
             <>
               <strong>Note:</strong> All therapies are prescribed only after a full medical evaluation. Some treatments may not be appropriate for every patient.
+              
             </>
+            
+                  <br></br>
+                  <li className="list-style-type-none">
+                    📞 Call us at{' '}
+                    <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{' '}
+                    to book your consultation.
+                  </li>
+                
             </>          
         ]}
         image={contentImage}
@@ -100,23 +109,16 @@ function WeightLoss() {
             ],
             treatments: [
                 <>
-                  <>
-                    📞 Call us at{" "}
-                    <strong>
-                      <a
-                        href="tel:+13529016582"
-                        className="text-decoration-underline"
-                        style={{ color: 'inherit' }}
-                      >
-                        (352) 901-6582
-                      </a>
-                    </strong>{" "}
+                  <br></br>
+                  <li className="list-style-type-none">
+                    📞 Call us at{' '}
+                    <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{' '}
                     to book your consultation.
-                  </>
+                  </li>
                 </>
             ],
             //image: contentImage3,
-            bgClass: "blue-fade-bg",
+            //bgClass: "blue-fade-bg",
            //buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"
         },
         ]}

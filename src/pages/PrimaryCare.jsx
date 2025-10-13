@@ -7,7 +7,7 @@ import Hero from '../components/Hero';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/primary-care-banner.png';
 import contentImage from '../assets/img/gallery-9.jpg';
-
+import PhoneChip from '../components/PhoneChip';
 import TextImageSection from '../components/TextImageSection';
 import sideImage from '../assets/img/membership-based-primary-health-care.webp';
 import { usePageSEO } from '../hooks/usePageSEO';
@@ -67,6 +67,9 @@ function PrimaryCare() {
             "Discounts on Aesthetic procedures",
             "Longer visits that actually allow time to talk",
             "Help coordinating care with specialists or other providers when needed",
+            <>
+              Call us at <PhoneChip variant="inline" className="phone-chip phone-chip--tight" /> to book your consultation.
+            </>
             ]}
 
         image={contentImage}

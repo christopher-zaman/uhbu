@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import SideBySideImages from '../components/SideBySideImages';
 import AlternatingColumns from '../components/AlternatingColumns';
-
+import PhoneChip from '../components/PhoneChip';
 import banner from '../assets/img/primary-care-banner.png';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
@@ -151,7 +151,12 @@ function VitaminInjectionsPage() {
       <TextBlock
         title="Feel Better, Live Better—One Injection at a Time"
         body="Whether you need a quick energy boost, want to brighten your skin, or support your immune system—our vitamin injections are a fast, effective way to feel your best."
-        footer="📞 Call or stop by today to get started. We’ll help you choose the right mix for your body and your goals!"
+        footer={
+          <>
+            Call or stop by today to get started. We’ll help you choose the right mix for your body and your goals!<br></br>
+            <PhoneChip variant="inline" className="phone-chip lead" />
+          </>
+        }
       />
 
       {/* <SideBySideImages

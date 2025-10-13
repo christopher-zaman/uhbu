@@ -43,7 +43,12 @@ function PeptideTherapy() {
             </>
         ]}
         listItems={[
-            "As we age, the body produces fewer of these natural messengers. This can affect energy, sleep, metabolism, focus, and even how we recover from stress or exercise. Peptide therapy is designed to gently encourage the body’s own restorative processes so you can feel and perform at your best."
+            "As we age, the body produces fewer of these natural messengers. This can affect energy, sleep, metabolism, focus, and even how we recover from stress or exercise. Peptide therapy is designed to gently encourage the body’s own restorative processes so you can feel and perform at your best.",
+            <li className="list-style-type-none">
+              📞 Call us at{' '}
+              <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{' '}
+              to book your consultation.
+            </li>
             ]}
         image={contentImage}
         />

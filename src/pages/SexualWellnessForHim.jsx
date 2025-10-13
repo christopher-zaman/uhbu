@@ -8,6 +8,7 @@ import MultiFeatureSection from '../components/MultiFeatureSection';
 import FeatureItems from '../components/FeatureItems';
 import InfoSplitSection from '../components/InfoSplitSection';
 import Footer from '../components/Footer';
+import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -89,10 +90,13 @@ const featureSections = [
      <p>
      At<strong> Ultimate Health DPC</strong> in Leesburg, we specialize in discreet, personalized care to help men reclaim their vitality, intimacy, and confidence—at every stage of life.
      </p>
+     <>
+      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+    </>
     </>),
     description: "",
     extraText: "",    
-    image: "/src/assets/img/well-being.jpg",
+    image: "/assets/img/well-being.webp",
     fallbackMessage: ""
   },
   {
@@ -111,6 +115,9 @@ const featureSections = [
     extraText: (
     <>
     "We’re here to remind you: <strong>you’re not alone—and you’re not out of options.</strong>"
+    <>
+      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+    </>
     </>),
     image: "/assets/img/wellness/peptide.jpg",
     fallbackMessage: "This is the fallback message"
@@ -130,7 +137,15 @@ const featureSections = [
       "Requires no downtime or medication",
       "Is safe for men with health concerns—including those in remission from prostate cancer",
       ],
-    extraText: "This is a great long-term solution that treats the root cause—not just the symptoms—of ED",
+    extraText: (
+            <>
+              This is a great long-term solution that treats the root cause—not just the symptoms—of ED
+              <p className='mt-4'>
+              {' '}
+              Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+              </p>
+            </>
+    ),
     image: "/assets/img/wellness/alma-duo.jpg",
   },
   {
@@ -144,7 +159,15 @@ const featureSections = [
       "Improved comfort during intercourse"
     ],
     description: "",
-    extraText: "This procedure is performed in-office with minimal discomfort and downtime.",
+    extraText: (
+            <>
+              This procedure is performed in-office with minimal discomfort and downtime.
+              <p className='mt-4'>
+              {' '}
+              Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+              </p>
+            </>
+    ),
     image: "/assets/img/wellness/p-shot.jpg",
     fallbackMessage: "This is the fallback message"
   },
@@ -157,7 +180,15 @@ const featureSections = [
       "Levitra® (Vardenafil)",
     ],
     description: "",
-    extraText: "These medications can help improve erection quality, stamina, and confidence in the bedroom. We'll help you choose the best option based on your needs and medical history.",
+    extraText: (
+            <>
+              These medications can help improve erection quality, stamina, and confidence in the bedroom. We'll help you choose the best option based on your needs and medical history.
+              <p className='mt-4'>
+              {' '}
+              Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+              </p>
+            </>
+    ),
     image: "/assets/img/wellness/ed-pills.png",
     fallbackMessage: "This is the fallback message"
   },
@@ -169,7 +200,12 @@ const featureSections = [
       "We’ll guide you on proper use and dosing to ensure safety and comfort.",
     ],
     description: "",
-    extraText: "",
+    extraText: (
+      <>
+        {' '}
+        Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+      </>
+    ),
     image: "/assets/img/wellness/tri-mix.png",
     fallbackMessage: "This is the fallback message"
   },
@@ -185,8 +221,13 @@ const featureSections = [
         " Let’s restore your confidence—naturally, safely, and with real results.Call today to schedule your private male sexual wellness consultation at our Leesburg office."
     ],
     description: "",
-    extraText: "",
-    image: "assets/img/wellness/pt-141-purple.jpg",
+    extraText: (
+      <>
+        {' '}
+        Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+      </>
+    ),
+    image: "assets/img/wellness/pt-141-purple.webp",
     
     fallbackMessage: "This is the fallback message"
   },
@@ -203,7 +244,12 @@ const featureSections = [
         "Call today to schedule your private male sexual wellness consultation at our Leesburg office."
     ],
     description: "",
-    extraText: "",
+    extraText: (
+      <>
+        {' '}
+        <PhoneChip variant="inline" className="phone-chip" />
+      </>
+    ),
     image: "/assets/img/wellness/get-fit.jpg",
     fallbackMessage: "This is the fallback message"
   },

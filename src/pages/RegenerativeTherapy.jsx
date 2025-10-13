@@ -10,7 +10,7 @@ import sideImage from '../assets/img/regenerative-therapy.png';
 import contentImage from '../assets/img/peptide-therapy.png';
 import thirdImage from '../assets/img/regenerative.png';
 import fourthImage from '../assets/img/fourth-peptide.png';
-
+import PhoneChip from '../components/PhoneChip';
 import beforeImage from '../assets/img/peptide-therapy-1.jpg';
 
 import TextImageSection from '../components/TextImageSection';
@@ -42,7 +42,14 @@ function RegenerativeTherapy() {
             </>
         ]}
         listItems={[
-            "Instead of relying only on outside medications, regenerative treatments focus on what your body already has—the ability to heal and restore. Using advanced techniques, we carefully process and apply your body’s own biologic material under the guidance of our licensed medical team."
+            "Instead of relying only on outside medications, regenerative treatments focus on what your body already has—the ability to heal and restore. Using advanced techniques, we carefully process and apply your body’s own biologic material under the guidance of our licensed medical team.",
+            <p>
+            Discover how regenerative therapies can help you feel and look your best—naturally. Schedule a consultation at <strong> Ultimate Health Direct Primary Care in Leesburg, FL.</strong> in Leesburg, FL to explore your options. 
+                <br></br><br></br>
+                📞 Call us at{" "}
+                <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
+                to book your consultation.
+            </p>
             ]}
         image={contentImage}
         />
@@ -79,9 +86,13 @@ function RegenerativeTherapy() {
                     <li><span className="d-inline-block"><strong>Whole-body focus: </strong> Regenerative care is most effective when combined with nutrition, lifestyle, and other wellness strategies</span></li>
 
                     <li><span className="d-inline-block"><strong> Note: </strong>Regenerative therapies are performed using a patient’s own biologic material. All treatments are provided under medical supervision and may not be suitable for everyone.</span></li>
-                    
+                    <>
+                    Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+                    </>
                 </ul>
+                
             </>
+            
             ),
             image: sideImage,
             bgClass: "blue-fade-bg",
@@ -124,8 +135,8 @@ function RegenerativeTherapy() {
                         Discover how regenerative therapies can help you feel and look your best—naturally. Schedule a consultation at <strong> Ultimate Health Direct Primary Care in Leesburg, FL.</strong> in Leesburg, FL to explore your options. 
                          <br></br><br></br>
                          📞 Call us at{" "}
-                    <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
-                    to book your consultation.
+                            <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
+                            to book your consultation.
                          </p>
                         
                     </li>

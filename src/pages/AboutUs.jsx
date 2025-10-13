@@ -1,18 +1,21 @@
-import React from 'react';
+// Components
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
+import TextVideoSection from '../components/TextVideoSection';
+import Contact from '../components/Contact';
+
+// Images
 import banner from '../assets/img/amanda-banner.webp';
 import contentImage from '../assets/img/amanda.webp';
 import secondImage from '../assets/img/amanda-facetime.webp';
 
-import TextVideoSection from '../components/TextVideoSection';
-import Contact from '../components/Contact';
+// SEO
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
+
 
 function AboutUs() {
   const seo = usePageSEO();
@@ -58,7 +61,6 @@ function AboutUs() {
                 },
             ]}
         />
-
         <ContentSection
         id="about-us"
         title="Amanda Vontrice Gaskin MSN, APRN"
@@ -75,5 +77,4 @@ function AboutUs() {
     </>
   );
 }
-
 export default AboutUs;
