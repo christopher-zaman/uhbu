@@ -3,7 +3,39 @@ import { Link, useLocation } from "react-router-dom";
 
 function Footer() {
   const { pathname } = useLocation();
+
+  // Existing CTA: show on all pages except /primary-care
   const showPrimaryCareCta = pathname !== '/primary-care';
+
+  // Define which routes should promote Spa Services
+  const SERVICE_PATHS = new Set([
+    '/weight-loss',
+    '/hormone-replacement-therapy',
+    '/peptide-therapy',
+    '/regenerative-therapy',
+    '/vitamin-injections',
+    '/vitamin-infusions',
+    '/sexual-wellness-treatments',
+    '/sexual-wellness-for-her',
+    '/sexual-wellness-for-him',
+    '/duo',
+    '/skin-pen',
+    '/toskani',
+    '/neurotoxin',
+    '/dermal-filler',
+    '/alma-femi-lift',
+    // include broader care pages if you want the Spa CTA there too:
+    '/primary-care',
+    '/womens-health',
+    '/mens-health',
+    '/telemedicine',
+    '/hair-restoration',
+    '/mental-health',
+    '/mental-wellness'
+  ]);
+
+  // New CTA: only on service pages, not on the Spa page itself
+  const showSpaCta = SERVICE_PATHS.has(pathname) && pathname !== '/spa-services';
 
   return (
     <footer id="footer" className="footer dark-background">
@@ -150,6 +182,17 @@ function Footer() {
             Learn how our{' '}
             <Link to="/primary-care"><strong>Direct Primary Care in Leesburg</strong></Link>{' '}
             keeps care affordable and accessible.
+          </p>
+        </div>
+      )}
+
+      {/* Spa Services CTA on service pages (not on /spa-services itself) */}
+      {showSpaCta && (
+        <div className="container mt-2">
+          <p className="text-center m-0">
+            Explore our{' '}
+            <Link to="/spa-services"><strong>Aesthetics &amp; Spa Services</strong></Link>{' '}
+            for skin health, facials, and injectables.
           </p>
         </div>
       )}
