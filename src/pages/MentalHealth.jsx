@@ -7,7 +7,7 @@ import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
 
-import video from '../videos/exomind-video.mp4';
+import video from '../assets/videos/exomind-video.mp4';
 import contentImage from '../assets/img/mental-health.webp';
 import myImage from '../assets/img/positive-mental-health.jpg';
 import PhoneChip from '../components/PhoneChip';
@@ -81,6 +81,9 @@ function MentalHealth() {
           title=""
           subtitle=""
           textColor="rgba(255,255,255,0.8)"
+          videoAspect="16 / 9"
+          videoControls={true} 
+          videoFit="contain" 
         />
 
       <div className="fullscript-banner-over-hero">
