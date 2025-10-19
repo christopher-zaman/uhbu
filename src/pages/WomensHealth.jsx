@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
+import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/banners/womens-health-banner.webp';
 import contentImage from '../assets/img/womens-health.jpg';
@@ -25,12 +25,19 @@ function WomensHealth() {
     <TopBar />
     <NavBar />
     
+  {/* HERO + OVERLAID BANNER */}
+    <div className="hero-with-banner">
     <Hero
     backgroundImage={banner}
     title="Women's Health Care"
     subtitle=""
     textColor="rgba(1, 3, 112, 0.75)"
      />
+    <div className="fullscript-banner-over-hero">
+      <FullscriptBanner />
+    </div>
+    </div>
+
      <ContentSection
         id="womens-health"
         title="Women's Health"

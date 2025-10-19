@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
+import FullscriptBanner from '../components/FullscriptBanner';
 
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/primary-care-banner.png';
@@ -42,12 +43,19 @@ function PrimaryCare() {
     <TopBar />
     <NavBar />
     
+  {/* HERO + OVERLAID BANNER */}
+    <div className="hero-with-banner">
     <Hero
     backgroundImage={banner}
     title="Primary Care"
     textColor="rgba(1, 3, 112, 0.75)"
     subtitle="Direct Primary Care – Leesburg Office"
      />
+    <div className="fullscript-banner-over-hero">
+      <FullscriptBanner />
+    </div>
+    </div>
+
      <ContentSection
         id="primarycare"
         title="Primary Care"

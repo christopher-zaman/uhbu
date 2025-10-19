@@ -3,13 +3,13 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
+import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
-import banner from '../assets/img/estrogen-banner.png';
+import banner from '../assets/img/estrogen-banner.webp';
 import sideImage from '../assets/img/regenerative-therapy.png';
-import contentImage from '../assets/img/peptide-therapy.png';
+import contentImage from '../assets/img/peptide-therapy.webp';
 import thirdImage from '../assets/img/regenerative.png';
-import fourthImage from '../assets/img/fourth-peptide.png';
+import fourthImage from '../assets/img/fourth-peptide.webp';
 import PhoneChip from '../components/PhoneChip';
 import beforeImage from '../assets/img/peptide-therapy-1.jpg';
 
@@ -24,11 +24,18 @@ function RegenerativeTherapy() {
     <SEO {...seo} />
     <TopBar />
     <NavBar />
+
+    {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
     <Hero
     backgroundImage={banner}
     title="Regenerative Therapy"
     subtitle=""
      />
+     <div className="fullscript-banner-over-hero">
+        <FullscriptBanner />
+     </div>
+     </div>
      <ContentSection
         id="regenerative-therapy"
         title="Regenerative Therapy in Leesburg, FL"

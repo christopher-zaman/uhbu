@@ -10,6 +10,7 @@ import contentImage from '../assets/img/hormone-therapy.jpg';
 import contentImage1 from '../assets/img/lab-testing.png';
 import contentImage2 from '../assets/img/conditions.png';
 import MultiFeatureSection from '../components/MultiFeatureSection';
+import FullscriptBanner from '../components/FullscriptBanner';
 
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/hormone-therapy-1.jpg';
@@ -26,11 +27,17 @@ function HormoneTherapy() {
     <TopBar />
     <NavBar />
     
+    {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
     <Hero
     backgroundVideo={video}
     title="Hormone Therapy in Leesburg, FL"
     subtitle="Doctor-guided, personalized care for lasting weight loss"
      />
+    <div className="fullscript-banner-over-hero">
+      <FullscriptBanner />
+    </div>
+     </div>
      <ContentSection
         id="hormone-therapy"
         title="Hormone Therapy in Leesburg, FL"

@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
+import FullscriptBanner from '../components/FullscriptBanner';
 import Title from '../components/Title';
 import banner from '../assets/img/pt-141-banner.jpg'
 import MultiFeatureSection from '../components/MultiFeatureSection';
@@ -262,6 +263,9 @@ function PShot() {
       <SEO {...seo} />
       <TopBar />
       <NavBar />
+
+      {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
       <Hero
         backgroundImage={banner}
         // heroImage="/assets/img/hero-img.png"
@@ -270,6 +274,11 @@ function PShot() {
         subtitle="Featuring the priapus Shot - designed to enhance your wellness journey."
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
       />
+      <div className="fullscript-banner-over-hero">
+        <FullscriptBanner />
+      </div>
+      </div>
+
       {/* <Title
         centerTitle={true}
         showHeading={false}

@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
+import FullscriptBanner from '../components/FullscriptBanner';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import banner from '../assets/banners/subscribe.png';
@@ -25,12 +26,18 @@ function OurPractice() {
       <TopBar />
       <NavBar />
 
+      {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
       <Hero
         backgroundImage={banner}
         title="Our Practice"
         subtitle="Rooted in Community, Committed to Care"
         textColor="rgba(255, 255, 255, 1)"
       />
+      <div className="fullscript-banner-over-hero">
+        <FullscriptBanner />
+      </div>
+      </div>
 
       
 

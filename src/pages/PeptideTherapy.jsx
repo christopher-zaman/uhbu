@@ -5,13 +5,13 @@ import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 
 import ContentSection from '../components/ContentSection';
-import banner from '../assets/img/estrogen-banner.png';
+import banner from '../assets/img/estrogen-banner.webp';
 import sideImage from '../assets/img/peptide.jpg';
-import contentImage from '../assets/img/peptide-therapy.png';
+import contentImage from '../assets/img/peptide-therapy.webp';
 import thirdImage from '../assets/img/what-is-peptide-therapy.webp';
-import fourthImage from '../assets/img/fourth-peptide.png';
+import fourthImage from '../assets/img/fourth-peptide.webp';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
+import FullscriptBanner from '../components/FullscriptBanner';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/peptide-therapy-1.jpg';
 import afterImage from '../assets/img/peptide-therapy-2.png';
@@ -26,11 +26,19 @@ function PeptideTherapy() {
     <SEO {...seo} />
     <TopBar />
     <NavBar />
+
+    {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
     <Hero
     backgroundImage={banner}
     title="Peptide Therapy"
     subtitle=""
      />
+     <div className="fullscript-banner-over-hero">
+        <FullscriptBanner />
+    </div>
+    </div>
+
      <ContentSection
         id="peptide-therapy"
         title="Peptide Therapy in Leesburg, FL"
@@ -44,11 +52,11 @@ function PeptideTherapy() {
         ]}
         listItems={[
             "As we age, the body produces fewer of these natural messengers. This can affect energy, sleep, metabolism, focus, and even how we recover from stress or exercise. Peptide therapy is designed to gently encourage the body’s own restorative processes so you can feel and perform at your best.",
-            <li className="list-style-type-none">
+            <>
               📞 Call us at{' '}
               <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{' '}
               to book your consultation.
-            </li>
+            </>
             ]}
         image={contentImage}
         />

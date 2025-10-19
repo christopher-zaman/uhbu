@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
+import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
 
 import video from '../videos/exomind-video.mp4';
@@ -74,13 +74,19 @@ function MentalHealth() {
       <TopBar />
       <NavBar />
 
-      <Hero
-        backgroundVideo={video}
-        title=""
-        subtitle=""
-        textColor="rgba(255,255,255,0.8)"
-      />
+    {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
+        <Hero
+          backgroundVideo={video}
+          title=""
+          subtitle=""
+          textColor="rgba(255,255,255,0.8)"
+        />
 
+      <div className="fullscript-banner-over-hero">
+        <FullscriptBanner />
+      </div>
+      </div>
       <ContentSection
         id="mental-health"
         title="Caring for Your Emotional Well-being"
