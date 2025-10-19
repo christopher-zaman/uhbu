@@ -9,3 +9,41 @@ section.about.about-us-bg {
   height: auto;
   display: block;
 }
+
+
+/* Ensure the hero is the positioning context */
+.hero-with-banner {
+  position: relative;
+  /* Optional: make sure hero is tall enough to comfortably fit the 160x600 on desktop */
+}
+
+.fullscript-banner-over-hero {
+  position: absolute;
+  /*left: 16px;         /* left, not right */
+  /*right: auto;*/
+  top: 0px;          /* nudge this to clear your fixed navbar if needed */
+  z-index: 20;
+  width: 160px;       /* native width */
+}
+
+/* Keep it within the hero visually and scale down if the hero is shorter */
+.fullscript-banner-over-hero img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* If your hero is sometimes short on certain pages, use this to cap height: */
+  max-height: calc(100vh - 140px);
+}
+
+/* Align to Bootstrap container’s left edge (with 16px padding) */
+@media (max-width: 992px) {
+  .fullscript-banner-over-hero {
+   display:none;   /* for .container max-width 1140px -> 1140/2 = 570; 570 - 30 = 540 content half-width */
+  }
+}
+
+/* If you’re using .container-lg/.container-xl, adjust the 540px number:
+   - 1140px container => 540
+   - 960px container  => 480
+   - 1320px container => 600
+*/

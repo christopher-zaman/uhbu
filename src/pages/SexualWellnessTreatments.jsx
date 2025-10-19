@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
+import FullscriptBanner from '../components/FullscriptBanner';
 import Details from '../components/Details';
 import SingleFeature from '../components/SingleFeature';
 import Features from '../components/Features';
@@ -19,13 +20,22 @@ function SexualWellnessTreatments() {
         <SEO {...seo} />
         <TopBar />
         <NavBar />
+
+        {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
         <Hero
-        backgroundImage="/assets/img/banners/model-honey-tone-large.webp"
-        // heroImage="/assets/img/hero-img.png"
-        title="Sexual Wellness Treatments"
-        subtitle="Empowering your wellness journey"
-        videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
-      />
+          backgroundImage="/assets/img/banners/model-honey-tone-large.webp"
+          // heroImage="/assets/img/hero-img.png"
+          title="Sexual Wellness Treatments"
+          subtitle="Empowering your wellness journey"
+          videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+        />
+
+        <div className="fullscript-banner-over-hero">
+          <FullscriptBanner />
+        </div>
+      
+      </div>
         {/* <SingleFeature
         video="/assets/video/p-shot.mp4"
         treatments={[

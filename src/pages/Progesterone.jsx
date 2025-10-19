@@ -5,7 +5,7 @@ import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 
 import ContentSection from '../components/ContentSection';
-import banner from '../assets/img/estrogen-banner.png';
+import banner from '../assets/img/estrogen-banner.webp';
 import contentImage from '../assets/img/estrogen.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 

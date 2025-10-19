@@ -7,6 +7,8 @@ import ContentSection from '../components/ContentSection';
 import TextVideoSection from '../components/TextVideoSection';
 import Contact from '../components/Contact';
 
+import FullscriptBanner from "../components/FullscriptBanner";
+
 // Images
 import banner from '../assets/img/amanda-banner.webp';
 import contentImage from '../assets/img/amanda.webp';
@@ -25,11 +27,19 @@ function AboutUs() {
     <TopBar />
     <NavBar />
     
-    <Hero
-    backgroundImage={banner}
-    title="About Us"
-    subtitle=""
-     />
+     {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
+        <Hero
+          backgroundImage={banner}
+          title="About Us"
+          subtitle=""
+        />
+        <div className="fullscript-banner-over-hero">
+          <FullscriptBanner />
+        </div>
+      </div>
+
+
      <ContentSection
         id="about-us"
         title="A Note from Our Founder"
@@ -61,6 +71,9 @@ function AboutUs() {
                 },
             ]}
         />
+        <aside>
+            <FullscriptBanner />
+        </aside>
         <ContentSection
         id="about-us"
         title="Amanda Vontrice Gaskin MSN, APRN"
@@ -77,4 +90,5 @@ function AboutUs() {
     </>
   );
 }
+
 export default AboutUs;

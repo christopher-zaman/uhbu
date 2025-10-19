@@ -10,6 +10,7 @@ import contentImage from '../assets/img/weight-loss.png';
 import contentImage2 from '../assets/img/help1.png';
 import contentImage3 from '../assets/img/what-makes-us-different.png';
 import MultiFeatureSection from '../components/MultiFeatureSection';
+import FullscriptBanner from '../components/FullscriptBanner';
 
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/before.webp';
@@ -25,11 +26,19 @@ function WeightLoss() {
     <SEO {...seo} />
     <TopBar />
     <NavBar />
+
+{/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
     <Hero
     backgroundImage={banner}
     title="Medical Weight Loss in Leesburg, FL"
     subtitle="Doctor-guided, personalized care for lasting weight loss"
      />
+     <div className="fullscript-banner-over-hero">
+      <FullscriptBanner />
+    </div>
+      </div>
+
      <ContentSection
         id="weight-loss"
         title="Medical Weight Loss in Leesburg, FL"

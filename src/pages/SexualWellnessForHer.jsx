@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
+import FullscriptBanner from '../components/FullscriptBanner';
 import Title from '../components/Title';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 import FeatureItems from '../components/FeatureItems';
@@ -208,6 +209,9 @@ function OShot() {
       <SEO {...seo} />
       <TopBar />
       <NavBar />
+
+      {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
       <Hero
         backgroundImage="assets/img/banners/votiva-vaginal-forma-v.webp"
         // heroImage="/assets/img/hero-img.png"
@@ -215,6 +219,12 @@ function OShot() {
         subtitle="Featuring the Orgasm Shot - designed to enhance your wellness journey."
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
       />
+      <div className="fullscript-banner-over-hero">
+        <FullscriptBanner />
+      </div>
+      </div>
+
+
       {/* <Title
         centerTitle={true}
         showHeading={false}

@@ -12,6 +12,7 @@ import Subscribe from '../components/Subscribe';
 import Contact from '../components/Contact';
 import CareCredit from '../components/CareCredit';
 import VideoHero from '../components/VideoHero';
+import FullscriptBanner from '../components/FullscriptBanner';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -26,6 +27,7 @@ function MentalWellness() {
       />
       <TopBar />
       <NavBar />
+      
       <VideoHero videoId="5fbA9uugBRY" height="75vh" objectFit={true}/>
 
       <SectionTitle>
@@ -55,10 +57,18 @@ function MentalWellness() {
 
       <Services /> 
 
-      <About />
+     
+        <About />
 
+        
+
+       {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
       <Testimonials />
-
+      <div className="fullscript-banner-over-hero">
+          <FullscriptBanner />
+        </div>
+      </div>  
       <Socials />
 
       <CareCredit />

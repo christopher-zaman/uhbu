@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
+import FullscriptBanner from '../components/FullscriptBanner';
 import Footer from '../components/Footer';
 import ContentSection from '../components/ContentSection';
 import MultiFeatureSection from '../components/MultiFeatureSection';
@@ -24,6 +25,9 @@ function Duo(){
         <SEO {...seo} />
         <TopBar />
         <NavBar />
+
+         {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
         <Hero
         backgroundImage="assets/img/banners/model-honey-tone-large.webp"
         backgroundVideo="/assets/video/alma-duo-video.mp4"
@@ -34,6 +38,11 @@ function Duo(){
         aria-label="Duo"
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
       />
+      <div className="fullscript-banner-over-hero">
+        <FullscriptBanner />
+      </div>
+      </div>
+
 
       <ContentSection
         id="alma-duo"

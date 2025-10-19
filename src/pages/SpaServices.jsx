@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
+import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/ultimate-health-spa-logo-bg.png';
 import sideImage from '../assets/img/regenerative-therapy.png';
@@ -22,13 +22,20 @@ function SpaServices() {
     <SEO {...seo} />
     <TopBar />
     <NavBar />
-    <Hero
-    backgroundImage={banner}
-    //title="Aesthetics & Spa Services in Leesburg, FL"
-    textColor="rgba(11, 61, 92, 0.8)"
-    subtitle=""
-    className="hero--spa"
-     />
+
+    {/* HERO + OVERLAID BANNER */}
+      <div className="hero-with-banner">
+        <Hero
+        backgroundImage={banner}
+        //title="Aesthetics & Spa Services in Leesburg, FL"
+        textColor="rgba(11, 61, 92, 0.8)"
+        subtitle=""
+        className="hero--spa"
+        />
+        <div className="fullscript-banner-over-hero">
+          <FullscriptBanner />
+        </div>
+      </div>
      <ContentSection
         id="aesthetics-spa-services"
         title="Aesthetics & Spa Services in Leesburg, FL"
@@ -81,24 +88,24 @@ function SpaServices() {
             titleClass: 'blurred-bg',
             description: (
             <>
-                <ul className="blurred-bg p-2">
-  <li>
-    <span className="d-inline-block">
-      Whether you’re preparing for a special occasion, maintaining your skin health, or simply treating yourself, our team is here to help you shine.
-    </span>
-  </li>
+            <ul className="blurred-bg p-2">
+            <li>
+              <span className="d-inline-block">
+                Whether you’re preparing for a special occasion, maintaining your skin health, or simply treating yourself, our team is here to help you shine.
+              </span>
+            </li>
 
-  <li>
-    <a
-      href="https://www.google.com/maps/search/?api=1&query=711%20North%203rd%20Street%2C%20Leesburg%2C%20FL%2034748"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="d-inline-block"
-      aria-label="Open address 711 North 3rd Street, Leesburg, FL 34748 in Google Maps (opens in a new tab)"
-    >
-      📍 Find us at 711 North 3rd Street, Leesburg, FL 34748
-    </a>
-  </li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=711%20North%203rd%20Street%2C%20Leesburg%2C%20FL%2034748"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="d-inline-block"
+                  aria-label="Open address 711 North 3rd Street, Leesburg, FL 34748 in Google Maps (opens in a new tab)"
+                >
+                  📍 Find us at 711 North 3rd Street, Leesburg, FL 34748
+                </a>
+              </li>
 
                     📞 Call us at{" "}
                     <a href="tel:+13529016582" className="phone-chip unstyled-link">(352) 901-6582</a>{" "}
