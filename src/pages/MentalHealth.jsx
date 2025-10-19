@@ -8,6 +8,7 @@ import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
 
 import video from '../assets/videos/exomind-video.mp4';
+import mobileImage from '../assets/img/positive-mental-health.jpg'
 import contentImage from '../assets/img/mental-health.webp';
 import myImage from '../assets/img/positive-mental-health.jpg';
 import PhoneChip from '../components/PhoneChip';
@@ -77,6 +78,7 @@ function MentalHealth() {
     {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
         <Hero
+          backgroundImage={mobileImage}
           backgroundVideo={video}
           title=""
           subtitle=""
