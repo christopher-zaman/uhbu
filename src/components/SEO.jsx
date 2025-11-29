@@ -29,7 +29,7 @@ const defaultOrg = {
   logo: `${HOST}/assets/img/logo.webp`,
   sameAs: [
     'https://www.instagram.com/ultimatehealthdpc',
-    'https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202',
+    'https://www.linkedin.com/in/amanda-gaskin-msn-aprn-2b2238202',
     'https://www.tiktok.com/@ultimatehealthdpc'
   ]
 };

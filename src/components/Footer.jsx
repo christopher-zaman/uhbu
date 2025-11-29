@@ -112,7 +112,7 @@ function Footer() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/amanda-neil-msn-aprn-2b2238202"
+                href="https://www.linkedin.com/in/amanda-gaskin-msn-aprn-2b2238202"
                 className="social-icon"
                 aria-label="LinkedIn profile for Amanda Gaskin"
                 target="_blank"
