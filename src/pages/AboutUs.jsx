@@ -71,9 +71,9 @@ function AboutUs() {
                 },
             ]}
         />
-        <aside>
+        {/* <aside>
             <FullscriptBanner />
-        </aside>
+        </aside> */}
         <ContentSection
         id="about-us"
         title="Amanda Vontrice Gaskin MSN, APRN"
