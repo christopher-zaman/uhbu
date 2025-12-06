@@ -51,13 +51,19 @@ function TopBar() {
                 href="tel:+13529016582"
                 className="text-dark fw-semibold d-flex align-items-center gap-1 fs-4 phone-chip unstyled-link"
                 itemProp="telephone"
-                onClick={() =>  
-                window.trackEvent?.("phone_click", {
-                  phone_number: "+13529016582",
-                  position: "topbar",
-                  page_location: window.location.href,
-                })
-              }
+                // chatgtp 12/6
+                onClick={() => {
+                console.log("TopBar phone clicked");
+                if (!window.trackEvent) {
+                  console.warn("trackEvent is NOT defined");
+                } else {
+                  window.trackEvent("phone_click", {
+                    phone_number: "+13529016582",
+                    position: "topbar",
+                    page_location: window.location.href,
+                  });
+                }
+              }}
               >
                 <i className="bi bi-telephone-fill"></i> 352-901-6582
               </a>
