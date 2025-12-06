@@ -91,13 +91,18 @@ function Contact() {
                 className="info-item d-flex text-decoration-none text-dark"
                 data-aos="fade-up"
                 data-aos-delay={300}
-                onClick={() =>
-                  window.trackEvent?.("phone_click", {
+                onClick={() => {
+                console.log("Contact page Call Us clicked");
+                if (!window.trackEvent) {
+                  console.warn("trackEvent is NOT defined");
+                } else {
+                  window.trackEvent("phone_click", {
                     phone_number: "+13529016582",
                     position: "contact_page_info_block",
                     page_location: window.location.href,
-                  })
+                  });
                 }
+              }}
               >
                 <i className="bi bi-telephone flex-shrink-0" />
                 <div>
