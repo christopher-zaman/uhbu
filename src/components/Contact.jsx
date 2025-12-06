@@ -21,6 +21,22 @@ function Contact() {
   try {
     const result = await emailjs.sendForm(SERVICE, TEMPLATE, form.current, PUBLIC);
     console.log('Email sent:', result); // { status: 200, text: 'OK' }
+
+    // 🔹 GA4 lead event
+    const fd = new FormData(form.current);
+    const name = fd.get("name");
+    const email = fd.get("email");
+    const phone = fd.get("phone");
+
+    window.trackEvent?.("generate_lead", {
+      form_id: "contact_page_form",
+      form_name: "Contact – Ultimate Health DPC",
+      page_location: window.location.href,
+      lead_name: name || "",
+      lead_email: email || "",
+      lead_phone: phone || "",
+    });
+
     alert('Message sent successfully!');
     form.current.reset();
   } catch (err) {
@@ -59,13 +75,38 @@ function Contact() {
                 <p>733 North 3rd Street Leesburg FL 34748</p>
               </div>
             </div>
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={300}>
+
+{/* chatgpt 12/6 */}
+            {/* <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={300}>
               <i className="bi bi-telephone flex-shrink-0" />
               <div>
                 <h3>Call Us</h3>
                 <p>352-901-6582</p>
               </div>
-            </div>
+            </div> */}
+
+            {/* Make this entire row a tel: link */}
+              <a
+                href="tel:+13529016582"
+                className="info-item d-flex text-decoration-none text-dark"
+                data-aos="fade-up"
+                data-aos-delay={300}
+                onClick={() =>
+                  window.trackEvent?.("phone_click", {
+                    phone_number: "+13529016582",
+                    position: "contact_page_info_block",
+                    page_location: window.location.href,
+                  })
+                }
+              >
+                <i className="bi bi-telephone flex-shrink-0" />
+                <div>
+                  <h3>Call Us</h3>
+                  <p>352-901-6582</p>
+                </div>
+              </a>
+
+
             <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={400}>
               <i className="bi bi-envelope flex-shrink-0" />
               <div>
