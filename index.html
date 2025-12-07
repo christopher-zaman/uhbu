@@ -38,9 +38,11 @@
     analytics_storage: 'granted'
   });
 
-  // Normal GA4 boot
+  // GA4 boot in debug mode
   gtag('js', new Date());
-  gtag('config', 'G-RXBDR8YW2E');
+  gtag('config', 'G-RXBDR8YW2E', {
+    debug_mode: true       // 🔹 add this
+  });
 </script>
 
 <!-- Safe wrapper so React can call events -->
