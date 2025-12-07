@@ -883,12 +883,65 @@ section,
   max-height: calc(100vh - 140px);
 }
 
-/* Align to Bootstrap container’s left edge (with 16px padding) */
+/* Default: desktop layout */
+.hero-desktop {
+  display: block;
+}
+
+.hero-mobile {
+  display: none;
+}
+
+/* Mobile breakpoint */
 @media (max-width: 992px) {
-  .fullscript-banner-over-hero {
-   display:none;   /* for .container max-width 1140px -> 1140/2 = 570; 570 - 30 = 540 content half-width */
+  .hero-desktop {
+    display: none;
+  }
+
+  /* Base behavior (desktop) retains dark theme, no change needed */
+
+/* Mobile overrides */
+@media (max-width: 992px) {
+
+  /* Light background applied only when hero-light class is present */
+  .hero-mobile.hero-light {
+    background-color: #ffffff !important; /* white background */
+    color: #000000 !important; /* set text black globally inside hero container */
+  }
+
+  /* If your Hero component uses a dark overlay, remove it on mobile */
+  .hero-mobile.hero-light .overlay-dark,
+  .hero-mobile.hero-light .dark-background,
+  .hero-mobile.hero-light .gradient-overlay {
+    background: none !important;
+  }
+
+  /* Force hero text to turn black if the component uses custom classes */
+  .hero-mobile.hero-light .hero-title,
+  .hero-mobile.hero-light .hero-subtitle,
+  .hero-mobile.hero-light h1,
+  .hero-mobile.hero-light h2,
+  .hero-mobile.hero-light p {
+    color: #000000 !important;
   }
 }
+
+  .hero {
+    padding: 0;
+  }
+
+  .hero-mobile {
+    display: block;
+  }
+  .hero h1 {
+    color: #000;
+  }
+
+  .fullscript-banner-over-hero {
+    display: none; /* already had this, just keeping it here */
+  }
+}
+
 
 /* If you’re using .container-lg/.container-xl, adjust the 540px number:
    - 1140px container => 540

@@ -6,6 +6,8 @@ import Hero from '../components/Hero';
 
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/weight-loss-banner.jpg';
+import bannerMobile from '../assets/mobile-banners/weight-loss-mobile-bg.webp';
+
 import contentImage from '../assets/img/weight-loss.png';
 import contentImage2 from '../assets/img/help1.png';
 import contentImage3 from '../assets/img/what-makes-us-different.png';
@@ -28,16 +30,31 @@ function WeightLoss() {
     <NavBar />
 
 {/* HERO + OVERLAID BANNER */}
-      <div className="hero-with-banner">
+<div className="hero-with-banner">
+
+  {/* Desktop Hero */}
+  <div className="hero-desktop">
     <Hero
-    backgroundImage={banner}
-    title="Medical Weight Loss in Leesburg, FL"
-    subtitle="Doctor-guided, personalized care for lasting weight loss"
-     />
-     <div className="fullscript-banner-over-hero">
+      backgroundImage={banner}
+      title="Medical Weight Loss in Leesburg, FL"
+      subtitle="Doctor-guided, personalized care for lasting weight loss"
+    />
+    <div className="fullscript-banner-over-hero">
       <FullscriptBanner />
     </div>
-      </div>
+  </div>
+
+  {/* Mobile Hero */}
+  <div className="hero-mobile hero-light">
+    <Hero
+      backgroundImage={bannerMobile}
+      title="Medical Weight Loss in Leesburg, FL"
+      subtitle="Doctor-guided, personalized care for lasting weight loss"
+    />
+  </div>
+
+</div>
+
 
      <ContentSection
         id="weight-loss"
