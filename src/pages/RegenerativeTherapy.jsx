@@ -16,6 +16,7 @@ import beforeImage from '../assets/img/peptide-therapy-1.jpg';
 import TextImageSection from '../components/TextImageSection';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
+import bannerMobile from '../assets/mobile-banners/peptide-therapy.webp';
 
 function RegenerativeTherapy() {
     const seo = usePageSEO();
@@ -27,14 +28,26 @@ function RegenerativeTherapy() {
 
     {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
-    <Hero
-    backgroundImage={banner}
-    title="Regenerative Therapy"
-    subtitle=""
-     />
-     <div className="fullscript-banner-over-hero">
-        <FullscriptBanner />
-     </div>
+        {/* Desktop Hero */}
+        <div className="hero-desktop">
+            <Hero
+            backgroundImage={banner}
+            title="Regenerative Therapy"
+            subtitle=""
+            />
+            <div className="fullscript-banner-over-hero">
+                <FullscriptBanner />
+            </div>
+        </div>
+        {/* Mobile Hero */}
+        <div className="hero-mobile">
+            <Hero
+            backgroundImage={bannerMobile}
+            title="Peptide Therapy"
+            subtitle=""
+            />
+        </div>
+        
      </div>
      <ContentSection
         id="regenerative-therapy"

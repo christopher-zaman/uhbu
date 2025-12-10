@@ -12,6 +12,8 @@ import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
+import bannerMobile from '../assets/mobile-banners/honey-model.webp';
+
 const featureList = [
   { 
     icon: "bi-eye", 
@@ -212,6 +214,8 @@ function OShot() {
 
       {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
+        {/* Desktop Hero */}
+        <div className="hero-desktop">
       <Hero
         backgroundImage="assets/img/banners/votiva-vaginal-forma-v.webp"
         // heroImage="/assets/img/hero-img.png"
@@ -221,6 +225,15 @@ function OShot() {
       />
       <div className="fullscript-banner-over-hero">
         <FullscriptBanner />
+      </div>
+      </div>
+      {/* Mobile Hero */}
+      <div className="hero-mobile">
+        <Hero
+          backgroundImage={bannerMobile}
+          title="Empowering your wellness journey"
+          subtitle=""
+        />
       </div>
       </div>
 

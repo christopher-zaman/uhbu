@@ -31,14 +31,15 @@ function WeightLoss() {
 
 {/* HERO + OVERLAID BANNER */}
 <div className="hero-with-banner">
-
   {/* Desktop Hero */}
   <div className="hero-desktop">
+
     <Hero
       backgroundImage={banner}
       title="Medical Weight Loss in Leesburg, FL"
       subtitle="Doctor-guided, personalized care for lasting weight loss"
     />
+
     <div className="fullscript-banner-over-hero">
       <FullscriptBanner />
     </div>
@@ -49,7 +50,7 @@ function WeightLoss() {
     <Hero
       backgroundImage={bannerMobile}
       title="Medical Weight Loss in Leesburg, FL"
-      subtitle="Doctor-guided, personalized care for lasting weight loss"
+      subtitle=""
     />
   </div>
 

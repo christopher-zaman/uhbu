@@ -12,6 +12,7 @@ import TextVideoSection from '../components/TextVideoSection';
 import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
+import bannerMobile from '../assets/mobile-banners/honey-model.webp';
 
 function SexualWellnessTreatments() {
   const seo = usePageSEO();
@@ -23,18 +24,30 @@ function SexualWellnessTreatments() {
 
         {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
-        <Hero
-          backgroundImage="/assets/img/banners/model-honey-tone-large.webp"
-          // heroImage="/assets/img/hero-img.png"
-          title="Sexual Wellness Treatments"
-          subtitle="Empowering your wellness journey"
-          videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
-        />
+        {/* Desktop Hero */}
+        <div className="hero-desktop">
+            <Hero
+              backgroundImage="/assets/img/banners/model-honey-tone-large.webp"
+              // heroImage="/assets/img/hero-img.png"
+              title="Sexual Wellness Treatments"
+              subtitle="Empowering your wellness journey"
+              videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+            />
 
         <div className="fullscript-banner-over-hero">
           <FullscriptBanner />
         </div>
-      
+
+      </div>
+
+      {/* Mobile Hero */}
+      <div className="hero-mobile">
+        <Hero
+          backgroundImage={bannerMobile}
+          title="Empowering your wellness journey"
+          subtitle=""
+        />
+      </div>
       </div>
         {/* <SingleFeature
         video="/assets/video/p-shot.mp4"

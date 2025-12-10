@@ -12,6 +12,8 @@ import Footer from '../components/Footer';
 import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
+import bannerMobile from '../assets/mobile-banners/honey-model.webp';
+
 
 const featureList = [
   { 
@@ -266,6 +268,7 @@ function PShot() {
 
       {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
+        
       <Hero
         backgroundImage={banner}
         // heroImage="/assets/img/hero-img.png"
@@ -278,6 +281,8 @@ function PShot() {
         <FullscriptBanner />
       </div>
       </div>
+      
+      
 
       {/* <Title
         centerTitle={true}

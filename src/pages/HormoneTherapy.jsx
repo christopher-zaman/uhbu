@@ -3,7 +3,6 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import video from '../assets/videos/hormone-replacement-therapy.mp4';
 import contentImage from '../assets/img/hormone-therapy.jpg';
@@ -11,10 +10,11 @@ import contentImage1 from '../assets/img/lab-testing.png';
 import contentImage2 from '../assets/img/conditions.png';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 import FullscriptBanner from '../components/FullscriptBanner';
-
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/hormone-therapy-1.jpg';
 import afterImage from '../assets/img/hormone-therapy-2.jpg';
+
+import bannerMobile from '../assets/mobile-banners/hormone-therapy.webp';
 
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
@@ -28,16 +28,30 @@ function HormoneTherapy() {
     <NavBar />
     
     {/* HERO + OVERLAID BANNER */}
-      <div className="hero-with-banner">
-    <Hero
-    backgroundVideo={video}
-    title="Hormone Therapy in Leesburg, FL"
-    subtitle="Doctor-guided, personalized care for lasting weight loss"
-     />
+  <div className="hero-with-banner">
+    {/* Desktop Hero */}
+    <div className="hero-desktop">
+        <Hero
+        backgroundVideo={video}
+        title="Hormone Therapy in Leesburg, FL"
+        subtitle=""
+        />
     <div className="fullscript-banner-over-hero">
       <FullscriptBanner />
     </div>
-     </div>
+  </div>
+      {/* Mobile Hero */}
+      <div className="hero-mobile">
+        <Hero
+          backgroundImage={bannerMobile}
+          title="Hormone Therapy in Leesburg, FL"
+          subtitle=""
+        />
+      </div>
+    </div>
+
+    
+
      <ContentSection
         id="hormone-therapy"
         title="Hormone Therapy in Leesburg, FL"
