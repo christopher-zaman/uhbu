@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { trackGA4 } from "../utils/ga4";
+
 export default function KeywordSnippetSection({
   title,
   snippet,
@@ -23,9 +25,20 @@ export default function KeywordSnippetSection({
     instagram: "https://www.instagram.com/ultimatehealthdpc",
   },
 }) {
+  const location = useLocation();
+
   const mailtoHref = `mailto:${encodeURIComponent(emailTo)}?subject=${encodeURIComponent(
     emailSubject
   )}`;
+
+  const handlePhoneClick = () => {
+    trackGA4("phone_click", {
+      phone_number: phoneHref?.replace("tel:", "") || "+13529016582",
+      position: "seo_card",
+      card_title: title,
+      page_path: location.pathname,
+    });
+  };
 
   return (
     <section className="keyword-snippet-section">
@@ -48,25 +61,18 @@ export default function KeywordSnippetSection({
                 <h3 className="keyword-title">{title}</h3>
                 <p className="keyword-snippet mb-3">{snippet}</p>
 
-                {/* ✅ Anything you pass between <KeywordSnippetSection>...</KeywordSnippetSection> renders here */}
-                {/* ✅ SEO-friendly internal link */}
-              {ctaHref && ctaText && (
-                <div className="mt-3">
-                  <Link
-                    to={ctaHref}
-                    className="seo-inline-link"
-                  >
-                    {ctaText}
-                  </Link>
-                </div>
-              )}
-
-              {/* existing slot */}
+                {ctaHref && ctaText && (
+                  <div className="mt-3">
+                    <Link to={ctaHref} className="seo-inline-link">
+                      {ctaText}
+                    </Link>
+                  </div>
+                )}
 
                 {children && <div className="mt-3">{children}</div>}
 
                 <div className="keyword-cta-bar">
-                  <a className="keyword-cta" href={phoneHref}>
+                  <a className="keyword-cta" href={phoneHref} onClick={handlePhoneClick}>
                     Call {phone}
                   </a>
 
@@ -97,12 +103,7 @@ export default function KeywordSnippetSection({
                       </a>
                     )}
 
-                    <a
-                      className="keyword-social-icon"
-                      href={mailtoHref}
-                      aria-label="Email"
-                      title="Email"
-                    >
+                    <a className="keyword-social-icon" href={mailtoHref} aria-label="Email" title="Email">
                       <i className="bi bi-envelope" />
                     </a>
                   </div>
