@@ -23,6 +23,14 @@ function NavBar() {
       // Weight Loss
       { type: 'link', key: 'weightloss', label: 'Weight Loss', href: '/weight-loss' },
 
+      // Special Services
+      {
+        type: 'link',
+        key: 'specialservices',
+        label: 'Services',
+        href: '/special-services',
+      },
+
       // Hormone Therapy
       {
         type: 'link',
@@ -73,6 +81,7 @@ function NavBar() {
         href: '/regenerative-therapy',
         
       },
+       
       // Aesthetics
       // {
       //   type: 'dropdown',

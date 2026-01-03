@@ -43,6 +43,7 @@ import BlogCMS from './pages/BlogCMS';
 import BlogPostCMS from './pages/BlogPostCMS';
 import RegenerativeTherapy from './pages/RegenerativeTherapy';
 import SpaServices from './pages/SpaServices';
+import SpecialServices from './pages/SpecialServices';
 
 function App() {
   usePageTracking();
@@ -86,6 +87,7 @@ function App() {
       <Route path="/vitamin-injections" element={<VitaminInjections />} />
       <Route path="/vitamin-infusions" element={<VitaminInfusions />} />
       <Route path="/spa-services" element={<SpaServices />} />
+      <Route path="/special-services" element={<SpecialServices />} />
       
 {/* Pages not in navbar */}
       <Route path="/skin-pen" element={<SkinPen />} />

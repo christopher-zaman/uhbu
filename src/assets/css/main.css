@@ -2103,6 +2103,275 @@ section,
 /*--------------------------------------------------------------
 # Custom styles
 --------------------------------------------------------------*/
+/* Page background stays clear; this gives the inner content that glassy wrapped look */
+.input-bg-none {
+  background-color: transparent;
+}
+
+.uha-glass-card {
+  position: relative;
+  border-radius: 22px;
+  padding: 26px;
+  /* sharp translucent glass */
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(8px);
+  /* crisp glass edge */
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  /* depth + subtle glow */
+  box-shadow:
+    0 18px 55px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(255, 255, 255, 0.12) inset;
+  overflow: hidden;
+  color:#fff;
+}
+
+.seo-inline-link {
+  color:#fff;
+}
+
+/* specular highlight (top shine) */
+.uha-glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.12) 26%,
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(255, 255, 255, 0.10) 100%
+  );
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+.new-form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color:rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 10px rgb(255 255 255 / 90%);
+    border: #fff;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 25px;
+    background-clip: padding-box;
+    
+    
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.new-form-control:hover {
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 2px 15px rgb(255 255 255 / 90%);
+}
+
+/* Kill Bootstrap focus styles */
+input.new-form-control:focus,
+input.new-form-control:focus-visible {
+
+  box-shadow: none !important;
+  outline: none !important;
+}
+.new-btn {
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 2px 15px rgb(255 255 255 / 90%);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.45);
+  border-radius: 25px;
+  color:#fff;
+}
+.new-btn:hover {
+  color: #D8DEE6;
+  box-shadow: 0px 2px 25px rgb(255 255 255 / 90%);
+}
+input.new-form-control{
+    backdrop-filter: blur(8px);
+}
+/* subtle colored glow like Apple uses */
+.uha-glass-card::after {
+  content: "";
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 255, 255, 0.22),
+    rgba(255, 255, 255, 0) 65%
+  );
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+/* image just flows naturally */
+.keyword-image-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.keyword-image {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* Text */
+.keyword-title {
+  margin-bottom: 10px;
+}
+.keyword-snippet {
+  margin-bottom: 0;
+}
+
+/* CTA bar "rides along" */
+.keyword-cta-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.keyword-cta {
+  border-radius: 25px;
+  padding: 10px 16px;
+
+  background-color:rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  
+  border: #fff;
+  color: #fff;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.keyword-cta:hover {
+  color: #000;
+  box-shadow: 0px 2px 15px rgb(255 255 255 / 90%);
+}
+.keyword-socials {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.keyword-socials a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Mobile: let the card grow naturally */
+@media (max-width: 992px) {
+  .uha-scroll-card {
+    max-height: none;
+  }
+}
+
+/* Remove template background from SEO sections */
+.keyword-snippet-section {
+  background: transparent !important;
+  color: #000;
+}
+
+/*bg image*/
+/* Fixed background layer */
+/*
+.special-services-bg {
+  min-height: 100vh;
+  background-image: url("../img/seo/o-shot.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+*/
+
+
+
+.special-services-bg {
+  background-image: url(/assets/img/ultimate-health-services-bg.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /*background-image: radial-gradient(circle at 0 0, rgba(255, 255, 255, .94), rgba(255, 255, 255, .94) 50%, rgba(255, 255, 255, .94)), radial-gradient(circle at 0 0, #e02020, #fa6400 17%, #fab400 32%, #6ed200 50%, #0091ff 67%, #6437ff 83%, #ff23e1);*/
+
+}
+
+
+
+
+/* Content spacing layer */
+.special-services-content {
+  padding: 80px 0;
+}
+
+.keyword-email-input {
+  min-width: 0;
+  max-width: 320px;
+}
+
+.keyword-email-btn {
+  padding: 0.45rem 0.9rem;
+  font-weight: 600;
+  border-radius: 999px;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.keyword-socials-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.keyword-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.keyword-social-icon a {
+  transform: translateY(-2px);
+  background: #fff !important;
+}
+
+.keyword-social-icon:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0px 2px 15px rgb(255 255 255 / 90%);
+}
+
+.keyword-social-icon i {
+  font-size: 1.2rem;
+}
+.keyword-social-icon i:hover {
+  color: #fff;
+}
+.new-form-control::placeholder {
+  color: rgba(244, 246, 248, 0.95); /* medical off-white */
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+}
+
+
+/*=======================
+=========================*/
+
 .hero-bg-video {
   position: absolute;
   top: 0;
