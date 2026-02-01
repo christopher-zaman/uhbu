@@ -13,7 +13,7 @@ import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 import bannerMobile from '../assets/mobile-banners/honey-model.webp';
-
+import ConversionBlock from "../components/ConversionBlock";
 
 const featureList = [
   { 
@@ -94,7 +94,7 @@ const featureSections = [
      At<strong> Ultimate Health DPC</strong> in Leesburg, we specialize in discreet, personalized care to help men reclaim their vitality, intimacy, and confidence—at every stage of life.
      </p>
      <>
-      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+      <PhoneChip variant="inline" className="phone-chip" />
     </>
     </>),
     description: "",
@@ -119,7 +119,7 @@ const featureSections = [
     <>
     "We’re here to remind you: <strong>you’re not alone—and you’re not out of options.</strong>"
     <>
-      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+      <PhoneChip variant="inline" className="phone-chip" />
     </>
     </>),
     image: "/assets/img/wellness/peptide.jpg",
@@ -145,7 +145,7 @@ const featureSections = [
               This is a great long-term solution that treats the root cause—not just the symptoms—of ED
               <p className='mt-4'>
               {' '}
-              Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+              <PhoneChip variant="inline" className="phone-chip" />
               </p>
             </>
     ),
@@ -167,7 +167,7 @@ const featureSections = [
               This procedure is performed in-office with minimal discomfort and downtime.
               <p className='mt-4'>
               {' '}
-              Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+              <PhoneChip variant="inline" className="phone-chip" />
               </p>
             </>
     ),
@@ -188,7 +188,7 @@ const featureSections = [
               These medications can help improve erection quality, stamina, and confidence in the bedroom. We'll help you choose the best option based on your needs and medical history.
               <p className='mt-4'>
               {' '}
-              Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+              <PhoneChip variant="inline" className="phone-chip" />
               </p>
             </>
     ),
@@ -206,7 +206,7 @@ const featureSections = [
     extraText: (
       <>
         {' '}
-        Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+        <PhoneChip variant="inline" className="phone-chip" />
       </>
     ),
     image: "/assets/img/wellness/tri-mix.png",
@@ -227,7 +227,7 @@ const featureSections = [
     extraText: (
       <>
         {' '}
-        Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+        <PhoneChip variant="inline" className="phone-chip" />
       </>
     ),
     image: "assets/img/wellness/pt-141-purple.webp",
@@ -271,11 +271,11 @@ function PShot() {
         
       <Hero
         backgroundImage={banner}
-        // heroImage="/assets/img/hero-img.png"
         title="Sexual Wellness For Him"
         textColor="rgba(1, 3, 112, 0.75)"
         subtitle="Featuring the priapus Shot - designed to enhance your wellness journey."
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+        cta={<PhoneChip inline={false} className='hero-phone fs-4'/>}
       />
       <div className="fullscript-banner-over-hero">
         <FullscriptBanner />
@@ -325,7 +325,43 @@ function PShot() {
         middleTitle="Cosmetic Gynecology – Non-Surgical Options"
       /> */}
 
-        
+        <ConversionBlock
+  id="sexual-wellness-for-him-conversion"
+  title="Discreet, confidence-focused care"
+  subtitle="Real support for performance, desire, and stamina—without judgment or awkwardness."
+
+  painTitle="If things have changed, you’re not alone—and you’re not out of options."
+  pains={[
+    "Difficulty getting or maintaining erections",
+    "Lower libido or reduced desire",
+    "Performance anxiety or inconsistent results",
+    "Reduced stamina or confidence during intimacy"
+  ]}
+  outcome="We take a private, medical approach to identify what’s contributing and guide you toward safe, effective options."
+
+  solutionTitle="How Ultimate Health DPC Helps"
+  solutionIntro="We focus on practical solutions and personalized care—so you feel supported and clear on next steps."
+  solutionBullets={[
+    { title: "Private, judgment-free consult", text: "A discreet conversation focused on symptoms, goals, and comfort level." },
+    { title: "Root-cause evaluation", text: "We consider circulation, hormones, stress, sleep, medications, and overall health." },
+    { title: "Personalized treatment plan", text: "Options may include device-based therapies and/or medical therapies when appropriate." },
+    { title: "Follow-up support", text: "We track progress and adjust your plan over time—so results feel consistent." }
+  ]}
+  solutionClosing="All therapies are offered only after a full medical evaluation. Not every option is appropriate for every patient."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Meet your provider", text: "Talk through goals, health history, and what’s been happening." },
+    { title: "Review your options", text: "Get a clear plan with treatments that fit your needs and preferences." },
+    { title: "Ongoing support", text: "Follow-up, adjustments, and guidance so you’re not guessing." }
+  ]}
+
+  ctaTitle="Ready to talk privately?"
+  ctaText="Call or text to schedule a confidential consultation."
+  ctaType="phone"
+  phoneClassName="hero-phone fs-4"
+/>
+
       <Footer />
       </>
     );

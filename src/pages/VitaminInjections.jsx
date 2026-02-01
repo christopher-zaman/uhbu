@@ -12,7 +12,7 @@ import banner from '../assets/img/primary-care-banner.png';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-
+import ConversionBlock from "../components/ConversionBlock";
 import TextBlock from '../components/TextBlock';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
@@ -141,7 +141,8 @@ function VitaminInjectionsPage() {
         <Hero
           backgroundImage={banner}
           title="Vitamin Injections"
-          subtitle="Feel better, look better—from the inside out."
+          subtitle="Support how you feel and function—from the inside out"
+          cta={<PhoneChip inline={false} className="hero-phone fs-4" />}
           textColor="rgba(1, 3, 112, 0.75)"
         />
         <div className="fullscript-banner-over-hero">
@@ -153,6 +154,43 @@ function VitaminInjectionsPage() {
         sectionId="vitamin-injections"
         items={injections}
       />
+
+      <ConversionBlock
+  id="vitamin-injections-conversion"
+  title="Quick support for energy, immunity, and recovery"
+  subtitle="Targeted injections designed to help you feel better—fast—without a long appointment."
+
+  painTitle="If you’ve been running on empty, your body is telling you."
+  pains={[
+    "Low energy, fatigue, or afternoon crashes",
+    "Brain fog or trouble focusing",
+    "Feeling run down or constantly stressed",
+    "Wanting better absorption than oral supplements"
+  ]}
+  outcome="We’ll help you choose an option that fits your goals and make it simple to get started."
+
+  solutionTitle="How Ultimate Health Helps"
+  solutionIntro="Our approach is fast, medically guided, and personalized."
+  solutionBullets={[
+    { title: "Quick visits", text: "Most injections take just a few minutes—easy to fit into your day." },
+    { title: "Provider guidance", text: "We help you choose what’s appropriate based on your needs." },
+    { title: "Goal-based options", text: "Energy, recovery, immune support, and overall wellness—without guessing." },
+    { title: "Easy follow-up", text: "Want a routine? We can help you build a schedule that makes sense." }
+  ]}
+  solutionClosing="Injections are offered with appropriate screening and may not be suitable for everyone."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Tell us your goal", text: "Energy, immunity, recovery, skin support—we start with what you want to improve." },
+    { title: "Choose your injection", text: "We recommend an option and frequency based on your needs." },
+    { title: "Get your boost", text: "Quick in-office injection with minimal disruption to your day." }
+  ]}
+
+  ctaTitle="Ready to get started?"
+  ctaText="Call or text to schedule a vitamin injection."
+  ctaType="phone"
+  phoneClassName="hero-phone fs-4"
+/>
 
       <TextBlock
         title="Feel Better, Live Better—One Injection at a Time"

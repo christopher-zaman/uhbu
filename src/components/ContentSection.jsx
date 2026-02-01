@@ -8,6 +8,7 @@ function ContentSection({
   subTitle = '',           
   paragraphs = [],
   listItems = [],
+  cta,
   image,
   imageClassName,
   video,
@@ -32,8 +33,11 @@ function ContentSection({
                 <p key={idx}>{p}</p>
               ))}
 
-              {/* ✅ Render the subTitle after the last paragraph */}
+              {/* Render the subTitle after the last paragraph */}
               {subTitle && <h4 className="mt-4">{subTitle}</h4>}
+
+              {/* Render the CTA */}
+              {/* {cta && <div className="content-cta mt-3">{cta}</div>} */}
 
               {listItems.length > 0 && (
                 <ul className="ps-3">

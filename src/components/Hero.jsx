@@ -9,6 +9,7 @@ function Hero({
   heroImage,
   title,
   subtitle,
+  cta,
   videoUrl,
   className = '',
   textColor,
@@ -27,6 +28,7 @@ function Hero({
     <section
   id="hero"
   className={`hero section dark-background ${className} ${backgroundVideo ? 'hero-has-video' : ''}`}
+   
 >
       {backgroundVideo && isDesktop ? (
     backgroundVideo.includes('youtube.com') ? (
@@ -69,6 +71,9 @@ function Hero({
           <div className="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
             <h1 style={textColor ? { color: textColor } : {}}>{title}</h1>
             <p style={textColor ? { color: textColor } : {}}>{subtitle}</p>
+
+            {cta && <div className="hero-cta mt-3">{cta}</div>}
+
           </div>
         </div>
       </div>

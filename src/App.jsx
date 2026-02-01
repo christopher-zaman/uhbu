@@ -44,7 +44,7 @@ import BlogPostCMS from './pages/BlogPostCMS';
 import RegenerativeTherapy from './pages/RegenerativeTherapy';
 import SpaServices from './pages/SpaServices';
 import SpecialServices from './pages/SpecialServices';
-
+import ScrollToHash from './components/ScrollToHash';
 function App() {
   usePageTracking();
   useEffect(() => {
@@ -65,6 +65,7 @@ function App() {
     <>
     
     <ScrollToTop />
+    <ScrollToHash />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/weight-loss" element={<WeightLoss />} />

@@ -13,9 +13,10 @@ import TextImageSection from '../components/TextImageSection';
 import sideImage from '../assets/img/membership-based-primary-health-care.webp';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
+import ConversionBlock from "../components/ConversionBlock";
 
 const featureList = [
-  { 
+  {   
     icon: "bi-eye", 
     title: "💨 Oxytocin Nasal Spray & Tablets", 
     subtext: "Known as the “love hormone,” oxytocin can help increase feelings of closeness, arousal, and emotional bonding. It may also enhance natural lubrication and enjoyment of intimacy", 
@@ -48,8 +49,9 @@ function PrimaryCare() {
     <Hero
     backgroundImage={banner}
     title="Primary Care"
-    textColor="rgba(1, 3, 112, 0.75)"
     subtitle="Direct Primary Care – Leesburg Office"
+    cta={<PhoneChip inline={false} className='fs-4'/>}
+    textColor="rgba(1, 3, 112, 0.75)"
      />
     <div className="fullscript-banner-over-hero">
       <FullscriptBanner />
@@ -60,6 +62,8 @@ function PrimaryCare() {
         id="primarycare"
         title="Primary Care"
         subTitle="What’s Included in Your $99/Month Membership:"
+        cta={<PhoneChip inline={false}/>}
+
         paragraphs={[
             "Imagine having a provider who knows you, listens to you, and is just a text away. That’s what you get with Direct Primary Care (DPC) at Ultimate Health DPC in Leesburg.",
             "We keep healthcare simple, personal, and affordable—with no insurance, no copays, and no rushed visits. Just real care, when you need it."
@@ -75,9 +79,7 @@ function PrimaryCare() {
             "Discounts on Aesthetic procedures",
             "Longer visits that actually allow time to talk",
             "Help coordinating care with specialists or other providers when needed",
-            <>
-              Call us at <PhoneChip variant="inline" className="phone-chip phone-chip--tight" /> to book your consultation.
-            </>
+           
             ]}
 
         image={contentImage}
@@ -198,6 +200,42 @@ function PrimaryCare() {
     },
   ]}
 /> */}
+<ConversionBlock
+  id="primary-care-conversion"
+  title="Primary care that actually feels personal"
+  subtitle="More access. More time. Clear communication. Care that fits real life."
+
+  painTitle="If primary care has felt frustrating, you’re not alone."
+  pains={[
+    "Long waits for appointments when you’re actually sick",
+    "Rushed visits where you don’t feel heard",
+    "Surprise bills, confusing copays, and insurance headaches",
+    "No clear way to reach your provider between visits"
+  ]}
+  outcome="Direct Primary Care is designed to remove friction—so getting care feels simple, consistent, and supportive."
+
+  solutionTitle="How Ultimate Health DPC Helps"
+  solutionIntro="We focus on relationship-based care with better access and real follow-through—without the usual barriers."
+  solutionBullets={[
+    { title: "More access", text: "Same-day or next-day visits when you need them." },
+    { title: "More time", text: "Longer appointments so you can actually talk through what’s going on." },
+    { title: "Direct communication", text: "Text access so questions don’t turn into unnecessary urgent care visits." },
+    { title: "Care coordination", text: "Help navigating referrals, labs, and specialist care when needed." }
+  ]}
+  solutionClosing="Whether you’re managing a chronic condition or just want a provider who knows you—this model is built for real support."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Reach out", text: "Call or text to ask questions and schedule your first visit." },
+    { title: "Build your plan", text: "We review your history, goals, and current concerns—then create a clear plan." },
+    { title: "Ongoing support", text: "Follow-ups, check-ins, and access when life happens—without the runaround." }
+  ]}
+
+  ctaTitle="Ready to feel supported in your healthcare?"
+  ctaText="Call or text to schedule a consultation."
+  ctaType="phone"
+  phoneClassName="fs-4"
+/>
 
     <Footer />
     </>

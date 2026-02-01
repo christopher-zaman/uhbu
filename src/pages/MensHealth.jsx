@@ -13,6 +13,7 @@ import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/male.jpg';
 import afterImage from '../assets/img/mens-health-2.jpg';
 import PhoneChip from '../components/PhoneChip';
+import ConversionBlock from "../components/ConversionBlock";
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -29,7 +30,8 @@ function MensHealth() {
       <Hero
       backgroundImage={banner}
       title="Men's Health"
-      subtitle=""
+      subtitle="Personalized care focused on energy, performance, and long-term health"
+      cta={<PhoneChip inline={false} className="hero-phone fs-4" />}
       textColor="rgba(1, 3, 112, 0.75)"
       />
       <div className="fullscript-banner-over-hero">
@@ -50,9 +52,7 @@ function MensHealth() {
             "Imagine what your love life would look like without erectile dysfunction. Imagine how close you and your partner could be ... we’ve got proven effective results using our erectile dysfunction treatment Alma Duo! In erectile dysfunction, a male is incapacitated to achieve or sustain the erection of the penis.",
             "This problem negatively affects the sexual life of many men. All men that suffer from ED should ask their doctor for a thorough physical examination to get to the root cause of their dysfunction. The reported prevalence of erectile dysfunction in young men has increased globally over the last decade.",
             "If you're located in Leesburg Florida or The Villages, Umatilla, Eustis, Tavares, Lady Lake, Clermont, and Fruitland Park then we are the men’s health care clinic offering ed treatment near you!",
-            <>
-            Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
-          </>
+            
             ]}
 
         image={contentImage}
@@ -77,6 +77,45 @@ function MensHealth() {
         },
         ]}
          />
+
+         <ConversionBlock
+  id="mens-health-conversion"
+  title="Men’s health care that’s straightforward and personalized"
+  subtitle="Support for energy, performance, confidence, and long-term wellness—without the runaround."
+
+  painTitle="If you’ve felt “off” lately, it’s worth addressing."
+  pains={[
+    "Low energy, reduced drive, or difficulty staying consistent in the gym",
+    "Changes in performance, confidence, or intimacy",
+    "Stress, poor sleep, or brain fog that’s affecting your day-to-day",
+    "Feeling unsure where to start—or tired of quick fixes"
+  ]}
+  outcome="We take a medical, judgment-free approach to understand what’s going on and outline clear options."
+
+  solutionTitle="How Ultimate Health DPC Helps"
+  solutionIntro="Our focus is on practical solutions and ongoing support—so you’re not left guessing after one visit."
+  solutionBullets={[
+    { title: "Private, judgment-free consult", text: "A respectful conversation focused on symptoms, goals, and priorities." },
+    { title: "Root-cause evaluation", text: "We look at hormones, circulation, lifestyle, stress, sleep, and overall health." },
+    { title: "Personalized plan", text: "Care is tailored to you—based on your needs, preferences, and medical profile." },
+    { title: "Follow-up support", text: "We track progress and adjust your plan over time for better consistency." }
+  ]}
+  solutionClosing="All therapies are recommended only after a full medical evaluation. Not every option is appropriate for every patient."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Reach out", text: "Call or text to schedule a consultation and ask questions." },
+    { title: "Evaluate & plan", text: "We review symptoms, history, and—when appropriate—labs or next steps." },
+    { title: "Start care with support", text: "Begin your plan with follow-ups and adjustments over time." }
+  ]}
+
+  ctaTitle="Ready to take the next step?"
+  ctaText="Call or text to schedule a confidential consultation."
+  ctaType="phone"
+  phoneClassName="hero-phone fs-4"
+/>
+
+
         <SideBySideImages
         title=""
         leftImage={beforeImage}

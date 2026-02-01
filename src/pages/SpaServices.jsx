@@ -14,6 +14,7 @@ import spaLogo from '../assets/img/ultimate-health-spa-logo.png';
 import TextImageSection from '../components/TextImageSection';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
+import ConversionBlock from "../components/ConversionBlock";
 
 function SpaServices() {
     const seo = usePageSEO();
@@ -27,9 +28,10 @@ function SpaServices() {
       <div className="hero-with-banner">
         <Hero
         backgroundImage={banner}
-        //title="Aesthetics & Spa Services in Leesburg, FL"
+        title="Aesthetics & Spa Services"
         textColor="rgba(11, 61, 92, 0.8)"
-        subtitle=""
+        subtitle="Thoughtfully designed treatments to support skin health, confidence, and overall wellness"
+        cta={<PhoneChip inline={false} className="hero-phone fs-4" />}
         className="hero--spa"
         />
         <div className="fullscript-banner-over-hero">
@@ -67,6 +69,45 @@ function SpaServices() {
             ]}
         image={contentImage}
         />
+
+<ConversionBlock
+  id="spa-services-conversion"
+  title="Look refreshed. Feel confident. Keep it natural."
+  subtitle="Personalized aesthetics and spa services in Leesburg—designed for real results without an “overdone” look."
+
+  painTitle="If your skin (or confidence) has been feeling off, you’re not alone."
+  pains={[
+    "Dullness, dryness, or uneven tone",
+    "Fine lines, texture, or tired-looking skin",
+    "Wanting a glow-up that still looks like you",
+    "Not sure which treatment is right for your goals"
+  ]}
+  outcome="We’ll help you choose the right service based on your skin, your comfort level, and the results you want."
+
+  solutionTitle="How Ultimate Health Spa Helps"
+  solutionIntro="We combine a boutique experience with licensed expertise—so you feel taken care of from start to finish."
+  solutionBullets={[
+    { title: "Personalized recommendations", text: "Every visit starts with understanding your goals and skin needs." },
+    { title: "Natural-looking results", text: "Enhancement that looks like you—just refreshed and more confident." },
+    { title: "Comfort-first experience", text: "Relaxing suites and a welcoming atmosphere that feels like a getaway." },
+    { title: "Trusted care", text: "Services are performed or supervised by licensed professionals when appropriate." }
+  ]}
+  solutionClosing="Individual results vary, and not every treatment is suitable for every client."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Tell us your goal", text: "Glow, hydration, smoothing texture, event prep, or targeted concerns." },
+    { title: "Get a tailored recommendation", text: "We’ll guide you to the best-fit option—no guessing." },
+    { title: "Enjoy your treatment", text: "Leave with a refreshed look and a simple plan for maintenance if desired." }
+  ]}
+
+  ctaTitle="Ready to book your spa visit?"
+  ctaText="Call or text to schedule, or book online."
+  ctaType="phone"
+  phoneClassName="hero-phone fs-4"
+/>
+
+
 
         <ContentSection
         id="ultimate-spa-difference"

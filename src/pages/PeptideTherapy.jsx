@@ -18,9 +18,9 @@ import afterImage from '../assets/img/peptide-therapy-2.png';
 import TextImageSection from '../components/TextImageSection';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
-
+import PhoneChip from '../components/PhoneChip';
 import bannerMobile from '../assets/mobile-banners/peptide-therapy.webp';
-
+import ConversionBlock from "../components/ConversionBlock";
 
 function PeptideTherapy() {
     const seo = usePageSEO();
@@ -38,7 +38,9 @@ function PeptideTherapy() {
             <Hero
             backgroundImage={banner}
             title="Peptide Therapy"
-            subtitle=""
+            subtitle="Personalized peptide therapy through Direct Primary Care in Leesburg"
+            cta={<PhoneChip inline={false} className="hero-phone fs-4"/>}
+            
             />
         
 
@@ -53,10 +55,49 @@ function PeptideTherapy() {
             <Hero
             backgroundImage={bannerMobile}
             title="Peptide Therapy"
-            subtitle=""
+            subtitle="Personalized peptide therapy through Direct Primary Care in Leesburg"
+            cta={<PhoneChip inline={false} className="hero-phone-white fs-4"/>}
             />
         </div>
     </div>
+
+    {/* NEW: Conversion Block (Pain → Solution → Process → CTA) */}
+<ConversionBlock
+  id="peptides-conversion"
+  title="A clearer, guided approach to peptide therapy"
+  subtitle="Personalized care designed to support energy, recovery, and overall wellness—without guesswork."
+
+  painTitle="Peptide therapy is often explored when you feel “off,” but can’t pinpoint why."
+  pains={[
+    "Low energy or stamina that doesn’t improve with rest",
+    "Slow recovery from workouts, stress, or busy weeks",
+    "Sleep that isn’t restful or consistent",
+    "Brain fog, low focus, or feeling “not like yourself”"
+  ]}
+  outcome="We start with a full evaluation and build a plan that supports your goals safely and responsibly."
+
+  solutionTitle="How Ultimate Health DPC Helps"
+  solutionIntro="We keep peptide therapy simple and medically guided—so you understand what you’re taking and why."
+  solutionBullets={[
+    { title: "Comprehensive evaluation", text: "We begin with a thorough consultation and, when appropriate, lab testing." },
+    { title: "Personalized plan", text: "Therapy is tailored to your body, lifestyle, and goals—not a one-size protocol." },
+    { title: "Ongoing monitoring", text: "We track progress and adjust carefully over time for safety and results." },
+    { title: "Direct Primary Care advantage", text: "More access, more time, and fewer barriers to getting questions answered." }
+  ]}
+  solutionClosing="All therapies are prescribed only after a full medical evaluation. Not every option is right for every patient."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Meet your provider", text: "Discuss symptoms, goals, and health history." },
+    { title: "Build a plan", text: "Review options and create a plan aligned with your needs." },
+    { title: "Ongoing support", text: "Monitor progress and refine your plan over time." }
+  ]}
+
+  ctaTitle="Ready to explore peptide therapy?"
+  ctaText="Call or text to schedule a consultation and get clear next steps."
+  ctaType="phone"
+  phoneClassName="hero-phone fs-4"
+/>
 
 
      <ContentSection

@@ -19,7 +19,7 @@ import Pricing from '../components/Pricing';
 import Faq from '../components/Faq';
 import Contact from '../components/Contact';
 import CareCredit from '../components/CareCredit';
-
+import contentImage from '../assets/img/amanda-mobile-small.webp';
 import backgroundVideo from '../assets/videos/alma-duo-video-optimized.mp4';
 import VideoHero from '../components/VideoHero';
 import CenteredVideoSection from '../components/CenteredVideoSection';
@@ -27,6 +27,10 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
+import AudienceGrid from '../components/AudienceGrid';
+import DPCComparison from "../components/DPCComparison";
+import LocalProof from "../components/LocalProof";
+import PrimaryCTA from '../components/PrimaryCTA';
 
 function App() {
   const seo = usePageSEO();
@@ -57,17 +61,76 @@ function App() {
         Welcome to <strong>Ultimate Health</strong>{' '}
         <span className="text-green-600">Direct Primary Care!</span>
       </SectionTitle>
+      <AudienceGrid
+        title="Who We’re For"
+        subtitle="Explore care paths built around your goals, your schedule, and your lifestyle."
+        className="lead"
+        items={[
+          {
+            icon: "🧑‍💼",
+            title: "Busy Professionals",
+            text: "Care that fits your life—direct access, telehealth options, and proactive guidance.",
+            bullets: ["Fast answers", "Less waiting", "Ongoing support"],
+            link: "/telemedicine",
+            buttonText: "Explore Telehealth"
+          },
+          {
+            icon: "🌸",
+            title: "Women’s Wellness",
+            text: "Support for hormones, vitality, and confidence—with care tailored to every stage.",
+            bullets: ["Hormone support", "Sexual wellness", "Whole-body care"],
+            link: "/womens-health",
+            buttonText: "Women’s Health"
+          },
+          {
+            icon: "💪",
+            title: "Men’s Health",
+            text: "Personalized care to support energy, performance, and long-term health outcomes.",
+            bullets: ["Energy & vitality", "Performance support", "Prevention & longevity"],
+            link: "/mens-health",
+            buttonText: "Men’s Health"
+          }
+        ]}
+      />
+      <DPCComparison
+        ctaType="link"
+        ctaLink="/primary-care"
+        ctaText="See How Membership Works"
+      />
+      <LocalProof
+  title="Why Ultimate Health DPC"
+  subtitle="Local, relationship-based care for Leesburg and Lake County."
+  locationLine="Proudly serving Leesburg, Lake County, and surrounding Central Florida communities"
+  philosophy="We take the time to listen, build a real relationship, and focus on prevention—so you feel supported long-term."
+  proofItems={[
+    { label: "Location", value: "Leesburg • Lake County, FL" },
+    { label: "Access", value: "Direct provider messaging" },
+    { label: "Care Style", value: "Prevention • longevity • whole-person care" },
+    { label: "Visit Style", value: "Unhurried, relationship-based visits" }
+  ]}
+  provider={{
+  name: "Amanda Vontrice Gaskin, MSN, APRN",
+  title: "Primary Care Provider",
+  bullets: [
+    "Practicing since 2006",
+    "Patient-first, relationship-based care"
+  ],
+  image: contentImage,
+  link: "/meet-us",
+  linkText: "Meet Amanda"
+}}
+  ctaType="phone"
+/>
+
 
       <Paragraph className="lead text-gray-500" data-aos="fade-up" data-aos-delay="0">
-        
         We’re so glad you’re here!
-
         At Ultimate Health, we believe going to the doctor should be simple, affordable, and personal. That’s why we do things differently. We’re a Direct Primary Care practice, which means you get care when you need it—without the long waits, surprise bills, or rushed visits.
         Think of us as your health partner. Whether you're feeling sick, need help managing a condition, or just want to stay on top of your health, we’re here for you. You’ll always see a provider who listens, cares, and takes the time to really know you.
         We’re proud to serve individuals, families, and even local businesses with the kind of care everyone deserves. Welcome to the Ultimate Health family—where your health is our priority, and you’re always treated like a VIP.
         Let’s take care of you—together.
       </Paragraph>
-
+      <PrimaryCTA />
         <CenteredVideoSection videoId="92jlApzokh0" />
 
 

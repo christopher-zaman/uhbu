@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import banner from '../assets/banners/contact-banner.png';
 import TextBlock from '../components/TextBlock';
 import ResumeUploadForm from '../components/ResumeUploadForm';
-
+import PhoneChip from '../components/PhoneChip';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
 
@@ -17,16 +17,14 @@ function Careers() {
       <SEO {...seo} />
       <TopBar />
       <NavBar />
-
       <Hero
         backgroundImage={banner}
         title="Careers"
-        subtitle=""
-        textColor="rgba(1, 3, 112, 0.75)"
+        subtitle="Join a team committed to compassionate, relationship-based care"
+        cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
+        textColor="rgba(255, 255, 255, 1)"
+        className='careers-hero'
       />
-
-      
-
       <TextBlock
         title="Careers"
         body={

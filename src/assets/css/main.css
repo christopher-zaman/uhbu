@@ -827,6 +827,16 @@ section,
   align-items: center;
 }
 
+.hero-phone {
+  color: #010370; /* or white, or brand color */
+}
+.hero-phone-white {
+  color: #fff; /* or white, or brand color */
+}
+
+.hero-phone .phone-text {
+  color: inherit;
+}
 
 .hero .hero-bg {
   position: absolute;
@@ -864,7 +874,41 @@ section,
   position: relative;
   /* Optional: make sure hero is tall enough to comfortably fit the 160x600 on desktop */
 }
-
+.hero.our-practice-hero {
+  height: auto;
+  max-height: none;
+  min-height: 620px;
+}
+.hero.careers-hero {
+  height: auto;
+  max-height: none;
+  min-height: 500px;
+}
+.hero.contact-hero {
+  height: auto;
+  max-height: none;
+  min-height: 500px;
+}
+.hero.blog-hero {
+  height: auto;
+  max-height: none;
+  min-height: 500px;
+}
+.hero.media-hero {
+  height: auto;
+  max-height: none;
+  min-height: 500px;
+}
+.hero.payment-plans-hero {
+  height: auto;
+  max-height: none;
+  min-height: 500px;
+}
+.hero.telemedicine-hero {
+  height: auto;
+  max-height: none;
+  min-height: 700px;
+}
 .fullscript-banner-over-hero {
   position: absolute;
   /*left: 16px;         /* left, not right */
@@ -2144,7 +2188,10 @@ section,
   pointer-events: none;
   opacity: 0.55;
 }
-
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+}
 .new-form-control {
     display: block;
     width: 100%;

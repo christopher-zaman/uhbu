@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Contact from '../components/Contact';
 import banner from '../assets/banners/contact-banner.png';
 import TextBlock from '../components/TextBlock';
-
+import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -17,15 +17,14 @@ function ContactUs() {
       <SEO {...seo} />
       <TopBar />
       <NavBar />
-
       <Hero
         backgroundImage={banner}
         title="Contact Us"
-        subtitle=""
-        textColor="rgba(1, 3, 112, 0.75)"
+        subtitle="We’re here to answer your questions and help you get started"
+        cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
+        textColor="rgba(255, 255, 255, 1)"
+        className='contact-hero'
       />
-
-      
 
       <TextBlock
         title="Contact Us"

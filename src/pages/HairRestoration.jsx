@@ -14,7 +14,7 @@ import PhoneChip from '../components/PhoneChip';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import TextBlock from '../components/TextBlock';
-
+import ConversionBlock from "../components/ConversionBlock";
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -72,7 +72,8 @@ function HairRestoration() {
       <Hero
         backgroundImage={banner}
         title="Hair Restoration"
-        subtitle=""
+        subtitle="Personalized treatments designed to support natural hair growth and scalp health"
+        cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
         textColor="rgba(255,255,255,0.8)"
       />
       <div className="fullscript-banner-over-hero">
@@ -85,9 +86,7 @@ function HairRestoration() {
         paragraphs={[
           "At Ultimate Health Spa, we understand that hair loss can impact your confidence and self-image. That’s why we offer a comprehensive, science-driven approach to hair restoration — designed to naturally stimulate growth, strengthen existing hair, and restore your confidence.",
           "Our hair restoration treatments are non-surgical, minimally invasive, and customized to each individual’s needs. Whether you’re noticing early thinning or have struggled with hair loss for years, we have advanced solutions to help you regain healthier, fuller hair.",
-          <>
-            Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
-          </>
+          <PhoneChip inline={false} className="hero-phone fs-4" />
         ]}
         // listItems={[
         //   ""
@@ -95,23 +94,56 @@ function HairRestoration() {
         video="/assets/video/hair-growth.mp4"  // ← this is the public path
       />
 
-      <MultiFeatureSection
-  sections={[{
-    title: "Our Hair Restoration Solutions Include:",
-    description: (
-        <>
-        <p>
-        </p>
-        </>
-    ),
-    htmlList,
-    image: myImage,
-    bgClass: "blue-fade-bg",
-    buttonText: "Book Now",
-    buttonLink: "/contact"
-  }]}
-/>
+    <MultiFeatureSection
+      sections={[{
+        title: "Our Hair Restoration Solutions Include:",
+        htmlList,
+        image: myImage,
+        bgClass: "blue-fade-bg",
+        // buttonText: "Book Now",
+        // buttonLink: "/contact"
+      }]
+    
+    }
+    />
 
+
+<ConversionBlock
+  id="hair-restoration-conversion"
+  title="A personalized, non-surgical approach to hair restoration"
+  subtitle="Support natural regrowth, strengthen existing hair, and improve scalp health with a plan built around you."
+
+  painTitle="Hair thinning can feel personal—and it’s common to feel unsure where to start."
+  pains={[
+    "Early thinning or widening part that keeps getting worse",
+    "Patchy shedding or sudden hair loss changes",
+    "Hair that feels weaker, finer, or slower to grow",
+    "Tried products that didn’t work (or didn’t last)"
+  ]}
+  outcome="We start with a focused consultation to understand what’s driving the change, then recommend options that match your goals."
+
+  solutionTitle="How Ultimate Health Spa Helps"
+  solutionIntro="Our approach is designed to be supportive, science-driven, and customized—so your plan actually fits your scalp and your lifestyle."
+  solutionBullets={[
+    { title: "Personalized evaluation", text: "We review your pattern of hair loss, history, and scalp health to guide next steps." },
+    { title: "Non-surgical options", text: "Treatments are minimally invasive with little to no downtime." },
+    { title: "Targeted treatment plan", text: "We recommend therapies that align with your specific concerns and goals." },
+    { title: "Progress tracking", text: "We monitor response over time and adjust your plan for better consistency." }
+  ]}
+  solutionClosing="Not every option is right for every person—your plan is based on what’s appropriate for you."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Consultation", text: "Discuss your goals, hair history, and what changes you’ve noticed." },
+    { title: "Choose a plan", text: "Review recommended options and set a realistic timeline for progress." },
+    { title: "Start treatment & follow up", text: "Begin your plan with check-ins and adjustments as needed." }
+  ]}
+
+  ctaTitle="Ready to take the next step?"
+  ctaText="Call or text to schedule a hair restoration consultation."
+  ctaType="phone"
+  phoneClassName="hero-phone-white fs-4"
+/>
 
 
     <TextBlock

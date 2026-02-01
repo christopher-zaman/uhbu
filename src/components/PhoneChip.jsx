@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PhoneChip({
   tel = '+13529016582',
-  display = '(352) 901-6582',
+  display = 'Schedule a Free Meet-and-Greet',
   inline = true,           // true = no extra padding/margin; false = chip style
   className = '',
   ariaLabel = 'Call Ultimate Health DPC'

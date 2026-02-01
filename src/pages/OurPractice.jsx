@@ -17,6 +17,7 @@ import ApproachMissionVision from '../components/ApproachMissionVision';
 import SingleColumnFeatureSection from '../components/SingleColumnFeatureSection';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
+import PhoneChip from '../components/PhoneChip';
 
 function OurPractice() {
   const seo = usePageSEO();
@@ -32,7 +33,9 @@ function OurPractice() {
         backgroundImage={banner}
         title="Our Practice"
         subtitle="Rooted in Community, Committed to Care"
+        cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
         textColor="rgba(255, 255, 255, 1)"
+        className="our-practice-hero"
       />
       <div className="fullscript-banner-over-hero">
         <FullscriptBanner />

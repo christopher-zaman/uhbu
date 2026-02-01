@@ -11,6 +11,7 @@ import Footer from '../components/Footer';
 import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
+import ConversionBlock from "../components/ConversionBlock";
 
 import bannerMobile from '../assets/mobile-banners/honey-model.webp';
 
@@ -93,7 +94,7 @@ const featureSections = [
     Whether you’re struggling with discomfort, dryness, low desire, or cosmetic concerns—we’re here for you.
       <p className='mt-4'>
       {' '}
-      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+      <PhoneChip variant="inline" className="phone-chip" />
       </p>
     </>
   ),
@@ -119,7 +120,7 @@ const featureSections = [
       These issues may be caused by hormone shifts (like menopause or postpartum), past trauma, stress, medication side effects, childbirth, or natural aging. But the good news is—you have options.
       <p className='mt-4'>
       {' '}
-      Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+      <PhoneChip variant="inline" className="phone-chip" />
       </p>
     </>
   ),
@@ -149,7 +150,7 @@ const featureSections = [
           Comfortable, non-surgical, and highly effective—Empower helps restore both function and sensation
           <p className='mt-4'>
           {' '}
-          Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          <PhoneChip variant="inline" className="phone-chip" />
           </p>
         </>
       ),
@@ -172,7 +173,7 @@ const featureSections = [
           It’s quick, safe, and has no downtime—just better results and more confidence.
           <p className='mt-4'>
           {' '}
-          Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          <PhoneChip variant="inline" className="phone-chip" />
           </p>
         </>
       ),
@@ -195,7 +196,7 @@ const featureSections = [
           We also offer O-Shot Arousal Oil and O-Shot CBD Lubricant to complement your in-office treatment and support intimacy at home.
           <p className='mt-4'>
           {' '}
-          Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+          <PhoneChip variant="inline" className="phone-chip" />
           </p>
         </>
       ),
@@ -222,7 +223,10 @@ function OShot() {
         title="Sexual Wellness For Her"
         subtitle="Featuring the Orgasm Shot - designed to enhance your wellness journey."
         videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+        textColor="rgb(255, 170, 234)"
+        cta={<PhoneChip inline={false} className='hero-phone fs-4'/>}
       />
+
       <div className="fullscript-banner-over-hero">
         <FullscriptBanner />
       </div>
@@ -232,7 +236,8 @@ function OShot() {
         <Hero
           backgroundImage={bannerMobile}
           title="Empowering your wellness journey"
-          subtitle=""
+          subtitle="The Orgasm Shot"
+          cta={<PhoneChip inline={false} className='hero-phone-white fs-4'/>}
         />
       </div>
       </div>
@@ -269,7 +274,43 @@ function OShot() {
         // dark={true}
       />
 
-        
+        <ConversionBlock
+  id="sexual-wellness-for-her-conversion"
+  title="Compassionate care for intimate wellness"
+  subtitle="Discreet, supportive, women-centered care—so you can feel comfortable, confident, and in control."
+
+  painTitle="If intimacy has changed, you’re not alone—and you’re not out of options."
+  pains={[
+    "Dryness, discomfort, or pain during intimacy",
+    "Lower desire or reduced arousal",
+    "Changes after childbirth, menopause, or hormone shifts",
+    "Decreased sensation or difficulty reaching orgasm"
+  ]}
+  outcome="We help you understand what’s contributing to the changes and guide you toward safe, personalized options."
+
+  solutionTitle="How Ultimate Health DPC Helps"
+  solutionIntro="We take a respectful, medical approach that’s focused on comfort, function, and confidence—without judgment."
+  solutionBullets={[
+    { title: "Private, judgment-free consult", text: "A supportive conversation focused on your symptoms, goals, and comfort level." },
+    { title: "Root-cause evaluation", text: "We consider hormones, life stage changes, stress, medications, and overall health." },
+    { title: "Personalized treatment plan", text: "Options may include in-office therapies and supportive medical therapies when appropriate." },
+    { title: "Follow-up & ongoing support", text: "We monitor progress and adjust your plan so you’re not left guessing." }
+  ]}
+  solutionClosing="All therapies are offered only after a full medical evaluation. Not every option is appropriate for every patient."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Meet your provider", text: "Share what’s changed, your goals, and what you’ve tried so far—comfortably and privately." },
+    { title: "Review your options", text: "We’ll outline what’s appropriate for you and explain the next step clearly." },
+    { title: "Start care with support", text: "Begin your plan with guidance and follow-up to refine results over time." }
+  ]}
+
+  ctaTitle="Ready to talk privately?"
+  ctaText="Call or text to schedule a confidential consultation."
+  ctaType="phone"
+  phoneClassName="hero-phone fs-4"
+/>
+
       <Footer />
       </>
     );

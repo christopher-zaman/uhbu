@@ -4,8 +4,9 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-import banner from '../assets/banners/media-presence.jpg';
+import banner from '../assets/banners/media-bg.webp';
 import Title from '../components/Title';
+import PhoneChip from '../components/PhoneChip';
 
 function Media() {
   return (
@@ -15,9 +16,11 @@ function Media() {
     
     <Hero
     backgroundImage={banner}
-    title="Check Out Our Media Appearences"
-    subtitle=""
-    textColor="rgba(255, 255, 255, 1)"
+    title="Our Media Appearences"
+    subtitle={<span class="text-white">Featuring interviews, coverage, and expert insights from our providers</span>}
+    cta={<PhoneChip inline={false} className="hero-phone fs-4" />}
+    textColor="rgba(1, 3, 112, 0.75)"
+    className='media-hero'
      />
     <section className="section blog py-5">
       <div className="container">

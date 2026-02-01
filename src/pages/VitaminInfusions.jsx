@@ -19,6 +19,7 @@ import BulletedTextBlock from '../components/BulletedTextBlock';
 import Faq from '../components/Faq';
 import TripleFAQGrid from '../components/TripleFaqGrid';
 import TripleFeatureFaqGrid from '../components/TripleFeatureFaqGrid';
+import ConversionBlock from "../components/ConversionBlock";
 
 import ContentSection from '../components/ContentSection';
 import TextImageSection from '../components/TextImageSection';
@@ -45,7 +46,14 @@ function VitaminInfusions() {
       <Hero
         backgroundImage={banner}
         title="Vitamin Infusions"
-        subtitle=""
+        // subtitle="IV vitamin infusions designed to support hydration, energy, and overall wellness"
+        subtitle={
+          <>
+            IV vitamin infusions designed to{" "}
+            <span className="text-white fw-semibold">support hydration</span>, energy, and overall wellness
+          </>
+        }
+        cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
         textColor="rgba(1, 3, 112, 0.75)"
       />
       <div className="fullscript-banner-over-hero">
@@ -61,7 +69,7 @@ function VitaminInfusions() {
 
       <TextBlock
         title="IV Therapy in Leesburg, FL"
-        body="Whether you need a quick energy boost, want to brighten your skin, or support your immune system—our vitamin injections are a fast, effective way to feel your best."
+        body="Whether you need a quick energy boost, want to brighten your skin, or support your immune system — our IV vitamin infusions are a fast, effective way to feel your best."
         footer={
         <>
           Call or stop by today to get started. We’ll help you choose the right mix for your body and your goals!<br></br>
@@ -86,7 +94,43 @@ function VitaminInfusions() {
             }}
             />
 
-      
+      <ConversionBlock
+  id="vitamin-infusions-conversion"
+  title="Hydration and nutrients—delivered efficiently"
+  subtitle="IV vitamin infusions designed to support hydration, energy, immune health, and recovery—guided by licensed providers."
+
+  painTitle="When you’re depleted, it’s hard to feel like yourself."
+  pains={[
+    "Dehydration from travel, heat, or a busy week",
+    "Low energy, fatigue, or burnout",
+    "Feeling run down during cold & flu season",
+    "Wanting more efficient absorption than oral supplements"
+  ]}
+  outcome="IV therapy delivers fluids and nutrients directly—so your body can use them efficiently."
+
+  solutionTitle="How Ultimate Health Helps"
+  solutionIntro="Our IV therapy is provider-guided, comfortable, and personalized to your goals."
+  solutionBullets={[
+    { title: "Provider-guided care", text: "Administered by trained medical professionals in a safe clinical setting." },
+    { title: "Goal-based blends", text: "Hydration, energy, immune support, recovery, and wellness optimization." },
+    { title: "Comfort-first experience", text: "Relax in a calm setting while your infusion runs." },
+    { title: "Clear expectations", text: "We’ll help you choose a drip and explain what to expect." }
+  ]}
+  solutionClosing="IV therapy is provided after appropriate evaluation and may not be suitable for everyone."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Quick consult", text: "We review goals and any health considerations." },
+    { title: "Receive your infusion", text: "Most sessions take around 45 minutes." },
+    { title: "Feel refreshed", text: "You’re back to your day with a plan for follow-up if desired." }
+  ]}
+
+  ctaTitle="Ready to book an IV infusion?"
+  ctaText="Call or text to schedule your session."
+  ctaType="phone"
+  phoneClassName="hero-phone-white fs-4"
+/>
+
 
         <TextBlock
         title="Why IV Therapy?"

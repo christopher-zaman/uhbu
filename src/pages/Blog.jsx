@@ -6,6 +6,7 @@ import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import banner from '../assets/banners/subscribe.png';
 import Title from '../components/Title';
+import PhoneChip from '../components/PhoneChip';
 
 function Blog() {
   return (
@@ -16,8 +17,11 @@ function Blog() {
     <Hero
     backgroundImage={banner}
     title="Check Out Our Blogs"
-    subtitle=""
+    subtitle="Insights, updates, and guidance to support informed health decisions"
+    cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
     textColor="rgba(255, 255, 255, 1)"
+    className='blog-hero'
+
      />
     <section className="section blog py-5">
       <div className="container">

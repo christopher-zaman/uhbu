@@ -10,7 +10,7 @@ import contentImage from '../assets/img/womens-health.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 
 import PhoneChip from '../components/PhoneChip';
-
+import ConversionBlock from "../components/ConversionBlock";
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/estrogen.jpg';
 import afterImage from '../assets/img/peri-menopause.png';
@@ -30,7 +30,8 @@ function WomensHealth() {
     <Hero
     backgroundImage={banner}
     title="Women's Health Care"
-    subtitle=""
+    subtitle="Personalized care supporting hormonal balance, wellness, and long-term health"
+    cta={<PhoneChip inline={false} className='hero-phone fs-4'/>}
     textColor="rgba(1, 3, 112, 0.75)"
      />
     <div className="fullscript-banner-over-hero">
@@ -85,7 +86,43 @@ function WomensHealth() {
         ]}
         
          />
-         
+         <ConversionBlock
+  id="womens-health-conversion"
+  title="Women’s health care that listens first"
+  subtitle="Personalized support for hormones, energy, mood, sleep, and long-term wellness—through Direct Primary Care."
+
+  painTitle="If you’ve felt dismissed or told “it’s normal,” you’re not alone."
+  pains={[
+    "Fatigue, brain fog, or mood changes that don’t feel like you",
+    "Weight changes, low energy, or stubborn symptoms despite “normal” labs",
+    "Perimenopause or menopause symptoms affecting sleep, focus, or confidence",
+    "Feeling rushed in visits or unsure what to do next"
+  ]}
+  outcome="We take the time to understand your symptoms, your history, and your goals—then build a plan that makes sense for you."
+
+  solutionTitle="How Ultimate Health DPC Helps"
+  solutionIntro="Our care is relationship-based and evidence-informed, with a focus on real-life results—not quick answers."
+  solutionBullets={[
+    { title: "Whole-person evaluation", text: "We look at hormones, lifestyle, stress, sleep, and overall health factors together." },
+    { title: "Personalized plan", text: "Options are tailored to your symptoms, life stage, and goals." },
+    { title: "Clear guidance", text: "You’ll understand your options and what to expect—without being overwhelmed." },
+    { title: "Ongoing support", text: "Follow-ups and adjustments so your plan evolves as your body changes." }
+  ]}
+  solutionClosing="Whether you’re navigating perimenopause, menopause, or just want proactive women’s care—your concerns deserve time and attention."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Schedule a visit", text: "Call or text to book a consultation and share what you’re experiencing." },
+    { title: "Review & evaluate", text: "We discuss symptoms, history, and—when appropriate—lab work or next steps." },
+    { title: "Start your plan", text: "Begin care with follow-up support and refinements over time." }
+  ]}
+
+  ctaTitle="Ready to feel heard and supported?"
+  ctaText="Call or text to schedule a consultation."
+  ctaType="phone"
+  phoneClassName="hero-phone fs-4"
+/>
+
         <SideBySideImages
         title=""
         leftImage={beforeImage}

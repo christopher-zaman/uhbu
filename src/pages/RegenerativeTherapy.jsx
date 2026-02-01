@@ -12,7 +12,7 @@ import thirdImage from '../assets/img/regenerative.png';
 import fourthImage from '../assets/img/fourth-peptide.webp';
 import PhoneChip from '../components/PhoneChip';
 import beforeImage from '../assets/img/peptide-therapy-1.jpg';
-
+import ConversionBlock from "../components/ConversionBlock";
 import TextImageSection from '../components/TextImageSection';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
@@ -33,7 +33,8 @@ function RegenerativeTherapy() {
             <Hero
             backgroundImage={banner}
             title="Regenerative Therapy"
-            subtitle=""
+            subtitle="Personalized regenerative therapies designed to support healing and recovery"
+            cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
             />
             <div className="fullscript-banner-over-hero">
                 <FullscriptBanner />
@@ -43,8 +44,9 @@ function RegenerativeTherapy() {
         <div className="hero-mobile">
             <Hero
             backgroundImage={bannerMobile}
-            title="Peptide Therapy"
-            subtitle=""
+            title="Regenerative Therapy"
+            subtitle="Personalized regenerative therapies designed to support healing and recovery"
+            cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
             />
         </div>
         
@@ -90,6 +92,44 @@ function RegenerativeTherapy() {
         image={thirdImage}
         />
 
+    <ConversionBlock
+  id="regenerative-therapy-conversion"
+  title="Support healing and recovery—naturally"
+  subtitle="Regenerative therapies designed to support your body’s repair process with medically guided care."
+
+  painTitle="When you’re not healing the way you used to, it’s frustrating."
+  pains={[
+    "Ongoing aches, stiffness, or slow recovery after activity",
+    "Feeling like progress has stalled despite doing “the right things”",
+    "Wanting non-surgical options with minimal downtime",
+    "Unsure which regenerative options are appropriate for your goals"
+  ]}
+  outcome="We help you understand what’s driving the issue and whether regenerative therapy may be a good fit."
+
+  solutionTitle="How Ultimate Health DPC Helps"
+  solutionIntro="Our approach is careful, personalized, and medically guided—so you feel clear on next steps."
+  solutionBullets={[
+    { title: "Medical evaluation first", text: "We review your history, goals, and symptoms before recommending anything." },
+    { title: "Personalized pathway", text: "Your plan is based on what’s appropriate for you—not a one-size protocol." },
+    { title: "Whole-body support", text: "We pair regenerative options with lifestyle guidance when needed for better outcomes." },
+    { title: "Clear expectations", text: "We’ll explain what to expect, what’s realistic, and how progress is monitored." }
+  ]}
+  solutionClosing="All therapies are provided under medical supervision and may not be suitable for everyone."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Consultation", text: "Discuss goals, history, and what recovery looks like for you right now." },
+    { title: "Review options", text: "We’ll explain which regenerative approaches may fit your needs." },
+    { title: "Start care & follow up", text: "Begin your plan with check-ins and adjustments as appropriate." }
+  ]}
+
+  ctaTitle="Ready to explore your options?"
+  ctaText="Call or text to schedule a consultation."
+  ctaType="phone"
+  phoneClassName="hero-phone-white fs-4"
+/>
+
+
          <TextImageSection 
          bgClass="sexual-wellness-bg"
          section={{
@@ -107,7 +147,7 @@ function RegenerativeTherapy() {
 
                     <li><span className="d-inline-block"><strong> Note: </strong>Regenerative therapies are performed using a patient’s own biologic material. All treatments are provided under medical supervision and may not be suitable for everyone.</span></li>
                     <>
-                    Call us at <PhoneChip variant="inline" className="phone-chip" /> to book your consultation.
+                    <PhoneChip variant="inline" className="phone-chip" />
                     </>
                 </ul>
                 

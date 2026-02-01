@@ -13,6 +13,7 @@ import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 import bannerMobile from '../assets/mobile-banners/honey-model.webp';
+import ConversionBlock from "../components/ConversionBlock";
 
 function SexualWellnessTreatments() {
   const seo = usePageSEO();
@@ -30,8 +31,9 @@ function SexualWellnessTreatments() {
               backgroundImage="/assets/img/banners/model-honey-tone-large.webp"
               // heroImage="/assets/img/hero-img.png"
               title="Sexual Wellness Treatments"
-              subtitle="Empowering your wellness journey"
+              subtitle="Personalized, relationship-based care focused on prevention, longevity, and real results"
               videoUrl="https://www.youtube.com/watch?v=92jlApzokh0"
+              cta={<PhoneChip inline={false} className="hero-phone-white fs-4"/>}
             />
 
         <div className="fullscript-banner-over-hero">
@@ -45,8 +47,14 @@ function SexualWellnessTreatments() {
         <Hero
           backgroundImage={bannerMobile}
           title="Empowering your wellness journey"
-          subtitle=""
+          subtitle="Personalized, relationship-based care focused on prevention, longevity, and real results"
+          cta={<PhoneChip inline={false} className="hero-phone-white fs-4"/>}
         />
+
+
+
+
+
       </div>
       </div>
         {/* <SingleFeature
@@ -107,6 +115,44 @@ function SexualWellnessTreatments() {
             
           ]}
         />
+
+
+        <ConversionBlock
+  id="sexual-wellness-conversion"
+  title="Supportive, confidential care—built around you"
+  subtitle="Restore comfort, function, and confidence with a plan tailored to your body and your goals."
+
+  painTitle="If something feels different, you deserve answers—not embarrassment."
+  pains={[
+    "Low desire, discomfort, or changes in sensation",
+    "Pain with intimacy or vaginal dryness",
+    "Difficulty with arousal or performance",
+    "Confidence changes after childbirth, stress, or hormone shifts"
+  ]}
+  outcome="We take a respectful, medical approach to help you understand what’s going on—and what your options are."
+
+  solutionTitle="How Ultimate Health DPC Helps"
+  solutionIntro="Our approach is private, personalized, and grounded in evidence-based options—so you feel supported every step of the way."
+  solutionBullets={[
+    { title: "Judgment-free consult", text: "A discreet, respectful conversation focused on your symptoms and goals." },
+    { title: "Root-cause evaluation", text: "We consider hormones, stress, medications, life stage changes, and overall health." },
+    { title: "Personalized treatment plan", text: "Options may include device-based therapies and/or supportive medical therapies when appropriate." },
+    { title: "Ongoing support", text: "Follow-up and adjustments so you’re not left guessing between visits." }
+  ]}
+  solutionClosing="All therapies are offered only after a full medical evaluation. Not every option is appropriate for every patient."
+
+  processTitle="What to Expect"
+  steps={[
+    { title: "Talk with your provider", text: "Share symptoms, goals, and what you’ve tried so far—privately and comfortably." },
+    { title: "Review your options", text: "We’ll explain what’s appropriate for you and outline a clear next step." },
+    { title: "Start care with support", text: "Begin your plan with guidance, follow-up, and adjustments over time." }
+  ]}
+
+  ctaTitle="Ready to talk privately?"
+  ctaText="Call or text to schedule a confidential consultation."
+  ctaType="phone"
+  phoneClassName="hero-phone-white fs-4"
+/>
 
 
         {/* <Details 

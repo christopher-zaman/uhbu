@@ -6,7 +6,7 @@ import Hero from '../components/Hero';
 import ContentSection from '../components/ContentSection';
 import TextVideoSection from '../components/TextVideoSection';
 import Contact from '../components/Contact';
-
+import PhoneChip from '../components/PhoneChip';
 import FullscriptBanner from "../components/FullscriptBanner";
 
 // Images
@@ -32,7 +32,9 @@ function AboutUs() {
         <Hero
           backgroundImage={banner}
           title="About Us"
-          subtitle=""
+          subtitle="Relationship-based care focused on listening, prevention, and long-term health"
+          cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
+          textColor="rgba(255,255,255,1)"
         />
         <div className="fullscript-banner-over-hero">
           <FullscriptBanner />
