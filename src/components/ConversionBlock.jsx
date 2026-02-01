@@ -42,7 +42,7 @@ export default function ConversionBlock({
       <div className="container text-center section-title" data-aos="fade-up">
         <div><span>{title}</span></div>
         <Divider />
-        {subtitle ? <p className="mt-3" style={{ opacity: 0.85 }}>{subtitle}</p> : null}
+        {subtitle ? <p className="mt-3 lead" style={{ opacity: 0.85 }}>{subtitle}</p> : null}
       </div>
 
       <div className="container" data-aos="fade-up" data-aos-delay={100}>
@@ -53,7 +53,7 @@ export default function ConversionBlock({
               <h3 className="mb-3">{painTitle}</h3>
 
               {pains?.length ? (
-                <ul className="list-unstyled mb-3">
+                <ul className="list-unstyled mb-3 lead">
                   {pains.slice(0, 6).map((p, i) => (
                     <li key={i} className="d-flex align-items-start gap-2 mb-2">
                       <span aria-hidden="true">•</span>
@@ -64,7 +64,7 @@ export default function ConversionBlock({
               ) : null}
 
               {outcome ? (
-                <div className="p-3 rounded-4" style={{ background: "rgba(1, 3, 112, 0.06)" }}>
+                <div className="p-3 rounded-4 lead" style={{ background: "rgba(1, 3, 112, 0.06)" }}>
                   <strong>→ </strong>{outcome}
                 </div>
               ) : null}
@@ -82,9 +82,9 @@ export default function ConversionBlock({
               <div className="row g-3">
                 {solutionBullets.slice(0, 6).map((b, i) => (
                   <div className="col-12 col-md-6" key={i}>
-                    <div className="p-4 rounded-4 h-100"
+                    <div className="p-4 rounded-4 h-100 lead"
                       style={{ background: "rgba(255,255,255,0.95)", border: "1px solid rgba(0,0,0,0.06)" }}>
-                      <strong className="d-block mb-1">{b.title}</strong>
+                      <strong className="d-block mb-1 text-success">{b.title}</strong>
                       <span style={{ opacity: 0.9 }}>{b.text}</span>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ export default function ConversionBlock({
             ) : null}
 
             {solutionClosing ? (
-              <p className="text-center mt-3 mb-0" style={{ opacity: 0.85 }}>
+              <p className="text-center mt-3 mb-0 lead" style={{ opacity: 0.85 }}>
                 {solutionClosing}
               </p>
             ) : null}
@@ -102,7 +102,7 @@ export default function ConversionBlock({
 
         {/* PROCESS */}
         <div className="row justify-content-center mb-4">
-          <div className="col-12 col-lg-9">
+          <div className="col-12 col-lg-9 lead">
             <h3 className="text-center mb-3">{processTitle}</h3>
 
             <div className="row g-3">
@@ -114,14 +114,14 @@ export default function ConversionBlock({
                   <div className="col-12 col-md-6 col-lg-4" key={i}>
                     <div className="p-4 rounded-4 h-100"
                       style={{ background: "rgba(255,255,255,0.95)", border: "1px solid rgba(0,0,0,0.06)" }}>
-                      <div className="mb-2" style={{ opacity: 0.75, fontWeight: 800 }}>
+                      <div className="mb-2 text-navy" style={{ opacity: 0.75, fontWeight: 800 }}>
                         Step {i + 1}
                       </div>
                       <div style={{ fontSize: "1.05rem", fontWeight: 900 }}>
                         {stepTitle}
                       </div>
                       {stepText ? (
-                        <div className="mt-2" style={{ opacity: 0.9 }}>
+                        <div className="mt-2 text-success" style={{ opacity: 0.9 }}>
                           {stepText}
                         </div>
                       ) : null}
