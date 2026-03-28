@@ -16,7 +16,7 @@ function ContentSection({
   buttonText = '',
   buttonLink = '',
   roundedImage = false,
-  reverse = false
+  reverse = false,
 }) {
   return (
     <section id={id} className="about section lead">

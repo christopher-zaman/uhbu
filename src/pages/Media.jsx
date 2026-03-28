@@ -74,14 +74,14 @@ function Media() {
               link="/media/small-business-administration"
             />
           </div>
-          {/* <div className="col-md-6 col-lg-4 mb-4">
+          <div className="col-md-6 col-lg-4 mb-4">
             <MediaPreview
-              title="Tired of your primary care provider? Leesburg practitioner recognized for direct care alternative"
-              excerpt="North Florida’s Top Honorees for 2025"
-              image="/assets/img/media-images/amanda-daily-commercial.webp"
-              link="/media/tired-of-your-primary-care-provider"
+              title="The UTI Cycle Menopause Creates and How Vaginal Estrogen Breaks It"
+              excerpt="Synopsis: This article reveals how recurrent UTIs affect up to 55% of women over 55 yet antibiotics don’t address the root cause of estrogen loss that raises vaginal pH, thins urethral/bladder tissues, and allows pathogenic bacteria to thrive."
+              image="/assets/img/media-images/amanda_gaskins_estrogen_menopause_article_image.webp"
+              link="/media/the-uti-cycle-menopause-creates-and-how-vaginal-estrogen-breaks-it"
             />
-          </div> */}
+          </div>
           
         </div>
 
