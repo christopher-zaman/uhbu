@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import BlogHero from '../components/BlogHero';
 import ContentSection from '../components/ContentSection';
 import sideImage from '../assets/img/side-card-image.webp';
-
+import estrogenImage from '../assets/img/estrogen.webp';
 
 function MediaPost() {
   const { slug } = useParams();
@@ -290,7 +290,8 @@ At Ultimate Health Direct Primary Care, Neil and her team do healthcare a little
   // Adding new post here:
   'the-uti-cycle-menopause-creates-and-how-vaginal-estrogen-breaks-it': {
     // title: 'The UTI Cycle Menopause Creates and How Vaginal Estrogen Breaks It',
-    banner: '../src/assets/img/estrogen.webp',
+    // banner: '../src/assets/img/estrogen.webp',
+    banner: estrogenImage,
     date: 'March 28, 2026',
     content: <>
   <h2>The UTI Cycle Menopause Creates and How Vaginal Estrogen Breaks It</h2>
