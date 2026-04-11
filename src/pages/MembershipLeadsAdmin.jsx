@@ -12,7 +12,11 @@ function MembershipLeadsAdmin() {
   const [items, setItems] = useState([]);
   const [status, setStatus] = useState('');
 
+  const [intakeItems, setIntakeItems] = useState([]);
+
   const expectedPin = import.meta.env.VITE_MEMBERSHIP_ADMIN_PIN;
+
+
 
 // This saves the 'unlocked' state (to not have to log in again and again like over and over)
 //   useEffect(() => {
@@ -54,7 +58,30 @@ function MembershipLeadsAdmin() {
         }
 
         setItems(result.items || []);
-        setStatus('');
+
+// 🔽 ADD THIS RIGHT HERE
+const intakeResponse = await fetch('/api/intake_submissions', {
+  headers: {
+    'x-admin-pin': pinInput,
+  },
+});
+
+const intakeText = await intakeResponse.text();
+
+let intakeResult = null;
+try {
+  intakeResult = JSON.parse(intakeText);
+} catch {
+  throw new Error(`API returned non-JSON: ${intakeText.slice(0, 160)}`);
+}
+
+if (!intakeResponse.ok) {
+  throw new Error(intakeResult?.error || 'Failed to load intake submissions.');
+}
+console.log('intake items from api:', intakeResult.items);
+setIntakeItems(intakeResult.items || []);
+
+setStatus('');
       } catch (error) {
         setStatus(error.message || 'Failed to load membership leads.');
       }
@@ -62,6 +89,7 @@ function MembershipLeadsAdmin() {
 
     loadLeads();
   }, [isUnlocked, pinInput]);
+
 
   const handleUnlock = (e) => {
     e.preventDefault();
@@ -97,6 +125,7 @@ const handleLock = () => {
   setIsUnlocked(false);
   setPinInput('');
   setItems([]);
+  setIntakeItems([]);
   setStatus('');
   setPinError('');
 };
@@ -151,7 +180,7 @@ const handleLock = () => {
           ) : (
             <>
               <div className="d-flex justify-content-between align-items-center mb-3">
-                <h4 className="mb-0">Recent Leads</h4>
+                <h4 className="mb-0">Membership Leads</h4>
                 <button className="btn btn-outline-secondary btn-sm" onClick={handleLock}>
                   Lock
                 </button>
@@ -162,7 +191,11 @@ const handleLock = () => {
               ) : items.length === 0 ? (
                 <div className="alert alert-warning">No leads found.</div>
               ) : (
+                
                 <div className="table-responsive">
+                <hr className="my-5" />
+                <p className="small text-muted">Intake count: {intakeItems.length}</p>
+                <h4 className="mb-3">Intake Submissions</h4>
                   <table className="table table-bordered table-striped align-middle">
                     <thead>
                       <tr>
@@ -192,7 +225,50 @@ const handleLock = () => {
                     </tbody>
                   </table>
                 </div>
-              )}
+            )}
+    {/*  */}
+    <hr className="my-5" />
+
+<h4 className="mb-3">Intake Submissions</h4>
+
+{intakeItems.length === 0 ? (
+  <div className="alert alert-warning">No intake submissions found.</div>
+) : (
+  <div className="table-responsive">
+    <table className="table table-bordered table-striped align-middle">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Preferred Contact</th>
+          <th>Interested For</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        {intakeItems.map((item) => (
+          <tr key={item._id}>
+            <td>
+              {item.createdAt
+                ? new Date(item.createdAt).toLocaleString()
+                : ''}
+            </td>
+            <td>{`${item.firstName || ''} ${item.lastName || ''}`.trim()}</td>
+            <td>{item.email || ''}</td>
+            <td>{item.phone || ''}</td>
+            <td>{item.preferredContactMethod || ''}</td>
+            <td>{item.interestType || ''}</td>
+            <td style={{ minWidth: '250px' }}>{item.message || ''}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
+
             </>
           )}
         </div>

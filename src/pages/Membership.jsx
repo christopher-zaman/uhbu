@@ -12,7 +12,7 @@ import MembershipSteps from '../components/MembershipSteps';
 import MembershipAudience from '../components/MembershipAudience';
 import MembershipCtaSplit from '../components/MembershipCtaSplit';
 import MembershipLeadForm from '../components/MembershipLeadForm';
-
+import IntakeForm from '../components/IntakeForm';
 import banner from '../assets/banners/contact-banner.png';
 
 function Membership() {
@@ -51,6 +51,7 @@ function Membership() {
 
       <div ref={leadFormRef}>
         <MembershipLeadForm />
+        <IntakeForm />
       </div>
 
       {/* <Contact /> */}
