@@ -14,12 +14,15 @@ function MembershipLeadsAdmin() {
 
   const expectedPin = import.meta.env.VITE_MEMBERSHIP_ADMIN_PIN;
 
-  useEffect(() => {
-    const saved = sessionStorage.getItem('membership_admin_unlocked');
-    if (saved === 'true') {
-      setIsUnlocked(true);
-    }
-  }, []);
+// This saves the 'unlocked' state (to not have to log in again and again like over and over)
+//   useEffect(() => {
+//     const saved = sessionStorage.getItem('membership_admin_unlocked');
+//     if (saved === 'true') {
+//       setIsUnlocked(true);
+//     }
+//   }, []);
+
+
 
   useEffect(() => {
     if (!isUnlocked) return;
@@ -28,9 +31,13 @@ function MembershipLeadsAdmin() {
       setStatus('Loading...');
       try {
         const response = await fetch('/api/membership-leads-list', {
-          headers: {
-            'x-admin-pin': pinInput || sessionStorage.getItem('membership_admin_pin') || '',
-          },
+        // complements the "saves the 'unlocked' state" effect block above    
+        //   headers: {
+        //     'x-admin-pin': pinInput || sessionStorage.getItem('membership_admin_pin') || '',
+        //   },
+        headers: {
+        'x-admin-pin': pinInput,
+        },
         });
 
         const text = await response.text();
@@ -59,26 +66,40 @@ function MembershipLeadsAdmin() {
   const handleUnlock = (e) => {
     e.preventDefault();
 
+    // Completments the above "saves the 'unlocked' state" effect block
+    // if (pinInput === expectedPin) {
+    //   setIsUnlocked(true);
+    //   setPinError('');
+    //   sessionStorage.setItem('membership_admin_unlocked', 'true');
+    //   sessionStorage.setItem('membership_admin_pin', pinInput);
+    // } else {
+    //   setPinError('Incorrect PIN.');
+    // }
     if (pinInput === expectedPin) {
-      setIsUnlocked(true);
-      setPinError('');
-      sessionStorage.setItem('membership_admin_unlocked', 'true');
-      sessionStorage.setItem('membership_admin_pin', pinInput);
+    setIsUnlocked(true);
+    setPinError('');
     } else {
-      setPinError('Incorrect PIN.');
+    setPinError('Incorrect PIN.');
     }
   };
+// Complements above effect block
+//   const handleLock = () => {
+//     setIsUnlocked(false);
+//     setPinInput('');
+//     setItems([]);
+//     setStatus('');
+//     setPinError('');
+//     sessionStorage.removeItem('membership_admin_unlocked');
+//     sessionStorage.removeItem('membership_admin_pin');
+//   };
 
-  const handleLock = () => {
-    setIsUnlocked(false);
-    setPinInput('');
-    setItems([]);
-    setStatus('');
-    setPinError('');
-    sessionStorage.removeItem('membership_admin_unlocked');
-    sessionStorage.removeItem('membership_admin_pin');
-  };
-
+const handleLock = () => {
+  setIsUnlocked(false);
+  setPinInput('');
+  setItems([]);
+  setStatus('');
+  setPinError('');
+};
   return (
     <>
       <SEO
