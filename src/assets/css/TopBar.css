@@ -1,12 +1,18 @@
 .topbar {
   background-color: #f8f9fa;
-  height: 150px;
+  /* height: 150px; */
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   padding-top: 10px;  /* increase if needed */
   padding-bottom: 10px;
+
+  position: relative;
+  z-index: 1050; /* ensure it's below announcement but above nav if needed */
 }
+
+
+
 #top-bar img {
   max-height: 145px; /* or the desired height */
   width: auto;
@@ -21,11 +27,13 @@
 
 /* Logo fixes */
 .topbar-logo {
-  max-height: 50px; /* adjust as needed */
+  max-height: 60px; /* adjust as needed */
   object-fit: contain;
   padding-top: 4px;
   padding-bottom: 4px;
+  width: auto;
 }
+
 
 /* On very small screens, give it more breathing room */
 @media (max-width: 576px) {

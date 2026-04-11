@@ -864,6 +864,9 @@ section,
   background: rgba(13, 110, 253, 0.12); /* brand tint */
   border: 1px solid rgba(13, 110, 253, 0.24);
 }
+.phone-chip:hover {
+  color: #0f058b;
+}
 
 /* Full Script Vertical Banner 
 =================================================================

@@ -25,7 +25,7 @@ function TopBar() {
               href="/contact#contact"
               className="topbar-glass-cta"
             >
-              Request an Appointment
+              Book Your Meet & Greet
             </a>
           </div>
 
@@ -69,7 +69,7 @@ function TopBar() {
           });
         }}
       >
-        <i className="bi bi-telephone-fill"></i> 352-901-6582
+        <i className="bi bi-telephone-fill"></i> Call 352-901-6582
       </a>
     </span>
   </div>

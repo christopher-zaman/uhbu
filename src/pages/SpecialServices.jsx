@@ -66,6 +66,7 @@ import vaginalTighteningImg from '../assets/img/seo/vaginal-tightening.webp';
 const services = [
   // Women's Bladder Control / Urinary  -> /womens-health
   {
+    id: "bladder-control-treatment",
     title: "Bladder control treatment",
     snippet:
       "At Ultimate Health Direct Primary Care in Leesburg, Florida, we offer personalized options for women seeking bladder control treatment, with a focus on comfort, confidence, and long-term support.",
@@ -75,6 +76,7 @@ const services = [
     ctaText: "Learn more about bladder control care for women",
   },
   {
+    id: "bladder-control-therapy-near-me",
     title: "Bladder control therapy near me",
     snippet:
       "If you’re exploring bladder control therapy, our Leesburg, Florida team at Ultimate Health Direct Primary Care focuses on identifying triggers and building a plan that fits your daily routine.",
@@ -84,6 +86,7 @@ const services = [
     ctaText: "Explore women’s bladder control therapy options",
   },
   {
+    id: "womens-bladder-control",
     title: "Womens bladder control",
     snippet:
       "Women’s bladder control concerns are common and treatable. Ultimate Health Direct Primary Care in Leesburg, Florida provides supportive, judgment-free care tailored to your needs.",
@@ -93,6 +96,7 @@ const services = [
     ctaText: "See women’s bladder control treatment options",
   },
   {
+    id: "urinary-incontinence-treatment",
     title: "Urinary incontinence treatment",
     snippet:
       "For urinary incontinence treatment in Leesburg, Florida, Ultimate Health Direct Primary Care offers a clear, step-by-step approach to help reduce leaks and improve confidence.",
@@ -102,6 +106,7 @@ const services = [
     ctaText: "Learn more about urinary incontinence treatment for women",
   },
   {
+    id: "urinary-incontinence-clinic",
     title: "Urinary incontinence clinic",
     snippet:
       "If you’re searching for a urinary incontinence clinic, Ultimate Health Direct Primary Care in Leesburg, Florida provides private, personalized visits and ongoing support.",
@@ -111,6 +116,7 @@ const services = [
     ctaText: "Visit our women’s health clinic for urinary incontinence support",
   },
   {
+    id: "urinary-incontinence-therapy-near-me",
     title: "Urinary incontinence therapy near me",
     snippet:
       "Need urinary incontinence therapy near you? Ultimate Health Direct Primary Care in Leesburg, Florida offers patient-focused care with practical next steps based on your symptoms.",
@@ -120,6 +126,7 @@ const services = [
     ctaText: "Explore urinary incontinence therapy options in women’s health",
   },
   {
+    id: "bladder-leakage-treatment",
     title: "Bladder leakage treatment",
     snippet:
       "Bladder leakage can disrupt work, sleep, and exercise. Ultimate Health Direct Primary Care in Leesburg, Florida helps women address bladder leakage treatment with a plan built for real life.",
@@ -129,6 +136,7 @@ const services = [
     ctaText: "Learn more about bladder leakage treatment for women",
   },
   {
+    id: "non-surgical-bladder-control-treatment",
     title: "Non surgical bladder control treatment",
     snippet:
       "If you’re seeking non surgical bladder control treatment, Ultimate Health Direct Primary Care in Leesburg, Florida can guide you through options aimed at improving control without major downtime.",
@@ -140,6 +148,7 @@ const services = [
 
   // Women's Hormone Therapy / Menopause  -> /hormone-replacement-therapy
   {
+    id: "womens-hormone-therapy",
     title: "Womens hormone therapy",
     snippet:
       "Ultimate Health Direct Primary Care in Leesburg, Florida provides women’s hormone therapy with a personalized approach to support energy, mood, and overall wellness.",
@@ -149,6 +158,7 @@ const services = [
     ctaText: "Learn more about hormone replacement therapy for women",
   },
   {
+    id: "womens-hormone-therapy-near-me",
     title: "Womens hormone therapy near me",
     snippet:
       "Searching for women’s hormone therapy near you? Our Leesburg, Florida team at Ultimate Health Direct Primary Care offers individualized care designed around your symptoms and goals.",
@@ -158,6 +168,7 @@ const services = [
     ctaText: "Explore women’s hormone therapy options near Leesburg",
   },
   {
+    id: "hormone-replacement-therapy-for-women",
     title: "Hormone replacement therapy for women",
     snippet:
       "For hormone replacement therapy for women in Leesburg, Florida, Ultimate Health Direct Primary Care focuses on safe, structured care and ongoing check-ins to support how you feel day to day.",
@@ -167,6 +178,7 @@ const services = [
     ctaText: "Explore hormone replacement therapy options for women",
   },
   {
+    id: "bioidentical-hormone-therapy",
     title: "Bioidentical hormone therapy",
     snippet:
       "If you’re considering bioidentical hormone therapy, Ultimate Health Direct Primary Care in Leesburg, Florida provides patient-centered guidance to help you navigate next steps with confidence.",
@@ -176,6 +188,7 @@ const services = [
     ctaText: "Learn more about bioidentical hormone therapy options",
   },
   {
+    id: "bioidentical-hormone-replacement-therapy",
     title: "Bioidentical hormone replacement therapy",
     snippet:
       "Ultimate Health Direct Primary Care in Leesburg, Florida offers bioidentical hormone replacement therapy with a personalized plan designed to support your wellness goals over time.",
@@ -185,6 +198,7 @@ const services = [
     ctaText: "Explore bioidentical hormone replacement therapy in Leesburg",
   },
   {
+    id: "hormone-therapy-for-menopause",
     title: "Hormone therapy for menopause",
     snippet:
       "Hormone therapy for menopause can help when symptoms interfere with daily life. Ultimate Health Direct Primary Care in Leesburg, Florida provides supportive, individualized care for women.",
@@ -194,6 +208,7 @@ const services = [
     ctaText: "Learn more about menopause hormone therapy options",
   },
   {
+    id: "menopause-hormone-therapy-clinic",
     title: "Menopause hormone therapy clinic",
     snippet:
       "Looking for a menopause hormone therapy clinic? Ultimate Health Direct Primary Care serves Leesburg, Florida with discreet visits and a step-by-step plan based on your symptoms.",
@@ -203,6 +218,7 @@ const services = [
     ctaText: "Explore menopause hormone therapy at our clinic",
   },
   {
+    id: "womens-wellness-hormone-therapy",
     title: "Womens wellness hormone therapy",
     snippet:
       "Women’s wellness hormone therapy at Ultimate Health Direct Primary Care in Leesburg, Florida is designed to support your overall well-being with personalized care and ongoing follow-up.",
@@ -212,6 +228,7 @@ const services = [
     ctaText: "Explore women’s wellness-focused hormone therapy",
   },
   {
+    id: "female-hormone-treatment-near-me",
     title: "Female hormone treatment near me",
     snippet:
       "Need female hormone treatment near you? Ultimate Health Direct Primary Care in Leesburg, Florida provides individualized support to help you feel more balanced and in control.",
@@ -223,6 +240,7 @@ const services = [
 
   // BHRT -> /hormone-replacement-therapy (closest match)
   {
+    id: "bhrt",
     title: "BHRT",
     snippet:
       "BHRT at Ultimate Health Direct Primary Care in Leesburg, Florida is centered on individualized care—helping you address symptoms with a plan aligned to your goals and follow-up needs.",
@@ -232,6 +250,7 @@ const services = [
     ctaText: "Learn more about BHRT and hormone replacement therapy",
   },
   {
+    id: "bhrt-near-me",
     title: "BHRT near me",
     snippet:
       "Searching for BHRT near you? Ultimate Health Direct Primary Care serves Leesburg, Florida with personalized hormone support and clear next steps based on your concerns.",
@@ -241,6 +260,7 @@ const services = [
     ctaText: "Explore BHRT options near Leesburg, Florida",
   },
   {
+    id: "bhrt-clinic",
     title: "BHRT clinic",
     snippet:
       "If you’re looking for a BHRT clinic in Leesburg, Florida, Ultimate Health Direct Primary Care offers patient-focused care with a structured plan and ongoing check-ins.",
@@ -250,6 +270,7 @@ const services = [
     ctaText: "Learn more about BHRT clinic services and follow-up care",
   },
   {
+    id: "bhrt-for-women",
     title: "BHRT for women",
     snippet:
       "BHRT for women at Ultimate Health Direct Primary Care in Leesburg, Florida is designed to support energy, mood, and overall wellness with care tailored to your symptoms.",
@@ -259,6 +280,7 @@ const services = [
     ctaText: "Explore BHRT for women and hormone therapy options",
   },
   {
+    id: "testosterone-bhrt-therapy",
     title: "Testosterone BHRT therapy",
     snippet:
       "Testosterone BHRT therapy may be considered in specific situations. Ultimate Health Direct Primary Care in Leesburg, Florida provides personalized guidance and ongoing monitoring based on your goals.",
@@ -268,6 +290,7 @@ const services = [
     ctaText: "Learn more about men’s hormone optimization and testosterone support",
   },
   {
+    id: "male-hormone-replacement-therapy",
     title: "Male hormone replacement therapy",
     snippet:
       "Male hormone replacement therapy at Ultimate Health Direct Primary Care in Leesburg, Florida is tailored to your symptoms and lifestyle, with supportive follow-up to help you stay on track.",
@@ -279,6 +302,7 @@ const services = [
 
   // Peptide Therapy -> /peptide-therapy
   {
+    id: "peptide-therapy",
     title: "Peptide therapy",
     snippet:
       "Peptide therapy at Ultimate Health Direct Primary Care in Leesburg, Florida is offered with a personalized approach focused on wellness goals, recovery, and long-term support.",
@@ -288,6 +312,7 @@ const services = [
     ctaText: "Learn more about peptide therapy and wellness support",
   },
   {
+    id: "peptide-therapy-near-me",
     title: "Peptide therapy near me",
     snippet:
       "Looking for peptide therapy near you? Ultimate Health Direct Primary Care serves Leesburg, Florida with individualized peptide care aligned to your goals and progress.",
@@ -297,6 +322,7 @@ const services = [
     ctaText: "Explore peptide therapy options near Leesburg, Florida",
   },
   {
+    id: "peptide-therapy-clinic",
     title: "Peptide therapy clinic",
     snippet:
       "If you’re searching for a peptide therapy clinic, Ultimate Health Direct Primary Care in Leesburg, Florida provides clear guidance, follow-up, and patient-centered care.",
@@ -306,6 +332,7 @@ const services = [
     ctaText: "Learn more about our peptide therapy clinic approach",
   },
   {
+    id: "peptide-injections",
     title: "Peptide injections",
     snippet:
       "Peptide injections are offered at Ultimate Health Direct Primary Care in Leesburg, Florida with an individualized plan designed around your wellness and recovery goals.",
@@ -315,6 +342,7 @@ const services = [
     ctaText: "Learn more about peptide injections and personalized plans",
   },
   {
+    id: "peptide-injections-near-me",
     title: "Peptide injections near me",
     snippet:
       "Need peptide injections near you? Ultimate Health Direct Primary Care in Leesburg, Florida provides personalized support and follow-up so your plan fits your routine.",
@@ -324,6 +352,7 @@ const services = [
     ctaText: "Explore peptide injection options near Leesburg, Florida",
   },
   {
+    id: "anti-aging-peptide-therapy",
     title: "Anti aging peptide therapy",
     snippet:
       "Anti aging peptide therapy at Ultimate Health Direct Primary Care in Leesburg, Florida is approached with personalized care focused on supporting wellness, recovery, and healthy aging goals.",
@@ -333,6 +362,7 @@ const services = [
     ctaText: "Learn more about peptide therapy for healthy aging goals",
   },
   {
+    id: "peptide-therapy-for-women",
     title: "Peptide therapy for women",
     snippet:
       "Peptide therapy for women at Ultimate Health Direct Primary Care in Leesburg, Florida is tailored to your goals, with supportive follow-up to track how you’re feeling over time.",
@@ -342,6 +372,7 @@ const services = [
     ctaText: "Explore peptide therapy options for women",
   },
   {
+    id: "peptide-therapy-for-men",
     title: "Peptide therapy for men",
     snippet:
       "Peptide therapy for men at Ultimate Health Direct Primary Care in Leesburg, Florida is personalized to your wellness and recovery goals, with guidance designed for sustainable results.",
@@ -351,6 +382,7 @@ const services = [
     ctaText: "Explore peptide therapy options for men",
   },
   {
+    id: "peptide-clinic-near-me",
     title: "Peptide clinic near me",
     snippet:
       "Searching for a peptide clinic near you? Ultimate Health Direct Primary Care supports patients in Leesburg, Florida with individualized plans and consistent follow-up.",
@@ -360,6 +392,7 @@ const services = [
     ctaText: "Learn more about peptide clinic care near Leesburg",
   },
   {
+    id: "peptide-treatment-for-muscle-recovery",
     title: "Peptide treatment for muscle recovery",
     snippet:
       "Peptide treatment for muscle recovery at Ultimate Health Direct Primary Care in Leesburg, Florida focuses on supporting your training, recovery, and wellness goals with a personalized plan.",
@@ -371,6 +404,7 @@ const services = [
 
   // Exomind / Brain Health -> /mental-wellness
   {
+    id: "exomind-clinic",
     title: "Exomind clinic",
     snippet:
       "Ultimate Health Direct Primary Care in Leesburg, Florida offers an Exomind clinic experience focused on brain-focused wellness goals in a supportive, patient-centered setting.",
@@ -380,6 +414,7 @@ const services = [
     ctaText: "Explore brain-focused wellness options and mental wellness support",
   },
   {
+    id: "exomind-therapy",
     title: "Exomind therapy",
     snippet:
       "Exomind therapy at Ultimate Health Direct Primary Care in Leesburg, Florida is designed for patients seeking a modern, non-invasive approach to brain-focused wellness support.",
@@ -389,6 +424,7 @@ const services = [
     ctaText: "Learn more about mental wellness support and brain health care",
   },
   {
+    id: "exomind-treatment-near-me",
     title: "Exomind treatment near me",
     snippet:
       "Looking for Exomind treatment near you? Ultimate Health Direct Primary Care serves Leesburg, Florida with a patient-focused experience and clear next steps based on your goals.",
@@ -398,6 +434,7 @@ const services = [
     ctaText: "Explore non-invasive mental wellness support near Leesburg",
   },
   {
+    id: "brain-health-clinic",
     title: "Brain health clinic",
     snippet:
       "If you’re searching for a brain health clinic in Leesburg, Florida, Ultimate Health Direct Primary Care offers supportive care focused on wellness goals, lifestyle factors, and long-term follow-through.",
@@ -409,6 +446,7 @@ const services = [
 
   // Erectile Dysfunction / Men's Health -> /mens-health
   {
+    id: "erectile-dysfunction-clinic",
     title: "Erectile dysfunction clinic",
     snippet:
       "Ultimate Health Direct Primary Care in Leesburg, Florida offers discreet support through our erectile dysfunction clinic approach—focused on privacy, individualized care, and clear next steps.",
@@ -418,6 +456,7 @@ const services = [
     ctaText: "Learn more about erectile dysfunction support in men’s health",
   },
   {
+    id: "erectile-dysfunction-clinic-near-me",
     title: "Erectile dysfunction clinic near me",
     snippet:
       "Searching for an erectile dysfunction clinic near you? Ultimate Health Direct Primary Care serves Leesburg, Florida with confidential, patient-centered men’s health care.",
@@ -427,6 +466,7 @@ const services = [
     ctaText: "Explore men’s health care for erectile dysfunction near Leesburg",
   },
   {
+    id: "erectile-dysfunction-treatment",
     title: "Erectile dysfunction treatment",
     snippet:
       "Erectile dysfunction treatment at Ultimate Health Direct Primary Care in Leesburg, Florida starts with understanding the full picture—then building a plan aligned to your health and goals.",
@@ -436,6 +476,7 @@ const services = [
     ctaText: "Explore erectile dysfunction treatment options in men’s health",
   },
   {
+    id: "ed-clinic",
     title: "ED clinic",
     snippet:
       "If you’re looking for an ED clinic in Leesburg, Florida, Ultimate Health Direct Primary Care provides a respectful, discreet environment and individualized men’s health support.",
@@ -445,6 +486,7 @@ const services = [
     ctaText: "Learn more about ED clinic support in men’s health",
   },
   {
+    id: "ed-clinic-near-me",
     title: "ED clinic near me",
     snippet:
       "Need an ED clinic near you? Ultimate Health Direct Primary Care supports men in Leesburg, Florida with confidential visits and a patient-focused approach.",
@@ -454,6 +496,7 @@ const services = [
     ctaText: "Explore ED clinic care near Leesburg, Florida",
   },
   {
+    id: "ed-treatment",
     title: "ED treatment",
     snippet:
       "ED treatment at Ultimate Health Direct Primary Care in Leesburg, Florida is personalized—built around your symptoms, lifestyle, and long-term wellness goals.",
@@ -463,6 +506,7 @@ const services = [
     ctaText: "Learn more about personalized ED treatment options",
   },
   {
+    id: "mens-health-ed-clinic",
     title: "Mens health ED clinic",
     snippet:
       "As a men’s health ED clinic serving Leesburg, Florida, Ultimate Health Direct Primary Care prioritizes privacy and practical next steps to support performance and confidence.",
@@ -472,6 +516,7 @@ const services = [
     ctaText: "Explore men’s health clinic support for ED",
   },
   {
+    id: "mens-health-ed-treatment",
     title: "Mens health ED treatment",
     snippet:
       "Men’s health ED treatment at Ultimate Health Direct Primary Care in Leesburg, Florida focuses on individualized care and ongoing support to help you feel your best.",
@@ -481,6 +526,7 @@ const services = [
     ctaText: "Learn more about men’s health ED treatment options",
   },
   {
+    id: "non-surgical-erectile-dysfunction-treatment",
     title: "Non surgical erectile dysfunction treatment",
     snippet:
       "If you’re seeking non surgical erectile dysfunction treatment, Ultimate Health Direct Primary Care in Leesburg, Florida offers confidential guidance and a personalized care plan.",
@@ -490,6 +536,7 @@ const services = [
     ctaText: "Explore non-surgical erectile dysfunction treatment options",
   },
   {
+    id: "testosterone-therapy-for-ed",
     title: "Testosterone therapy for ED",
     snippet:
       "Testosterone therapy for ED may be part of a broader men’s health plan for some patients. Ultimate Health Direct Primary Care in Leesburg, Florida provides individualized guidance and follow-up.",
@@ -499,6 +546,7 @@ const services = [
     ctaText: "Learn more about testosterone support for men’s health",
   },
   {
+    id: "ed-clinic-direct-primary-care",
     title: "ED clinic direct primary care",
     snippet:
       "For an ED clinic in a direct primary care setting, Ultimate Health Direct Primary Care in Leesburg, Florida offers personalized, relationship-based care with privacy and continuity.",
@@ -510,6 +558,7 @@ const services = [
 
   // Vaginal Rejuvenation / Women's Intimate Health -> /womens-health
   {
+    id: "vaginal-rejuvenation",
     title: "Vaginal rejuvenation",
     snippet:
       "Ultimate Health Direct Primary Care in Leesburg, Florida offers vaginal rejuvenation support with a discreet, patient-centered approach focused on comfort and confidence.",
@@ -519,6 +568,7 @@ const services = [
     ctaText: "Learn more about vaginal rejuvenation and women’s intimate health",
   },
   {
+    id: "vaginal-rejuvenation-near-me",
     title: "Vaginal rejuvenation near me",
     snippet:
       "Searching for vaginal rejuvenation near you? Ultimate Health Direct Primary Care serves Leesburg, Florida with private, supportive care tailored to your goals.",
@@ -528,6 +578,7 @@ const services = [
     ctaText: "Explore vaginal rejuvenation options near Leesburg, Florida",
   },
   {
+    id: "vaginal-rejuvenation-clinic",
     title: "Vaginal rejuvenation clinic",
     snippet:
       "If you’re looking for a vaginal rejuvenation clinic, Ultimate Health Direct Primary Care in Leesburg, Florida provides a comfortable setting and individualized guidance.",
@@ -537,6 +588,7 @@ const services = [
     ctaText: "Learn more about our women’s health clinic and intimate wellness care",
   },
   {
+    id: "non-surgical-vaginal-rejuvenation",
     title: "Non surgical vaginal rejuvenation",
     snippet:
       "Non surgical vaginal rejuvenation at Ultimate Health Direct Primary Care in Leesburg, Florida is approached with privacy, education, and care tailored to your comfort.",
@@ -546,6 +598,7 @@ const services = [
     ctaText: "Explore non-surgical vaginal rejuvenation options",
   },
   {
+    id: "laser-vaginal-rejuvenation",
     title: "Laser vaginal rejuvenation",
     snippet:
       "For laser vaginal rejuvenation inquiries in Leesburg, Florida, Ultimate Health Direct Primary Care provides patient-focused guidance and a discreet care experience.",
@@ -555,6 +608,7 @@ const services = [
     ctaText: "Learn more about laser-based vaginal rejuvenation support",
   },
   {
+    id: "vaginal-tightening-therapy",
     title: "Vaginal tightening therapy",
     snippet:
       "Vaginal tightening therapy at Ultimate Health Direct Primary Care in Leesburg, Florida is offered with a respectful, discreet approach focused on your comfort and goals.",
@@ -564,6 +618,7 @@ const services = [
     ctaText: "Explore vaginal tightening therapy and women’s intimate health care",
   },
   {
+    id: "vaginal-tightening-treatment-near-me",
     title: "Vaginal tightening treatment near me",
     snippet:
       "Looking for vaginal tightening treatment near you? Ultimate Health Direct Primary Care supports patients in Leesburg, Florida with private visits and individualized care.",
@@ -589,6 +644,7 @@ function SpecialServices() {
           {services.map((service, idx) => (
             <KeywordSnippetSection
               key={`${service.title}-${idx}`}
+              id={service.id} // 👈 add this
               title={service.title}
               snippet={service.snippet}
               imageSrc={service.imageSrc}

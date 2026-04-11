@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { trackGA4 } from "../utils/ga4";
 
 export default function KeywordSnippetSection({
+  id,
   title,
   snippet,
   imageSrc,
@@ -41,7 +42,7 @@ export default function KeywordSnippetSection({
   };
 
   return (
-    <section className="keyword-snippet-section">
+    <section id={id} className="keyword-snippet-section">
       <div className="container">
         <div className="uha-glass-card uha-scroll-card">
           <div className={`row align-items-center gy-4 ${reverse ? "flex-row-reverse" : ""}`}>

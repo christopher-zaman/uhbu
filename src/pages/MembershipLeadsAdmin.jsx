@@ -1,0 +1,185 @@
+import React, { useEffect, useState } from 'react';
+import TopBar from '../components/TopBar';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import Announcement from '../components/Announcement';
+import SEO from '../components/SEO';
+
+function MembershipLeadsAdmin() {
+  const [pinInput, setPinInput] = useState('');
+  const [isUnlocked, setIsUnlocked] = useState(false);
+  const [pinError, setPinError] = useState('');
+  const [items, setItems] = useState([]);
+  const [status, setStatus] = useState('');
+
+  const expectedPin = import.meta.env.VITE_MEMBERSHIP_ADMIN_PIN;
+
+  useEffect(() => {
+    const saved = sessionStorage.getItem('membership_admin_unlocked');
+    if (saved === 'true') {
+      setIsUnlocked(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isUnlocked) return;
+
+    async function loadLeads() {
+      setStatus('Loading...');
+      try {
+        const response = await fetch('/api/membership-leads-list', {
+          headers: {
+            'x-admin-pin': pinInput || sessionStorage.getItem('membership_admin_pin') || '',
+          },
+        });
+
+        const text = await response.text();
+
+        let result = null;
+        try {
+          result = JSON.parse(text);
+        } catch {
+          throw new Error(`API returned non-JSON: ${text.slice(0, 160)}`);
+        }
+
+        if (!response.ok) {
+          throw new Error(result?.error || 'Failed to load membership leads.');
+        }
+
+        setItems(result.items || []);
+        setStatus('');
+      } catch (error) {
+        setStatus(error.message || 'Failed to load membership leads.');
+      }
+    }
+
+    loadLeads();
+  }, [isUnlocked, pinInput]);
+
+  const handleUnlock = (e) => {
+    e.preventDefault();
+
+    if (pinInput === expectedPin) {
+      setIsUnlocked(true);
+      setPinError('');
+      sessionStorage.setItem('membership_admin_unlocked', 'true');
+      sessionStorage.setItem('membership_admin_pin', pinInput);
+    } else {
+      setPinError('Incorrect PIN.');
+    }
+  };
+
+  const handleLock = () => {
+    setIsUnlocked(false);
+    setPinInput('');
+    setItems([]);
+    setStatus('');
+    setPinError('');
+    sessionStorage.removeItem('membership_admin_unlocked');
+    sessionStorage.removeItem('membership_admin_pin');
+  };
+
+  return (
+    <>
+      <SEO
+        title="Membership Leads Admin | Ultimate Health DPC"
+        description="Admin page for viewing membership leads."
+      />
+      <Announcement />
+      <TopBar />
+      <NavBar />
+
+      <section className="section">
+        <div className="container">
+          <div className="section-title" data-aos="fade-up">
+            <h2>Membership Leads Admin</h2>
+            <p>Internal access only.</p>
+          </div>
+
+          {!isUnlocked ? (
+            <div className="row justify-content-center">
+              <div className="col-lg-5">
+                <div className="card shadow-sm border-0">
+                  <div className="card-body p-4">
+                    <h4 className="mb-3">Enter Admin PIN</h4>
+
+                    <form onSubmit={handleUnlock}>
+                      <div className="mb-3">
+                        <input
+                          type="password"
+                          className="form-control"
+                          placeholder="Enter PIN"
+                          value={pinInput}
+                          onChange={(e) => setPinInput(e.target.value)}
+                          required
+                        />
+                      </div>
+
+                      {pinError ? (
+                        <div className="alert alert-danger py-2">{pinError}</div>
+                      ) : null}
+
+                      <button type="submit" className="btn btn-dark w-100">
+                        Unlock
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className="d-flex justify-content-between align-items-center mb-3">
+                <h4 className="mb-0">Recent Leads</h4>
+                <button className="btn btn-outline-secondary btn-sm" onClick={handleLock}>
+                  Lock
+                </button>
+              </div>
+
+              {status ? (
+                <div className="alert alert-info">{status}</div>
+              ) : items.length === 0 ? (
+                <div className="alert alert-warning">No leads found.</div>
+              ) : (
+                <div className="table-responsive">
+                  <table className="table table-bordered table-striped align-middle">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Preferred Contact</th>
+                        <th>Interested For</th>
+                        <th>Message</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {items.map((item) => (
+                        <tr key={item._id}>
+                          <td>
+                            {item.createdAt ? new Date(item.createdAt).toLocaleString() : ''}
+                          </td>
+                          <td>{`${item.firstName || ''} ${item.lastName || ''}`.trim()}</td>
+                          <td>{item.email || ''}</td>
+                          <td>{item.phone || ''}</td>
+                          <td>{item.preferredContactMethod || ''}</td>
+                          <td>{item.interestType || ''}</td>
+                          <td style={{ minWidth: '250px' }}>{item.message || ''}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}
+
+export default MembershipLeadsAdmin;

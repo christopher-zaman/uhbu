@@ -31,7 +31,8 @@ import AudienceGrid from '../components/AudienceGrid';
 import DPCComparison from "../components/DPCComparison";
 import LocalProof from "../components/LocalProof";
 import PrimaryCTA from '../components/PrimaryCTA';
-
+import Announcement from '../components/Announcement';
+import ValueSection from '../components/ValueSection';
 function App() {
   const seo = usePageSEO();
   useEffect(() => {
@@ -45,26 +46,32 @@ function App() {
         description="Join Ultimate Health DPC and enjoy unlimited doctor access, weight loss support, hormone therapy, and more. Serving Leesburg, Florida."
         image="https://ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.png"
       />
-      <TopBar />
-      <NavBar />
+      <div className="header-stack">
+        <Announcement />
+        <TopBar />
+        <NavBar />
+      </div>
       <VideoHero videoId="rxVnntel71w" height="75vh" />
       
-      {/* <Hero 
+      {/* 
+      <Hero 
         backgroundImage="/assets/img/banners/amanda-mobile-small.webp"
         backgroundVideo={backgroundVideo}
         heroImage="/assets/img/hero-img-sexual-wellness.png"
         title=""
         subtitle=""
-      /> */}
+      /> 
+      */}
 
       <SectionTitle>
         Welcome to <strong>Ultimate Health</strong>{' '}
-        <span className="text-green-600">Direct Primary Care!</span>
+        <span className="text-green">Direct Primary Care!</span>
       </SectionTitle>
       <AudienceGrid
-        title="Who We’re For"
-        subtitle="Explore care paths built around your goals, your schedule, and your lifestyle."
+        title="For Families Who Want Better Access, Better Answers, and a Provider Who Actually Knows Them"
+        subtitle="Unlimited visits. Same-day appointments. Transparent pricing. No insurance headaches."
         className="lead"
+        titleClassName="audience-grid-title--small"
         items={[
           {
             icon: "🧑‍💼",
@@ -97,7 +104,7 @@ function App() {
         ctaLink="/primary-care"
         ctaText="See How Membership Works"
       />
-      <LocalProof
+  <LocalProof
   title="Why Ultimate Health DPC"
   subtitle="Local, relationship-based care for Leesburg and Lake County."
   locationLine="Proudly serving Leesburg, Lake County, and surrounding Central Florida communities"
@@ -113,7 +120,12 @@ function App() {
   title: "Primary Care Provider",
   bullets: [
     "Practicing since 2006",
-    "Patient-first, relationship-based care"
+    "Patient-first, relationship-based care",
+    "Led by Amanda Gaskin, MSN, APRN",
+    "2022 Leesburg Area Chamber Business Woman of the Year",
+    "2026 Executive Board Chairman, Leesburg Area Chamber of Commerce",
+    "Deep community roots. Personalized care. Modern medicine with real access."
+
   ],
   image: contentImage,
   link: "/meet-us",
@@ -121,7 +133,7 @@ function App() {
 }}
   ctaType="phone"
 />
-
+<ValueSection />
 
       <Paragraph className="lead text-gray-500" data-aos="fade-up" data-aos-delay="0">
         We’re so glad you’re here!
@@ -130,11 +142,13 @@ function App() {
         We’re proud to serve individuals, families, and even local businesses with the kind of care everyone deserves. Welcome to the Ultimate Health family—where your health is our priority, and you’re always treated like a VIP.
         Let’s take care of you—together.
       </Paragraph>
-      <PrimaryCTA />
-        <CenteredVideoSection videoId="92jlApzokh0" />
-
-
-      {/* <video
+      <PrimaryCTA
+        title = "Ready to experience healthcare differently?"
+        text = "We’re here to answer your questions and help you take the next step."
+      />
+      <CenteredVideoSection videoId="92jlApzokh0" />
+      {/* 
+      <video
         className="hero-bg-video"
         autoPlay
         loop
@@ -143,31 +157,22 @@ function App() {
       >
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
-      </video> */}
-
+      </video> 
+      */}
       <Services /> 
-
-
       <About />
-
-
       <Testimonials />
-
-      
       <Socials />
-
       <CareCredit />
-
       <Subscribe />
-
-
-      {/* <Features />
+      {/* 
+      <Features />
       <Details />
       <Gallery />
-      
       <Team />
       <Pricing />
-      <Faq /> */}
+      <Faq /> 
+      */}
       <Contact />
       <Footer />
     </>

@@ -45,6 +45,8 @@ import RegenerativeTherapy from './pages/RegenerativeTherapy';
 import SpaServices from './pages/SpaServices';
 import SpecialServices from './pages/SpecialServices';
 import ScrollToHash from './components/ScrollToHash';
+import Membership from './pages/Membership';
+import MembershipLeadsAdmin from './pages/MembershipLeadsAdmin';
 function App() {
   usePageTracking();
   useEffect(() => {
@@ -69,6 +71,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/weight-loss" element={<WeightLoss />} />
+      <Route path="/membership" element={<Membership/>} />
+      <Route path="/admin" element={<MembershipLeadsAdmin />} />
       <Route path="/hormone-replacement-therapy" element={<HormoneTherapy />} />
       <Route path="/peptide-therapy" element={<PeptideTherapy />} />
       <Route path="/pt-141" element={<PT141 />} />

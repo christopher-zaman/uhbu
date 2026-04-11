@@ -286,11 +286,7 @@ At Ultimate Health Direct Primary Care, Neil and her team do healthcare a little
   <p> Discover why more people in Leesburg, Lady Lake, and The Villages are making the switch. Visit UltimateHealthDPC.com to learn more or call 352-901-6582 to join today</p>
 </>
   },  
-
-  // Adding new post here:
   'the-uti-cycle-menopause-creates-and-how-vaginal-estrogen-breaks-it': {
-    // title: 'The UTI Cycle Menopause Creates and How Vaginal Estrogen Breaks It',
-    // banner: '../src/assets/img/estrogen.webp',
     banner: estrogenImage,
     date: 'March 28, 2026',
     content: <>

@@ -9,12 +9,17 @@ export default function AudienceGrid({
   subtitle = "Care designed for real life—find the path that fits you.",
   items = [],
   className = "",
-  bgClass = ""
+  bgClass = "",
+  titleClassName = ""
 }) {
   return (
     <section id={id} className={`audience-grid section ${bgClass} ${className}`}>
       <div className="container text-center section-title" data-aos="fade-up">
-        <div><span>{title}</span></div>
+        <div>
+          <span className={`audience-grid-title ${titleClassName}`}>
+           {title}
+          </span>
+        </div>
         <Divider />
         {subtitle ? <p className="audience-subtitle mt-3">{subtitle}</p> : null}
       </div>
