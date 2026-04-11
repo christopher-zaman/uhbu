@@ -146,10 +146,10 @@ const handleLock = () => {
 
       <section className="section">
         <div className="container">
-          <div className="section-title" data-aos="fade-up">
+          {/* <div className="section-title" data-aos="fade-up">
             <h2>Membership Leads Admin</h2>
             <p>Internal access only.</p>
-          </div>
+          </div> */}
 
           {!isUnlocked ? (
             <div className="row justify-content-center">
