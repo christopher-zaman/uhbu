@@ -60,7 +60,7 @@ function MembershipLeadsAdmin() {
         setItems(result.items || []);
 
 // 🔽 ADD THIS RIGHT HERE
-const intakeResponse = await fetch('/api/intake_submissions', {
+const intakeResponse = await fetch('/api/intake-submissions', {
   headers: {
     'x-admin-pin': pinInput,
   },
