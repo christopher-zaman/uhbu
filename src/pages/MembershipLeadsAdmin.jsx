@@ -59,27 +59,32 @@ function MembershipLeadsAdmin() {
 
         setItems(result.items || []);
 
-// 🔽 ADD THIS RIGHT HERE
-const intakeResponse = await fetch('/api/intake-submissions', {
-  headers: {
-    'x-admin-pin': pinInput,
-  },
-});
-
-const intakeText = await intakeResponse.text();
-
-let intakeResult = null;
+// 🔽 SAFE intake fetch (won't break membership)
 try {
-  intakeResult = JSON.parse(intakeText);
-} catch {
-  throw new Error(`API returned non-JSON: ${intakeText.slice(0, 160)}`);
-}
+  const intakeResponse = await fetch('/api/intake-submissions', {
+    headers: {
+      'x-admin-pin': pinInput,
+    },
+  });
 
-if (!intakeResponse.ok) {
-  throw new Error(intakeResult?.error || 'Failed to load intake submissions.');
+  const intakeText = await intakeResponse.text();
+
+  let intakeResult = null;
+  try {
+    intakeResult = JSON.parse(intakeText);
+  } catch {
+    throw new Error(`Non-JSON intake response: ${intakeText.slice(0, 120)}`);
+  }
+
+  if (!intakeResponse.ok) {
+    throw new Error(intakeResult?.error || 'Failed to load intake submissions.');
+  }
+
+  console.log('intake items from api:', intakeResult.items);
+  setIntakeItems(intakeResult.items || []);
+} catch (err) {
+  console.error('Intake load failed:', err.message);
 }
-console.log('intake items from api:', intakeResult.items);
-setIntakeItems(intakeResult.items || []);
 
 setStatus('');
       } catch (error) {
@@ -179,12 +184,7 @@ const handleLock = () => {
             </div>
           ) : (
             <>
-              <div className="d-flex justify-content-between align-items-center mb-3">
-                <h4 className="mb-0">Membership Leads</h4>
-                <button className="btn btn-outline-secondary btn-sm" onClick={handleLock}>
-                  Lock
-                </button>
-              </div>
+              
 
               {status ? (
                 <div className="alert alert-info">{status}</div>
@@ -194,8 +194,8 @@ const handleLock = () => {
                 
                 <div className="table-responsive">
                 <hr className="my-5" />
-                <p className="small text-muted">Intake count: {intakeItems.length}</p>
-                <h4 className="mb-3">Intake Submissions</h4>
+                
+                <h4 className="mb-3">Membership Leads</h4>
                   <table className="table table-bordered table-striped align-middle">
                     <thead>
                       <tr>
@@ -230,7 +230,7 @@ const handleLock = () => {
     <hr className="my-5" />
 
 <h4 className="mb-3">Intake Submissions</h4>
-
+<p className="small text-muted">Intake count: {intakeItems.length}</p>
 {intakeItems.length === 0 ? (
   <div className="alert alert-warning">No intake submissions found.</div>
 ) : (
@@ -240,6 +240,7 @@ const handleLock = () => {
         <tr>
           <th>Date</th>
           <th>Name</th>
+          <th>Sex</th>
           <th>Email</th>
           <th>Phone</th>
           <th>Preferred Contact</th>
@@ -256,6 +257,7 @@ const handleLock = () => {
                 : ''}
             </td>
             <td>{`${item.firstName || ''} ${item.lastName || ''}`.trim()}</td>
+            <td>{item.patientInformation?.sex || ''}</td>
             <td>{item.email || ''}</td>
             <td>{item.phone || ''}</td>
             <td>{item.preferredContactMethod || ''}</td>
