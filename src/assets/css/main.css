@@ -464,6 +464,19 @@ h6 {
 
 }
 
+.testimonials.membership-testimonials {
+  background: linear-gradient(to right, #fff5f7, #ffe3ec) !important;
+  color: #333;
+}
+
+.membership-testimonials .testimonial-item,
+.membership-testimonials h3,
+.membership-testimonials h4,
+.membership-testimonials p {
+  color: #333;
+}
+
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -868,6 +881,17 @@ section,
   color: #0f058b;
 }
 
+.hero-benefits {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.hero-benefits li {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
 /* Full Script Vertical Banner 
 =================================================================
 =================================================================
@@ -903,6 +927,11 @@ section,
   min-height: 500px;
 }
 .hero.payment-plans-hero {
+  height: auto;
+  max-height: none;
+  min-height: 500px;
+}
+.hero.membership-hero {
   height: auto;
   max-height: none;
   min-height: 500px;

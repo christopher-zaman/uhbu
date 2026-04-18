@@ -14,6 +14,7 @@ import MembershipCtaSplit from '../components/MembershipCtaSplit';
 import MembershipLeadForm from '../components/MembershipLeadForm';
 import IntakeForm from '../components/IntakeForm';
 import banner from '../assets/banners/contact-banner.png';
+import Testimonials from '../components/Testimonials';
 
 function Membership() {
   const leadFormRef = useRef(null);
@@ -40,10 +41,31 @@ function Membership() {
 
       <Hero
         backgroundImage={banner}
-        title="Membership Made Simple"
-        subtitle="Learn how membership works, who it is for, and choose the next step that fits you best."
-      />
+        title="Personalized Primary Care Without Insurance Barriers"
+        subtitle="For individuals and families who want direct access to their doctor, longer visits, and transparent pricing."
+        className="membership-hero"
+        cta={
+          <div className="d-flex gap-3 flex-wrap">
+            <button className="btn btn-primary" onClick={scrollToLeadForm}>
+              Book Your Free Meet & Greet
+            </button>
+            <button className="btn btn-outline-light" onClick={scrollToLeadForm}>
+              Request Info
+            </button>
+          </div>
+        }
+      >
+        <ul className="hero-benefits">
+          <li>Busy professionals who need same-day or next-day appointments</li>
+          <li>Direct access to your doctor</li>
+          <li>No copays or surprise bills</li>
+        </ul>
+      </Hero>
 
+      <Testimonials 
+        filterType="dpc"
+        className="membership-testimonials" 
+      />
       <MembershipIntroSection />
       <MembershipSteps />
       <MembershipAudience />
