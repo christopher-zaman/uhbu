@@ -37,7 +37,8 @@ const initialIntakeFormData = {
   lastName: '',
   preferredName: '',
   sex: '',
-  ssn: '',
+  visitReason: '',
+  isitReasonOther: '',
   dobMonth: '',
   dobDay: '',
   dobYear: '',
@@ -176,7 +177,8 @@ const goToTab = (tabId) => {
           lastName: formData.lastName,
           preferredName: formData.preferredName,
           sex: formData.sex,
-          ssn: formData.ssn,
+          visitReason: formData.visitReason,
+          visitReasonOther: formData.visitReasonOther,
           dob: formatDob(),
           primaryPhone: formData.primaryPhone,
           cellPhone: formData.cellPhone,
@@ -232,7 +234,9 @@ const goToTab = (tabId) => {
         phone: formData.primaryPhone || formData.cellPhone,
         preferredContactMethod: formData.cellPhone ? 'phone' : 'email',
         interestType: 'intake',
-        message: `Intake submission from ${formData.firstName} ${formData.lastName}`.trim(),
+        message: formData.visitReason === 'Other'
+        ? (formData.visitReasonOther || '').trim()
+        : (formData.visitReason || '').trim(),
       };
 
       const response = await fetch('/api/intake', {
@@ -416,19 +420,46 @@ sessionStorage.removeItem('intake_form_draft');
                             ))}
                           </div>
                         </div>
-
+                        
+                        {/*  */}
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">Social Security Number</label>
-                          <input
-                            type="text"
-                            name="ssn"
-                            className="form-control"
-                            placeholder="-- --"
-                            value={formData.ssn}
+                          <label className="form-label fw-semibold">
+                            Reason for Visit <span className="text-danger">*</span>
+                          </label>
+                          <select
+                            name="visitReason"
+                            className="form-select"
+                            value={formData.visitReason}
                             onChange={handleChange}
-                          />
+                            required
+                          >
+                            <option value="">Select</option>
+                            <option value="Annual / Preventive Visit">Annual / Preventive Visit</option>
+                            <option value="Hormone Therapy">Hormone Therapy</option>
+                            <option value="Weight Loss">Weight Loss</option>
+                            <option value="Peptide Therapy">Peptide Therapy</option>
+                            <option value="Primary Care">Primary Care</option>
+                            <option value="Sexual Wellness">Sexual Wellness</option>
+                            <option value="Vitamin Therapy">Vitamin Therapy</option>
+                            <option value="Other">Other</option>
+                          </select>
                         </div>
 
+                        {formData.visitReason === 'Other' && (
+                          <div className="col-md-3">
+                            <label className="form-label fw-semibold">Please describe</label>
+                            <input
+                              type="text"
+                              name="visitReasonOther"
+                              className="form-control"
+                              placeholder="Describe current concern"
+                              value={formData.visitReasonOther}
+                              onChange={handleChange}
+                            />
+                          </div>
+                        )}
+
+                        {/* Date of Birth Field */}
                         <div className="col-md-6">
                           <label className="form-label fw-semibold">Date of Birth</label>
                           <div className="row g-2">
