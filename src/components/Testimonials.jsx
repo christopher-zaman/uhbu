@@ -11,7 +11,7 @@ const reviews = [
     rating: 5,
     text: "Absolutely wonderful experience. Amanda has the best bedside manner and truly cares about her patients. You can tell she takes the time to listen and make you feel comfortable. Her spa is beautiful and professional as well. I highly recommend her if you’re looking for someone you can trust with your care.",
     time: "4 weeks ago",
-    image: "/assets/img/testimonials/testimonials-1-1.png",
+    image: "/assets/img/testimonials/a.png",
     tag: "dpc",
   },
   {
@@ -20,7 +20,7 @@ const reviews = [
     rating: 5,
     text: "From the phone call to schedule an appointment to the check-in, to the pre-test vitals, and ultimately to the visit, I was thoroughly impressed. Amanda Gaskin or doc as I’m referring to her was absolutely amazing. Not only her positive attitude and great sense of humor impressed me but combined with her medical knowledge and her creative thought, past primary care mysteries are being solved or at least attempted to be solved rather than bandaged. After my appointment I told everyone that’s in the area that I care about, a testimony and advised them to do themselves and their health a favor and join this innovative program. Thank you Ultimate Health staff.",
     time: "Google Review",
-    image: "/assets/img/testimonials/testimonial-2-1.png",
+    image: "/assets/img/testimonials/j.png",
     tag: "general",
   },
   {
@@ -38,7 +38,7 @@ const reviews = [
     rating: 5,
     text: "Amanda is the absolute best. With being the best doctor around, she also has the best staff. Greatest hidden gem in all of Lake County. She actually cares and the staff does too. They are all supportive of men and women health. Best relationship with a doctor I have ever had.",
     time: "Google Review",
-    image: "/assets/img/testimonials/testimonials-3.jpg",
+    image: "/assets/img/testimonials/l.jpg",
     tag: "general",
   },
   {

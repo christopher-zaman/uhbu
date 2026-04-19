@@ -8,7 +8,7 @@ import TextVideoSection from '../components/TextVideoSection';
 import Contact from '../components/Contact';
 import PhoneChip from '../components/PhoneChip';
 import FullscriptBanner from "../components/FullscriptBanner";
-
+import SiteHeader from '../components/SiteHeader';
 // Images
 import banner from '../assets/img/amanda-banner.webp';
 import contentImage from '../assets/img/amanda.webp';
@@ -24,8 +24,7 @@ function AboutUs() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
+    <SiteHeader />
     
      {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">

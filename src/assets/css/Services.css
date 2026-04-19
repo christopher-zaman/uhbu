@@ -27,7 +27,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #00008b;
+  background: #060a66;
   color: white;
   padding: 20px;
   text-align: center;
@@ -95,5 +95,16 @@
   border: 1px solid rgba(255,255,255,0.6);
 }
 
+.services-subtitle {
+  max-width: 860px;
+  color: #555;
+}
 
+.service-intro {
+  line-height: 1.5;
+}
+
+.service-list li {
+  margin-bottom: 6px;
+}
 

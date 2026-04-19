@@ -15,20 +15,37 @@ function VideoHero({ videoId, title, subtitle, cta, bullets }) {
       </div>
 
       {/* Overlay Content */}
-      <div className="video-hero-overlay container lead">
-      <div className="video-hero-content">
-        {title && <h1>{title}</h1>}
-        {subtitle && <p>{subtitle}</p>}
-        {bullets && (
-          <ul className="video-hero-bullets">
-            {bullets.map((b, i) => (
-              <li key={i}>{b}</li>
-            ))}
-          </ul>
-        )}
-        {cta && <div className="video-hero-cta">{cta}</div>}
+<div className="video-hero-overlay container">
+  <div className="video-hero-content">
+
+    {/* Title (always visible, but can be adjusted later) */}
+    {title && <h1 className="video-hero-title d-none d-md-block">{title}</h1>}
+
+    {/* Hide on mobile */}
+    {subtitle && (
+      <p className="video-hero-subtitle d-none d-md-block">
+        {subtitle}
+      </p>
+    )}
+
+    {/* Hide on mobile */}
+    {bullets && bullets.length > 0 && (
+      <ul className="video-hero-bullets d-none d-md-block">
+        {bullets.map((b, i) => (
+          <li key={i}>{b}</li>
+        ))}
+      </ul>
+    )}
+
+    {/* CTA always visible */}
+    {cta && (
+      <div className="video-hero-cta">
+        {cta}
       </div>
-    </div>
+    )}
+
+  </div>
+</div>
 
       {/* SVG Waves */}
       <svg

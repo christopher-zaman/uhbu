@@ -1,7 +1,7 @@
 import React from 'react';
+import Announcement from '../components/Announcement';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
-import SectionTitle from '../components/SectionTitle';
 import Paragraph from '../components/Paragraph';
 import About from '../components/About';
 import Services from '../components/Services';
@@ -42,10 +42,9 @@ function App() {
         description="Join Ultimate Health DPC and enjoy unlimited doctor access, weight loss support, hormone therapy, and more. Serving Leesburg, Florida."
         image="https://ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.png"
       />
-      <div className="header-stack">
-        <TopBar />
-        <NavBar />
-      </div>
+      <Announcement />
+      <TopBar />
+      <NavBar />
       <VideoHero
           videoId="rxVnntel71w" 
           title="Your Personal Provider. One Monthly Fee. No Insurance Games."
@@ -53,7 +52,7 @@ function App() {
           bullets={[
             "Flat monthly membership — no copays, no surprise bills",
             "Same-day or next-day appointments",
-            "Telehealth after your first visit"
+            "Telehealth available after your first in-person visit"
           ]}
           cta={
             <a 
@@ -68,8 +67,9 @@ function App() {
       <AmandaSpotlight 
         image={contentImage} 
       />
-
       <HowItWorks />
+
+      <Services /> 
 
       <PricingPreview startingPrice="$99" />
       <HomepageTestimonials reviews={reviews} />
@@ -156,7 +156,7 @@ function App() {
         text="Schedule your visit or call us today to take the next step."
       />
       <CenteredVideoSection videoId="92jlApzokh0" />
-      <Services /> 
+      
       <About />
       <Testimonials />
       <Socials />

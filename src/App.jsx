@@ -49,6 +49,7 @@ import Membership from './pages/Membership';
 import MembershipLeadsAdmin from './pages/MembershipLeadsAdmin';
 import StickyCTA from './components/StickyCTA';
 import Announcement from './components/Announcement';
+import EmployerLandingPage from './pages/EmployerLandingPage';
 function App() {
   usePageTracking();
   useEffect(() => {
@@ -70,11 +71,12 @@ function App() {
     
     <ScrollToTop />
     <ScrollToHash />
-    <Announcement />
+
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/weight-loss" element={<WeightLoss />} />
       <Route path="/membership" element={<Membership/>} />
+      <Route path="/employers" element={<EmployerLandingPage />} />
       <Route path="/admin" element={<MembershipLeadsAdmin />} />
       <Route path="/hormone-replacement-therapy" element={<HormoneTherapy />} />
       <Route path="/peptide-therapy" element={<PeptideTherapy />} />

@@ -32,11 +32,26 @@ function AmandaSpotlight({ image }) {
             </p>
 
             <ul className="amanda-bullets">
-              <li>Practicing since 2006</li>
-              <li>2022 Leesburg Area Chamber Business Woman of the Year</li>
-              <li>2026 Executive Board Chairman, Leesburg Area Chamber of Commerce</li>
-              <li>Deep community roots. Personalized care. Modern medicine with real access.</li>
-            </ul>
+  <li>Practicing since 2006</li>
+
+  <li className="highlight">
+    🏆 2022 Leesburg Area Chamber Business Woman of the Year
+  </li>
+
+  <li className="highlight">
+    🏛 2026 Executive Board Chairman, Leesburg Area Chamber of Commerce
+  </li>
+
+  <li>
+    Deep community roots. Personalized care. Modern medicine with real access.
+  </li>
+
+  <li className="media-link">
+    <a href="/media">
+      See media & community recognition →
+    </a>
+  </li>
+</ul>
 
             <div className="d-flex flex-wrap gap-3 mt-4">
               <a

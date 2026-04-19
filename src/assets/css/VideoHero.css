@@ -29,7 +29,136 @@ body {
   margin: 0;
   padding: 0;
 }
+  .video-hero {
+  position: relative;
+  overflow: hidden;
+}
 
+.video-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.42) 0%,
+    rgba(0, 0, 0, 0.28) 38%,
+    rgba(0, 0, 0, 0.12) 68%,
+    rgba(0, 0, 0, 0.03) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.video-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.video-hero-content {
+  max-width: 620px;
+  color: #fff;
+  text-align: left;
+  pointer-events: none;
+  padding: 0 12px;
+}
+
+.video-hero-content h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 12px;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.28);
+}
+
+.video-hero-content p {
+  font-size: clamp(1rem, 1.5vw, 1.35rem);
+  line-height: 1.45;
+  margin-bottom: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
+}
+
+.video-hero-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 22px;
+}
+
+.video-hero-bullets li {
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  line-height: 1.45;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-hero-cta {
+  pointer-events: auto;
+}
+
+.video-hero-cta a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.video-hero-cta a:hover {
+  background: rgba(255, 255, 255, 0.24);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991.98px) {
+  .video-hero-overlay {
+    align-items: flex-end;
+    padding-bottom: 80px;
+  }
+
+  .video-hero-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .video-hero-overlay {
+    align-items: flex-end;
+    padding-bottom: 96px;
+  }
+
+  .video-hero-content {
+    padding: 0 16px;
+  }
+
+  .video-hero-content h1 {
+    margin-bottom: 10px;
+  }
+
+  .video-hero-content p {
+    margin-bottom: 10px;
+  }
+
+  .video-hero-bullets {
+    margin-bottom: 16px;
+  }
+
+  .video-hero-bullets li {
+    margin-bottom: 6px;
+  }
+}
 
 .responsive-video-wrapper {
   position: relative;
