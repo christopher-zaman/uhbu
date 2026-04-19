@@ -47,7 +47,6 @@ const initialIntakeFormData = {
   email: '',
 
   address1: '',
-  address2: '',
   city: '',
   state: '',
   zip: '',
@@ -56,18 +55,6 @@ const initialIntakeFormData = {
   emergencyLastName: '',
   emergencyPhone: '',
   emergencyRelationship: '',
-
-  occupation: '',
-  position: '',
-  employmentType: '',
-  employerName: '',
-  workPhone: '',
-
-  workAddress1: '',
-  workAddress2: '',
-  workCity: '',
-  workState: '',
-  workZip: '',
 
   hasInsurance: '',
 
@@ -195,18 +182,6 @@ const goToTab = (tabId) => {
           phone: formData.emergencyPhone,
           relationship: formData.emergencyRelationship,
         },
-        employment: {
-          occupation: formData.occupation,
-          position: formData.position,
-          employmentType: formData.employmentType,
-          employerName: formData.employerName,
-          workPhone: formData.workPhone,
-          workAddress1: formData.workAddress1,
-          workAddress2: formData.workAddress2,
-          workCity: formData.workCity,
-          workState: formData.workState,
-          workZip: formData.workZip,
-        },
         insurance: {
           hasInsurance: formData.hasInsurance,
         },
@@ -304,28 +279,27 @@ sessionStorage.removeItem('intake_form_draft');
   );
 
   return (
-    <section className="contact section">
-      <div className="container section-title" data-aos="fade-up">
-        <h2>Patient Intake Form Packet</h2>
-        <Divider />
-        <p>Please complete each tab below and move through the packet step by step.</p>
+    <section className="contact section light-background-pink-gradient">
+      <div className="container section-title lead text-center pb-0" data-aos="fade-up">
+        <h2 className="membership-process text-center">Patient Intake Form Packet</h2>
+        <p classname="">Please complete each tab below and move through the packet step by step.</p>
       </div>
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center lead">
           <div className="col-12">
             <div className="card border-0 shadow-sm">
               <div className="card-body p-0">
                 {/* Tabs */}
-                <div className="border-bottom bg-light p-3">
-                  <div className="d-flex flex-wrap gap-2">
+                <div className="border-bottom light-pink-transparent-bg p-3">
+                  <div className="d-flex flex-wrap gap-2 lead">
                     {tabs.map((tab) => (
                       <button
                         key={tab.id}
                         type="button"
                         onClick={() => goToTab(tab.id)}
-                        className={`btn btn-sm ${
-                          activeTab === tab.id ? 'btn-dark' : 'btn-outline-secondary'
+                        className={`btn ${
+                          activeTab === tab.id ? 'btn-pink-transparent' : 'btn-outline-second'
                         }`}
                       >
                         {tab.label}
@@ -349,7 +323,7 @@ sessionStorage.removeItem('intake_form_draft');
                       <div className="row gy-4">
                         <div className="col-md-3">
                           <label className="form-label fw-semibold">
-                            Patient First Name <span className="text-danger">*</span>
+                            First Name <span className="text-danger">*</span>
                           </label>
                           <input
                             type="text"
@@ -363,7 +337,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">Patient Middle Name</label>
+                          <label className="form-label fw-semibold">Middle Name</label>
                           <input
                             type="text"
                             name="middleName"
@@ -376,7 +350,7 @@ sessionStorage.removeItem('intake_form_draft');
 
                         <div className="col-md-3">
                           <label className="form-label fw-semibold">
-                            Patient Last Name <span className="text-danger">*</span>
+                            Last Name <span className="text-danger">*</span>
                           </label>
                           <input
                             type="text"
@@ -390,7 +364,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">Patient Preferred Name</label>
+                          <label className="form-label fw-semibold">Preferred Name</label>
                           <input
                             type="text"
                             name="preferredName"
@@ -420,7 +394,7 @@ sessionStorage.removeItem('intake_form_draft');
                             ))}
                           </div>
                         </div>
-                        
+
                         {/*  */}
                         <div className="col-md-3">
                           <label className="form-label fw-semibold">
@@ -547,7 +521,7 @@ sessionStorage.removeItem('intake_form_draft');
                           />
                         </div>
 
-                        <div className="col-md-2">
+                        <div className="col-md-4">
                           <label className="form-label fw-semibold">Address</label>
                           <input
                             type="text"
@@ -559,19 +533,7 @@ sessionStorage.removeItem('intake_form_draft');
                           />
                         </div>
 
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">Address 2</label>
-                          <input
-                            type="text"
-                            name="address2"
-                            className="form-control"
-                            placeholder="address 2"
-                            value={formData.address2}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
+                        <div className="col-md-4">
                           <label className="form-label fw-semibold">City</label>
                           <input
                             type="text"
@@ -659,127 +621,6 @@ sessionStorage.removeItem('intake_form_draft');
                             className="form-control"
                             placeholder="Emergency Contact Relationship"
                             value={formData.emergencyRelationship}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">Occupation</label>
-                          <input
-                            type="text"
-                            name="occupation"
-                            className="form-control"
-                            value={formData.occupation}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">Position</label>
-                          <input
-                            type="text"
-                            name="position"
-                            className="form-control"
-                            value={formData.position}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">Employment Type</label>
-                          <select
-                            name="employmentType"
-                            className="form-select"
-                            value={formData.employmentType}
-                            onChange={handleChange}
-                          >
-                            <option value="">Select</option>
-                            <option value="Full-Time">Full-Time</option>
-                            <option value="Part-Time">Part-Time</option>
-                            <option value="Self-Employed">Self-Employed</option>
-                            <option value="Unemployed">Unemployed</option>
-                          </select>
-                        </div>
-
-                        <div className="col-md-3">
-                          <label className="form-label fw-semibold">Employer Name</label>
-                          <input
-                            type="text"
-                            name="employerName"
-                            className="form-control"
-                            placeholder="Full Name"
-                            value={formData.employerName}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-3">
-                          <label className="form-label fw-semibold">Work Phone</label>
-                          <input
-                            type="tel"
-                            name="workPhone"
-                            className="form-control"
-                            value={formData.workPhone}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">Work Address</label>
-                          <input
-                            type="text"
-                            name="workAddress1"
-                            className="form-control"
-                            placeholder="address"
-                            value={formData.workAddress1}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">Address 2</label>
-                          <input
-                            type="text"
-                            name="workAddress2"
-                            className="form-control"
-                            placeholder="address 2"
-                            value={formData.workAddress2}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">City</label>
-                          <input
-                            type="text"
-                            name="workCity"
-                            className="form-control"
-                            placeholder="city"
-                            value={formData.workCity}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">State</label>
-                          <input
-                            type="text"
-                            name="workState"
-                            className="form-control"
-                            placeholder="state"
-                            value={formData.workState}
-                            onChange={handleChange}
-                          />
-                        </div>
-
-                        <div className="col-md-2">
-                          <label className="form-label fw-semibold">Zip</label>
-                          <input
-                            type="text"
-                            name="workZip"
-                            className="form-control"
-                            placeholder="zip"
-                            value={formData.workZip}
                             onChange={handleChange}
                           />
                         </div>
@@ -935,7 +776,7 @@ sessionStorage.removeItem('intake_form_draft');
                       <div className="row gy-4">
                         <div className="col-md-6">
                           <label className="form-label fw-semibold">
-                            Patient First Name <span className="text-danger">*</span>
+                            First Name <span className="text-danger">*</span>
                           </label>
                           <input
                             type="text"
@@ -949,7 +790,7 @@ sessionStorage.removeItem('intake_form_draft');
 
                         <div className="col-md-6">
                           <label className="form-label fw-semibold">
-                            Patient Last Name <span className="text-danger">*</span>
+                            Last Name <span className="text-danger">*</span>
                           </label>
                           <input
                             type="text"
@@ -1045,7 +886,7 @@ sessionStorage.removeItem('intake_form_draft');
                       {tabIndex < tabs.length - 1 ? (
                         <button
                           type="button"
-                          className="btn btn-danger"
+                          className="btn btn-pink-transparent"
                           onClick={nextTab}
                         >
                           Next Form
@@ -1053,7 +894,7 @@ sessionStorage.removeItem('intake_form_draft');
                       ) : (
                         <button
                         type="button"
-                        className="btn btn-dark"
+                        className="btn btn-pink-transparent"
                         disabled={isSubmitting}
                         onClick={handleSubmit}
                         >

@@ -26,11 +26,10 @@ const steps = [
 
 function MembershipSteps() {
   return (
-    <section className="services section light-background">
+    <section className="services section light-background-pink-gradient">
       <div className="container section-title" data-aos="fade-up">
-        <h2>Membership Process</h2>
-        <Divider />
-        <p>Simple steps to help you move forward with clarity.</p>
+        <h2 className="membership-process">Membership Process</h2>
+        <p className="lead">Simple steps to help you move forward with clarity.</p>
       </div>
 
       <div className="container">
@@ -44,10 +43,15 @@ function MembershipSteps() {
             >
               <div className="service-item item-cyan position-relative h-100">
                 <div className="icon">
-                  <span className="fw-bold">{step.number}</span>
+                  <span 
+                  className="fw-bold lead font-large"
+                  data-aos="slide-right"
+                  data-aos-delay="200"
+                  >{step.number}
+                  </span>
                 </div>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
+                <h4 className="text-dark-pink">{step.title}</h4>
+                <p className="lead">{step.text}</p>
               </div>
             </div>
           ))}

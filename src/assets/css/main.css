@@ -475,8 +475,93 @@ h6 {
 .membership-testimonials p {
   color: #333;
 }
+/* phone chip styling */
+.cta-membership {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
 
+.cta-membership a {
+  background-color: #d49fa8 !important;
+  color: rgba(255, 255, 255, 0.8);
+}
 
+.section-title h2.membership-process {
+  font-size: 1.25rem;
+  color: #d49fa8;
+}
+
+.section-title h2.membership-process::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #d49fa8;
+    margin: 4px 10px;
+}
+.text-pink {
+  color: #d49fa8;
+}
+.text-dark-pink {
+  color: #85686c;
+}
+
+.membership-page {
+  --accent-color: #d49fa8;
+}
+.membership-form {
+  font-size: 1.25rem;
+}
+.light-pink-transparent-bg {
+  background: linear-gradient(to right, #fff5f7, #ffffff);
+}
+.btn-pink-transparent {
+  background: #fad6e2;
+  border: 1px dotted #d49fa8;
+}
+.btn-pink-transparent:hover {
+  background:#d49fa8;
+  color:#fff;
+}
+.btn-outline-second{
+  background: rgba(255,255,255,0.7);
+}
+.membership-cta-split-card-bg {
+  background-color: #fdf7f9;
+}
+.hero.membership-hero .hero-bg {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero.membership-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(30, 48, 89, 0.85) 0%,
+    rgba(30, 48, 89, 0.6) 40%,
+    rgba(30, 48, 89, 0.2) 70%,
+    rgba(30, 48, 89, 0) 100%
+  );
+  z-index: 2;
+}
+
+.cta-request-info {
+  border: none;
+}
+
+.cta-request-info:hover {
+  background-color: pink;
+  color: #fff;
+}
+
+.light-background-pink-gradient {
+  background: linear-gradient(to right, #fff5f7, #ffe3ec)
+}
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -890,6 +975,7 @@ section,
 .hero-benefits li {
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 18px;
 }
 
 /* Full Script Vertical Banner 

@@ -6,31 +6,34 @@ function MembershipCtaSplit({ onRequestInfoClick }) {
       <div className="container" data-aos="fade-up">
         <div className="row gy-4">
           <div className="col-lg-6">
-            <div className="p-4 p-lg-5 bg-white shadow-sm rounded h-100">
-              <h3 className="mb-3">Book Your Consultation</h3>
+            <div className="p-4 p-lg-5 membership-cta-split-card-bg shadow-sm rounded h-100 lead">
+              <h3 className="mb-3 text-pink">Book Your Consultation</h3>
               <p>
                 Ready to take the next step? Go directly to our booking page
                 and schedule your consultation.
               </p>
-              <a href="/book-an-appointment" className="btn btn-danger">
-                Book Now
+              <a href="https://app.elationemr.com/book/UltimateHealthDPC" 
+              className="btn btn-pink-transparent lead" 
+              target="_blank"
+              
+              >
+                Book Now (Opens new tab)
               </a>
             </div>
           </div>
 
           <div className="col-lg-6">
-            <div className="p-4 p-lg-5 bg-white shadow-sm rounded h-100">
-              <h3 className="mb-3">Request Membership Information</h3>
+            <div className="p-4 p-lg-5 membership-cta-split-card-bg shadow-sm rounded h-100 lead">
+              <h3 className="mb-3 text-pink">Request Membership Information</h3>
               <p>
-                Not ready to book yet? Send us your information and questions,
-                and someone from the team can follow up with you.
+                Not ready to book yet? Ask a question or request more information using the form below — we’re here to help.
               </p>
               <button
                 type="button"
-                className="btn btn-outline-dark"
+                className="btn btn-pink-transparent lead"
                 onClick={onRequestInfoClick}
               >
-                Get Started
+                Request Membership Information
               </button>
             </div>
           </div>

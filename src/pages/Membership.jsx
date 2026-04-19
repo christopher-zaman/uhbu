@@ -13,8 +13,10 @@ import MembershipAudience from '../components/MembershipAudience';
 import MembershipCtaSplit from '../components/MembershipCtaSplit';
 import MembershipLeadForm from '../components/MembershipLeadForm';
 import IntakeForm from '../components/IntakeForm';
-import banner from '../assets/banners/contact-banner.png';
+import banner from '../assets/banners/full-team.webp';
 import Testimonials from '../components/Testimonials';
+import PhoneChip from '../components/PhoneChip';
+
 
 function Membership() {
   const leadFormRef = useRef(null);
@@ -28,6 +30,7 @@ function Membership() {
 
   return (
     <>
+     <div className="membership-page">
       <SEO
         title="Membership | Ultimate Health DPC"
         description="Learn how membership works at Ultimate Health Direct Primary Care. Book your consultation or request membership information."
@@ -46,11 +49,8 @@ function Membership() {
         className="membership-hero"
         cta={
           <div className="d-flex gap-3 flex-wrap">
-            <button className="btn btn-primary" onClick={scrollToLeadForm}>
-              Book Your Free Meet & Greet
-            </button>
-            <button className="btn btn-outline-light" onClick={scrollToLeadForm}>
-              Request Info
+            <button className="lead cta-membership cta-request-info" onClick={scrollToLeadForm}>
+              Request Membership Info
             </button>
           </div>
         }
@@ -60,8 +60,10 @@ function Membership() {
           <li>Direct access to your doctor</li>
           <li>No copays or surprise bills</li>
         </ul>
+        <PhoneChip
+          className="lead cta-membership cta-request-info"
+        />
       </Hero>
-
       <Testimonials 
         filterType="dpc"
         className="membership-testimonials" 
@@ -72,12 +74,15 @@ function Membership() {
       <MembershipCtaSplit onRequestInfoClick={scrollToLeadForm} />
 
       <div ref={leadFormRef}>
+        <div className="membership-form lead">
         <MembershipLeadForm />
+        </div>
         <IntakeForm />
       </div>
 
       {/* <Contact /> */}
       <Footer />
+      </div>
     </>
   );
 }

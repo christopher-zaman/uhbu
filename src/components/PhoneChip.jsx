@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiPhone } from 'react-icons/fi';
 
 export default function PhoneChip({
   tel = '+13529016582',
@@ -17,8 +18,8 @@ export default function PhoneChip({
       className={`${base} ${className}`}
       aria-label={`${ariaLabel} at ${display}`}
     >
-      <span role="img" aria-hidden="true">📞</span>{' '}
-      <span className="phone-text">{display}</span>
+      <FiPhone size={22} />
+      <span className=""> {display}</span>
     </a>
   );
 }

@@ -83,10 +83,10 @@ function MembershipLeadForm() {
 
   return (
     <section className="contact section">
-      <div className="container section-title" data-aos="fade-up">
-        <h2>Request Membership Information</h2>
-        <Divider />
-        <p>Fill out the form below and our team can reach out to you.</p>
+      <div className="container section-title pb-0" data-aos="fade-up">
+        <h2 className="membership-process text-center">Request Membership Information</h2>
+        <p className="lead text-center">Fill out the form below and our team can reach out to you.</p>
+
       </div>
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -189,7 +189,7 @@ function MembershipLeadForm() {
                   />
                 </div>
 
-                <div className="col-12 text-center">
+                <div className="col-12 text-center lead">
                   <button type="submit" disabled={isSubmitting}>
                     {isSubmitting ? 'Submitting...' : 'Request Information'}
                   </button>
