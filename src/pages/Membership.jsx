@@ -16,7 +16,7 @@ import IntakeForm from '../components/IntakeForm';
 import banner from '../assets/banners/full-team.webp';
 import Testimonials from '../components/Testimonials';
 import PhoneChip from '../components/PhoneChip';
-
+import PricingPreview from '../components/PricingPreview';
 
 function Membership() {
   const leadFormRef = useRef(null);
@@ -38,7 +38,6 @@ function Membership() {
         // url="https://www.ultimatehealthdpc.com/membership"
       />
 
-      <Announcement />
       <TopBar />
       <NavBar />
 
@@ -72,7 +71,10 @@ function Membership() {
       <MembershipSteps />
       <MembershipAudience />
       <MembershipCtaSplit onRequestInfoClick={scrollToLeadForm} />
-
+      <PricingPreview
+        startingPrice="$99"
+        showSecondaryCTA={true}
+      />
       <div ref={leadFormRef}>
         <div className="membership-form lead">
         <MembershipLeadForm />

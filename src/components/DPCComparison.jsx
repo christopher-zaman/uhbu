@@ -22,13 +22,13 @@ export default function DPCComparison({
     "No copays, no surprise bills",
     "Transparent monthly membership"
   ],
-  leftBadge = "Often feels reactive",
-  rightBadge = "Built to be proactive",
+  leftBadge = "Reactive",
+  rightBadge = "Proactive",
   ctaType = "phone", // "phone" | "link" | "none"
   ctaLink = "/primary-care",
   ctaText = "Learn About Membership",
-  className = "",
-  bgClass = ""
+  className = "lead",
+  bgClass = "lead"
 }) {
   return (
     <section id={id} className={`dpc-compare section ${bgClass} ${className}`}>

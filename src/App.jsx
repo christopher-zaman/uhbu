@@ -47,6 +47,8 @@ import SpecialServices from './pages/SpecialServices';
 import ScrollToHash from './components/ScrollToHash';
 import Membership from './pages/Membership';
 import MembershipLeadsAdmin from './pages/MembershipLeadsAdmin';
+import StickyCTA from './components/StickyCTA';
+import Announcement from './components/Announcement';
 function App() {
   usePageTracking();
   useEffect(() => {
@@ -68,6 +70,7 @@ function App() {
     
     <ScrollToTop />
     <ScrollToHash />
+    <Announcement />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/weight-loss" element={<WeightLoss />} />
@@ -126,6 +129,8 @@ function App() {
 
     <Route path="/admin" element={<AdminRedirect />} />
     </Routes>
+    
+    <StickyCTA />
     </>
   );
 }

@@ -1,26 +1,17 @@
 import React from 'react';
 import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
-import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
 import Paragraph from '../components/Paragraph';
-import Video from '../components/Video';
 import About from '../components/About';
 import Services from '../components/Services';
-import Features from '../components/Features';
 import Footer from '../components/Footer';
-import Details from '../components/Details';
-import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials';
 import Socials from '../components/Socials';
 import Subscribe from '../components/Subscribe';
-import Team from '../components/Team';
-import Pricing from '../components/Pricing';
-import Faq from '../components/Faq';
 import Contact from '../components/Contact';
 import CareCredit from '../components/CareCredit';
-import contentImage from '../assets/img/amanda-mobile-small.webp';
-import backgroundVideo from '../assets/videos/alma-duo-video-optimized.mp4';
+import contentImage from '../assets/img/amanda-spotlight.webp';
 import VideoHero from '../components/VideoHero';
 import CenteredVideoSection from '../components/CenteredVideoSection';
 import { useEffect } from 'react';
@@ -31,8 +22,13 @@ import AudienceGrid from '../components/AudienceGrid';
 import DPCComparison from "../components/DPCComparison";
 import LocalProof from "../components/LocalProof";
 import PrimaryCTA from '../components/PrimaryCTA';
-import Announcement from '../components/Announcement';
 import ValueSection from '../components/ValueSection';
+import AmandaSpotlight from '../components/AmandaSpotlight';
+import HowItWorks from '../components/HowItWorks';
+import PricingPreview from '../components/PricingPreview';
+import HomepageTestimonials from '../components/HomepageTestimonials';
+import { reviews } from '../data/reviews';
+
 function App() {
   const seo = usePageSEO();
   useEffect(() => {
@@ -47,29 +43,43 @@ function App() {
         image="https://ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.png"
       />
       <div className="header-stack">
-        <Announcement />
         <TopBar />
         <NavBar />
       </div>
-      <VideoHero videoId="rxVnntel71w" height="75vh" />
-      
-      {/* 
-      <Hero 
-        backgroundImage="/assets/img/banners/amanda-mobile-small.webp"
-        backgroundVideo={backgroundVideo}
-        heroImage="/assets/img/hero-img-sexual-wellness.png"
-        title=""
-        subtitle=""
-      /> 
-      */}
+      <VideoHero
+          videoId="rxVnntel71w" 
+          title="Your Personal Provider. One Monthly Fee. No Insurance Games."
+          subtitle="Direct access to your provider in Leesburg — same-day visits, no waiting rooms, and care that actually knows your name."
+          bullets={[
+            "Flat monthly membership — no copays, no surprise bills",
+            "Same-day or next-day appointments",
+            "Telehealth after your first visit"
+          ]}
+          cta={
+            <a 
+            href="https://app.elationemr.com/book/UltimateHealthDPC"
+            target="_blank"
+            >
+              Become a Member Today
+            </a>
+          }
+      />
 
-      <SectionTitle>
+      <AmandaSpotlight 
+        image={contentImage} 
+      />
+
+      <HowItWorks />
+
+      <PricingPreview startingPrice="$99" />
+      <HomepageTestimonials reviews={reviews} />
+      {/* <SectionTitle>
         Welcome to <strong>Ultimate Health</strong>{' '}
         <span className="text-green">Direct Primary Care!</span>
-      </SectionTitle>
+      </SectionTitle> */}
       <AudienceGrid
-        title="For Families Who Want Better Access, Better Answers, and a Provider Who Actually Knows Them"
-        subtitle="Unlimited visits. Same-day appointments. Transparent pricing. No insurance headaches."
+        // title="For Families Who Want Better Access, Better Answers, and a Provider Who Actually Knows Them"
+        // subtitle="Unlimited visits. Same-day appointments. Transparent pricing. No insurance headaches."
         className="lead"
         titleClassName="audience-grid-title--small"
         items={[
@@ -101,8 +111,8 @@ function App() {
       />
       <DPCComparison
         ctaType="link"
-        ctaLink="/primary-care"
-        ctaText="See How Membership Works"
+        ctaLink="/membership"
+        ctaText="Memberships starting at $99/month"
       />
   <LocalProof
   title="Why Ultimate Health DPC"
@@ -134,7 +144,6 @@ function App() {
   ctaType="phone"
 />
 <ValueSection />
-
       <Paragraph className="lead text-gray-500" data-aos="fade-up" data-aos-delay="0">
         We’re so glad you’re here!
         At Ultimate Health, we believe going to the doctor should be simple, affordable, and personal. That’s why we do things differently. We’re a Direct Primary Care practice, which means you get care when you need it—without the long waits, surprise bills, or rushed visits.
@@ -143,36 +152,16 @@ function App() {
         Let’s take care of you—together.
       </Paragraph>
       <PrimaryCTA
-        title = "Ready to experience healthcare differently?"
-        text = "We’re here to answer your questions and help you take the next step."
+        title="Ready to get started?"
+        text="Schedule your visit or call us today to take the next step."
       />
       <CenteredVideoSection videoId="92jlApzokh0" />
-      {/* 
-      <video
-        className="hero-bg-video"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> 
-      */}
       <Services /> 
       <About />
       <Testimonials />
       <Socials />
       <CareCredit />
       <Subscribe />
-      {/* 
-      <Features />
-      <Details />
-      <Gallery />
-      <Team />
-      <Pricing />
-      <Faq /> 
-      */}
       <Contact />
       <Footer />
     </>

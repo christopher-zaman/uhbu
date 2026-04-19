@@ -59,17 +59,21 @@ function Contact() {
 
 
   return (
-    <section id="contact" className="contact section contact-bg">
-      <div className="container section-title" data-aos="fade-up">
+    <section id="contact" className="contact section contact-bg-main">
+      <div className="container section-title lead" data-aos="fade-up">
         <div>
           <span>Contact</span> <span className="description-title">Information</span>
         </div>
+
+        <p className="mt-2 mb-0">
+          Use the form below or contact us directly — we’re happy to help.
+        </p>
       </div>
 
       <div className="container" data-aos="fade" data-aos-delay={100}>
         <div className="row gy-4">
           <div className="col-lg-4">
-            <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={200}>
+            <div className="info-item d-flex lead" data-aos="fade-up" data-aos-delay={200}>
               <i className="bi bi-geo-alt flex-shrink-0" />
               <div>
                 <h3>Address</h3>
@@ -77,16 +81,6 @@ function Contact() {
               </div>
             </div>
 
-{/* chatgpt 12/6 */}
-            {/* <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={300}>
-              <i className="bi bi-telephone flex-shrink-0" />
-              <div>
-                <h3>Call Us</h3>
-                <p>352-901-6582</p>
-              </div>
-            </div> */}
-
-            {/* Make this entire row a tel: link */}
               <a
                 href="tel:+13529016582"
                 className="info-item d-flex text-decoration-none text-dark"
@@ -101,19 +95,16 @@ function Contact() {
 
                   if (!ok) console.warn("GA4 not available (gtag/dataLayer missing)");
                 }}
-
               >
                 <i className="bi bi-telephone flex-shrink-0" />
-                <div>
+                <div className="lead">
                   <h3>Call Us</h3>
                   <p>352-901-6582</p>
                 </div>
               </a>
-
-
             <div className="info-item d-flex" data-aos="fade-up" data-aos-delay={400}>
               <i className="bi bi-envelope flex-shrink-0" />
-              <div>
+              <div className="lead">
                 <h3>Email Us</h3>
                 <p>ultimatehealthdpc@gmail.com</p>
               </div>
@@ -124,10 +115,13 @@ function Contact() {
             <form
               ref={form}
               onSubmit={sendEmail}
-              className="php-email-form"
+              className="php-email-form lead"
               data-aos="fade-up"
               data-aos-delay={200}
             >
+            <p className="contact-form-reassurance small mb-3">
+              Have questions first? That’s completely okay — we’ll help you find the right next step.
+            </p>
               <div className="row gy-4">
                 <div className="col-md-6">
                   <input
@@ -161,8 +155,8 @@ function Contact() {
                     type="text"
                     name="subject"
                     className="form-control"
-                    placeholder="Subject"
-                    required
+                    placeholder="Subject (optional)"
+                    
                   />
                 </div>
                 <div className="col-md-12">
