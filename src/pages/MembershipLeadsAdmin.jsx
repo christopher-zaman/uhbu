@@ -191,7 +191,7 @@ const handleLock = () => {
                 <div className="alert alert-warning">No leads found.</div>
               ) : (
                 
-                <div className="table-responsive">
+                <div className="table-responsive white-transparent-bg">
                 <hr className="my-5" />
                 
                 <h4 className="mb-3">Membership Leads</h4>
