@@ -191,11 +191,11 @@ const handleLock = () => {
                 <div className="alert alert-warning">No leads found.</div>
               ) : (
                 
-                <div className="table-responsive white-transparent-bg">
+                <div className="table-responsive">
                 <hr className="my-5" />
                 
                 <h4 className="mb-3">Membership Leads</h4>
-                  <table className="table table-bordered table-striped align-middle">
+                  <table className="table table-bordered table-striped align-middle white-transparent-bg">
                     <thead>
                       <tr>
                         <th>Date</th>
