@@ -25,6 +25,9 @@ import ConversionBlock from "../components/ConversionBlock";
 
 function WeightLoss() {
   const seo = usePageSEO();
+
+  console.log("WeightLoss SEO:", seo);
+    
   return (
     <>
     <SEO {...seo} />

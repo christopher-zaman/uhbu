@@ -4,8 +4,10 @@ import seoConfig from '../config/seoConfig';
 
 export const usePageSEO = () => {
   const { pathname } = useLocation();
-  // return seoConfig[pathname] || seoConfig["/"]; // fallback to home
+
   if (!seoConfig[pathname]) {
-  console.warn("Missing SEO config for:", pathname);
-}
+    console.warn("Missing SEO config for:", pathname);
+  }
+
+  return seoConfig[pathname] || seoConfig["/"];
 };
