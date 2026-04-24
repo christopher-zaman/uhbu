@@ -143,7 +143,7 @@ const handleLock = () => {
       <TopBar />
       <NavBar />
 
-      <section className="section">
+      <section className="section bg-pink">
         <div className="container">
           {/* <div className="section-title" data-aos="fade-up">
             <h2>Membership Leads Admin</h2>

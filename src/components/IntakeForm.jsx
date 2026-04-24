@@ -256,7 +256,7 @@ sessionStorage.removeItem('intake_form_draft');
 
   const renderYesNoGroup = (label, value, onChange, required = false) => (
     <div className="mb-4">
-      <label className="form-label fw-semibold">
+      <label className="form-label ">
         {label} {required ? <span className="text-danger">*</span> : null}
       </label>
       <div className="d-flex gap-2 flex-wrap">
@@ -322,7 +322,7 @@ sessionStorage.removeItem('intake_form_draft');
 
                       <div className="row gy-4">
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label ">
                             First Name <span className="text-danger">*</span>
                           </label>
                           <input
@@ -337,7 +337,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">Middle Name</label>
+                          <label className="form-label ">Middle Name</label>
                           <input
                             type="text"
                             name="middleName"
@@ -349,7 +349,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label ">
                             Last Name <span className="text-danger">*</span>
                           </label>
                           <input
@@ -364,7 +364,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">Preferred Name</label>
+                          <label className="form-label ">Preferred Name</label>
                           <input
                             type="text"
                             name="preferredName"
@@ -376,9 +376,9 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">Sex</label>
+                          <label className="form-label ">Sex</label>
                           <div className="d-flex gap-2 flex-wrap">
-                            {['Male', 'Female', 'Other'].map((option) => (
+                            {['Male', 'Female'].map((option) => (
                               <button
                                 key={option}
                                 type="button"
@@ -397,7 +397,7 @@ sessionStorage.removeItem('intake_form_draft');
 
                         {/*  */}
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label ">
                             Reason for Visit <span className="text-danger">*</span>
                           </label>
                           <select
@@ -421,7 +421,7 @@ sessionStorage.removeItem('intake_form_draft');
 
                         {formData.visitReason === 'Other' && (
                           <div className="col-md-3">
-                            <label className="form-label fw-semibold">Please describe</label>
+                            <label className="form-label ">Please describe</label>
                             <input
                               type="text"
                               name="visitReasonOther"
@@ -435,7 +435,7 @@ sessionStorage.removeItem('intake_form_draft');
 
                         {/* Date of Birth Field */}
                         <div className="col-md-6">
-                          <label className="form-label fw-semibold">Date of Birth</label>
+                          <label className="form-label ">Date of Birth</label>
                           <div className="row g-2">
                             <div className="col-md-4">
                               <select
@@ -486,7 +486,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-4">
-                          <label className="form-label fw-semibold">Primary Phone</label>
+                          <label className="form-label ">Primary Phone</label>
                           <input
                             type="tel"
                             name="primaryPhone"
@@ -498,7 +498,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-4">
-                          <label className="form-label fw-semibold">Cell Phone</label>
+                          <label className="form-label ">Cell Phone</label>
                           <input
                             type="tel"
                             name="cellPhone"
@@ -510,7 +510,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-4">
-                          <label className="form-label fw-semibold">Email Address</label>
+                          <label className="form-label ">Email Address</label>
                           <input
                             type="email"
                             name="email"
@@ -522,7 +522,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-4">
-                          <label className="form-label fw-semibold">Address</label>
+                          <label className="form-label ">Address</label>
                           <input
                             type="text"
                             name="address1"
@@ -534,7 +534,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-4">
-                          <label className="form-label fw-semibold">City</label>
+                          <label className="form-label ">City</label>
                           <input
                             type="text"
                             name="city"
@@ -546,7 +546,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-2">
-                          <label className="form-label fw-semibold">State</label>
+                          <label className="form-label ">State</label>
                           <input
                             type="text"
                             name="state"
@@ -558,7 +558,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-2">
-                          <label className="form-label fw-semibold">Zip</label>
+                          <label className="form-label ">Zip</label>
                           <input
                             type="text"
                             name="zip"
@@ -570,7 +570,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label small">
                             Emergency Contact First Name <span className="text-danger">*</span>
                           </label>
                           <input
@@ -584,7 +584,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label small">
                             Emergency Contact Last Name <span className="text-danger">*</span>
                           </label>
                           <input
@@ -598,7 +598,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label small">
                             Emergency Contact Phone <span className="text-danger">*</span>
                           </label>
                           <input
@@ -612,7 +612,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-3">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label small">
                             Emergency Contact Relationship <span className="text-danger">*</span>
                           </label>
                           <input
@@ -645,7 +645,7 @@ sessionStorage.removeItem('intake_form_draft');
 
                       <div className="row gy-4">
                         <div className="col-md-4">
-                          <label className="form-label fw-semibold">Name of Current Physician</label>
+                          <label className="form-label ">Name of Current Physician</label>
                           <input
                             type="text"
                             name="currentPhysicianName"
@@ -657,7 +657,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-4">
-                          <label className="form-label fw-semibold">Phone</label>
+                          <label className="form-label ">Phone</label>
                           <input
                             type="tel"
                             name="currentPhysicianPhone"
@@ -669,7 +669,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-4">
-                          <label className="form-label fw-semibold">Date of Last Visit</label>
+                          <label className="form-label ">Date of Last Visit</label>
                           <div className="row g-2">
                             <div className="col-md-4">
                               <select
@@ -726,7 +726,7 @@ sessionStorage.removeItem('intake_form_draft');
                           {historyConditions.map((condition) => (
                             <div className="col-lg-4 col-md-6" key={condition}>
                               <div className="border rounded p-3 h-100">
-                                <div className="fw-semibold mb-3">{condition}</div>
+                                <div className=" mb-3">{condition}</div>
                                 <div className="d-flex gap-2">
                                   <button
                                     type="button"
@@ -775,7 +775,7 @@ sessionStorage.removeItem('intake_form_draft');
 
                       <div className="row gy-4">
                         <div className="col-md-6">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label ">
                             First Name <span className="text-danger">*</span>
                           </label>
                           <input
@@ -789,7 +789,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-md-6">
-                          <label className="form-label fw-semibold">
+                          <label className="form-label ">
                             Last Name <span className="text-danger">*</span>
                           </label>
                           <input
@@ -803,7 +803,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-12">
-                          <label className="form-label fw-semibold">Signature</label>
+                          <label className="form-label ">Signature</label>
                           <input
                             type="text"
                             name="signatureName"
@@ -857,7 +857,7 @@ sessionStorage.removeItem('intake_form_draft');
                         </div>
 
                         <div className="col-12">
-                          <label className="form-label fw-semibold">Notes</label>
+                          <label className="form-label ">Notes</label>
                           <textarea
                             className="form-control"
                             name="releaseNotes"
