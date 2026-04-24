@@ -129,7 +129,6 @@ function App() {
         <p>Try the menu above or <a href="/">go home</a>.</p>
       </div>} />
 
-    <Route path="/admin" element={<AdminRedirect />} />
     </Routes>
     
     <StickyCTA />

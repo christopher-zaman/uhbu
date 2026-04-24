@@ -1,323 +1,289 @@
+// src/config/seoConfig.js
+
+const HOST = "https://www.ultimatehealthdpc.com";
+
 const seoConfig = {
   "/": {
-    title: "Direct Primary Care in Leesburg, FL | Ultimate Health DPC",
+    title: "Membership-Based Primary Care in Leesburg | Ultimate Health DPC",
     description:
-      "Affordable, membership-based care for families and individuals at Ultimate Health DPC.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/",
+      "Join Ultimate Health DPC in Leesburg, FL for membership-based primary care, same-day visits, direct provider access, and personalized wellness support.",
+    url: `${HOST}/`,
   },
 
-  "/meet-us": {
-    title: "About Our Nurse Practitioner in Leesburg, FL | Trusted Primary Care Provider",
+  "/membership": {
+    title: "Direct Primary Care Membership in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Meet Amanda, a trusted primary care provider serving families at our Leesburg healthcare clinic. Learn about her credentials, care philosophy, and commitment to patient-first medicine.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/meet-us",
+      "Affordable Direct Primary Care membership in Leesburg with unlimited visits, no copays, no insurance barriers, and direct access to your provider.",
+    url: `${HOST}/membership`,
+  },
+
+  "/primary-care": {
+    title: "Primary Care in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Personalized primary care in Leesburg with longer visits, same-day appointments, preventive care, chronic condition support, and direct provider access.",
+    url: `${HOST}/primary-care`,
   },
 
   "/weight-loss": {
-    title: "Medical Weight Loss in Leesburg, FL | Provider-Guided & Safe",
+    title: "Medical Weight Loss in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Medical weight loss in Leesburg focused on safe, sustainable results. Work 1-on-1 with a provider for guided weight management across Central Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/weight-loss",
+      "Medical weight loss in Leesburg with personalized treatment plans, provider-guided support, and options for weight loss medications when appropriate.",
+    url: `${HOST}/weight-loss`,
   },
 
   "/hormone-replacement-therapy": {
-    title: "Hormone Therapy in Leesburg, FL | Personalized Balance & Energy",
+    title: "Hormone Replacement Therapy in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Hormone therapy in Leesburg for fatigue, mood, sleep, and libido. Comprehensive hormone imbalance treatment with personalized plans in Florida, including bioidentical options when appropriate.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/hormone-replacement-therapy",
+      "Hormone therapy in Leesburg for men and women experiencing fatigue, low libido, mood changes, weight changes, or hormone imbalance symptoms.",
+    url: `${HOST}/hormone-replacement-therapy`,
   },
 
   "/peptide-therapy": {
-    title: "Peptide Therapy in Leesburg, FL | Cellular Health & Recovery",
+    title: "Peptide Therapy in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Peptide therapy in Leesburg designed to support cellular health, vitality, and recovery—advanced wellness therapies tailored to your goals across Central Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/peptide-therapy",
+      "Explore peptide therapy in Leesburg designed to support wellness, recovery, energy, body composition, and healthy aging under provider guidance.",
+    url: `${HOST}/peptide-therapy`,
   },
 
   "/pt-141": {
-    title: "PT-141 Peptide Therapy | Ultimate Health DPC",
+    title: "PT-141 Treatment in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Stimulate sexual desire with brain-targeting PT-141 peptide therapy.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/pt-141",
+      "Learn about PT-141 treatment in Leesburg for sexual wellness support, libido concerns, and personalized care through Ultimate Health DPC.",
+    url: `${HOST}/pt-141`,
   },
 
   "/sexual-wellness-treatments": {
     title: "Sexual Wellness Treatments in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Explore sexual wellness treatments designed for confidence, performance, and intimacy support with discreet, patient-centered care in Leesburg, Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/sexual-wellness-treatments",
-  },
-
-  "/sexual-wellness-for-him": {
-    title: "Sexual Wellness for Men | Ultimate Health DPC",
-    description:
-      "P-Shot®, ED treatment, PT-141, and male enhancement therapies.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/sexual-wellness-for-him",
+      "Sexual wellness treatments in Leesburg for men and women, including personalized options to support confidence, intimacy, and overall wellness.",
+    url: `${HOST}/sexual-wellness-treatments`,
   },
 
   "/sexual-wellness-for-her": {
-    title: "Sexual Wellness for Women | Ultimate Health DPC",
+    title: "Women’s Sexual Wellness in Leesburg, FL | Ultimate Health DPC",
     description:
-      "O-Shot®, and women’s intimate wellness support with discreet care.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/sexual-wellness-for-her",
+      "Women’s sexual wellness treatments in Leesburg designed to support intimacy, confidence, comfort, and whole-body wellness.",
+    url: `${HOST}/sexual-wellness-for-her`,
+  },
+
+  "/sexual-wellness-for-him": {
+    title: "Men’s Sexual Wellness in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Men’s sexual wellness treatments in Leesburg for performance, confidence, libido, and overall men’s health support.",
+    url: `${HOST}/sexual-wellness-for-him`,
   },
 
   "/duo": {
-    title: "ALMA Duo ED Treatment | Ultimate Health DPC",
+    title: "DUO Sexual Wellness Treatment in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Non-invasive shockwave therapy to improve erections and sexual performance without medication.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/duo",
+      "Learn about DUO sexual wellness treatment in Leesburg, designed to support intimacy, performance, and confidence for couples and individuals.",
+    url: `${HOST}/duo`,
   },
 
   "/vampire-facial": {
-    title: "Vampire Facial® in Leesburg, FL | Ultimate Health DPC",
-    description: "Microneedling to refresh and smooth aging skin.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/vampire-facial",
-  },
-
-  "/primary-care": {
-    title: "Primary Care Membership in Leesburg, FL | Ultimate Health DPC",
+    title: "Vampire Facial in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Unlimited visits, no copays, and better care through membership-based primary care.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/primary-care",
-  },
-
-  "/mens-health": {
-    title: "Men’s Health in Leesburg, FL | Energy, Performance & Hormone Optimization",
-    description:
-      "Comprehensive men’s health in Leesburg—vitality, performance, and intimacy support. A trusted option for men’s clinic needs in Central Florida, including the Winter Haven area.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/mens-health",
-  },
-
-  "/womens-health": {
-    title: "Women’s Health in Leesburg, FL | Menopause Support & Hormone Balance",
-    description:
-      "Women’s health in Leesburg for fatigue, mood changes, and menopause support. Personalized plans that promote hormone balance for women at every stage.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/womens-health",
-  },
-
-  "/telemedicine": {
-    title: "Telemedicine Appointments | Ultimate Health DPC",
-    description: "See your provider virtually from anywhere in Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/telemedicine",
-  },
-
-  "/hair-restoration": {
-    title: "Hair Restoration in Leesburg, FL | Ultimate Health DPC",
-    description: "Regrow thinning hair with medication-based treatment plans.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/hair-restoration",
-  },
-
-  "/mental-health": {
-    title: "Mental Health Support in Leesburg, FL | Ultimate Health DPC",
-    description: "Access care for anxiety, depression, ADHD, and more.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/mental-health",
-  },
-
-  "/mental-wellness": {
-    title: "Mental Wellness Coaching | Ultimate Health DPC",
-    description:
-      "Personalized mental health guidance and emotional resilience programs.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/mental-wellness",
-  },
-
-  "/regenerative-therapy": {
-    title: "Regenerative Therapies in Leesburg, FL | Natural, Non-Surgical Care",
-    description:
-      "Natural, provider-guided regenerative therapies in Leesburg for skin and hair vitality. Non-surgical approaches that encourage your body’s own rejuvenation processes.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/regenerative-therapy",
+      "Refresh your skin with a vampire facial in Leesburg using regenerative aesthetic techniques to support smoother, healthier-looking skin.",
+    url: `${HOST}/vampire-facial`,
   },
 
   "/vitamin-injections": {
     title: "Vitamin Injections in Leesburg, FL | Ultimate Health DPC",
-    description: "Boost energy, immunity, and mood with quick vitamin shots.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/vitamin-injections",
+    description:
+      "Vitamin injections in Leesburg for energy, wellness, metabolism, immune support, and personalized nutritional support.",
+    url: `${HOST}/vitamin-injections`,
   },
 
   "/vitamin-infusions": {
-    title: "IV Therapy in Leesburg, FL | Hydration, Energy & Immune Support",
+    title: "IV Vitamin Therapy in Leesburg, FL | Ultimate Health DPC",
     description:
-      "IV therapy in Leesburg for hydration, recovery, and immune health. Choose targeted drips—an immune boost IV or hydration therapy—personalized for your needs in Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/vitamin-infusions",
+      "IV vitamin infusions in Leesburg for hydration, energy, immune support, recovery, and overall wellness.",
+    url: `${HOST}/vitamin-infusions`,
+  },
+
+  "/womens-health": {
+    title: "Women’s Health Services in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Women’s health services in Leesburg including primary care, hormone support, wellness visits, sexual wellness, and personalized treatment plans.",
+    url: `${HOST}/womens-health`,
+  },
+
+  "/mens-health": {
+    title: "Men’s Health Services in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Men’s health services in Leesburg including primary care, hormone support, sexual wellness, weight management, and preventive care.",
+    url: `${HOST}/mens-health`,
+  },
+
+  "/telemedicine": {
+    title: "Telemedicine in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Convenient telemedicine visits for Ultimate Health DPC patients in Leesburg, offering flexible access to your provider when appropriate.",
+    url: `${HOST}/telemedicine`,
+  },
+
+  "/mental-health": {
+    title: "Mental Health Support in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Mental health support in Leesburg through personalized primary care, wellness guidance, and compassionate provider access.",
+    url: `${HOST}/mental-health`,
+  },
+
+  "/mental-wellness": {
+    title: "Mental Wellness Services in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Mental wellness support in Leesburg focused on whole-person care, stress management, emotional wellness, and personalized health guidance.",
+    url: `${HOST}/mental-wellness`,
+  },
+
+  "/hair-restoration": {
+    title: "Hair Restoration in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Hair restoration services in Leesburg designed to support hair growth, confidence, and personalized regenerative wellness care.",
+    url: `${HOST}/hair-restoration`,
+  },
+
+  "/regenerative-therapy": {
+    title: "Regenerative Therapy in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Regenerative therapy in Leesburg focused on recovery, healing support, aesthetics, and personalized wellness treatment options.",
+    url: `${HOST}/regenerative-therapy`,
   },
 
   "/spa-services": {
-    title: "Aesthetics & Medical Spa in Leesburg, FL | Hidden Luxury at Ultimate Health",
+    title: "Medical Spa Services in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Discover a hidden luxury medical spa in Leesburg—facials, skincare, and injectables—delivered with a clinical, patient-first approach in Central Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/spa-services",
+      "Medical spa services in Leesburg including skin treatments, aesthetics, wellness therapies, and personalized care in a clinical setting.",
+    url: `${HOST}/spa-services`,
   },
 
   "/special-services": {
-    title: "Special Services in Leesburg, FL | Women’s & Men’s Wellness Care",
+    title: "Specialty Wellness Services in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Explore special services focused on women’s wellness, men’s health, and supportive care options at Ultimate Health DPC in Leesburg, Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/special-services",
+      "Explore specialty wellness services at Ultimate Health DPC in Leesburg, including advanced therapies, aesthetics, and personalized treatment options.",
+    url: `${HOST}/special-services`,
   },
 
   "/skin-pen": {
-    title: "SkinPen Microneedling | Ultimate Health DPC",
+    title: "SkinPen Microneedling in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Improve texture, tone, and acne scars with collagen-inducing microneedling.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/skin-pen",
+      "SkinPen microneedling in Leesburg to support smoother skin texture, collagen production, and refreshed, healthier-looking skin.",
+    url: `${HOST}/skin-pen`,
   },
 
   "/toskani": {
-    title: "Toskani Skincare Products | Ultimate Health DPC",
+    title: "Toskani Skin Treatments in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Clinical-grade skincare for aging, discoloration, and overall skin glow.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/toskani",
+      "Toskani aesthetic treatments in Leesburg designed to support skin rejuvenation, hydration, and a refreshed appearance.",
+    url: `${HOST}/toskani`,
   },
 
   "/neurotoxin": {
-    title: "Neurotoxin Wrinkle Treatment | Ultimate Health DPC",
-    description: "Smooth fine lines with Botox®, Dysport®, or Xeomin®.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/neurotoxin",
+    title: "Neurotoxin Treatments in Leesburg, FL | Ultimate Health DPC",
+    description:
+      "Neurotoxin treatments in Leesburg to soften the appearance of fine lines and wrinkles with personalized aesthetic care.",
+    url: `${HOST}/neurotoxin`,
   },
 
   "/dermal-filler": {
     title: "Dermal Fillers in Leesburg, FL | Ultimate Health DPC",
-    description: "Restore youthful contours with HA filler treatments.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/dermal-filler",
+    description:
+      "Dermal filler treatments in Leesburg to restore volume, enhance facial balance, and support a refreshed, natural-looking appearance.",
+    url: `${HOST}/dermal-filler`,
   },
 
   "/alma-femi-lift": {
-    title: "Alma FemiLift® Vaginal Rejuvenation | Ultimate Health DPC",
-    description: "Laser treatment to improve tone, dryness, and confidence.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/alma-femi-lift",
-  },
-
-  "/blog": {
-    title: "Ultimate Health Blog | Primary Care & Wellness in Leesburg, FL",
+    title: "Alma FemiLift in Leesburg, FL | Ultimate Health DPC",
     description:
-      "Answers to local health questions—why weight loss stalls, signs of hormone imbalance, benefits of IV therapy in Florida heat, and what to expect at a DPC clinic.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/blog",
+      "Alma FemiLift treatment in Leesburg for women’s wellness, intimate health support, and personalized care.",
+    url: `${HOST}/alma-femi-lift`,
   },
 
-  "/media": {
-    title: "Media & Updates | Ultimate Health DPC in Leesburg, FL",
+  "/meet-us": {
+    title: "Meet Ultimate Health DPC | Leesburg Direct Primary Care",
     description:
-      "Clinic updates, announcements, and featured media from Ultimate Health Direct Primary Care in Leesburg, Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/media",
-  },
-
-  "/contact": {
-    title: "Contact & Book Now | Ultimate Health DPC, Leesburg, FL",
-    description:
-      "Book medical spa or primary care in Leesburg. Call, schedule online, or get directions—easy appointments for Ultimate Health patients in Central Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/contact",
-  },
-
-  "/careers": {
-    title: "Careers at Ultimate Health DPC",
-    description: "Join our mission-driven team of healthcare innovators.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/careers",
+      "Meet the Ultimate Health DPC team in Leesburg and learn about our personalized, membership-based approach to primary care and wellness.",
+    url: `${HOST}/meet-us`,
   },
 
   "/our-practice": {
-    title: "About Our Practice | Ultimate Health DPC",
+    title: "Our Practice | Ultimate Health DPC in Leesburg, FL",
     description:
-      "Learn about our values, services, and commitment to patient-centered care.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/our-practice",
+      "Learn about Ultimate Health DPC, a Leesburg Direct Primary Care practice focused on affordable, personal, and accessible healthcare.",
+    url: `${HOST}/our-practice`,
+  },
+
+  "/contact": {
+    title: "Contact Ultimate Health DPC | Leesburg, FL",
+    description:
+      "Contact Ultimate Health DPC in Leesburg, FL to ask questions, schedule a visit, or learn more about membership-based primary care.",
+    url: `${HOST}/contact`,
+  },
+
+  "/careers": {
+    title: "Careers at Ultimate Health DPC | Leesburg, FL",
+    description:
+      "Explore career opportunities with Ultimate Health DPC in Leesburg and join a team focused on personalized, patient-centered care.",
+    url: `${HOST}/careers`,
+  },
+
+  "/employers": {
+  title: "DPC for Employers in Leesburg | Ultimate Health DPC",
+  description:
+    "Give your team a healthcare benefit they’ll actually use. Employer group memberships with direct provider access, same-day appointments, and predictable costs.",
+  url: `${HOST}/employers`,
+},
+
+  "/blog": {
+    title: "Health & Wellness Blog | Ultimate Health DPC",
+    description:
+      "Read health, wellness, primary care, hormone therapy, weight loss, and lifestyle articles from Ultimate Health DPC in Leesburg.",
+    url: `${HOST}/blog`,
+  },
+
+  "/media": {
+    title: "Media & Updates | Ultimate Health DPC",
+    description:
+      "View media, updates, announcements, and educational content from Ultimate Health DPC in Leesburg, FL.",
+    url: `${HOST}/media`,
+  },
+
+  "/payment-plans": {
+    title: "Payment Plans | Ultimate Health DPC",
+    description:
+      "Learn about payment plan options at Ultimate Health DPC for eligible services and personalized care in Leesburg.",
+    url: `${HOST}/payment-plans`,
   },
 
   "/privacy-policy": {
     title: "Privacy Policy | Ultimate Health DPC",
     description:
-      "Read the Ultimate Health DPC privacy policy and how we protect your information.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/privacy-policy",
+      "Read the Ultimate Health DPC privacy policy to learn how information is handled when using our website and services.",
+    url: `${HOST}/privacy-policy`,
+    noindex: true,
   },
 
   "/terms-and-conditions": {
     title: "Terms and Conditions | Ultimate Health DPC",
     description:
-      "Review the terms and conditions for using the Ultimate Health DPC website and services.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/terms-and-conditions",
+      "Read the terms and conditions for using the Ultimate Health DPC website and related services.",
+    url: `${HOST}/terms-and-conditions`,
+    noindex: true,
   },
 
-  "/payment-plans": {
-    title: "Payment Plans | Ultimate Health DPC in Leesburg, FL",
-    description:
-      "Learn about payment plan options available for eligible services at Ultimate Health DPC in Leesburg, Florida.",
-    image:
-      "https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp",
-    url: "https://www.ultimatehealthdpc.com/payment-plans",
+  "/admin": {
+    title: "Admin | Ultimate Health DPC",
+    description: "Ultimate Health DPC admin area.",
+    url: `${HOST}/admin`,
+    noindex: true,
   },
 
-  // These routes do not exist in App.jsx yet. Keep commented until you add real pages/routes.
-  // "/direct-primary-care": { ... },
-  // "/tirzepatide": { ... },
-  // "/estrogen": { ... },
+  "/blog-cms": {
+    title: "Blog CMS | Ultimate Health DPC",
+    description: "Ultimate Health DPC blog CMS.",
+    url: `${HOST}/blog-cms`,
+    noindex: true,
+  },
 };
 
 export default seoConfig;

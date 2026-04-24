@@ -27,17 +27,13 @@ import sideImage from '../assets/img/vitamin.png';
 import fourthImage from '../assets/img/why-vitamin.png';
 import spaLogo from '../assets/img/ultimate-health-spa-logo.png'; 
 import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
 
 function VitaminInfusions() {
-  
+  const seo = usePageSEO();
   return (
     <>
-    <SEO
-        title="Vitamin Infusions | Ultimate Health DPC"
-        description="Revitalize with our powerful vitamin infusions in Leesburg, FL. Boost energy, immunity, and hydration with IV therapy at Ultimate Health."
-        image="https://www.ultimatehealthdpc.com/assets/iv-infusion-treatments-eb346629.jpg"
-        url="https://www.ultimatehealthdpc.com/vitamin-infusions"
-      />
+    <SEO {...seo} />
       <TopBar />
       <NavBar />
 

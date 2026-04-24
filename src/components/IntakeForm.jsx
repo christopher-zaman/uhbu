@@ -282,7 +282,7 @@ sessionStorage.removeItem('intake_form_draft');
     <section className="contact section light-background-pink-gradient">
       <div className="container section-title lead text-center pb-0" data-aos="fade-up">
         <h2 className="membership-process text-center">Patient Intake Form Packet</h2>
-        <p classname="">Please complete each tab below and move through the packet step by step.</p>
+        <p className="">Please complete each tab below and move through the packet step by step.</p>
       </div>
 
       <div className="container" data-aos="fade-up" data-aos-delay="100">

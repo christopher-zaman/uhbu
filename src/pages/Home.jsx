@@ -18,6 +18,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
+
 import AudienceGrid from '../components/AudienceGrid';
 import DPCComparison from "../components/DPCComparison";
 import LocalProof from "../components/LocalProof";
@@ -28,7 +29,7 @@ import HowItWorks from '../components/HowItWorks';
 import PricingPreview from '../components/PricingPreview';
 import HomepageTestimonials from '../components/HomepageTestimonials';
 import { reviews } from '../data/reviews';
-
+import WelcomeSection from '../components/WelcomeSection';
 function App() {
   const seo = usePageSEO();
   useEffect(() => {
@@ -37,11 +38,7 @@ function App() {
   
   return (    
     <>
-    <SEO
-        title="Membership-Based Primary Care in Leesburg | Ultimate Health DPC"
-        description="Join Ultimate Health DPC and enjoy unlimited doctor access, weight loss support, hormone therapy, and more. Serving Leesburg, Florida."
-        image="https://ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.png"
-      />
+      <SEO {...seo} />
       <Announcement />
       <TopBar />
       <NavBar />
@@ -144,13 +141,14 @@ function App() {
   ctaType="phone"
 />
 <ValueSection />
-      <Paragraph className="lead text-gray-500" data-aos="fade-up" data-aos-delay="0">
+<WelcomeSection />
+      {/* <Paragraph className="lead text-gray-500" data-aos="fade-up" data-aos-delay="0">
         We’re so glad you’re here!
         At Ultimate Health, we believe going to the doctor should be simple, affordable, and personal. That’s why we do things differently. We’re a Direct Primary Care practice, which means you get care when you need it—without the long waits, surprise bills, or rushed visits.
         Think of us as your health partner. Whether you're feeling sick, need help managing a condition, or just want to stay on top of your health, we’re here for you. You’ll always see a provider who listens, cares, and takes the time to really know you.
         We’re proud to serve individuals, families, and even local businesses with the kind of care everyone deserves. Welcome to the Ultimate Health family—where your health is our priority, and you’re always treated like a VIP.
         Let’s take care of you—together.
-      </Paragraph>
+      </Paragraph> */}
       <PrimaryCTA
         title="Ready to get started?"
         text="Schedule your visit or call us today to take the next step."
@@ -158,7 +156,7 @@ function App() {
       <CenteredVideoSection videoId="92jlApzokh0" />
       
       <About />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Socials />
       <CareCredit />
       <Subscribe />

@@ -4,8 +4,10 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Announcement from '../components/Announcement';
 import SEO from '../components/SEO';
+import { usePageSEO } from '../hooks/usePageSEO';
 
 function MembershipLeadsAdmin() {
+  const seo = usePageSEO();
   const [pinInput, setPinInput] = useState('');
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [pinError, setPinError] = useState('');
@@ -136,10 +138,7 @@ const handleLock = () => {
 };
   return (
     <>
-      <SEO
-        title="Membership Leads Admin | Ultimate Health DPC"
-        description="Admin page for viewing membership leads."
-      />
+      <SEO {...seo} />
       <Announcement />
       <TopBar />
       <NavBar />

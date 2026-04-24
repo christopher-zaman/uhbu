@@ -20,11 +20,7 @@ function MentalWellness() {
   const seo = usePageSEO();
   return (    
     <>
-    <SEO
-        title="Membership-Based Primary Care in Leesburg | Ultimate Health DPC"
-        description="Join Ultimate Health DPC and enjoy unlimited doctor access, weight loss support, hormone therapy, and more. Serving Leesburg, Florida."
-        image="https://ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.png"
-      />
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
       

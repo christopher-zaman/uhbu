@@ -3,10 +3,9 @@ import TopBar from '../components/TopBar';
 import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import Contact from '../components/Contact';
 import Announcement from '../components/Announcement';
 import SEO from '../components/SEO';
-
+import { usePageSEO } from '../hooks/usePageSEO';
 import MembershipIntroSection from '../components/MembershipIntroSection';
 import MembershipSteps from '../components/MembershipSteps';
 import MembershipAudience from '../components/MembershipAudience';
@@ -19,6 +18,7 @@ import PhoneChip from '../components/PhoneChip';
 import PricingPreview from '../components/PricingPreview';
 
 function Membership() {
+  const seo = usePageSEO();
   const leadFormRef = useRef(null);
 
   const scrollToLeadForm = () => {
@@ -31,16 +31,10 @@ function Membership() {
   return (
     <>
      <div className="membership-page">
-      <SEO
-        title="Membership | Ultimate Health DPC"
-        description="Learn how membership works at Ultimate Health Direct Primary Care. Book your consultation or request membership information."
-        image="https://www.ultimatehealthdpc.com/assets/img/membership-based-primary-health-care.webp"
-        // url="https://www.ultimatehealthdpc.com/membership"
-      />
-
+      <SEO {...seo} />
+      <Announcement />
       <TopBar />
       <NavBar />
-
       <Hero
         backgroundImage={banner}
         title="Personalized Primary Care Without Insurance Barriers"
@@ -81,8 +75,6 @@ function Membership() {
         </div>
         <IntakeForm />
       </div>
-
-      {/* <Contact /> */}
       <Footer />
       </div>
     </>

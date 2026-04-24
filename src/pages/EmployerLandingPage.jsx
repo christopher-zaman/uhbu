@@ -65,11 +65,7 @@ function EmployerLandingPage() {
 
   return (
     <>
-      <SEO
-        {...seo}
-        title="DPC for Employers in Leesburg | Ultimate Health DPC"
-        description="Give your team a healthcare benefit they’ll actually use. Employer group memberships with direct provider access, same-day appointments, and predictable costs."
-      />
+      <SEO {...seo} />
       <TopBar />
       <NavBar />
 

@@ -436,6 +436,83 @@ h6 {
     color: #000;
   }
 }
+
+
+
+
+.welcome-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.welcome-section .section-label {
+  display: inline-block;
+  color: #94c142;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.welcome-section h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #17137a;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.welcome-card {
+  background: #f8fbff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #94c142;
+}
+
+.welcome-card h4 {
+  color: #17137a;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.welcome-card ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.welcome-card li {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.welcome-card li::before {
+  content: "✓";
+  color: #94c142;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* -----------------------------------------
   Video Overlay
 ----------------------------------------------*/
