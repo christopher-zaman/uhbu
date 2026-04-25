@@ -1,14 +1,12 @@
 // Components
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import ContentSection from '../components/ContentSection';
 import TextVideoSection from '../components/TextVideoSection';
 import Contact from '../components/Contact';
 import PhoneChip from '../components/PhoneChip';
 import FullscriptBanner from "../components/FullscriptBanner";
-import SiteHeader from '../components/SiteHeader';
+
 // Images
 import banner from '../assets/img/amanda-banner.webp';
 import contentImage from '../assets/img/amanda.webp';
@@ -18,13 +16,11 @@ import secondImage from '../assets/img/amanda-facetime.webp';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
 
-
 function AboutUs() {
   const seo = usePageSEO();
   return (
     <>
     <SEO {...seo} />
-    <SiteHeader />
     
      {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">

@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import Footer from '../components/Footer';
@@ -16,7 +14,6 @@ import ConversionBlock from "../components/ConversionBlock";
 import TextBlock from '../components/TextBlock';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
-
 
 const injections = [
   {
@@ -133,9 +130,6 @@ function VitaminInjectionsPage() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
     {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
         <Hero

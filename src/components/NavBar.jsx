@@ -20,11 +20,26 @@ function NavBar() {
 
   const navItems = [
     { type: 'link', label: 'Weight Loss', href: '/weight-loss' },
-    { type: 'link', label: 'Membership', href: '/membership' },
+    // { type: 'link', label: 'Membership', href: '/membership' },
+    {
+      type: 'dropdown',
+      title: 'Membership',
+      href: '/membership',
+      items: [
+        {
+          label: 'Enrollment',
+          href: 'https://app.elationemr.com/book/UltimateHealthDPC',
+          external: true,
+        },
+        { label: 'Employers', href: '/employers' },
+      ],
+    },
     {
       type: 'dropdown',
       title: 'Services',
+      href: '/special-services',
       items: [
+        { type: 'link', external: true, label: 'Exomind', href: 'https://exomindthevillages.com/' } ,
         { label: 'Bladder Control Support for Women', href: '/special-services#bladder-control-support' },
         { label: 'Women’s Hormone Therapy', href: '/special-services#womens-hormone-therapy' },
         { label: 'BHRT and Hormone Optimization', href: '/special-services#bhrt-hormone-optimization' },
@@ -40,6 +55,7 @@ function NavBar() {
     {
       type: 'dropdown',
       title: 'Sexual Wellness',
+      href: '/duo',
       items: [
         { label: 'Sexual Wellness Treatments', href: '/sexual-wellness-treatments' },
         { label: 'Sexual Wellness For Her', href: '/sexual-wellness-for-her' },
@@ -50,6 +66,7 @@ function NavBar() {
     {
       type: 'dropdown',
       title: 'Primary Care',
+      href: '/primary-care',
       items: [
         { label: 'Membership', href: '/membership' },
         { label: "Women's Health", href: '/womens-health' },
@@ -64,6 +81,7 @@ function NavBar() {
     {
       type: 'dropdown',
       title: 'Vitamin Therapy',
+      href: 'vitamin-infusions',
       items: [
         { label: '💉 Vitamin Injections', href: '/vitamin-injections' },
         { label: '💧 Vitamin Infusions', href: '/vitamin-infusions' },
@@ -73,6 +91,7 @@ function NavBar() {
     {
       type: 'dropdown',
       title: 'About Us',
+      href: '/meet-us',
       items: [
         { label: 'Meet Us', href: '/meet-us' },
         { label: 'Our Practice', href: '/our-practice' },
@@ -148,24 +167,51 @@ function NavBar() {
               const isDropdownOpen = openDropdown === item.title;
 
               return (
-                <li key={index} className="uh-dropdown">
-                  <button
-                    type="button"
-                    className="uh-dropdown-toggle"
-                    onClick={() =>
-                      setOpenDropdown(isDropdownOpen ? null : item.title)
-                    }
-                  >
-                    <span>{item.title}</span>
-                    <i
-                      className={`bi ${
-                        isDropdownOpen ? 'bi-chevron-up' : 'bi-chevron-down'
-                      }`}
-                    />
-                  </button>
+                <li
+  key={index}
+  className="uh-dropdown"
+  onMouseEnter={() => {
+    if (window.innerWidth >= 992) {
+      setOpenDropdown(item.title);
+    }
+  }}
+  onMouseLeave={() => {
+    if (window.innerWidth >= 992) {
+      setOpenDropdown(null);
+    }
+  }}
+>
+  <div className="uh-dropdown-parent">
+    {item.href ? (
+      renderLink(
+        {
+          label: item.title,
+          href: item.href,
+          external: item.external,
+        },
+        "uh-dropdown-toggle uh-dropdown-title-link"
+      )
+    ) : (
+      <span className="uh-dropdown-toggle">{item.title}</span>
+    )}
 
-                  {isDropdownOpen && (
-                    <ul className="uh-dropdown-menu">
+    <button
+      type="button"
+      className="uh-dropdown-arrow"
+      onClick={() =>
+        setOpenDropdown(isDropdownOpen ? null : item.title)
+      }
+    >
+      <i
+        className={`bi ${
+          isDropdownOpen ? "bi-chevron-up text-success" : "bi-chevron-down text-white"
+        }`}
+      />
+    </button>
+  </div>
+
+  {isDropdownOpen && (
+    <ul className="uh-dropdown-menu">
                       {item.items.map((child, childIndex) => (
                         <li key={childIndex}>
                           {renderLink(child, 'uh-dropdown-link')}

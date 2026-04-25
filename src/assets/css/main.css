@@ -3547,6 +3547,7 @@ body.uh-menu-open .scroll-top {
     white-space: nowrap;
     padding: 0 14px;
   }
+  
 
   .uh-nav-link,
   .uh-dropdown-toggle {
@@ -3629,4 +3630,93 @@ body.uh-menu-open .scroll-top {
     background: #fff !important;
     padding-top: 90px !important;
   }
+}
+
+
+
+/* =========================
+   Desktop nav hover effects
+========================= */
+
+@media (min-width: 992px) {
+  .uh-nav-list > li {
+    position: relative;
+  }
+
+  .uh-nav-link,
+  .uh-dropdown-toggle {
+    position: relative;
+  }
+
+  .uh-nav-link::after,
+  .uh-dropdown-toggle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    background: #94c142;
+    border-radius: 999px;
+    transition: width 0.25s ease;
+  }
+
+  .uh-nav-link:hover::after,
+  .uh-dropdown-toggle:hover::after,
+  .uh-dropdown:hover > .uh-dropdown-toggle::after {
+    width: 32px;
+  }
+
+  .uh-dropdown:hover > .uh-dropdown-menu {
+    display: block;
+  }
+
+  .uh-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    min-width: 260px;
+    background: #fff;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    z-index: 9999;
+  }
+
+  .uh-dropdown-link {
+    display: block;
+    padding: 10px 18px;
+    color: #222;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .uh-dropdown-link:hover {
+    color: #94c142;
+    background: #f7f9f4;
+  }
+}
+
+.uh-dropdown-parent {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.uh-dropdown-title-link {
+  background: transparent;
+  border: 0;
+  text-decoration: none;
+}
+
+.uh-dropdown-arrow {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }

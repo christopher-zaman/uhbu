@@ -1,14 +1,10 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/testosterone-banner.jpg';
 import contentImage from '../assets/img/testosterone.webp';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/testosterone-1.png';
 import afterImage from '../assets/img/testosterone-2.jpg';
@@ -20,9 +16,6 @@ function Testosterone() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-    
     <Hero
     backgroundImage={banner}
     title="Testosterone"

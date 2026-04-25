@@ -1,12 +1,9 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 import KeywordSnippetSection from '../components/KeywordSnippetSection';
 import SubscribeInline from '../components/SubscribeInline.jsx';
-
 import womensBladderControlImg from '../assets/img/seo/womens-bladder-control.webp';
 import womensHormoneTherapyImg from '../assets/img/seo/womens-hormone-therapy.webp';
 import bhrtImg from '../assets/img/seo/bhrt.webp';
@@ -131,9 +128,6 @@ function SpecialServices() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
       <main className="special-services-bg lead">
         <div className="special-services-content">
           {services.map((service, idx) => (

@@ -1,10 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import BlogHero from '../components/BlogHero';
-
 
 function BlogPost() {
   const { slug } = useParams();
@@ -457,8 +454,6 @@ function BlogPost() {
   if (!post) {
     return (
       <>
-        <TopBar />
-        <NavBar />
         <div className="container mt-5">
           <h2>404 - Blog Post Not Found</h2>
         </div>
@@ -469,8 +464,6 @@ function BlogPost() {
 
   return (
     <>
-      <TopBar />
-      <NavBar />
       <BlogHero
         backgroundImage={post.banner}
         title={post.title}

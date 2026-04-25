@@ -50,6 +50,7 @@ import MembershipLeadsAdmin from './pages/MembershipLeadsAdmin';
 import StickyCTA from './components/StickyCTA';
 import Announcement from './components/Announcement';
 import EmployerLandingPage from './pages/EmployerLandingPage';
+import SiteHeader from './components/SiteHeader';
 function App() {
   usePageTracking();
   useEffect(() => {
@@ -71,7 +72,7 @@ function App() {
     
     <ScrollToTop />
     <ScrollToHash />
-
+    <SiteHeader />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/weight-loss" element={<WeightLoss />} />

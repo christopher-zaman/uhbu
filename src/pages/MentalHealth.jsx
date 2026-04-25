@@ -1,12 +1,9 @@
 // MentalHealth.jsx
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
-
 import video from '../assets/videos/exomind-video.mp4';
 import mobileImage from '../assets/img/positive-mental-health.jpg'
 import contentImage from '../assets/img/mental-health.webp';
@@ -14,7 +11,6 @@ import myImage from '../assets/img/positive-mental-health.jpg';
 import PhoneChip from '../components/PhoneChip';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 import Contact from '../components/Contact';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { usePageSEO } from '../hooks/usePageSEO';
@@ -72,9 +68,6 @@ function MentalHealth() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
     {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
         <Hero

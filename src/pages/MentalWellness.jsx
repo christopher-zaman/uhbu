@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import SectionTitle from '../components/SectionTitle';
 import Paragraph from '../components/Paragraph';
 import About from '../components/About';
@@ -21,16 +19,11 @@ function MentalWellness() {
   return (    
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-      
       <VideoHero videoId="5fbA9uugBRY" height="75vh" objectFit={true}/>
-
       <SectionTitle>
         Welcome to <strong>Ultimate Health</strong>{' '}
         <span className="text-green-600 animate-bounce">Direct Primary Care!</span>
       </SectionTitle>
-
       <Paragraph className="lead text-gray-500">
         We’re so glad you’re here!
 
@@ -39,7 +32,6 @@ function MentalWellness() {
         We’re proud to serve individuals, families, and even local businesses with the kind of care everyone deserves. Welcome to the Ultimate Health family—where your health is our priority, and you’re always treated like a VIP.
         Let’s take care of you—together.
       </Paragraph>
-
       {/* <video
         className="hero-bg-video"
         autoPlay
@@ -50,31 +42,21 @@ function MentalWellness() {
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video> */}
-
       <Services /> 
-
-     
-        <About />
-
-        
-
-       {/* HERO + OVERLAID BANNER */}
+      <About />
+      {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
-      <Testimonials />
+          <Testimonials />
       <div className="fullscript-banner-over-hero">
           <FullscriptBanner />
-        </div>
+      </div>
       </div>  
       <Socials />
-
       <CareCredit />
-
       <Subscribe />
-
       <Contact />
       <Footer />
     </>
   );
 }
-
 export default MentalWellness;

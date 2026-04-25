@@ -1,11 +1,8 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
-
 import AlternatingColumns from '../components/AlternatingColumns';
 import AboutUs from './AboutUs';
 import banner from '../assets/banners/iv-infusion-treatments.jpg';
@@ -20,7 +17,6 @@ import Faq from '../components/Faq';
 import TripleFAQGrid from '../components/TripleFaqGrid';
 import TripleFeatureFaqGrid from '../components/TripleFeatureFaqGrid';
 import ConversionBlock from "../components/ConversionBlock";
-
 import ContentSection from '../components/ContentSection';
 import TextImageSection from '../components/TextImageSection';
 import sideImage from '../assets/img/vitamin.png';
@@ -34,9 +30,6 @@ function VitaminInfusions() {
   return (
     <>
     <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
       {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
       <Hero
@@ -392,9 +385,6 @@ function VitaminInfusions() {
     // Add more as needed
   ]}
 />
-
-        
-      
       <Contact />
       <Footer />
     </>

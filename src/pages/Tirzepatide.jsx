@@ -1,14 +1,10 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import video from '../assets/videos/tirzepatide.mp4';
 import contentImage from '../assets/img/tirzepatide.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/tirzepatide-1.jpg';
 import afterImage from '../assets/img/tirzepatide-2.png';
@@ -20,9 +16,6 @@ function Tirzepatide() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-    
     <Hero
     backgroundVideo={video}
     title="Tirzepatide"
@@ -75,7 +68,6 @@ function Tirzepatide() {
         className="bg-light tirzepatide-images"
         
          />
-    
     <Footer />
     </>
   );

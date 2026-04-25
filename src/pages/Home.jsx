@@ -1,7 +1,4 @@
 import React from 'react';
-import Announcement from '../components/Announcement';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Paragraph from '../components/Paragraph';
 import About from '../components/About';
 import Services from '../components/Services';
@@ -18,7 +15,6 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
-
 import AudienceGrid from '../components/AudienceGrid';
 import DPCComparison from "../components/DPCComparison";
 import LocalProof from "../components/LocalProof";
@@ -30,7 +26,6 @@ import PricingPreview from '../components/PricingPreview';
 import HomepageTestimonials from '../components/HomepageTestimonials';
 import { reviews } from '../data/reviews';
 import WelcomeSection from '../components/WelcomeSection';
-
 function App() {
   const seo = usePageSEO();
   useEffect(() => {
@@ -40,9 +35,6 @@ function App() {
   return (    
     <>
       <SEO {...seo} />
-      <Announcement />
-      <TopBar />
-      <NavBar />
       <VideoHero
           videoId="rxVnntel71w" 
           title="Your Personal Provider. One Monthly Fee. No Insurance Games."

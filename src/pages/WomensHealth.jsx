@@ -1,14 +1,11 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/banners/womens-health-banner.webp';
 import contentImage from '../assets/img/womens-health.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import PhoneChip from '../components/PhoneChip';
 import ConversionBlock from "../components/ConversionBlock";
 import SideBySideImages from '../components/SideBySideImages';
@@ -22,9 +19,6 @@ function WomensHealth() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-    
   {/* HERO + OVERLAID BANNER */}
     <div className="hero-with-banner">
     <Hero
@@ -76,8 +70,6 @@ function WomensHealth() {
                 
                 
                 ],
-                
-                 
             // image: contentImage,
             bgClass: "blue-fade-bg",
             buttonLink: "https://app.elationemr.com/book/UltimateHealthDPC?appointment_types"

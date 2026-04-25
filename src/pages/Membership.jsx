@@ -1,9 +1,6 @@
 import React, { useRef } from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import Announcement from '../components/Announcement';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
 import MembershipIntroSection from '../components/MembershipIntroSection';
@@ -32,9 +29,6 @@ function Membership() {
     <>
      <div className="membership-page">
       <SEO {...seo} />
-      <Announcement />
-      <TopBar />
-      <NavBar />
       <Hero
         backgroundImage={banner}
         title="Personalized Primary Care Without Insurance Barriers"

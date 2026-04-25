@@ -1,12 +1,9 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import Footer from '../components/Footer';
 import ContentSection from '../components/ContentSection';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import SideBySideImages from '../components/SideBySideImages';
 import contentImage from '../assets/img/alma-duo.jpg';
 import beforeImage from '../assets/img/estrogen-1.webp';
@@ -23,9 +20,6 @@ function Duo(){
     return(
         <>
         <SEO {...seo} />
-        <TopBar />
-        <NavBar />
-
          {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
         <Hero
@@ -43,8 +37,6 @@ function Duo(){
         <FullscriptBanner />
       </div>
       </div>
-
-
       <ContentSection
         id="alma-duo"
         title="Introducing the DUO Treatment"
@@ -55,8 +47,6 @@ function Duo(){
         listItems={[
             "DUO is ideal for individuals looking for a non-surgical solution to sexual function issues, including erectile dysfunction, reduced sensitivity, and challenges in achieving satisfactory sexual performance. It offers an effective alternative to medications and a cutting-edge solution for those aiming to boost their sexual health discreetly. A consultation with Amanda Gaskin can help determine your suitability for this innovative treatment.",
             ]}
-
-
         image={contentImage}
         video={duoVideo}
         />
@@ -74,18 +64,8 @@ function Duo(){
         },
         ]}
          />
-        {/* <SideBySideImages
-        title=""
-        leftImage={beforeImage}
-        rightImage={afterImage}
-        leftAlt="Before Treatment"
-        rightAlt="After Treatment"
-        sectionId="before-after"
-        className="bg-light duo-images"
-        
-         /> */}
 
-         <ConversionBlock
+  <ConversionBlock
   id="alma-duo-conversion"
   title="A simple, non-invasive way to support sexual wellness"
   subtitle="A discreet, in-office treatment designed to support blood flow, sensitivity, and confidence—without downtime."
@@ -122,10 +102,10 @@ function Duo(){
   phoneClassName="hero-phone-white fs-4"
 />
 
-        <Contact />
-        <Footer />
-        </>
-    );
+    <Contact />
+    <Footer />
+    </>
+  );
 }
 
 export default Duo;

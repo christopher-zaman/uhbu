@@ -1,7 +1,5 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import ContentSection from '../components/ContentSection';
 import video from '../assets/videos/hormone-replacement-therapy.mp4';
@@ -13,9 +11,7 @@ import FullscriptBanner from '../components/FullscriptBanner';
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/hormone-therapy-1.jpg';
 import afterImage from '../assets/img/hormone-therapy-2.jpg';
-
 import bannerMobile from '../assets/mobile-banners/hormone-therapy.webp';
-
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -24,9 +20,6 @@ function HormoneTherapy() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-    
     {/* HERO + OVERLAID BANNER */}
   <div className="hero-with-banner">
     {/* Desktop Hero */}
@@ -49,9 +42,6 @@ function HormoneTherapy() {
         />
       </div>
     </div>
-
-    
-
      <ContentSection
         id="hormone-therapy"
         title="Hormone Therapy in Leesburg, FL"
@@ -98,7 +88,6 @@ function HormoneTherapy() {
       buttonLink: "/hormone-replacement-therapy",
       image: contentImage1,
     },
-
     {
       title: "Conditions We Support",
       description: (
@@ -110,8 +99,7 @@ function HormoneTherapy() {
             <li><span><strong>Mood changes, irritability, or brain fog</strong></span></li>
             <li><span><strong>Low libido or intimacy concerns</strong></span></li>
           </ul>
-          <br></br>
-          
+          <br></br>   
         </>
       ),
       treatments: [],
@@ -119,8 +107,6 @@ function HormoneTherapy() {
       image: contentImage2,
       //buttonLink: "/hormone-replacement-therapy",
     },
-
-    
     {
       title: "Why Patients Choose Ultimate Health",
       description: (
@@ -131,7 +117,6 @@ function HormoneTherapy() {
             <li><span><strong>Whole-person focus:</strong> We go beyond prescriptions to include lifestyle and wellness strategies for lasting health</span></li>
           </ul>
           <br></br>
-          
         </>
       ),
       treatments: [],
@@ -139,8 +124,6 @@ function HormoneTherapy() {
       image: beforeImage,
       //buttonLink: "/hormone-replacement-therapy",
     },
-
-
     {
       title: "Take the Next Step",
       description: (
@@ -164,23 +147,10 @@ function HormoneTherapy() {
       image: afterImage,
       //buttonLink: "/hormone-replacement-therapy",
     },
-
   ]}
 />
-
-        {/* <SideBySideImages
-        title=""
-        leftImage={beforeImage}
-        rightImage={afterImage}
-        leftAlt="Before Treatment"
-        rightAlt="After Treatment"
-        sectionId="before-after"
-        className="bg-light hormone-therapy-images"
-        
-         /> */}
-    
-    <Footer />
-    </>
+  <Footer />
+  </>
   );
 }
 

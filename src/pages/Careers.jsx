@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import banner from '../assets/banners/contact-banner.png';
@@ -15,8 +13,6 @@ function Careers() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
       <Hero
         backgroundImage={banner}
         title="Careers"
@@ -39,10 +35,7 @@ function Careers() {
         }
         footer=""
       />
-
         <ResumeUploadForm />
-     
-
       <Footer />
     </>
   );

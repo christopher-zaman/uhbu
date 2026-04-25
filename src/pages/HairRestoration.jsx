@@ -1,8 +1,6 @@
 // MentalHealth.jsx
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
@@ -64,9 +62,6 @@ function HairRestoration() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
     {/* HERO + OVERLAID BANNER */}
     <div className="hero-with-banner">
       <Hero
@@ -106,8 +101,6 @@ function HairRestoration() {
     
     }
     />
-
-
 <ConversionBlock
   id="hair-restoration-conversion"
   title="A personalized, non-surgical approach to hair restoration"
@@ -144,8 +137,6 @@ function HairRestoration() {
   ctaType="phone"
   phoneClassName="hero-phone-white fs-4"
 />
-
-
     <TextBlock
     title="Why Choose Ultimate Health Spa for Hair Restoration?"
     body={[
@@ -160,9 +151,7 @@ function HairRestoration() {
           <PhoneChip variant="inline" className="phone-chip lead" />
         </>
       }
-    
      />
-
     <Contact />
     <Footer />
     </>

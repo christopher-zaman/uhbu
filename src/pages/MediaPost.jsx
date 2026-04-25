@@ -1,7 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import BlogHero from '../components/BlogHero';
 import ContentSection from '../components/ContentSection';
@@ -432,8 +430,6 @@ And if you’re a woman dealing with recurrent UTIs, ask your provider about it.
   if (!post) {
     return (
       <>
-        <TopBar />
-        <NavBar />
         <div className="container mt-5">
           <h2>404 - Blog Post Not Found</h2>
         </div>
@@ -444,8 +440,6 @@ And if you’re a woman dealing with recurrent UTIs, ask your provider about it.
 
   return (
     <>
-      <TopBar />
-      <NavBar />
       <BlogHero
         backgroundImage={post.banner}
         title={post.title}

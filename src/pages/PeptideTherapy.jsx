@@ -1,9 +1,6 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/estrogen-banner.webp';
 import sideImage from '../assets/img/peptide.jpg';
@@ -27,29 +24,21 @@ function PeptideTherapy() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-
     {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
         {/* Desktop Hero */}
         <div className="hero-desktop">
 
-            <Hero
-            backgroundImage={banner}
-            title="Peptide Therapy"
-            subtitle="Personalized peptide therapy through Direct Primary Care in Leesburg"
-            cta={<PhoneChip inline={false} className="hero-phone fs-4"/>}
-            
-            />
-        
-
-            <div className="fullscript-banner-over-hero">
-                <FullscriptBanner />
-            </div>
-
+        <Hero
+        backgroundImage={banner}
+        title="Peptide Therapy"
+        subtitle="Personalized peptide therapy through Direct Primary Care in Leesburg"
+        cta={<PhoneChip inline={false} className="hero-phone fs-4"/>}
+        />
+        <div className="fullscript-banner-over-hero">
+            <FullscriptBanner />
         </div>
-
+        </div>
     {/* Mobile Hero */}
         <div className="hero-mobile">
             <Hero
@@ -60,8 +49,7 @@ function PeptideTherapy() {
             />
         </div>
     </div>
-
-    {/* NEW: Conversion Block (Pain → Solution → Process → CTA) */}
+{/* NEW: Conversion Block (Pain → Solution → Process → CTA) */}
 <ConversionBlock
   id="peptides-conversion"
   title="A clearer, guided approach to peptide therapy"
@@ -98,8 +86,6 @@ function PeptideTherapy() {
   ctaType="phone"
   phoneClassName="hero-phone fs-4"
 />
-
-
      <ContentSection
         id="peptide-therapy"
         title="Peptide Therapy in Leesburg, FL"
@@ -121,7 +107,6 @@ function PeptideTherapy() {
             ]}
         image={contentImage}
         />
-
         <ContentSection
         id="why-peptide-therapy"
         title="Potential Benefits?"
@@ -220,21 +205,8 @@ function PeptideTherapy() {
             //buttonLink: "contact"
         }}
          />
-
-        {/* <SideBySideImages
-        title=""
-        leftImage={beforeImage}
-        rightImage={afterImage}
-        leftAlt="Before Treatment"
-        rightAlt="After Treatment"
-        sectionId="before-after"
-        className="bg-light peptide-therapy-img"
-
-         /> */}
-    
     <Footer />
     </>
   );
 }
-
 export default PeptideTherapy;

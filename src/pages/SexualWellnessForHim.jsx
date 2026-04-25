@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import Title from '../components/Title';
@@ -263,12 +261,8 @@ function PShot() {
     return(
       <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
       {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
-        
       <Hero
         backgroundImage={banner}
         title="Sexual Wellness For Him"
@@ -281,21 +275,6 @@ function PShot() {
         <FullscriptBanner />
       </div>
       </div>
-      
-      
-
-      {/* <Title
-        centerTitle={true}
-        showHeading={false}
-        introText="Sexual Wellness"
-        highlightText='For Her'
-      /> */}
-      
-      {/* <FeatureItems 
-        items={featureList}
-        topTitle="Treatment Options"
-        middleTitle="Cosmetic Gynecology – Non-Surgical Options"
-      /> */}
       <MultiFeatureSection 
         backgroundClass="male-sexual-wellness-bg"
         sections={featureSections} 
@@ -317,14 +296,6 @@ function PShot() {
         // backgroundColor="#0f058b"  // Or any background you like
         // dark={true}
       />
-
-
-      {/* <FeatureItems 
-        items={featureList}
-        topTitle="Treatment Options"
-        middleTitle="Cosmetic Gynecology – Non-Surgical Options"
-      /> */}
-
         <ConversionBlock
   id="sexual-wellness-for-him-conversion"
   title="Discreet, confidence-focused care"

@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import Announcement from '../components/Announcement';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
 
@@ -15,10 +12,7 @@ function MembershipLeadsAdmin() {
   const [status, setStatus] = useState('');
 
   const [intakeItems, setIntakeItems] = useState([]);
-
   const expectedPin = import.meta.env.VITE_MEMBERSHIP_ADMIN_PIN;
-
-
 
 // This saves the 'unlocked' state (to not have to log in again and again like over and over)
 //   useEffect(() => {
@@ -27,8 +21,6 @@ function MembershipLeadsAdmin() {
 //       setIsUnlocked(true);
 //     }
 //   }, []);
-
-
 
   useEffect(() => {
     if (!isUnlocked) return;
@@ -139,10 +131,6 @@ const handleLock = () => {
   return (
     <>
       <SEO {...seo} />
-      <Announcement />
-      <TopBar />
-      <NavBar />
-
       <section className="section bg-pink">
         <div className="container">
           {/* <div className="section-title" data-aos="fade-up">

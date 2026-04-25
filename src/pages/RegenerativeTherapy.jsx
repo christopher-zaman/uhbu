@@ -1,7 +1,5 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import ContentSection from '../components/ContentSection';
@@ -23,9 +21,6 @@ function RegenerativeTherapy() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-
     {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
         {/* Desktop Hero */}

@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import Footer from '../components/Footer';
@@ -15,9 +13,6 @@ function PaymentPlans() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
       {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
       <Hero
@@ -32,13 +27,9 @@ function PaymentPlans() {
         <FullscriptBanner />
       </div>
       </div>
-
       <CherryPayment sections={["all"]} />
-    
-
       <Footer />
     </>
   );
 }
-
 export default PaymentPlans;

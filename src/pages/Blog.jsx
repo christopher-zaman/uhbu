@@ -1,8 +1,6 @@
 import React from 'react';
 import BlogPreview from '../components/BlogPreview';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import banner from '../assets/banners/subscribe.png';
 import Title from '../components/Title';
@@ -10,10 +8,7 @@ import PhoneChip from '../components/PhoneChip';
 
 function Blog() {
   return (
-    <>
-    <TopBar />
-    <NavBar />
-    
+    <>    
     <Hero
     backgroundImage={banner}
     title="Check Out Our Blogs"

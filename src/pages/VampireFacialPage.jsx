@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
@@ -8,7 +6,6 @@ import banner from '../assets/banners/vampire-facial-banner.webp';
 import TextBlock from '../components/TextBlock';
 import BulletedTextBlock from '../components/BulletedTextBlock';
 import sideImage from '../assets/img/vampire-facial.jpg';
-
 import TextImageSection from '../components/TextImageSection';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
@@ -18,18 +15,12 @@ function VampireFacialPage() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
       <Hero
         backgroundImage={banner}
         title="Vampire Facial"
         subtitle=""
         textColor="rgba(1, 3, 112, 0.75)"
       />
-
-      
-
       <TextBlock
         title="What is the Vampire Facial®?"
         body={
@@ -66,9 +57,6 @@ function VampireFacialPage() {
                 buttonLink: '/contact'
             }}
             />
-
-      
-
         <TextBlock
         title="Benefits of a Vampire Facial"
         body="The Vampire Facial offers a range of aesthetic enhancements by harnessing the body's natural healing abilities. It's an effective alternative to more invasive anti-aging treatments, such as Botox or surgery, providing a rejuvenated complexion. This treatment is multifaceted, addressing issues from fine lines to hair thinning."
@@ -87,18 +75,14 @@ function VampireFacialPage() {
         paragraph=""
         />
 
-
-
         <TextBlock
             title="Why Choose Ultimate Health DPC in Leesburg, Florida?"
             body="At Ultimate Health DPC, we prioritize your well-being, offering personalized care in a comfortable and discreet environment. Our experienced healthcare professionals are dedicated to providing comprehensive consultations and ensuring your journey to optimal health is tailored to your unique needs."
             footer=""
         />
-      
       <Contact />
       <Footer />
     </>
   );
 }
-
 export default VampireFacialPage;

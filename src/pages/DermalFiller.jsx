@@ -1,18 +1,13 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/banners/dermal-filler-banner.jpg';
 import contentImage from '../assets/img/dermal-filler.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/dermal-filler-1.webp';
 import afterImage from '../assets/img/dermal-filler-2.png';
-
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 
@@ -21,9 +16,6 @@ function DermalFiller() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-    
     <Hero
     backgroundImage={banner}
     title="✨ Dermal Fillers"
@@ -72,9 +64,7 @@ function DermalFiller() {
         rightAlt="After Treatment"
         sectionId="before-after"
         className="bg-light tirzepatide-images"
-        
-         />
-    
+        />
     <Footer />
     </>
   );

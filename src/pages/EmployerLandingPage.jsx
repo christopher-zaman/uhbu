@@ -1,13 +1,10 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
 
 function EmployerLandingPage() {
   const seo = usePageSEO();
-
   const employerBenefits = [
     'Lower absenteeism through faster access to care',
     'Affordable group pricing with predictable monthly costs',
@@ -66,9 +63,6 @@ function EmployerLandingPage() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
       <main className="employer-page">
         {/* Hero */}
         <section className="employer-hero py-5">

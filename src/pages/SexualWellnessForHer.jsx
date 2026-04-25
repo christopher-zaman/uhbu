@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import Title from '../components/Title';
@@ -12,7 +10,6 @@ import PhoneChip from '../components/PhoneChip';
 import { usePageSEO } from '../hooks/usePageSEO';
 import SEO from '../components/SEO';
 import ConversionBlock from "../components/ConversionBlock";
-
 import bannerMobile from '../assets/mobile-banners/honey-model.webp';
 
 const featureList = [
@@ -210,9 +207,6 @@ function OShot() {
     return(
       <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
       {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
         {/* Desktop Hero */}
@@ -241,14 +235,6 @@ function OShot() {
         />
       </div>
       </div>
-
-
-      {/* <Title
-        centerTitle={true}
-        showHeading={false}
-        introText="Sexual Wellness"
-        highlightText='For Her'
-      /> */}
       
       <FeatureItems 
         items={featureList}

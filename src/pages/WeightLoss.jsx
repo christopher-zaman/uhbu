@@ -1,39 +1,30 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import PhoneChip from '../components/PhoneChip';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/img/weight-loss-banner.jpg';
 import bannerMobile from '../assets/mobile-banners/weight-loss-mobile-bg.webp';
-
 import contentImage from '../assets/img/weight-loss.png';
 import contentImage2 from '../assets/img/help1.png';
 import contentImage3 from '../assets/img/what-makes-us-different.png';
 import MultiFeatureSection from '../components/MultiFeatureSection';
 import FullscriptBanner from '../components/FullscriptBanner';
-
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/before.webp';
 import afterImage from '../assets/img/after-weight-loss.jpg';
 import SEO from '../components/SEO';
 import { usePageSEO } from '../hooks/usePageSEO';
 import PrimaryCTA from '../components/PrimaryCTA';
-
 import ConversionBlock from "../components/ConversionBlock";
 
 function WeightLoss() {
   const seo = usePageSEO();
-
   console.log("WeightLoss SEO:", seo);
-    
+
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-
 {/* HERO + OVERLAID BANNER */}
 <div className="hero-with-banner">
   {/* Desktop Hero */}
@@ -97,9 +88,6 @@ function WeightLoss() {
   ctaType="phone"
   phoneClassName="hero-phone-white fs-4"
 />
-
-
-
      <ContentSection
         id="weight-loss"
         title="Medical Weight Loss in Leesburg, FL"

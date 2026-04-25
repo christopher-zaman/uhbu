@@ -1,7 +1,5 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/banners/neurotoxins-banner.webp';
@@ -18,9 +16,6 @@ function Neurotoxins() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-    
     <Hero
     backgroundImage={banner}
     title="Neurotoxin for Fine Lines & Wrinkle Relaxation"
@@ -41,7 +36,6 @@ function Neurotoxins() {
             "Jeuveau – $10/unit (great for frown lines and forehead wrinkles)",
             "Dysport – $8/unit (spreads easily, great for larger areas)",
             ]}
-
         image={contentImage}
         />
         <MultiFeatureSection
@@ -66,12 +60,9 @@ function Neurotoxins() {
         rightAlt="After Treatment"
         sectionId="before-after"
         className="bg-light tirzepatide-images"
-        
          />
-    
     <Footer />
     </>
   );
 }
-
 export default Neurotoxins;

@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import Details from '../components/Details';
@@ -20,9 +18,6 @@ function SexualWellnessTreatments() {
     return(
       <>
         <SEO {...seo} />
-        <TopBar />
-        <NavBar />
-
         {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
         {/* Desktop Hero */}
@@ -50,10 +45,6 @@ function SexualWellnessTreatments() {
           subtitle="Personalized, relationship-based care focused on prevention, longevity, and real results"
           cta={<PhoneChip inline={false} className="hero-phone-white fs-4"/>}
         />
-
-
-
-
 
       </div>
       </div>
@@ -153,16 +144,6 @@ function SexualWellnessTreatments() {
   ctaType="phone"
   phoneClassName="hero-phone-white fs-4"
 />
-
-
-        {/* <Details 
-          centerTitle={true}
-          showHeading={false}
-          introText="Explore Our"
-          highlightText='Sexual Wellness Treatments'
-          headingText
-        /> */}
-        {/* <Features /> */}
         <Footer />
       </>
     );

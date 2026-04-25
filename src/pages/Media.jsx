@@ -1,8 +1,6 @@
 import React from 'react';
 import MediaPreview from '../components/MediaPreview';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
 import banner from '../assets/banners/media-bg.webp';
 import Title from '../components/Title';
@@ -11,9 +9,6 @@ import PhoneChip from '../components/PhoneChip';
 function Media() {
   return (
     <>
-    <TopBar />
-    <NavBar />
-    
     <Hero
     backgroundImage={banner}
     title="Our Media Appearences"

@@ -1,6 +1,4 @@
 import React from 'react';
-import TopBar from '../components/TopBar';
-import NavBar from '../components/NavBar';
 import Hero from '../components/Hero';
 import FullscriptBanner from '../components/FullscriptBanner';
 import Footer from '../components/Footer';
@@ -24,9 +22,6 @@ function OurPractice() {
   return (
     <>
       <SEO {...seo} />
-      <TopBar />
-      <NavBar />
-
       {/* HERO + OVERLAID BANNER */}
       <div className="hero-with-banner">
       <Hero
@@ -41,9 +36,6 @@ function OurPractice() {
         <FullscriptBanner />
       </div>
       </div>
-
-      
-
       <TextBlock
         title="Our Practice"
         body={
@@ -60,7 +52,6 @@ function OurPractice() {
         }
         footer=""
       />
-
       <TextImageSection
             bgClass="our-practice"
             section={{
@@ -84,13 +75,6 @@ function OurPractice() {
             }}
             />
 
-      
-
-        {/* <TextBlock
-        title="Award-Winning Care & Leadership"
-        body=""
-        footer=""
-      /> */}
       <MultiFeatureSection 
       sections={[
         {
@@ -148,23 +132,9 @@ function OurPractice() {
                 }
             ]}
         />
-
-
-
-        
-           
-
-
-        {/* <TextBlock
-            title="Why Choose Ultimate Health DPC in Leesburg, Florida?"
-            body="At Ultimate Health DPC, we prioritize your well-being, offering personalized care in a comfortable and discreet environment. Our experienced healthcare professionals are dedicated to providing comprehensive consultations and ensuring your journey to optimal health is tailored to your unique needs."
-            footer=""
-        /> */}
-      
       <Contact />
       <Footer />
     </>
   );
 }
-
 export default OurPractice;

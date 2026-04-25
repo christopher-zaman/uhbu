@@ -1,14 +1,10 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import banner from '../assets/banners/toskani-banner.webp';
 import contentImage from '../assets/img/toskani.jpg';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/toskani-1.jpg';
 import afterImage from '../assets/img/toskani-2.webp';
@@ -20,9 +16,6 @@ function Toskani() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-    
     <Hero
     backgroundImage={banner}
     title="Toskani Peptide Cocktails"

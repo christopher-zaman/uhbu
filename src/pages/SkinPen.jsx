@@ -1,14 +1,10 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import TopBar from '../components/TopBar';
 import Hero from '../components/Hero';
-
 import ContentSection from '../components/ContentSection';
 import video from '../assets/videos/skin-pen.mp4';
 import contentImage from '../assets/img/skin-pen.webp';
 import MultiFeatureSection from '../components/MultiFeatureSection';
-
 import SideBySideImages from '../components/SideBySideImages';
 import beforeImage from '../assets/img/skin-pen-1.jpg';
 import afterImage from '../assets/img/skin-pen-2.jpg';
@@ -20,9 +16,6 @@ function SkinPen() {
   return (
     <>
     <SEO {...seo} />
-    <TopBar />
-    <NavBar />
-    
     <Hero
     backgroundVideo={video}
     title="✨ SkinPen Microneedling"
