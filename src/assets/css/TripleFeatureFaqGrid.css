@@ -33,7 +33,7 @@
     background-attachment: fixed;
 }
 .white-transparent-bg {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5) !important;
 }
 .iv-faq-item{
     background-color: rgba(255, 255, 255, 0.1);

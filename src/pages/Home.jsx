@@ -30,6 +30,7 @@ import PricingPreview from '../components/PricingPreview';
 import HomepageTestimonials from '../components/HomepageTestimonials';
 import { reviews } from '../data/reviews';
 import WelcomeSection from '../components/WelcomeSection';
+
 function App() {
   const seo = usePageSEO();
   useEffect(() => {

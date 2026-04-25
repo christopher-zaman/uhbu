@@ -1,75 +1,55 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function NavBar() {
-  const [mobileNavActive, setMobileNavActive] = useState(false);
-  const [dropdownStates, setDropdownStates] = useState({});
+  const [isOpen, setIsOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
 
-  const toggleDropdown = (key) => {
-    setDropdownStates((prev) => ({ ...prev, [key]: !prev[key] }));
-  };
-
-  const closeMobileNav = () => {
-    setMobileNavActive(false);
-    setDropdownStates({});
+  const closeMenu = () => {
+    setIsOpen(false);
+    setOpenDropdown(null);
   };
 
   useEffect(() => {
-    document.body.classList.toggle('mobile-nav-active', mobileNavActive);
+    document.body.classList.toggle('uh-menu-open', isOpen);
 
     return () => {
-      document.body.classList.remove('mobile-nav-active');
+      document.body.classList.remove('uh-menu-open');
     };
-  }, [mobileNavActive]);
+  }, [isOpen]);
 
   const navItems = [
-    { type: 'link', key: 'weightloss', label: 'Weight Loss', href: '/weight-loss' },
-    { type: 'link', key: 'membership', label: 'Membership', href: '/membership' },
+    { type: 'link', label: 'Weight Loss', href: '/weight-loss' },
+    { type: 'link', label: 'Membership', href: '/membership' },
     {
       type: 'dropdown',
-      key: 'dropdown1',
       title: 'Services',
-      href: '/special-services',
       items: [
-        { type: 'link', label: 'Bladder Control Support for Women', href: '/special-services#bladder-control-support' },
-        { type: 'link', label: 'Women’s Hormone Therapy', href: '/special-services#womens-hormone-therapy' },
-        { type: 'link', label: 'BHRT and Hormone Optimization', href: '/special-services#bhrt-hormone-optimization' },
-        { type: 'link', label: 'Peptide Therapy', href: '/special-services#peptide-therapy' },
-        { type: 'link', label: 'Brain Health and Mental Wellness Support', href: '/special-services#brain-health-wellness' },
-        { type: 'link', label: 'Men’s Sexual Health and ED Support', href: '/special-services#mens-sexual-health' },
-        { type: 'link', label: 'Women’s Intimate Wellness', href: '/special-services#womens-intimate-wellness' },
-        { type: 'link', label: 'Membership', href: '/membership' },
-      ]
+        { label: 'Bladder Control Support for Women', href: '/special-services#bladder-control-support' },
+        { label: 'Women’s Hormone Therapy', href: '/special-services#womens-hormone-therapy' },
+        { label: 'BHRT and Hormone Optimization', href: '/special-services#bhrt-hormone-optimization' },
+        { label: 'Peptide Therapy', href: '/special-services#peptide-therapy' },
+        { label: 'Brain Health and Mental Wellness Support', href: '/special-services#brain-health-wellness' },
+        { label: 'Men’s Sexual Health and ED Support', href: '/special-services#mens-sexual-health' },
+        { label: 'Women’s Intimate Wellness', href: '/special-services#womens-intimate-wellness' },
+        { label: 'Membership', href: '/membership' },
+      ],
     },
-    {
-      type: 'link',
-      key: 'hormonetherapy',
-      label: 'Hormone Therapy',
-      href: '/hormone-replacement-therapy',
-    },
-    {
-      type: 'link',
-      key: 'peptidetherapy',
-      label: 'Peptide Therapy',
-      href: '/peptide-therapy',
-    },
+    { type: 'link', label: 'Hormone Therapy', href: '/hormone-replacement-therapy' },
+    { type: 'link', label: 'Peptide Therapy', href: '/peptide-therapy' },
     {
       type: 'dropdown',
-      key: 'dropdown4',
       title: 'Sexual Wellness',
-      href: '/sexual-wellness-treatments',
       items: [
         { label: 'Sexual Wellness Treatments', href: '/sexual-wellness-treatments' },
-        { label: 'Sexual Wellness For her', href: '/sexual-wellness-for-her' },
-        { label: 'Sexual Wellness For him ', href: '/sexual-wellness-for-him' },
+        { label: 'Sexual Wellness For Her', href: '/sexual-wellness-for-her' },
+        { label: 'Sexual Wellness For Him', href: '/sexual-wellness-for-him' },
         { label: 'Duo', href: '/duo' },
       ],
     },
     {
       type: 'dropdown',
-      key: 'dropdown5',
       title: 'Primary Care',
-      href: '/primary-care',
       items: [
         { label: 'Membership', href: '/membership' },
         { label: "Women's Health", href: '/womens-health' },
@@ -80,31 +60,28 @@ function NavBar() {
         { label: 'Mental Wellness', href: '/mental-wellness' },
       ],
     },
-    {
-      type: 'link',
-      key: 'regenerativetherapy',
-      label: 'Regenerative Therapy',
-      href: '/regenerative-therapy',
-    },
+    { type: 'link', label: 'Regenerative Therapy', href: '/regenerative-therapy' },
     {
       type: 'dropdown',
-      key: 'dropdown8',
       title: 'Vitamin Therapy',
       items: [
         { label: '💉 Vitamin Injections', href: '/vitamin-injections' },
         { label: '💧 Vitamin Infusions', href: '/vitamin-infusions' },
-        { label: '🪷 Spa Services', href: '/spa-services' }
+        { label: '🪷 Spa Services', href: '/spa-services' },
       ],
     },
     {
       type: 'dropdown',
-      key: 'dropdown9',
       title: 'About Us',
       items: [
         { label: 'Meet Us', href: '/meet-us' },
         { label: 'Our Practice', href: '/our-practice' },
         { label: 'Careers', href: '/careers' },
-        { label: 'Enrollment', href: 'https://app.elationemr.com/book/UltimateHealthDPC', external: true },
+        {
+          label: 'Enrollment',
+          href: 'https://app.elationemr.com/book/UltimateHealthDPC',
+          external: true,
+        },
         { label: 'Contact Us', href: '/contact' },
         { label: 'Blog', href: '/blog' },
         { label: 'Media', href: '/media' },
@@ -114,91 +91,95 @@ function NavBar() {
     },
   ];
 
+  const renderLink = (item, className = 'uh-nav-link') => {
+    if (item.external) {
+      return (
+        <a
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={className}
+          onClick={closeMenu}
+        >
+          {item.label}
+        </a>
+      );
+    }
+
+    return (
+      <Link to={item.href} className={className} onClick={closeMenu}>
+        {item.label}
+      </Link>
+    );
+  };
+
   return (
-    <header id="header" className="header d-flex align-items-center">
-      <div className="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-        <nav id="navmenu" className="navmenu">
-          <ul>
+    <header className="uh-navbar">
+      <div className="uh-navbar-inner">
+        <button
+          type="button"
+          className="uh-nav-toggle"
+          onClick={() => setIsOpen(true)}
+          aria-label="Open navigation menu"
+        >
+          <i className="bi bi-list" />
+        </button>
+
+        <nav className={`uh-nav-panel ${isOpen ? 'uh-open' : ''}`}>
+          <div className="uh-nav-panel-header">
+            <span className="uh-menu-title">Menu</span>
+
+            <button
+              type="button"
+              className="uh-nav-close"
+              onClick={closeMenu}
+              aria-label="Close navigation menu"
+            >
+              <i className="bi bi-x-lg" />
+            </button>
+          </div>
+
+          <ul className="uh-nav-list">
             {navItems.map((item, index) => {
               if (item.type === 'link') {
-                const text = item.label || item.title;
-
-                return (
-                  <li key={index}>
-                    {item.external ? (
-                      <a
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={item.active ? 'active' : ''}
-                        onClick={closeMobileNav}
-                      >
-                        {text}
-                      </a>
-                    ) : (
-                      <Link
-                        to={item.href}
-                        className={item.active ? 'active' : ''}
-                        onClick={closeMobileNav}
-                      >
-                        {text}
-                      </Link>
-                    )}
-                  </li>
-                );
+                return <li key={index}>{renderLink(item)}</li>;
               }
 
-              if (item.type === 'dropdown') {
-                return (
-                  <li key={item.key} className="dropdown">
-                    <a
-                      href={item.href || '#'}
-                      onClick={(e) => {
-                        if (window.innerWidth < 1200) {
-                          e.preventDefault();
-                          toggleDropdown(item.key);
-                        }
-                      }}
-                    >
-                      {item.title} <i className="bi bi-chevron-down toggle-dropdown" />
-                    </a>
+              const isDropdownOpen = openDropdown === item.title;
 
-                    <ul className={dropdownStates[item.key] ? 'dropdown-active' : ''}>
-                      {item.items.map((dropdownItem, idx) => (
-                        <li key={idx}>
-                          {dropdownItem.external ? (
-                            <a
-                              href={dropdownItem.href}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              onClick={closeMobileNav}
-                            >
-                              {dropdownItem.label}
-                            </a>
-                          ) : (
-                            <Link
-                              to={dropdownItem.href.startsWith('/') ? dropdownItem.href : `/${dropdownItem.href}`}
-                              onClick={closeMobileNav}
-                            >
-                              {dropdownItem.label}
-                            </Link>
-                          )}
+              return (
+                <li key={index} className="uh-dropdown">
+                  <button
+                    type="button"
+                    className="uh-dropdown-toggle"
+                    onClick={() =>
+                      setOpenDropdown(isDropdownOpen ? null : item.title)
+                    }
+                  >
+                    <span>{item.title}</span>
+                    <i
+                      className={`bi ${
+                        isDropdownOpen ? 'bi-chevron-up' : 'bi-chevron-down'
+                      }`}
+                    />
+                  </button>
+
+                  {isDropdownOpen && (
+                    <ul className="uh-dropdown-menu">
+                      {item.items.map((child, childIndex) => (
+                        <li key={childIndex}>
+                          {renderLink(child, 'uh-dropdown-link')}
                         </li>
                       ))}
                     </ul>
-                  </li>
-                );
-              }
-
-              return null;
+                  )}
+                </li>
+              );
             })}
           </ul>
-
-          <i
-            className={`mobile-nav-toggle d-xl-none bi ${mobileNavActive ? 'bi-x' : 'bi-list'}`}
-            onClick={() => setMobileNavActive((prev) => !prev)}
-          />
         </nav>
+
+        {isOpen && <button className="uh-nav-backdrop" onClick={closeMenu} />}
       </div>
     </header>
   );
