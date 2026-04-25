@@ -1454,6 +1454,7 @@ section,
 }
 .phone-chip:hover {
   color: #0f058b;
+  background-color: #efefef;
 }
 
 .hero-benefits {
@@ -2864,7 +2865,7 @@ section,
 }
 
 .contact .info-item i {
-  color: var(--accent-color);
+  color: #0f048a;
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
   font-size: 20px;
   width: 44px;
@@ -2891,7 +2892,7 @@ section,
 }
 
 .contact .info-item:hover i {
-  background: var(--accent-color);
+  background: #0f048a;
   color: var(--contrast-color);
 }
 
@@ -2928,16 +2929,17 @@ section,
 
 
 .contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
+  color: #0f058b;
+  background: none;
+  border: 1px dotted #0f058b;
   padding: 10px 30px;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+  background:#0f058b;
+  color:#fff;
 }
 .contact-bg {
       background-color: #f0f9ff !important;
@@ -3724,13 +3726,69 @@ body.uh-menu-open .scroll-top {
 .pink-gradient {
   background: radial-gradient(circle, #fad3e0 0%, #ffffff 100%)
 }
-.blue-gradient {
+.pink-inverse-gradient {
   background: radial-gradient(circle, #ffffff 0%, #fad3e0 100%)
 }
 
 .pink-gradient:hover {
   background: radial-gradient(circle, #ffffff 0%,#fad3e0 100%)
 }
-.blue-gradient:hover {
+.pink-inverse-gradient:hover {
   background: radial-gradient(circle, #fad3e0 0%, #ffffff 100%)
+}
+.blue-gradient {
+  background: radial-gradient(circle, #ffffff 0%, #c4bffa 100%)
+}
+
+.contact .php-email-form .form-control {
+    border-radius: 5px;
+    border: 1px dashed purple;
+    background: none;
+    box-shadow: 5px 5px 10px rgba(128, 0, 128, 0.5);
+}
+.text-black {
+  color: #000;
+}
+/* .custom-contact-form-fields {
+    border-radius: 5px;
+    border: 1px dashed purple;
+    background: none;
+    box-shadow: 5px 5px 10px rgba(128, 0, 128, 0.5);
+} */
+
+/* Contact Form Inputs */
+.contact .php-email-form .form-control,
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
+.contact .php-email-form input[type="tel"],
+.contact .php-email-form textarea {
+  border-radius: 5px;
+  border: 1px dashed purple;
+  background: transparent;
+  box-shadow: 5px 5px 10px rgba(128, 0, 128, 0.15);
+  
+  padding: 12px 16px;
+  min-height: 55px;
+  
+  color: #1f2b6c;
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.contact .php-email-form .form-control:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #8e44ad;
+  box-shadow: 0px 0px 12px rgba(142, 68, 173, 0.35);
+  outline: none;
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: #7a7a7a;
+  font-weight: 500;
+}
+
+.text-blue {
+ color:#0f058b;
 }

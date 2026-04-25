@@ -59,7 +59,7 @@ function Contact() {
 
 
   return (
-    <section id="contact" className="contact section contact-bg-main">
+    <section id="contact" className="contact section blue-gradient text-black">
       <div className="container section-title lead" data-aos="fade-up">
         <div>
           <span>Contact</span> <span className="description-title">Information</span>
@@ -185,11 +185,21 @@ function Contact() {
                       messages, and general two-way communication. Msg frequency varies.
                       Msg&amp;data rates may apply. Reply HELP for support. Reply STOP to opt out.
                       Refer to our{' '}
-                      <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">
+                      <a 
+                      href="/privacy-policy" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue"
+                      >
                         privacy policy
                       </a>{' '}
                       and{' '}
-                      <a href="/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+                      <a 
+                      href="/terms-and-conditions" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-blue"
+                      >
                         terms and conditions
                       </a>{' '}
                       for more information.

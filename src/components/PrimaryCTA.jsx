@@ -6,7 +6,7 @@ import PhoneChip from "./PhoneChip";
 export default function PrimaryCTA({
   title = "Have questions? Let’s talk.",
   text = "We’re here to answer your questions and help you take the next step.",
-  className = "lead",
+  className = "lead pink-gradient text-blue",
   bgClass = ""
 }) {
   return (
@@ -18,10 +18,10 @@ export default function PrimaryCTA({
         {/* SAME CTA AS HERO — NO VARIATION */}
         <PhoneChip 
         inline={false} 
-        className="hero-phone" 
+        className="hero-phone pink-gradient" 
         display="Book Your Meet & Greet Today Or call 352-901-6582"
         />
       </div>
     </section>
   );
-}
+} 

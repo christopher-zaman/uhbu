@@ -205,7 +205,7 @@ const handleLock = () => {
   </button>
 
   <button
-    className="btn blue-gradient"
+    className="btn pink-inverse-gradient"
     onClick={async () => {
       try {
         const response = await fetch('/api/intake-export', {
