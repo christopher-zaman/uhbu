@@ -245,7 +245,7 @@ const handleLock = () => {
                 
                 <div className="table-responsive">
                 
-                <h4 className="mb-3">Membership Leads</h4>
+                <h4 className="mb-3 text-white">Membership Leads</h4>
                   <table className="table-bordered table-striped align-middle white-transparent-bg">
                     <thead>
                       <tr>
@@ -278,7 +278,7 @@ const handleLock = () => {
             )}
     {/*  */}
 
-<h4 className="mb-3">Intake Submissions</h4>
+<h4 className="mb-3 text-white">Intake Submissions</h4>
 <p className="small text-muted">Intake count: {intakeItems.length}</p>
 {intakeItems.length === 0 ? (
   <div className="alert alert-warning">No intake submissions found.</div>
