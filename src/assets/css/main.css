@@ -3720,3 +3720,17 @@ body.uh-menu-open .scroll-top {
   display: flex;
   align-items: center;
 }
+
+.pink-gradient {
+  background: radial-gradient(circle, #fad3e0 0%, #ffffff 100%)
+}
+.blue-gradient {
+  background: radial-gradient(circle, #ffffff 0%, #fad3e0 100%)
+}
+
+.pink-gradient:hover {
+  background: radial-gradient(circle, #ffffff 0%,#fad3e0 100%)
+}
+.blue-gradient:hover {
+  background: radial-gradient(circle, #fad3e0 0%, #ffffff 100%)
+}

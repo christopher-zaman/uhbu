@@ -171,6 +171,70 @@ const handleLock = () => {
             </div>
           ) : (
             <>
+
+            <div className="d-flex flex-wrap gap-2 mb-4">
+  <button
+    className="btn pink-gradient"
+    onClick={async () => {
+      try {
+        const response = await fetch('/api/membership-leads-export', {
+          headers: {
+            'x-admin-pin': pinInput,
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to export membership leads');
+        }
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'membership-leads.csv';
+        a.click();
+
+        window.URL.revokeObjectURL(url);
+      } catch (err) {
+        alert(err.message);
+      }
+    }}
+  >
+    Export All Membership CSV
+  </button>
+
+  <button
+    className="btn blue-gradient"
+    onClick={async () => {
+      try {
+        const response = await fetch('/api/intake-export', {
+          headers: {
+            'x-admin-pin': pinInput,
+          },
+        });
+
+        if (!response.ok) {
+          throw new Error('Failed to export intake submissions');
+        }
+
+        const blob = await response.blob();
+        const url = window.URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'intake-submissions.csv';
+        a.click();
+
+        window.URL.revokeObjectURL(url);
+      } catch (err) {
+        alert(err.message);
+      }
+    }}
+  >
+    Export All Intake CSV
+  </button>
+</div>
               
 
               {status ? (
