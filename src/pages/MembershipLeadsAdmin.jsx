@@ -279,7 +279,7 @@ const handleLock = () => {
     {/*  */}
 
 <h4 className="mb-3 text-white">Intake Submissions</h4>
-<p className="small text-muted">Intake count: {intakeItems.length}</p>
+<p className="small text-white">Intake count: {intakeItems.length}</p>
 {intakeItems.length === 0 ? (
   <div className="alert alert-warning">No intake submissions found.</div>
 ) : (
