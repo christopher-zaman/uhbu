@@ -192,10 +192,9 @@ const handleLock = () => {
               ) : (
                 
                 <div className="table-responsive">
-                <hr className="my-5" />
                 
                 <h4 className="mb-3">Membership Leads</h4>
-                  <table className="table table-bordered table-striped align-middle white-transparent-bg">
+                  <table className="table-bordered table-striped align-middle white-transparent-bg">
                     <thead>
                       <tr>
                         <th>Date</th>
@@ -226,7 +225,6 @@ const handleLock = () => {
                 </div>
             )}
     {/*  */}
-    <hr className="my-5" />
 
 <h4 className="mb-3">Intake Submissions</h4>
 <p className="small text-muted">Intake count: {intakeItems.length}</p>
@@ -234,7 +232,7 @@ const handleLock = () => {
   <div className="alert alert-warning">No intake submissions found.</div>
 ) : (
   <div className="table-responsive">
-    <table className="table table-bordered table-striped align-middle">
+    <table className="table-bordered table-striped align-middle white-transparent-bg">
       <thead>
         <tr>
           <th>Date</th>
