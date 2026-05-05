@@ -174,7 +174,7 @@ const handleLock = () => {
 
             <div className="d-flex flex-wrap gap-2 mb-4">
   <button
-    className="btn pink-gradient"
+    className="btn blue-gradient"
     onClick={async () => {
       try {
         const response = await fetch('/api/membership-leads-export', {

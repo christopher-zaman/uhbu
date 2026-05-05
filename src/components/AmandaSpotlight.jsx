@@ -22,7 +22,7 @@ function AmandaSpotlight({ image }) {
               Meet Your Provider
             </span>
 
-            <h2 className="amanda-title text-pink">
+            <h2 className="amanda-title text-blue">
               Amanda Gaskin, MSN, APRN
             </h2>
 
@@ -56,14 +56,14 @@ function AmandaSpotlight({ image }) {
             <div className="d-flex flex-wrap gap-3 mt-4">
               <a
                 href="/meet-us"
-                className="btn btn-pink-transparent rounded-pill px-4"
+                className="btn btn-blue-transparent rounded-pill px-4"
               >
                 Meet Amanda
               </a>
 
               <a
                 href="https://app.elationemr.com/book/UltimateHealthDPC"
-                className="btn btn-pink-transparent rounded-pill px-4"
+                className="btn btn-blue-transparent rounded-pill px-4"
                 target="_blank"
                 rel="noreferrer"
               >

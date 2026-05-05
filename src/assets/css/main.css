@@ -616,11 +616,11 @@ h6 {
 }
 
 .light-background-pink-gradient {
-  background: linear-gradient(to right, #fff5f7, #ffe3ec)
+  background: linear-gradient(to right, #ffffff, #f8fbff)
 }
 /* Home Testimonials */
 .homepage-testimonials {
-  background: linear-gradient(to right, #fff5f7, #ffe3ec)
+  background: radial-gradient(circle, #ffffff 0%, #cac9ff 100%)
 }
 
 .homepage-testimonials-header {
@@ -3737,7 +3737,7 @@ body.uh-menu-open .scroll-top {
   background: radial-gradient(circle, #fad3e0 0%, #ffffff 100%)
 }
 .blue-gradient {
-  background: radial-gradient(circle, #ffffff 0%, #c4bffa 100%)
+  background: radial-gradient(circle, #ffffff 0%, #d1d5fb 100%)
 }
 
 .contact .php-email-form .form-control {

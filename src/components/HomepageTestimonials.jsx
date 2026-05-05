@@ -106,7 +106,7 @@ function HomepageTestimonials({ reviews = [] }) {
         <div className="text-center mt-4">
           <a
             href="https://app.elationemr.com/book/UltimateHealthDPC"
-            className="btn btn-pink-transparent rounded-pill px-4"
+            className="btn btn-blue-transparent rounded-pill px-4"
             target="_blank"
             rel="noreferrer"
           >
