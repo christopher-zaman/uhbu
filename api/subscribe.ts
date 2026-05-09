@@ -28,6 +28,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
+
+console.log('subscribe route hit');
+console.log('subscribe body:', req.body);
+console.log('RESEND_API_KEY exists:', !!process.env.RESEND_API_KEY);
+console.log('NOTIFY_TO_EMAIL:', process.env.NOTIFY_TO_EMAIL);
+console.log('FROM_EMAIL:', process.env.FROM_EMAIL);
+
 const {
   email,
   source,
