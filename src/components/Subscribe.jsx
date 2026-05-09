@@ -4,6 +4,7 @@ import '../assets/css/Subscribe.css';
 function Subscribe() {
   const form = useRef();
 
+  console.log("Subscribe frontend submit fired");
   const sendSubscription = async (e) => {
   e.preventDefault();
 
