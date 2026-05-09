@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from 'react';
 import { trackGA4 } from "../utils/ga4";
 
 function Contact() {
@@ -8,52 +7,54 @@ function Contact() {
   const sendEmail = async (e) => {
   e.preventDefault();
 
-  // Guard: make sure env vars exist
-  const SERVICE = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const PUBLIC  = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  const fd = new FormData(form.current);
 
-  if (!SERVICE || !TEMPLATE || !PUBLIC) {
-    console.error('EmailJS env vars missing:', { SERVICE, TEMPLATE, PUBLIC });
-    alert('Email settings are not configured. Please try again later.');
-    return;
-  }
+  const payload = {
+    name: fd.get('name') || '',
+    email: fd.get('email') || '',
+    phone: fd.get('phone') || '',
+    subject: fd.get('subject') || '',
+    message: fd.get('message') || '',
+    smsConsent: fd.get('smsConsent') === 'on',
+    pageLocation: window.location.href,
+  };
 
   try {
-    const result = await emailjs.sendForm(SERVICE, TEMPLATE, form.current, PUBLIC);
-    console.log('Email sent:', result); // { status: 200, text: 'OK' }
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    });
 
-    // 🔹 GA4 lead event
-    const fd = new FormData(form.current);
-    const name = fd.get("name");
-    const email = fd.get("email");
-    const phone = fd.get("phone");
+    const text = await response.text();
+
+    let result = null;
+    try {
+      result = JSON.parse(text);
+    } catch {
+      throw new Error(`API returned non-JSON: ${text.slice(0, 160)}`);
+    }
+
+    if (!response.ok) {
+      throw new Error(result?.error || 'Something went wrong.');
+    }
 
     window.trackEvent?.("generate_lead", {
       form_id: "contact_page_form",
       form_name: "Contact – Ultimate Health DPC",
       page_location: window.location.href,
-      lead_name: name || "",
-      lead_email: email || "",
-      lead_phone: phone || "",
+      lead_name: payload.name,
+      lead_email: payload.email,
+      lead_phone: payload.phone,
     });
 
     alert('Message sent successfully!');
     form.current.reset();
   } catch (err) {
-    // log everything useful
-    console.error('EmailJS error:', err, {
-      status: err?.status,
-      text: err?.text,
-      message: err?.message,
-      name: err?.name,
-    });
-
-    alert(
-      `Failed to send message. ${
-        err?.text || err?.message || 'Please try again later.'
-      }`
-    );
+    console.error('Contact form error:', err);
+    alert(err?.message || 'Failed to send message. Please try again later.');
   }
 };
 

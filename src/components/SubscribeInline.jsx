@@ -1,29 +1,50 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
 import { useLocation } from "react-router-dom";
 
 export default function SubscribeInline({ cardTitle = "", source = "seo-card" }) {
   const form = useRef();
   const location = useLocation();
 
-  const sendSubscription = (e) => {
+  const sendSubscription = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_SUBSCRIBE_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(() => {
-        alert("Thank you for subscribing!");
-        form.current.reset();
-      })
-      .catch((error) => {
-        console.error("Subscription error:", error);
-        alert("Failed to subscribe. Please try again later.");
+    const fd = new FormData(form.current);
+
+    const payload = {
+      email: fd.get("subscriber_email") || "",
+      source: fd.get("source") || source,
+      page: fd.get("page") || location.pathname,
+      cardTitle: fd.get("cardTitle") || cardTitle,
+    };
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
       });
+
+      const text = await response.text();
+
+      let result = null;
+      try {
+        result = JSON.parse(text);
+      } catch {
+        throw new Error(`API returned non-JSON: ${text.slice(0, 160)}`);
+      }
+
+      if (!response.ok) {
+        throw new Error(result?.error || "Something went wrong.");
+      }
+
+      alert("Thank you for subscribing!");
+      form.current.reset();
+    } catch (error) {
+      console.error("Subscription error:", error);
+      alert(error?.message || "Failed to subscribe. Please try again later.");
+    }
   };
 
   return (
@@ -36,7 +57,6 @@ export default function SubscribeInline({ cardTitle = "", source = "seo-card" })
         required
       />
 
-      {/* tracking (matches template) */}
       <input type="hidden" name="source" value={source} />
       <input type="hidden" name="page" value={location.pathname} />
       <input type="hidden" name="cardTitle" value={cardTitle} />

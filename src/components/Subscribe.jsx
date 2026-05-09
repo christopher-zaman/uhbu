@@ -1,28 +1,55 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import '../assets/css/Subscribe.css';
 
 function Subscribe() {
   const form = useRef();
 
-  const sendSubscription = (e) => {
-    e.preventDefault();
+  const sendSubscription = async (e) => {
+  e.preventDefault();
 
-    emailjs.sendForm(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_SUBSCRIBE_TEMPLATE_ID,
-      form.current,
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    )
-    .then((result) => {
-      console.log('Subscription sent:', result.text);
-      alert('Thank you for subscribing!');
-      form.current.reset();
-    }, (error) => {
-      console.error('Subscription error:', error.text);
-      alert('Failed to subscribe. Please try again later.');
-    });
+  const fd = new FormData(form.current);
+
+  const payload = {
+    email: fd.get('subscriber_email') || '',
+    source: 'subscribe-section',
   };
+
+  try {
+    const response = await fetch('/api/subscribe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const text = await response.text();
+
+    let result = null;
+
+    try {
+      result = JSON.parse(text);
+    } catch {
+      throw new Error(`API returned non-JSON: ${text.slice(0, 160)}`);
+    }
+
+    if (!response.ok) {
+      throw new Error(result?.error || 'Something went wrong.');
+    }
+
+    alert('Thank you for subscribing!');
+
+    form.current.reset();
+
+  } catch (err) {
+    console.error('Subscription error:', err);
+
+    alert(
+      err?.message || 'Failed to subscribe. Please try again later.'
+    );
+  }
+
+};
 
   return (
     <section className="subscribe-section text-white">

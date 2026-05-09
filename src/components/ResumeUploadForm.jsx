@@ -1,29 +1,48 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 function ResumeUploadForm() {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID_RESUME,
-        form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          alert('Resume submitted successfully!');
-          form.current.reset();
+    const fd = new FormData(form.current);
+
+    const payload = {
+      name: fd.get('user_name') || '',
+      email: fd.get('user_email') || '',
+      message: fd.get('message') || '',
+      resumeLink: fd.get('resume_link') || '',
+    };
+
+    try {
+      const response = await fetch('/api/resume', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        (error) => {
-          console.error('EmailJS error:', error);
-          alert('Failed to send. Please try again.');
-        }
-      );
+        body: JSON.stringify(payload),
+      });
+
+      const text = await response.text();
+
+      let result = null;
+      try {
+        result = JSON.parse(text);
+      } catch {
+        throw new Error(`API returned non-JSON: ${text.slice(0, 160)}`);
+      }
+
+      if (!response.ok) {
+        throw new Error(result?.error || 'Something went wrong.');
+      }
+
+      alert('Resume submitted successfully!');
+      form.current.reset();
+    } catch (error) {
+      console.error('Resume submission error:', error);
+      alert(error?.message || 'Failed to send. Please try again.');
+    }
   };
 
   return (
@@ -54,6 +73,7 @@ function ResumeUploadForm() {
                     required
                   />
                 </div>
+
                 <div className="col-md-6">
                   <input
                     type="email"
@@ -63,6 +83,7 @@ function ResumeUploadForm() {
                     required
                   />
                 </div>
+
                 <div className="col-12">
                   <textarea
                     name="message"
@@ -71,10 +92,20 @@ function ResumeUploadForm() {
                     placeholder="Cover Letter or Message (optional)"
                   ></textarea>
                 </div>
+
                 <div className="col-12">
-                    <p className="small text-muted mb-1">
-                        <strong>Need help?</strong> Upload your resume to <a href="https://drive.google.com" target="_blank" rel="noreferrer">Google Drive</a> or <a href="https://dropbox.com" target="_blank" rel="noreferrer">Dropbox</a> and paste a shareable link below.
-                    </p>
+                  <p className="small text-muted mb-1">
+                    <strong>Need help?</strong> Upload your resume to{' '}
+                    <a href="https://drive.google.com" target="_blank" rel="noreferrer">
+                      Google Drive
+                    </a>{' '}
+                    or{' '}
+                    <a href="https://dropbox.com" target="_blank" rel="noreferrer">
+                      Dropbox
+                    </a>{' '}
+                    and paste a shareable link below.
+                  </p>
+
                   <input
                     type="url"
                     name="resume_link"
@@ -82,11 +113,11 @@ function ResumeUploadForm() {
                     placeholder="Paste Google Drive / Dropbox resume link"
                     required
                   />
+
                   <small className="text-muted d-block mt-1">
                     Please ensure the file link is publicly shareable.
                   </small>
                 </div>
-                
 
                 <div className="col-md-12 text-center mt-3">
                   <button type="submit">Submit Resume</button>

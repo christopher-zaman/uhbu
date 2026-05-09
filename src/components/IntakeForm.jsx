@@ -38,7 +38,7 @@ const initialIntakeFormData = {
   preferredName: '',
   sex: '',
   visitReason: '',
-  isitReasonOther: '',
+  visitReasonOther: '',
   dobMonth: '',
   dobDay: '',
   dobYear: '',

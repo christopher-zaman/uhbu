@@ -3739,7 +3739,15 @@ body.uh-menu-open .scroll-top {
 .blue-gradient {
   background: radial-gradient(circle, #ffffff 0%, #d1d5fb 100%)
 }
+/* css yoinked from Resend */
+.bg-gradient-fade {
+    background-image: linear-gradient(90deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 40%);
+}
 
+.bg-gradient-fade-green {
+  /* #019c393b */
+    background-image: linear-gradient(90deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 40%);
+}
 .contact .php-email-form .form-control {
     border-radius: 5px;
     border: 1px dashed purple;

@@ -1,3 +1,4 @@
+import { sendNotificationEmail } from "./_email.js";
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { getDb } from './_db.js';
 
@@ -46,11 +47,30 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const result = await db.collection('membership_leads').insertOne(doc);
 
-    return res.status(200).json({
-      ok: true,
-      insertedId: result.insertedId,
-    });
-  } catch (error: any) {
+  try {
+    await sendNotificationEmail({
+    subject: 'New Membership Submission',
+    html: `
+      <h2>New Membership Submission</h2>
+      <p><strong>Name:</strong> ${doc.firstName} ${doc.lastName}</p>
+      <p><strong>Email:</strong> ${doc.email}</p>
+      <p><strong>Phone:</strong> ${doc.phone}</p>
+      <p><strong>Preferred Contact Method:</strong> ${doc.preferredContactMethod}</p>
+      <p><strong>Interest Type:</strong> ${doc.interestType}</p>
+      <p><strong>Message:</strong> ${doc.message}</p>
+      <p><strong>Submitted:</strong> ${new Date().toLocaleString()}</p>
+    `,
+  });
+} catch (emailError) {
+  console.error('Email notification failed:', emailError);
+}
+// End email send notification 
+
+  return res.status(200).json({
+    ok: true,
+    insertedId: result.insertedId,
+  });
+} catch (error: any) {
   console.error('membership-leads error:', error);
   return res.status(500).json({
     error: error?.message || 'Server error while saving membership lead.',
