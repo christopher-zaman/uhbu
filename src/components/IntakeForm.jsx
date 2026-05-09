@@ -299,7 +299,7 @@ sessionStorage.removeItem('intake_form_draft');
                         type="button"
                         onClick={() => goToTab(tab.id)}
                         className={`btn ${
-                          activeTab === tab.id ? 'btn-pink-transparent' : 'btn-outline-second'
+                          activeTab === tab.id ? 'btn-blue-transparent' : 'btn-outline-second'
                         }`}
                       >
                         {tab.label}
@@ -886,7 +886,7 @@ sessionStorage.removeItem('intake_form_draft');
                       {tabIndex < tabs.length - 1 ? (
                         <button
                           type="button"
-                          className="btn btn-pink-transparent"
+                          className="btn btn-blue-transparent"
                           onClick={nextTab}
                         >
                           Next Form
@@ -894,7 +894,7 @@ sessionStorage.removeItem('intake_form_draft');
                       ) : (
                         <button
                         type="button"
-                        className="btn btn-pink-transparent"
+                        className="btn btn-blue-transparent"
                         disabled={isSubmitting}
                         onClick={handleSubmit}
                         >

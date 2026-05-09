@@ -26,7 +26,7 @@ const steps = [
 
 function MembershipSteps() {
   return (
-    <section className="services section light-background-pink-gradient">
+    <section className="services section bg-gradient-pastel">
       <div className="container section-title" data-aos="fade-up">
         <h2 className="membership-process">Membership Process</h2>
         <p className="lead">Simple steps to help you move forward with clarity.</p>
@@ -50,7 +50,7 @@ function MembershipSteps() {
                   >{step.number}
                   </span>
                 </div>
-                <h4 className="text-dark-pink">{step.title}</h4>
+                <h4 className="text-dark-blue">{step.title}</h4>
                 <p className="lead">{step.text}</p>
               </div>
             </div>

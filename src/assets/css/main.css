@@ -538,7 +538,7 @@ h6 {
 
 .section-title h2.membership-process {
   font-size: 1.25rem;
-  color: #d49fa8;
+  color: #04087a;
 }
 
 .section-title h2.membership-process::after {
@@ -546,14 +546,14 @@ h6 {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #d49fa8;
+    background: #04087a;
     margin: 4px 10px;
 }
-.text-pink {
-  color: #d49fa8;
+.text-blue {
+  color: #04087a;
 }
-.text-dark-pink {
-  color: #85686c;
+.text-dark-blue {
+  color: #04087a;
 }
 
 .membership-page {
@@ -563,9 +563,12 @@ h6 {
   font-size: 1.25rem;
 }
 .light-pink-transparent-bg {
-  background: linear-gradient(to right, #fff5f7, #ffffff);
+  background: linear-gradient(to right, #dbeafe, #ffffff);
 }
-.btn-pink-transparent {
+.light-blue-transparent-bg {
+  background: linear-gradient(to right, #dbeafe, #ffffff);
+}
+.btn-blue-transparent {
   background: #fad6e2;
   border: 1px dotted #d49fa8;
 }
@@ -585,7 +588,7 @@ h6 {
   background: rgba(255,255,255,0.7);
 }
 .membership-cta-split-card-bg {
-  background-color: #fdf7f9;
+  background-color: #d1d5fb;
 }
 .hero.membership-hero .hero-bg {
   object-fit: cover;
@@ -3739,15 +3742,61 @@ body.uh-menu-open .scroll-top {
 .blue-gradient {
   background: radial-gradient(circle, #ffffff 0%, #d1d5fb 100%)
 }
+
+.blue-gradient {
+  background: radial-gradient(circle, #d7f0df 0%, #d7f0df 100%)
+}
 /* css yoinked from Resend */
 .bg-gradient-fade {
     background-image: linear-gradient(90deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 40%);
 }
 
 .bg-gradient-fade-green {
-  /* #019c393b */
-    background-image: linear-gradient(90deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 40%);
+    background-image: linear-gradient(
+        to top,
+        #e0f2fe 0%,
+        transparent 60%
+    );
+    color: #000;
 }
+
+.bg-gradient-fade-yellow {
+    background-image: linear-gradient(
+        135deg,
+        #fefce8 0%,
+        transparent 50%
+    );
+}
+.bg-gradient-fade-yellow {
+    background-image: linear-gradient(
+        135deg,
+        #fefce8 0%,
+        transparent 50%
+    );
+}
+
+.bg-gradient-pastel {
+    background-image: linear-gradient(
+        135deg,
+        #d7f0df 0%,
+        #fefce8 45%,
+        #dbeafe 100%
+    );
+}
+.bg-gradient-soft {
+    background-image: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #f8fafc 35%,
+        #fefce8 100%
+    );
+}
+.bg-blur-pastel {
+    background:
+        radial-gradient(circle at top left, #d7f0df 0%, transparent 40%),
+        radial-gradient(circle at bottom right, #fefce8 0%, transparent 40%);
+}
+
 .contact .php-email-form .form-control {
     border-radius: 5px;
     border: 1px dashed purple;

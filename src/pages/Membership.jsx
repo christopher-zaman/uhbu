@@ -53,7 +53,7 @@ function Membership() {
       </Hero>
       <Testimonials 
         filterType="dpc"
-        className="membership-testimonials" 
+        className="bg-gradient-fade-green" 
       />
       <MembershipIntroSection />
       <MembershipSteps />
