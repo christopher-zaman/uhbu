@@ -44,7 +44,7 @@ function PrimaryCare() {
     backgroundImage={banner}
     title="Primary Care"
     subtitle="Direct Primary Care – Leesburg Office"
-    cta={<PhoneChip inline={false} className='fs-4'/>}
+    cta={<PhoneChip inline={false} className='fs-4 text-blue'/>}
     textColor="rgba(1, 3, 112, 0.75)"
      />
     <div className="fullscript-banner-over-hero">

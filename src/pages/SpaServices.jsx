@@ -27,7 +27,7 @@ function SpaServices() {
         textColor="rgba(11, 61, 92, 0.8)"
         subtitle="Thoughtfully designed treatments to support skin health, confidence, and overall wellness"
         cta={<PhoneChip inline={false} className="hero-phone fs-4" />}
-        className="hero--spa"
+        className="hero--spa hide-on-mobile"
         />
         <div className="fullscript-banner-over-hero">
           <FullscriptBanner />
