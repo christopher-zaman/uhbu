@@ -948,10 +948,10 @@ Employer Landing Page
 
 .employer-eyebrow {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #94c142;
+  color: #759539;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -1046,7 +1046,7 @@ Employer Landing Page
 }
 
 .employer-accordion .accordion-body {
-  color: #555;
+  color: #759539;
 }
 
 .employer-disclaimer {
