@@ -557,7 +557,7 @@ h6 {
 }
 
 .membership-page {
-  --accent-color: #d49fa8;
+  --accent-color: #94c142;
 }
 .membership-form {
   font-size: 1.25rem;
@@ -850,6 +850,10 @@ h6 {
 
 .hero.membership-hero::before {
   background:none;
+}
+.section-title h2.membership-process::after{
+  display:none;
+  padding:5px;
 }
 }
 
@@ -1175,7 +1179,7 @@ Employer Landing Page
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: #94c142;
 }
 
 .footer-contact a:hover {

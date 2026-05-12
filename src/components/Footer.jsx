@@ -142,6 +142,7 @@ function Footer() {
               <li><Link to="/contact">Contact</Link></li>
               <li><Link to="/privacy-policy">Privacy Policy</Link></li>
               <li><Link to="/terms-and-conditions">Terms</Link></li>
+              <li><Link to="/membership">Membership</Link></li>
             </ul>
           </div>
 
@@ -154,6 +155,7 @@ function Footer() {
               <li><a href="/sexual-wellness-treatments">Sexual Wellness</a></li>
               <li><a href="/primary-care">Primary Care</a></li>
               <li><a href="/skin-pen">Aesthetics</a></li>
+              <li><a href="/employers">DPC Emplpoyers</a></li>
             </ul>
           </div>
 
