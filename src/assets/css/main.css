@@ -618,7 +618,7 @@ h6 {
 }
 
 .cta-request-info:hover {
-  background-color: pink;
+  background-color: rgba(255,255,255,0.2);
   color: #fff;
 }
 
@@ -838,6 +838,19 @@ h6 {
     font-size: 0.95rem;
     padding: 12px 14px;
   }
+}
+
+@media (max-width: 768px) {
+.cta-request-info {
+  display:none;
+}
+.hide-on-mobile {
+  display:none;
+}
+
+.hero.membership-hero::before {
+  background:none;
+}
 }
 
 /* --------------------------------------

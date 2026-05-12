@@ -37,7 +37,7 @@ function AmandaSpotlight({ image }) {
   <li className="highlight">
     🏆 2022 Leesburg Area Chamber Business Woman of the Year
   </li>
-
+ 
   <li className="highlight">
     🏛 2026 Executive Board Chairman, Leesburg Area Chamber of Commerce
   </li>

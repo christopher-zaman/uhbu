@@ -33,16 +33,16 @@ function Membership() {
         backgroundImage={banner}
         title="Personalized Primary Care Without Insurance Barriers"
         subtitle="For individuals and families who want direct access to their doctor, longer visits, and transparent pricing."
-        className="membership-hero"
+        className="membership-hero hide-on-mobile"
         cta={
-          <div className="d-flex gap-3 flex-wrap">
+          <div className="d-flex gap-3 flex-wrap hide-on-mobile">
             <button className="lead cta-membership cta-request-info" onClick={scrollToLeadForm}>
               Request Membership Info
             </button>
           </div>
         }
       >
-        <ul className="hero-benefits">
+        <ul className="hero-benefits hide-on-mobile">
           <li>Busy professionals who need same-day or next-day appointments</li>
           <li>Direct access to your doctor</li>
           <li>No copays or surprise bills</li>

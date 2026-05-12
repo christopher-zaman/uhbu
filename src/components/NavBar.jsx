@@ -31,7 +31,7 @@ function NavBar() {
           href: 'https://app.elationemr.com/book/UltimateHealthDPC',
           external: true,
         },
-        { label: 'Employers', href: '/employers' },
+        { label: 'DPC for Employers', href: '/employers' },
       ],
     },
     {
@@ -105,7 +105,7 @@ function NavBar() {
         { label: 'Blog', href: '/blog' },
         { label: 'Media', href: '/media' },
         { label: 'Payment Plans', href: '/payment-plans' },
-        { label: 'Employers', href: '/employers' },
+        { label: 'DPC for Employers', href: '/employers' },
       ],
     },
   ];

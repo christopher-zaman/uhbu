@@ -67,7 +67,7 @@ function Hero({
         <img src={backgroundImage} alt="" className="hero-bg" />
       )}
 
-      <div className="container hero-content">
+      <div className={`container hero-content ${className || ""}`}>
         <div className="row gy-4 justify-content-between">
           {heroImage ? (
             <div className="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay={100}>
