@@ -155,7 +155,7 @@ function Footer() {
               <li><a href="/sexual-wellness-treatments">Sexual Wellness</a></li>
               <li><a href="/primary-care">Primary Care</a></li>
               <li><a href="/skin-pen">Aesthetics</a></li>
-              <li><a href="/employers">DPC Emplpoyers</a></li>
+              <li><a href="/employers">DPC Employers</a></li>
             </ul>
           </div>
 
