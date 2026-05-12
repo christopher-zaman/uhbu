@@ -77,7 +77,8 @@ function EmployerLandingPage() {
                   Ultimate Health DPC offers employer group memberships that give
                   employees direct access to a dedicated provider, same-day
                   appointments, and predictable costs without the usual
-                  complexity.
+                  complexity.<br></br>
+                  <h3 className="text-blue">Set up an employer plan with as few as 3 interested employees</h3>
                 </p>
 
                 <div className="d-flex flex-wrap gap-3 mt-4">
