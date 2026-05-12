@@ -18,7 +18,7 @@ export default function PrimaryCTA({
         {/* SAME CTA AS HERO — NO VARIATION */}
         <PhoneChip 
         inline={false} 
-        className="hero-phone blue-gradient" 
+        className="hero-phone btn-blue-transparent" 
         display="Book Your Meet & Greet Today Or call 352-901-6582"
         />
       </div>

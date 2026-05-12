@@ -159,6 +159,12 @@ body {
     margin-bottom: 6px;
   }
 }
+/* add media query here to hide this button on mobile or use bootstrap class d-none */
+@media (max-width: 767.98px) {
+  .video-hero-cta {
+    display: none;
+  }
+}
 
 .responsive-video-wrapper {
   position: relative;

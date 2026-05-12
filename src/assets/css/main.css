@@ -516,7 +516,7 @@ h6 {
   background: linear-gradient(to right, #fff5f7, #ffe3ec) !important;
   color: #333;
 }
-
+ 
 .membership-testimonials .testimonial-item,
 .membership-testimonials h3,
 .membership-testimonials h4,
@@ -568,7 +568,7 @@ h6 {
 .light-blue-transparent-bg {
   background: linear-gradient(to right, #dbeafe, #ffffff);
 }
-.btn-blue-transparent {
+.btn-pink-transparent {
   background: #fad6e2;
   border: 1px dotted #d49fa8;
 }
@@ -579,6 +579,10 @@ h6 {
 .btn-blue-transparent {
   background: none;
   border: 1px dotted #0f058b;
+}
+.rounded-button{
+  border-radius: 15px;
+    padding: 5px 8px;
 }
 .btn-blue-transparent:hover {
   background:#0f058b;
@@ -779,15 +783,15 @@ h6 {
 
 /* Primary */
 .sticky-cta-btn.primary {
-  background: #94c142;
+  background: #04087a;
   color: #fff;
-  border: 1px solid #94c142;
+  border: 2px dashed #fff;
 }
 
 .sticky-cta-btn.primary:hover {
-  background: #86b437;
+  background: #fff;
   border-color: #86b437;
-  color: #fff;
+  color: #04087a;
   transform: translateY(-2px);
 }
 
@@ -799,8 +803,8 @@ h6 {
 }
 
 .sticky-cta-btn.secondary:hover {
-  background: #f8fbff;
-  color: #1d2b6f;
+  background: #04087a;
+  color: #fff;
   border-color: rgba(29, 43, 111, 0.28);
   transform: translateY(-2px);
 }
@@ -1457,7 +1461,7 @@ section,
 }
 .phone-chip:hover {
   color: #0f058b;
-  background-color: #efefef;
+  background-color: #fff;
 }
 
 .hero-benefits {
@@ -3700,7 +3704,7 @@ body.uh-menu-open .scroll-top {
   }
 
   .uh-dropdown-link:hover {
-    color: #94c142;
+    color: #04087a;
     background: #f7f9f4;
   }
 }
@@ -3743,7 +3747,7 @@ body.uh-menu-open .scroll-top {
   background: radial-gradient(circle, #ffffff 0%, #d1d5fb 100%)
 }
 
-.blue-gradient {
+.green-gradient {
   background: radial-gradient(circle, #d7f0df 0%, #d7f0df 100%)
 }
 /* css yoinked from Resend */

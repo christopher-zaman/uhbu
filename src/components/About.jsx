@@ -48,7 +48,7 @@ function About() {
               </p>
             </div>
 
-            <a href="/meet-us" className="read-more lead">
+            <a href="/meet-us" className="btn-blue-transparent text-blue rounded-pill p-2">
               <span>Meet the Team</span> <i className="bi bi-arrow-right" />
             </a>
           </div>

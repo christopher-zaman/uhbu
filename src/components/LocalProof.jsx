@@ -59,9 +59,9 @@ export default function LocalProof({
 
               <div className="lp-cta mt-4">
                 {ctaType === "phone" ? (
-                  <PhoneChip inline={false} className="lp-phone" />
+                  <PhoneChip inline={false} className="lp-phone btn-blue-transparent text-blue" />
                 ) : ctaType === "link" ? (
-                  <Link to={ctaLink} className="btn btn-primary rounded-pill px-4">
+                  <Link to={ctaLink} className="btn rounded-pill px-4">
                     {ctaText}
                   </Link>
                 ) : null}
