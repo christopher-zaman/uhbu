@@ -5,7 +5,7 @@ import Hero from '../components/Hero';
 import banner from '../assets/banners/subscribe.png';
 import Title from '../components/Title';
 import PhoneChip from '../components/PhoneChip';
-
+// Replace banner with hero video of mens biote?
 function Blog() {
   return (
     <>    
@@ -20,10 +20,10 @@ function Blog() {
      />
     <section className="section blog py-5">
       <div className="container">
-          <Title
+          {/* <Title
           introText = "Read Our"
           highlightText = "Blogs"
-           />
+           /> */}
         {/* First Row */}
         <div className="row mb-5">
             <div className="col-md-6 col-lg-4 mb-4">
@@ -80,7 +80,7 @@ function Blog() {
               link="/blog/does-the-labia-really-matter"
             />
           </div>
-
+  {/* Thrid row */}
           <div className="col-md-6 col-lg-4 mb-4">
             <BlogPreview
               title="Where to Find Safe, Affordable Weight Loss in Leesburg, FL"
@@ -107,6 +107,34 @@ function Blog() {
               link="/blog/direct-primary-care-versus-traditional-care"
             />
           </div>
+{/* Fourth row */}
+        <div className="col-md-6 col-lg-4 mb-4">
+            <BlogPreview
+              title="Male Patient Seminar with Dr. Cory Rice"
+              excerpt="Precision and preventive medicine"
+              image="/assets/img/blog-images/blog-post-uhdpc.webp"
+              link="/blog/precision-and-preventive-medicine"
+              isVideo={true}
+            />
+          </div>
+
+          {/* <div className="col-md-6 col-lg-4 mb-4">
+            <BlogPreview
+              title="Top 5 Signs Your Hormones Might Be Out of Balance—And What Leesburg Women Are Doing About It"
+              excerpt="Hormones play a quiet but powerful role in how you feel every day."
+              image="/assets/img/blog-images/hormone-balance.webp"
+              link="/blog/signs-your-hormones-might-be-out-of-balance"
+            />
+          </div> */}
+
+          {/* <div className="col-md-6 col-lg-4 mb-4">
+            <BlogPreview
+              title="What Direct Primary Care Looks Like in Lake County vs Traditional Insurance"
+              excerpt="The healthcare system can feel like a maze"
+              image="/assets/img/blog-images/health-care-maze.webp"
+              link="/blog/direct-primary-care-versus-traditional-care"
+            />
+          </div> */}
 
         </div>
       </div>

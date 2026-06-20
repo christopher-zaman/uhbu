@@ -446,8 +446,140 @@ function BlogPost() {
   <p> Discover why more people in Leesburg, Lady Lake, and The Villages are making the switch. Visit UltimateHealthDPC.com to learn more or call 352-901-6582 to join today</p>
 </>
   },  
-};
+// New Blog Post - 06/20/2026
+'precision-and-preventive-medicine': {
+    title: 'Precisions',
+    banner: '/assets/img/blog-images/blog-post-uhdpc.webp',
+    videoEmbed: 'https://player.vimeo.com/video/880897358?h=fcac3cf722&autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0',
+    date: 'June 20, 2026',
+    content: <>
 
+  <h2>Could Low Testosterone Be Affecting Your Health? Signs, Symptoms, and Treatment Options for Men in Leesburg, Florida</h2>
+
+  <p>
+    As men age, many assume that feeling tired, gaining weight, losing muscle, experiencing brain fog, or noticing a decline in libido is simply part of getting older.
+
+    While aging does bring changes, these symptoms may also be linked to hormonal imbalances—particularly low testosterone.
+
+    At Ultimate Health Direct Primary Care in Leesburg, Florida, we believe men deserve answers when they are not feeling their best. A comprehensive evaluation can help identify whether hormone levels, thyroid function, nutrition, lifestyle factors, or other health conditions may be contributing to these symptoms.
+  </p>
+
+  <h2>
+    Common Signs of Low Testosterone
+  </h2>
+
+  <p>
+    Testosterone plays an important role in a man's overall health and well-being. Low testosterone levels may contribute to:
+  </p> 
+
+  <ul>
+    <li><strong>Fatigue or low energy</strong></li>
+    <li>Reduced motivation</li>
+    <li>Increased body fat</li>
+    <li>Decreased libido</li>
+    <li>Erectile dysfunction</li>
+    <li>Brain fog or difficulty concentrating</li>
+    <li>Mood changes or irritability</li>
+    <li>Slower workout recovery</li>
+    <li>Poor sleep quality</li>
+    <li>Decreased libido</li>
+    <li>Decreased libido</li>
+  </ul>
+  
+  <p>
+    Many men experience several of these symptoms simultaneously and simply attribute them to a busy lifestyle or aging.
+  </p> 
+  
+  <h2>Testosterone Affects More Than Sexual Health</h2>
+
+    <p>
+    Many people think of testosterone only in terms of libido and sexual performance. However, testosterone influences multiple systems throughout the body
+    <br></br>
+    Healthy hormone levels can support
+    </p> 
+  <ul>
+    <li>Muscle mass and strength</li>
+    <li>Metabolic health</li>
+    <li>Energy levels</li>
+    <li>Cognitive function</li>
+    <li>Bone health</li>
+    <li>Exercise recovery</li>
+    <li>Overall quality of life</li>
+  </ul>
+   
+  <p>
+    Because hormones affect so many aspects of health, symptoms often appear gradually and may be overlooked for years. 
+    <br />
+    <strong>Why Proper Testing Matters</strong>
+  </p>
+  <p>
+    Hormone health is not determined by a single number on a lab report.
+    A thorough evaluation should include
+     <ul>
+      <li>Review of symptoms</li>
+      <li>Medical history</li>
+      <li>Physical assessment</li>
+      <li>Comprehensive laboratory testing</li>
+  </ul>
+  </p>
+
+  <p>
+   At Ultimate Health Direct Primary Care, we take a personalized approach to understanding what may be contributing to your symptoms rather than relying on one lab value alone.
+  </p>
+
+<h3>Testosterone Isn't the Whole Story</h3>
+<p>Many symptoms associated with low testosterone can also be caused by:</p>
+
+<ul>
+  <li>Thyroid dysfunction</li>
+  <li>Poor sleep</li>
+  <li>Chronic stress</li>
+  <li>Nutritional deficiencies</li>
+  <li>Weight gain and metabolic issues</li>
+  <li>Other underlying medical conditions</li>
+</ul>
+
+<p>That is why a complete evaluation is essential before considering treatment options.</p>
+
+<h3>Treatment Options for Hormone Optimization</h3>
+<p>When appropriate, hormone optimization may be considered as part of a broader wellness plan.</p>
+<p>Potential treatment options can include:</p>
+<ul>
+  <li>Lifestyle modifications</li>
+  <li>Nutrition and weight management</li>
+  <li>Exercise recommendations</li>
+  <li>Testosterone replacement therapy</li>
+  <li>Thyroid optimization when indicated</li>
+</ul>
+<p>The right approach depends on each individual's symptoms, health goals, laboratory findings, and medical history.</p>
+<h3>When Should You Get Tested?</h3>
+<p>If you have been experiencing:</p>
+<ul>
+  <li>Persistent fatigue</li>
+  <li>Weight gain despite healthy habits</li>
+  <li>Low libido</li>
+  <li>Brain fog</li>
+  <li>Reduced exercise performance</li>
+  <li>Mood changes</li>
+  it may be worth discussing hormone testing with a qualified healthcare provider.
+</ul>
+
+
+<h3>Take the Next Step</h3>
+
+<p>
+  You don't have to accept feeling "off" as a normal part of aging.
+  <br></br>
+  At Ultimate Health Direct Primary Care in Leesburg, we work with patients to identify the root causes of their symptoms and develop personalized plans focused on long-term health and wellness.
+<br></br>
+  If you're experiencing symptoms that may be related to hormone imbalance, schedule a consultation to learn whether comprehensive hormone testing could help you better understand your health and improve your quality of life.
+</p>
+<p> 
+    Discover why more people in Leesburg, Lady Lake, and The Villages are making the switch. Call 352-901-6582 to join today!
+</p>
+</>
+  },  
+};
 
   const post = blogPosts[slug];
 
@@ -461,13 +593,43 @@ function BlogPost() {
       </>
     );
   }
-
   return (
     <>
-      <BlogHero
-        backgroundImage={post.banner}
-        title={post.title}
+      {post.videoEmbed ? (
+  <div className="container py-4">
+    <div className="mx-auto" style={{ maxWidth: '900px' }}>
+      <div
+        style={{
+          position: 'relative',
+          paddingBottom: '56.25%',
+          height: 0,
+          overflow: 'hidden',
+          borderRadius: '12px'
+        }}
+      >
+        <iframe
+          src={post.videoEmbed}
+          title={post.title}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%'
+          }}
+          frameBorder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
         />
+      </div>
+    </div>
+  </div>
+) : (
+  <BlogHero
+    backgroundImage={post.banner}
+    title={post.title}
+  />
+)}
       <section className="section py-5">
         <div className="container">
             <p className="text-muted">{post.date}</p>
@@ -475,7 +637,7 @@ function BlogPost() {
             <div className="lead">{post.content}</div>
         </div>
     </section>
-      <Footer />
+    <Footer />
     </>
   );
 }

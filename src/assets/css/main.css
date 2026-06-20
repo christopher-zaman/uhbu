@@ -1076,6 +1076,52 @@ Employer Landing Page
     padding: 26px 22px;
   }
 }
+.video-container {
+  margin-bottom: 2rem;
+}
+.blog-thumbnail {
+  position: relative;
+}
+
+.blog-thumbnail img {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    background: rgba(0,0,0,.55);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: none;
+}
+
+.play-button i {
+    color: white;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.blog-thumbnail-image {
+    position: relative;
+}
+
+
+
+.blog-thumbnail-link {
+    display: block;
+}
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
