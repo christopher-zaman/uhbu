@@ -204,7 +204,7 @@ function NavBar() {
     >
       <i
         className={`bi ${
-          isDropdownOpen ? "bi-chevron-up text-success" : "bi-chevron-down text-white"
+          isDropdownOpen ? "bi-chevron-up text-success" : "bi-chevron-down text-blue"
         }`}
       />
     </button>
