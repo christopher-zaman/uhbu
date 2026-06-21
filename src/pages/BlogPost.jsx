@@ -448,7 +448,7 @@ function BlogPost() {
   },  
 // New Blog Post - 06/20/2026
 'precision-and-preventive-medicine': {
-    title: 'Precisions',
+    title: 'Signs, Symptoms, and Treatment Options for Men in Leesburg, Florida',
     banner: '/assets/img/blog-images/blog-post-uhdpc.webp',
     videoEmbed: 'https://player.vimeo.com/video/880897358?h=fcac3cf722&autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0',
     date: 'June 20, 2026',
@@ -482,8 +482,6 @@ function BlogPost() {
     <li>Mood changes or irritability</li>
     <li>Slower workout recovery</li>
     <li>Poor sleep quality</li>
-    <li>Decreased libido</li>
-    <li>Decreased libido</li>
   </ul>
   
   <p>
@@ -574,9 +572,10 @@ function BlogPost() {
 <br></br>
   If you're experiencing symptoms that may be related to hormone imbalance, schedule a consultation to learn whether comprehensive hormone testing could help you better understand your health and improve your quality of life.
 </p>
-<p> 
-    Discover why more people in Leesburg, Lady Lake, and The Villages are making the switch. Call 352-901-6582 to join today!
-</p>
+
+<a href="tel:3529016582" className="btn btn-blue-transparent mt-3">
+  Call 352-901-6582 
+</a>
 </>
   },  
 };

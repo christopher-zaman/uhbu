@@ -7,6 +7,19 @@ import Contact from '../components/Contact';
 import PhoneChip from '../components/PhoneChip';
 import FullscriptBanner from "../components/FullscriptBanner";
 
+import PhotoGallery from '../components/PhotoGallery';
+import gallery1 from '../assets/img/gallery/gallery-1.webp';
+import gallery2 from '../assets/img/gallery/gallery-2.webp';
+import gallery3 from '../assets/img/gallery/gallery-3.webp';
+import gallery4 from '../assets/img/gallery/gallery-4.webp';
+import gallery5 from '../assets/img/gallery/gallery-5.webp';
+import gallery6 from '../assets/img/gallery/gallery-6.webp';
+import gallery7 from '../assets/img/gallery/gallery-7.webp';
+import gallery8 from '../assets/img/gallery/gallery-8.webp';
+import gallery9 from '../assets/img/gallery/gallery-9.webp';
+import gallery10 from '../assets/img/gallery/gallery-10.webp';
+
+
 // Images
 import banner from '../assets/img/amanda-banner.webp';
 import contentImage from '../assets/img/amanda.webp';
@@ -56,6 +69,23 @@ function AboutUs() {
         image={contentImage}
         roundedImage={true}
         />
+
+        <PhotoGallery
+          title="Amanda In The Community"
+          subtitle="Moments from our practice, community, and patient-centered care."
+          images={[
+          { src: gallery1, alt: 'Amanda featured in Style Magazine' },
+          { src: gallery2, alt: 'Ultimate Health DPC community event' },
+          { src: gallery3, alt: 'Amanda with patients and community members' },
+          { src: gallery4, alt: 'Amanda speaking at a community health event' },
+          { src: gallery5, alt: 'Amanda participating in a wellness outreach program' },
+          { src: gallery6, alt: 'Ultimate Health Direct Primary Care office event' },
+          { src: gallery7, alt: 'Amanda receiving community recognition' },
+          { src: gallery8, alt: 'Amanda with healthcare colleagues and partners' },
+          { src: gallery9, alt: 'Amanda serving the Lake County community' },
+        ]}
+        />
+
         <TextVideoSection
             bgClass="sexual-wellness-bg lead"
             sections={[

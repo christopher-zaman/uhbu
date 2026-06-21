@@ -2,28 +2,37 @@ import React from 'react';
 import BlogPreview from '../components/BlogPreview';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
-import banner from '../assets/banners/subscribe.png';
+// import banner from '../assets/banners/blog-banner.png';
 import Title from '../components/Title';
 import PhoneChip from '../components/PhoneChip';
+import PhotoBanner from '../components/PhotoBanner';
+import businessWomenBanner from '../assets/banners/blog-banner.png';
 // Replace banner with hero video of mens biote?
 function Blog() {
   return (
     <>    
-    <Hero
-    backgroundImage={banner}
-    title="Check Out Our Blogs"
-    subtitle="Insights, updates, and guidance to support informed health decisions"
-    cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
+    {/* <Hero
+    backgroundImage={businessWomenBanner}
+    // title="Check Out Our Blogs"
+    // subtitle="Insights, updates, and guidance to support informed health decisions"
+    // cta={<PhoneChip inline={false} className="hero-phone-white fs-4" />}
     textColor="rgba(255, 255, 255, 1)"
-    className='blog-hero'
+    className='blog-hero-banner'
 
-     />
+     /> */}
+
+     <PhotoBanner
+      image={businessWomenBanner}
+      alt="Amanda Gaskin Business Women of Style"
+    />
     <section className="section blog py-5">
       <div className="container">
           {/* <Title
           introText = "Read Our"
           highlightText = "Blogs"
            /> */}
+           <h1>Health Tips, Wellness & Preventive Care</h1>
+           <p>Expert guidance, preventive care tips, and wellness resources from the Ultimate Health team.</p>
         {/* First Row */}
         <div className="row mb-5">
             <div className="col-md-6 col-lg-4 mb-4">
