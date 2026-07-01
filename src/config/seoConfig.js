@@ -80,12 +80,7 @@ const seoConfig = {
     url: `${HOST}/duo`,
   },
 
-  "/vampire-facial": {
-    title: "Vampire Facial in Leesburg, FL | Ultimate Health DPC",
-    description:
-      "Refresh your skin with a vampire facial in Leesburg using regenerative aesthetic techniques to support smoother, healthier-looking skin.",
-    url: `${HOST}/vampire-facial`,
-  },
+
 
   "/vitamin-injections": {
     title: "Vitamin Injections in Leesburg, FL | Ultimate Health DPC",

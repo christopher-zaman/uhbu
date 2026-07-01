@@ -128,7 +128,7 @@ function OurPractice() {
 
                 ],
                 extraText: '',
-                //   video: '/assets/videos/vampire-treatment.mp4',
+                //   video: '/assets/videos/',
                 }
             ]}
         />
