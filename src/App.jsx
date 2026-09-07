@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -51,7 +52,12 @@ import StickyCTA from './components/StickyCTA';
 import Announcement from './components/Announcement';
 import EmployerLandingPage from './pages/EmployerLandingPage';
 import SiteHeader from './components/SiteHeader';
+import InsideLake from './pages/InsideLake';
+
 function App() {
+  const location = useLocation();
+  const hideStickyCTA = location.pathname === "/insidelake";
+
   usePageTracking();
   useEffect(() => {
     AOS.init({
@@ -123,7 +129,8 @@ function App() {
       <Route path="/blog-cms" element={<BlogCMS />} />
 
       <Route path="/blog-cms/:slug" element={<BlogPostCMS />} />
-
+      <Route path="/insidelake" element={<InsideLake />} />
+      
 {/* Create a proper 404 page */}
       <Route path="*" element={<div style={{padding: '3rem'}}>
         <h1>Page not found</h1>
@@ -132,7 +139,7 @@ function App() {
 
     </Routes>
     
-    <StickyCTA />
+    {!hideStickyCTA && <StickyCTA />}
     </>
   );
 }
