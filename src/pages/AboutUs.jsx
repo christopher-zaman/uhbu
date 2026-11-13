@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { lipedemaPost } from './LipedemaAndMenopause';
+
 // Components
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
@@ -112,6 +115,14 @@ function AboutUs() {
         roundedImage={true}
         reverse={true}
         />        
+    <section className="section py-4">
+      <div className="container">
+        <h2>Educational Articles by Amanda Gaskin</h2>
+        <ul>
+          <li><Link to={lipedemaPost.path}>{lipedemaPost.title}</Link></li>
+        </ul>
+      </div>
+    </section>
     <Contact />
     <Footer />
     </>
