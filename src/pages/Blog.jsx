@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogPreview from '../components/BlogPreview';
+import { lipedemaPost } from './LipedemaAndMenopause';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 // import banner from '../assets/banners/blog-banner.png';
@@ -33,6 +34,16 @@ function Blog() {
            /> */}
            <h1>Health Tips, Wellness & Preventive Care</h1>
            <p>Expert guidance, preventive care tips, and wellness resources from the Ultimate Health team.</p>
+        <div className="row mb-4">
+          <div className="col-md-6 col-lg-4">
+            <BlogPreview
+              title={lipedemaPost.title}
+              excerpt={lipedemaPost.description}
+              image={lipedemaPost.image}
+              link={lipedemaPost.path}
+            />
+          </div>
+        </div>
         {/* First Row */}
         <div className="row mb-5">
             <div className="col-md-6 col-lg-4 mb-4">

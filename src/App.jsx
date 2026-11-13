@@ -36,6 +36,7 @@ import Blog from './pages/Blog';
 import Media from './pages/Media';
 import MediaPost from './pages/MediaPost';
 import BlogPost from './pages/BlogPost';
+import LipedemaAndMenopause from './pages/LipedemaAndMenopause';
 import usePageTracking from './hooks/usePageTracking';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
@@ -121,6 +122,7 @@ function App() {
       <Route path="/media" element={<Media />} />
 
       <Route path="/media/:slug" element={<MediaPost />} />
+      <Route path="/blog/lipedema-and-menopause" element={<LipedemaAndMenopause />} />
       <Route path="/blog/:slug" element={<BlogPost />} /> 
 
       <Route path="/privacy-policy" element={<PrivacyPolicy />} /> 
