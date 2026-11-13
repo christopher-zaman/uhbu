@@ -27,6 +27,7 @@ const SEO = ({
   image = `${HOST}/assets/img/membership-based-primary-health-care.webp`,
   url = `${HOST}/`,
   noindex = false,
+  type = 'website',
   jsonLd
 }) => {
   return (
@@ -38,7 +39,7 @@ const SEO = ({
 
         <link rel="canonical" href={url} />
 
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content={type} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
